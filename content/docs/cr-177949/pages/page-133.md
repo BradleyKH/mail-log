@@ -1,0 +1,30 @@
+---
+pdfPage: 133
+folio: null
+sectionId: "appendices"
+kind: text
+source: ocr
+confidence: 88.2
+figures: []
+---
+CONTRACT: NAS1-16200
+
+POP 1 REPORT (FIRST HALF OF FISCAL YEAR)
+BASED ON EAC'S
+
+ALL RECORDS
+
+ALL TASKS
+
+REPORT WITH FEE
+
+ALL PROGRAMS
+
+ALL JOB ORDERS
+
+ALL W.A.'S
+
+DATE COMPUTED:
+THU, JUL 11 1985 09:19:45 PM
+
+POP! REPORT

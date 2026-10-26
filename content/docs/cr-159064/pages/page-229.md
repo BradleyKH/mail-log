@@ -1,0 +1,66 @@
+---
+pdfPage: 229
+folio: null
+sectionId: "C"
+kind: figure
+source: ocr
+confidence: 28.5
+figures: []
+---
+L_FILE
+
+12/04/78 12215
+
+PRT901
+
+Pee C RCC eS SEES EE ESE eer eee Ce eee CSCC PETC CESS CLS SCC CISC LC SCSISCLSCIOSSOSLSCSLCOLCISCCSCSCCSOSCS SCS TSS e Cee ee
+
+ISTE T SCSI S STS STS S TTS TCCSCCTCOCTSVE CSCC COO CTISCTOCT CSET CTT CETTE TIC ITI TTT LTT ITI TITTLE TiTtriLitit
+
+we.
+
+at
+
+an
+
+nh
+we
+at
+
+ARR EIR ER ARERR AREER ARE ARERR EERE RARER EEE EER EER EE ERE AREER EAR ATER ARTE E TERE EREE EEE ER ER ERE
+SRR TITRA T IIR TR TOT SOTIOT TTT TS ORR RT TT RTE ER REE AEE EERE EEE RAE RE REE ERE EERE REAR RE
+
+Wh W
+
+<F ec
+Eeeee
+
+WW
+
+Leceece
+
+WWWWl
+
+fEEeeeeee
+fSeeelente
+
+br ae a ad
+
+W
+wiWW
+
+WWWWW
+W
+W
+WWW
+W
+WWW
+
+ae
+at
+at
+te
+*
+ae
+ae
+ae

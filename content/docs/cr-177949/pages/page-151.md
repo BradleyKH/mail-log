@@ -1,0 +1,31 @@
+---
+pdfPage: 151
+folio: null
+sectionId: "appendices"
+kind: text
+source: ocr
+confidence: 92.4
+figures: []
+---
+CONTRACT: NAS1-16200
+SPECIAL-R PRORATION OF HOURS
+BASED ON ACTUALS
+
+ALL RECORDS
+
+TASK(S) R
+
+REPORT WITHOUT FEE
+
+ALL PROGRAMS
+
+ALL JOB ORDERS
+
+ALL W.A.'S
+
+DATE COMPUTED:
+WED, JUL 10 1985 09:13:14 AM
+
+SPECIAL R SUBTASK PRORATION HOURLY REPORT
+
+1-2

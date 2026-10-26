@@ -1,0 +1,45 @@
+---
+pdfPage: 322
+folio: null
+sectionId: "C.ARCDR"
+kind: listing
+source: reviewed
+confidence: 95
+figures: []
+listing:
+  appendix: "C"
+  routines: ["ARCDR"]
+  listingPage: 93
+---
+```fortran
+(1068) C
+(1069) C     PLACE THE ARCHIVE FILE AT THE EOF MARKER
+(1070) C
+(1071) 50    READ(9,END=75)TIT,PTIT,DIR,DT,SYS,WAN,VEH,REV,RDAT
+(1072)       GO TO 50
+(1073) 75    DO 9999 ILOOP=1,IKNT
+(1074) 82    WRITE(1,80)
+(1075) 80    FORMAT(' WHAT IS THE DIR-REPORT NUMBER OF THE DOCUMENT ',
+(1076)      1' YOU WISH TO ARCHIVE',/)
+(1077)       READ(1,81,ERR=82)IDR
+(1078) 81    FORMAT(3A4,A2)
+(1079) 100   READ(6,END=200)TIT,PTIT,DIR,DT,SYS,WAN,VEH,REV,RDAT
+(1080)       DO 150 I=1,4
+(1081)       IF(IDR(I).NE.DIR(I)) GO TO 125
+(1082) 150   CONTINUE
+(1083)       WRITE(9)TIT,PTIT,DIR,DT,SYS,WAN,VEH,REV,RDAT
+(1084)       GO TO 100
+(1085) 125   WRITE(10)TIT,PTIT,DIR,DT,SYS,WAN,VEH,REV,RDAT
+(1086)       GO TO 100
+(1087) 200   CALL SRCH$$(K$CLOS,'DIR   ',6,0,0,0)
+(1088)       CALL SRCH$$(K$DELE,'DIR   ',6,0,0,0)
+(1089)       CALL SRCH$$(K$CLOS,'TEMP  ',6,0,0,0)
+(1090)         CALL CNAM$$('TEMP  ',6,'DIR   ',6,IC)
+(1091)          CALL SRCH$$(K$RDWR+K$NDAM,'DIR   ',6,2,IT,IC)
+(1092)       CALL SRCH$$(K$RDWR+K$NDAM,'TEMP  ',6,6,IT,IC)
+(1093) 9999  CONTINUE
+(1094)       ENDFILE 9
+(1095)       CALL SRCH$$(K$CLOS,'INACT ',6,0,0,0)
+(1096)       RETURN
+(1097)       END
+```

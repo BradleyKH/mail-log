@@ -1,0 +1,53 @@
+---
+pdfPage: 472
+folio: null
+sectionId: "D.INPSDW"
+kind: listing
+source: reviewed
+confidence: 29.5
+figures: []
+listing:
+  appendix: "D"
+  routines: ["INPSDW"]
+  listingPage: 145
+---
+```fortran
+(2117) 104   CONTINUE
+(2118) 200   IF(R.EQ.1.AND.IR.NE.2) GO TO 400
+(2119) 201   WRITE(1,202)
+(2120) 202   FORMAT(' (2) DRAWING NUMBER',/,'!',14X,'!'/)
+(2121)       READ(1,203,ERR=201)DRAW
+(2122) 203   FORMAT(1X,3A4,A2)
+(2123)       WRITE(1,203)DRAW
+(2124) 400   IF(R.EQ.1.AND.IR.NE.3) GO TO 500
+(2125) 401   WRITE(1,402)
+(2126) 402   FORMAT(' (3) DRAWING DATE',/,'!MMDDYY!'/)
+(2127)       READ(1,403,ERR=401)DT
+(2128) 403   FORMAT(1X,3I2)
+(2129)       WRITE(1,403)DT
+(2130) 500   IF(R.EQ.1.AND.IR.NE.4) GO TO 900
+(2131) 501   WRITE(1,502)
+(2132) 502   FORMAT(' (4) SYSTEM',
+(2133)      11X,'(ELEC,GSE,GUID,MECH,PROP,RF,SOP,MGS,EGS,PERF)',
+(2134)      1,/,3('!',4X,'!')/)
+(2135)       READ(1,503,ERR=501)SYS
+(2136) 503   FORMAT(1X,3(A4,2X))
+(2137)       WRITE(1,503) SYS
+(2138) 900   IF(R.EQ.1.AND.IR.NE.5) GO TO 2200
+(2139) 901   WRITE(1,902)
+(2140) 902   FORMAT(' (5) VEHICLE',/2('!    !')/)
+(2141)       READ(1,903,ERR=901)((VEH(I,J),J=1,2),I=1,2)
+(2142) 903   FORMAT(2(1X,I3,A1,1X))
+(2143)       WRITE(1,903) ((VEH(I,J),J=1,2),I=1,2)
+(2144) 2200  CONTINUE
+(2145)       IF(R.EQ.1.AND.IR.NE.6) GO TO 2300
+(2146) 2201  WRITE(1,2202)
+(2147) 2202  FORMAT(' (6) SECTION',/,
+(2148)      15X,'E SECT  ,UPPER B   ,LOWER B     ,ALCYONE IA   ,ALCYONE IIA',/
+(2149)      1,5X,'G SECT   ,UPPER C   ,LOWER C     ,ALGOL IIA    ,ALGOL IIIA',/
+(2150)      1,5X,'EG SECT  ,UPPER D   ,LOWER D     ,ANTARES IIA  ,ANTARES IIIA'
+(2151)      1,/,5X,'BASE A    ,UPPER F   ,LOWER F     ,ALTAIR IIIA  ,',
+(2152)      1'CASTOR IIA',/,13X,'H/S 25/34    ,H/S 40/34   ,H/S 45/42',/,
+(2153)      1'!',12X,'!'/)
+(2154)       READ(1,2203,ERR=2201)SECT
+```

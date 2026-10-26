@@ -1,0 +1,30 @@
+---
+pdfPage: 135
+folio: "F-2"
+sectionId: "appendices"
+kind: text
+source: ocr
+confidence: 90.3
+figures: []
+---
+CONTRACT: NAS1-16200
+
+POP 2 REPORT (SECOND HALF OF FISCAL YEAR)
+BASED ON EAC'S
+
+ALL RECORDS
+
+ALL TASKS
+
+REPORT WITH FEE
+
+ALL PROGRAMS
+
+ALL JOB ORDERS
+
+ALL W.A.'S
+
+DATE COMPUTED:
+THU, JUL 11 1985 08:33:11 PM
+
+POP2 REPORT

@@ -1,0 +1,61 @@
+---
+pdfPage: 20
+folio: "12"
+sectionId: "2.4"
+kind: text
+source: ocr
+confidence: 80.5
+figures: []
+---
+SEND>THANK YOU FOR MESSAGE. GOODBYE.
+SEND>(* CNTL E * return *)
+
+DATA SENT...WAITING FOR RESPONSE
+
+*
+LINE DISCONNECTED
+
+AVAILABLE COMMANDS
+
+\1. CALL
+
+\2. ANSWER
+
+\3. ACTIVE USERS
+
+\4. DISCONNECT
+CMD> 4
+
+Option 99 displays the SYSTEM NEWS and reinitializes the SPADS
+main menu.
+
+Once entered Into the selected contract data area the user is next
+
+given the Analysts main menu as shown below.
+
+KH KKKKKKKK KKH KK KER KKEKKER EK KERR
+
+%
+\* CONTRACT: NAS1-16200 *
+
+KEK AKER KE KKKKKKEKKERKKEKRKEKER
+
+(0) EXIT (QUIT AND EXIT THIS CONTRACT - RETURN TO CONTRACTS MENU )
+(1) RETRIEVE (SEARCH, GET, AND DISPLAY ON TERMINAL DATA BASE RECORDS )
+(2) INPUT (ADD NEW WA RECORD TO THE DATA BASE - PRIVILEGED COMMAND)
+
+(3) BOOK PART (SEARCH, GET, AND OUTPUT TO A PRINTER DATA BASE RECORDS )
+
+```text
+(4) REPORT    (GENERATE SPECIAL FINANCIAL REPORTS - PRIVILEGED COMMAND)
+
+(5) UPDATE    (HOUSEKEEPING AND UPDATE OPERATIONS - PRIVILEGED COMMAND)
+```
+
+(6) RATETABLE (USE THE RATE TABLE AS A CALCULATOR - PRIVILEGED COMMAND)
+
+-—— eee we ee eee Ke eee we we eee ew eee eee
+
+ENTER OPTION >
+
+The Contract Analysis fille program main menu has’ six (6) options:

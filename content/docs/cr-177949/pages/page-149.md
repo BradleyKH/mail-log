@@ -1,0 +1,27 @@
+---
+pdfPage: 149
+folio: null
+sectionId: "appendices"
+kind: text
+source: ocr
+confidence: 85.1
+figures: []
+---
+CONTRACT: NAS1=16200
+PRORATION OF HOURS
+BASED ON ACTUALS
+
+ALL RECORDS
+
+TASK(S) 1 CT
+REPORT WITHOUT FEE
+ALL PROGRAMS
+
+ALL JOB ORDERS
+
+ALL W.A.'S
+
+DATE COMPUTED:
+WED, JUL 10 1985 09:14:04 AM
+
+REGULAR PRORATION HOURLY REPORT

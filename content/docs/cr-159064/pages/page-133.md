@@ -1,0 +1,53 @@
+---
+pdfPage: 133
+folio: null
+sectionId: "B.INPSC"
+kind: listing
+source: reviewed
+confidence: 95
+figures: []
+listing:
+  appendix: "B"
+  routines: ["INPSC"]
+  listingPage: 117
+---
+```fortran
+(1469) 403   FORMAT(1X,8A4)
+(1470)       WRITE(1,403)TO
+(1471) 500   IF(R.EQ.1.AND.IR.NE.5) GO TO 600
+(1472) 501   WRITE(1,502)
+(1473) 502   FORMAT(' (5) DOCUMENT/LETTER NUMBER',/,'!',18X,'!'/)
+(1474)       READ(1,503,ERR=501)DLN
+(1475) 503   FORMAT(1X,4A4,A2)
+(1476)       WRITE(1,503) DLN
+(1477) 600   IF(R.EQ.1.AND.IR.NE.6) GO TO 700
+(1478) 601   WRITE(1,602)
+(1479) 602   FORMAT(' (6) SUBJECT (7 WORDS - 10 CHAR/WORD)',/
+(1480)      1'!',76X,'!'/)
+(1481)       LEN=10
+(1482)        CALL TINPUT(TIT,LEN)
+(1483)       DO 610 IJ=1,21
+(1484) 610   SUB(IJ)=TIT(IJ)
+(1485)       WRITE(1,603)SUB
+(1486) 603   FORMAT(7(1X,2A4,A2))
+(1487) 700   IF(R.EQ.1.AND.IR.NE.7) GO TO 800
+(1488) 701   WRITE(1,702)
+(1489) 702   FORMAT(' (7) ROUTING',/,6('!   !')/)
+(1490)       READ(1,703,ERR=701)ROUT
+(1491) 703   FORMAT(6(1X,A3,1X))
+(1492)       WRITE(1,703) ROUT
+(1493) 800   IF(R.EQ.1.AND.IR.NE.8) GO TO 900
+(1494) 801   WRITE(1,802)
+(1495) 802   FORMAT(' (8) INPUT DATA DATE',/,'!MMDDYY!',/)
+(1496)        IF(R.EQ.0) GOTO 805
+(1497)       READ(1,803,ERR=801)IDD
+(1498) 803   FORMAT(1X,3I2)
+(1499)       GO TO 810
+(1500) 805   REWIND 10
+(1501)       READ(10,803)IM,ID,IY
+(1502)       IDD(1)=IM
+(1503)       IDD(2)=ID
+(1504)       IDD(3)=IY
+(1505)       REWIND 10
+(1506) 810   WRITE(1,803) IDD
+```

@@ -1,0 +1,17 @@
+{
+  "routine": "OPEN@F-TTEST",
+  "lineIds": [
+    "u1",
+    "u2",
+    "u3",
+    "u4",
+    "u5"
+  ],
+  "pages": [
+    {
+      "pdfPage": 531,
+      "firstLine": 1,
+      "lastLine": 5
+    }
+  ]
+}

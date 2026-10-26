@@ -1,0 +1,35 @@
+---
+pdfPage: 530
+folio: null
+sectionId: "6.2.3"
+kind: text
+source: ocr
+confidence: 85.8
+figures: ["6.2.3.4"]
+---
+ITEM
+NO.
+
+SEARCHABLE ENGINEERING ORDER DATA ITEMS
+
+DESCRIPTION SEARCHABLE
+E.0. TITLE
+E.0. NUMBER
+
+E.0. REVISION
+
+E.0. DATE.
+
+E.0. REVISION DATE
+
+VEHICLE
+
+** NOT OUTPUT DURING A VEHICLE SEARCH
+
+FIGURE 6.2.3.4
+
+~ 516 -
+
+OUTPUT
+
+*

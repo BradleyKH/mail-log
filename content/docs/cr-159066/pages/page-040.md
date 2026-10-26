@@ -1,0 +1,30 @@
+---
+pdfPage: 40
+folio: "28"
+sectionId: "5.3.3"
+kind: text
+source: ocr
+confidence: 85.6
+figures: ["5.3.3.2"]
+---
+E.0. NUMBER
+
+E.0. TITLE
+
+E.0. REVISION
+
+E.0. DATE
+
+E.0. REVISION DATE
+
+VEHICLE
+
+SEARCHABLE ENGINEERING ORDER DATA ITEMS
+
+SEARCHABLE
+
+** NOT OUTPUT DURING A VEHICLE SEARCH
+
+FIGURE 5.3.3.2
+
+QUTPUT

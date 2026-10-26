@@ -1,0 +1,28 @@
+---
+pdfPage: 54
+folio: "46"
+sectionId: "6.2"
+kind: text
+source: ocr
+confidence: 92.9
+figures: []
+---
+SORTED LISTING BY (1) SYSTEM NUMBER
+(2) SUB-TASK
+(3) WACODE
+ENTER OPTION NUMBER > 3
+SORTED BY NASA RESPONSIBLE ENGINEER (Y OR N) > Y
+WACODE SORT NOW BEGINNING: PLEASE STAND BY
+RECORDS FOUND AND SORTED FOR WACODE
+ENGINEER SORT NOW BEGINNING: PLEASE STAND BY
+RECORDS FOUND AND SORTED FOR ENGINEERS
+ALL DONE
+(0) NO OUTPUT !!!
+(1) SCOUT PROJECT OFFICE / LARC, NASA
+(2) VOUGHT CORPORATION / DALLAS, TX
+
+ENTER OPTION NUMBER > ** return **
+
+See Appendix A-1 of this document for an example of the printer
+
+output for the Book Part Brief option.

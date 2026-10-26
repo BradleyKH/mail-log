@@ -1,0 +1,6 @@
+      SUBROUTINE CLOSE
+$INSERT SYSCOM>KEYS.F
+      CALL SRCH$$(K$CLOS,'DRAW  ',6,0,0,0)
+      CALL SRCH$$(K$CLOS,'OUT   ',6,0,0,0)
+      CALL EXIT
+      END

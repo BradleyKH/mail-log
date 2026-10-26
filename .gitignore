@@ -1,0 +1,13 @@
+node_modules/
+sources/
+dist/
+build/
+notes/
+*.plan.md
+sources/TM-X-72628-*.pdf
+test-results/
+playwright-report/
+*.tsbuildinfo
+.vite/
+.playwright-mcp/
+scout-print/v1/reference/*.pdf

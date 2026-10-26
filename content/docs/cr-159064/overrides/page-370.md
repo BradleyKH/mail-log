@@ -1,0 +1,53 @@
+---
+pdfPage: 370
+folio: null
+sectionId: "D.EONN"
+kind: listing
+source: reviewed
+confidence: 100
+figures: []
+listing:
+  appendix: "D"
+  routines: ["EONN"]
+  listingPage: 43
+---
+```fortran
+(0639)       IF(IEON(I).NE.EON(I)) GOTO 260
+(0640) 266   CONTINUE
+(0641)       KNT=KNT+1
+(0642)       IF(IPAGE.NE.0) GOTO 302
+(0643) C     FETCH AND WRITE TIME AND DATE TO OUTPUT FILE
+(0644)       CALL TIMDAT(ARRAY,15)
+(0645)       AMIN=ARRAY(4)
+(0646)       AH=AMIN/60.0
+(0647)       IH=AH
+(0648)       IMM=IH*60
+(0649)       IMIN=AMIN
+(0650)       IDM=IMIN-IMM
+(0651)       WRITE(7,1000)IH,IDM,(ARRAY(I),I=1,3)
+(0652) 1000  FORMAT('1',100X,I3,':',I3,4X,2(A2,'/'),A2)
+(0653)       WRITE(7,300)
+(0654) 300   FORMAT(4X,115('*'),/,50X,'E.O. SEARCH ',/,
+(0655)      19X,'E.O. NUMBER',8X,'DATE',6X,'E.O. TITLE',/,4X,115('*'),/,1H0)
+(0656)       IPAGE=1
+(0657) 302   CONTINUE
+(0658) 130   FORMAT(3X,19A4)
+(0659)       IF(EOREV.EQ.'NC') GOTO 250
+(0660)       WRITE(7,230)KNT,EON,EOREV,ERDT,EPTIT
+(0661) 230   FORMAT(1X,I4,'.  ',2A4,1X,'REV ',A2,3X,2(I2,'-'),I2,
+(0662)      13X,19A4,/)
+(0663)       WRITE(1,140) KNT,EON,EOREV,ERDT,((EOVEH(I,J),J=1,2),I=1,2)
+(0664) 140   FORMAT(2X,I4,'.',2X,2A4,1X,'REV ',A2,5X,2(I2,'-'),I2,3X,2(2X,
+(0665)      1 I3,A1))
+(0666)       GO TO 60
+(0667) 250   WRITE(7,230)KNT,EON,EOREV,EDT,EPTIT
+(0668)       WRITE(1,140) KNT,EON,EOREV,EDT,((EOVEH(I,J),J=1,2),I=1,2)
+(0669) 60    CONTINUE
+(0670)       IF(EPTIT(1).NE.'     ') WRITE(1,130)EPTIT
+(0671)       IF(KNT/21.EQ.KNT/21.) IPAGE=0
+(0672)       CALL PAUS
+(0673)       GO TO 400
+(0674) 350   WRITE(1,360)IEON
+(0675) 360   FORMAT(' THERE IS NO E.O.',1X,2A4,' IN THE EO SUBFILE',/)
+(0676) 400   RETURN
+```

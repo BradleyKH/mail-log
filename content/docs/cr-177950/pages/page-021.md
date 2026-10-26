@@ -1,0 +1,63 @@
+---
+pdfPage: 21
+folio: "13"
+sectionId: "2.8"
+kind: mixed
+source: ocr
+confidence: 66.3
+figures: []
+---
+ENTER OPTION > 79
+
+ere cccceeeoceee«ACTIVE USER LIST........seccecesoe
+
+```text
+CGH                    DCM                   DKH
+SLI                    GMG                   PMK
+CH1                    CL1                   FS2
+```
+
+AVAILABLE COMMANDS
+
+\1. CALL
+
+\2. ANSWER
+
+\3. ACTIVE USERS
+\4. DISCONNECT
+
+CMD>2
+
+PLEASE HOLD...INCOMING CALL
+
+HRHEK KKH KKK KKH KKK HK EKER EHH KKK KEKE KER HEE KEE KREGER EE KEKE KEKE EKER
+
+THIS 1S A TEST MESSAGE
+THIS 1S THE LAST LINE OF THE MESSAGE
+
+KKK HK HER HEHKHEHKEKHHEKHKKKHEHEK KK EHEKKEHHKHEKKE KER EH KEKE REE KEKE ERE EEK EKER
+
+TYPE CNTL -E- TO END MESSAGE
+*
+TYPE CNTL -P- TO HANGUP PHONE
+
+SEND>THANK YOU FOR MESSAGE. GOODBYE.
+SEND>(* CNTL E * return *)
+
+DATA SENT...WAITING FOR RESPONSE
+
+LINE DISCONNECTED
+
+AVAILABLE COMMANDS
+\1. CALL
+\2. ANSWER
+\3. ACTIVE USERS
+\4. DISCONNECT
+
+CMD> 4
+
+Option 99 will restart the appropriate main
+
+selection
+
+menu.

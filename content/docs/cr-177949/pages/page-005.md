@@ -1,0 +1,24 @@
+---
+pdfPage: 5
+folio: null
+sectionId: null
+kind: text
+source: ocr
+confidence: 93.3
+figures: []
+---
+9.0
+
+TABLE OF CONTENTS
+
+8.6 RESORT DATA BASE OPTION
+
+8.7 BOOK ALL OUTPUTS
+
+8.8 JOB ORDERS UPDATE
+8.8.1 REBUILD JOB ORDERS FROM SUSTAINING TABLE
+8.8.2 UPDATE PROGRAM NUMBERS
+
+RATETABLE OPTION
+
+PAGE NO.

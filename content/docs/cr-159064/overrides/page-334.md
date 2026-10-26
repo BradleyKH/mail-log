@@ -1,0 +1,53 @@
+---
+pdfPage: 334
+folio: null
+sectionId: "D.IDENT"
+kind: listing
+source: reviewed
+confidence: 95
+figures: []
+listing:
+  appendix: "D"
+  routines: ["IDENT"]
+  listingPage: 7
+---
+```fortran
+(0074)       SUBROUTINE IDENT
+(0075) C
+(0076) C     THIS ROUTINE KEEPS TRACK OF WHO ACCESSED THE CALLING
+(0077) C     PROGRAM LAST
+(0078) C
+(0079)       INTEGER*2 ARRAY(15)
+(0080) C SYSCOM>KEYS.F       MNEMONIC KEYS FOR FILE SYSTEM (FTN)      31 MAY, 1977
+(0080)       NOLIST
+(0081)       CALL BREAK$(.TRUE.)
+(0082)       CALL TIMDAT(ARRAY,15)
+(0083) C
+(0084) C     OPEN TEMP FILE (FUNIT 16)
+(0085) C
+(0086)       CALL SRCH$$(K$NDAM+K$RDWR,'TUSER',5,16,1,IC)
+(0087) C
+(0088) C     OPEN USER FILE (FUNIT 15)
+(0089) C
+(0090)       CALL SRCH$$(K$NDAM+K$RDWR,'USER',4,15,1,IC)
+(0091) C
+(0092) C     NOW WRITE USERS LOGIN ID, DATE (MMDDY), TIME, AND USER NUMBER
+(0093) C
+(0094)       AMIN=ARRAY(4)
+(0095)       AH=AMIN/60.0
+(0096)       IH=AH
+(0097)       IMM=IH*60
+(0098)       IMIN=AMIN
+(0099)       IDM=IMIN-IMM
+(0100) 25    WRITE(20,1)(ARRAY(I),I=13,15),IH,IDM,ARRAY(5),
+(0101)      1             (ARRAY(I),I=1,3),ARRAY(12)
+(0102) 1     FORMAT(3A2,2(I3,':'),I3,1X,2(A2,'/'),A2,I3)
+(0103) 2     FORMAT(3A2,2(I3,1X),I3,1X,2(A2,1X),A2,I3)
+(0104) C
+(0105) C     NOW COPY THE CONTENTS OF USER TO TUSER
+(0106) C
+(0107)       READ(19,2,END=50)(ARRAY(I),I=13,15),IH,IDM,ARRAY(5),
+(0108)      1                 (ARRAY(I),I=1,3),ARRAY(12)
+(0109)       GO TO 25
+(0110) 50    CALL SRCH$$(K$CLOS,'USER',4,0,0,0)
+```

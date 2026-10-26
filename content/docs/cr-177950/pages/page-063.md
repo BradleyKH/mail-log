@@ -1,0 +1,61 @@
+---
+pdfPage: 63
+folio: "55"
+sectionId: "6.4.2"
+kind: text
+source: ocr
+confidence: 90.1
+figures: []
+---
+ENTER PROJECT # TO BE SELECTED (ZERO - O = FOR ALL) > 5
+
+YOU HAVE SELECTED 754 RECORDS FROM THE CORRESPONDENCE FILE FOR QUERY
+ENTER INPUT DATE TO BE SEARCHED ON > 2/13/84
+
+INPUT DATE SEARCH FOR 2/13/84 FOUND 1 RECORDS
+
+TERMINAL OUTPUT NOW BEING GENERATED .... PLEASE STAND BY ...
+
+10/ 9/84 PAGE 1
+
+PROJECTS CORRESPONDENCE FILE :: INPUT DATE :: 1984 213
+
+```text
+INDEX                      SOURCE                    FILE CODE
+
+PROJECT                  AUTHOR                   FILE FOLDER
+
+DOCDATE                   REFERENCE NUMBER          DOCUMENT FILE
+
+10188                    LARC                     155400
+
+ERBE                     EGAN
+```
+
+2/ 3/1984
+
+DESCRIPTION: REPORT OF TRIP TO BASD, JANUARY 18-19, 1984, ERBS PRE-
+ENVIRONMENTAL REVIEW
+Option 10 performs the Description search, which is a partial search
+and operates similarly to the Author search In option 2. See the following
+
+example.
+
+SELECT OPTION BY ENTERING NUMBER (RETURN TO QUIT) > 10
+THIS SEARCH ROUTINE PERFORMS THE DESCRIPTION QUERY / RETRIEVAL
+
+THE CURRENT PROJECTS AVAILABLE FOR SEARCHING ARE:
+
+(1) LDEF
+(2) OOP
+
+(3) ACEE
+(4) TRW
+
+(5) ERBE
+(6) ALSO
+( 7) ~~ UARS
+(8) STFE
+
+ENTER PROJECT # TO BE SELECTED (ZERO - O - FOR ALL) > 5
+YOU HAVE SELECTED 754 RECORDS FROM THE CORRESPONDENCE FILE FOR QUERY

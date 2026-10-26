@@ -1,0 +1,776 @@
+[
+  {
+    "id": "1.0",
+    "title": "INTRODUCTION",
+    "level": 1,
+    "pdfPage": 9
+  },
+  {
+    "id": "1.1",
+    "title": "SECTION DESCRIPTIONS",
+    "level": 2,
+    "pdfPage": 9
+  },
+  {
+    "id": "2.0",
+    "title": "BASIC OPERATING PROCEDURES",
+    "level": 1,
+    "pdfPage": 11
+  },
+  {
+    "id": "2.1",
+    "title": "LOGIN",
+    "level": 2,
+    "pdfPage": 11
+  },
+  {
+    "id": "2.2",
+    "title": "PROGRAM ENTRY",
+    "level": 2,
+    "pdfPage": 12
+  },
+  {
+    "id": "2.2.1",
+    "title": "ETI",
+    "level": 3,
+    "pdfPage": 12
+  },
+  {
+    "id": "2.2.2",
+    "title": "PROJECTS DIRECTORATE",
+    "level": 3,
+    "pdfPage": 13
+  },
+  {
+    "id": "2.3",
+    "title": "PROGRAM EXIT",
+    "level": 2,
+    "pdfPage": 13
+  },
+  {
+    "id": "2.4",
+    "title": "ENTRANCE TO PRIVILEGED AREAS",
+    "level": 2,
+    "pdfPage": 13
+  },
+  {
+    "id": "2.5",
+    "title": "INPUT OPERATIONS",
+    "level": 2,
+    "pdfPage": 14
+  },
+  {
+    "id": "2.5.1",
+    "title": "INFO INPUT SCREENS",
+    "level": 3,
+    "pdfPage": 14
+  },
+  {
+    "id": "2.5.2",
+    "title": "FORTRAN INPUT FORMS",
+    "level": 3,
+    "pdfPage": 15
+  },
+  {
+    "id": "2.6",
+    "title": "UPDATE OPERATIONS",
+    "level": 2,
+    "pdfPage": 15
+  },
+  {
+    "id": "2.6.1",
+    "title": "INFO UPDATE SCREENS",
+    "level": 3,
+    "pdfPage": 15
+  },
+  {
+    "id": "2.6.2",
+    "title": "FORTRAN UPDATE FORMS",
+    "level": 3,
+    "pdfPage": 16
+  },
+  {
+    "id": "2.7",
+    "title": "ERROR MESSAGES",
+    "level": 2,
+    "pdfPage": 16
+  },
+  {
+    "id": "2.8",
+    "title": "SYSTEM EXIT / LOGOUT",
+    "level": 2,
+    "pdfPage": 16
+  },
+  {
+    "id": "3.0",
+    "title": "SPECIAL OPERATIONS",
+    "level": 1,
+    "pdfPage": 22
+  },
+  {
+    "id": "3.1",
+    "title": "PRINTOUT SPOOLING",
+    "level": 2,
+    "pdfPage": 22
+  },
+  {
+    "id": "3.2",
+    "title": "EMERGENCY / RECOVERY",
+    "level": 2,
+    "pdfPage": 24
+  },
+  {
+    "id": "3.2.1",
+    "title": "SOFTWARE / OPERATOR ERRORS FOR PROGRAMS",
+    "level": 3,
+    "pdfPage": 24
+  },
+  {
+    "id": "3.2.2",
+    "title": "FILE IN USE",
+    "level": 3,
+    "pdfPage": 25
+  },
+  {
+    "id": "3.3",
+    "title": "EMERGENCY / RECOVERY FOR OAS",
+    "level": 2,
+    "pdfPage": 26
+  },
+  {
+    "id": "3.3.1",
+    "title": "SOFTWARE / OPERATOR ERRORS",
+    "level": 3,
+    "pdfPage": 26
+  },
+  {
+    "id": "4.0",
+    "title": "OFFICE AUTOMATION SYSTEM",
+    "level": 1,
+    "pdfPage": 27
+  },
+  {
+    "id": "5.0",
+    "title": "TELEMAIL NETWORK",
+    "level": 1,
+    "pdfPage": 32
+  },
+  {
+    "id": "5.1",
+    "title": "TELEMAIL GENERAL ENTRY",
+    "level": 2,
+    "pdfPage": 32
+  },
+  {
+    "id": "5.2",
+    "title": "TELEMAIL EXIT",
+    "level": 2,
+    "pdfPage": 33
+  },
+  {
+    "id": "5.3",
+    "title": "CLEANUP OF PRIMOS FILES",
+    "level": 2,
+    "pdfPage": 34
+  },
+  {
+    "id": "5.4",
+    "title": "SENDING A DOCUMENT",
+    "level": 2,
+    "pdfPage": 34
+  },
+  {
+    "id": "5.5",
+    "title": "RECEIVING A DOCUMENT",
+    "level": 2,
+    "pdfPage": 35
+  },
+  {
+    "id": "6.0",
+    "title": "MAIL LOG CORRESPONDENCE FILE",
+    "level": 1,
+    "pdfPage": 37
+  },
+  {
+    "id": "6.1",
+    "title": "INPUT OPTION",
+    "level": 2,
+    "pdfPage": 38
+  },
+  {
+    "id": "6.2",
+    "title": "UPDATE OPTION",
+    "level": 2,
+    "pdfPage": 41
+  },
+  {
+    "id": "6.3",
+    "title": "DELETE OPTION",
+    "level": 2,
+    "pdfPage": 44
+  },
+  {
+    "id": "6.4",
+    "title": "SEARCH OPTION",
+    "level": 2,
+    "pdfPage": 47
+  },
+  {
+    "id": "6.4.1",
+    "title": "CCR SEARCH",
+    "level": 3,
+    "pdfPage": 48
+  },
+  {
+    "id": "6.4.2",
+    "title": "CORRESPONDENCE SEARCH",
+    "level": 3,
+    "pdfPage": 54
+  },
+  {
+    "id": "6.5",
+    "title": "REPORT OPTION",
+    "level": 2,
+    "pdfPage": 64
+  },
+  {
+    "id": "6.5.1",
+    "title": "DAILY INPUT REPORT",
+    "level": 3,
+    "pdfPage": 65
+  },
+  {
+    "id": "6.5.2",
+    "title": "DOCUMENT DATE REPORT",
+    "level": 3,
+    "pdfPage": 66
+  },
+  {
+    "id": "6.5.3",
+    "title": "SPECIAL CCR REPORTS",
+    "level": 3,
+    "pdfPage": 67
+  },
+  {
+    "id": "6.5.3.1",
+    "title": "OPEN OR HOLD RECORDS",
+    "level": 4,
+    "pdfPage": 68
+  },
+  {
+    "id": "6.5.3.2",
+    "title": "APPROVED OR DISAPPROVED RECORDS",
+    "level": 4,
+    "pdfPage": 69
+  },
+  {
+    "id": "6.5.3.3",
+    "title": "CANCELLED OR WITHDRAWN RECORDS",
+    "level": 4,
+    "pdfPage": 70
+  },
+  {
+    "id": "6.5.3.4",
+    "title": "SEARCH AND PRINT ALL",
+    "level": 4,
+    "pdfPage": 71
+  },
+  {
+    "id": "7.0",
+    "title": "MECHANICAL DRAWING FILE",
+    "level": 1,
+    "pdfPage": 73
+  },
+  {
+    "id": "7.1",
+    "title": "INPUT OPTION",
+    "level": 2,
+    "pdfPage": 74
+  },
+  {
+    "id": "7.1.1",
+    "title": "INPUT TO DRAWING FILE",
+    "level": 3,
+    "pdfPage": 75
+  },
+  {
+    "id": "7.1.2",
+    "title": "INPUT TO CATEGORY LOOKUP TABLE",
+    "level": 3,
+    "pdfPage": 77
+  },
+  {
+    "id": "7.1.3",
+    "title": "INPUT TO SCC FILE",
+    "level": 3,
+    "pdfPage": 78
+  },
+  {
+    "id": "7.1.4",
+    "title": "SORT THE DRAWING DATA BASE",
+    "level": 3,
+    "pdfPage": 79
+  },
+  {
+    "id": "7.2",
+    "title": "UPDATE OPTION",
+    "level": 2,
+    "pdfPage": 79
+  },
+  {
+    "id": "7.2.1",
+    "title": "UPDATE DRAWING RECORD",
+    "level": 3,
+    "pdfPage": 80
+  },
+  {
+    "id": "7.2.2",
+    "title": "UPDATE DRAWING PART",
+    "level": 3,
+    "pdfPage": 81
+  },
+  {
+    "id": "7.2.3",
+    "title": "UPDATE SPECIFICATION RECORD",
+    "level": 3,
+    "pdfPage": 82
+  },
+  {
+    "id": "7.2.4",
+    "title": "UPDATE SCC FILE RECORD",
+    "level": 3,
+    "pdfPage": 82
+  },
+  {
+    "id": "7.2.5",
+    "title": "UPDATE RECORD IN CATEGORY LOOKUP TABLE",
+    "level": 3,
+    "pdfPage": 84
+  },
+  {
+    "id": "7.2.6",
+    "title": "SORT THE DRAWING DATA BASE",
+    "level": 3,
+    "pdfPage": 85
+  },
+  {
+    "id": "7.3",
+    "title": "DELETE OPTION",
+    "level": 2,
+    "pdfPage": 85
+  },
+  {
+    "id": "7.3.1",
+    "title": "DELETE A PART",
+    "level": 3,
+    "pdfPage": 85
+  },
+  {
+    "id": "7.3.2",
+    "title": "DELETE A DRAWING",
+    "level": 3,
+    "pdfPage": 87
+  },
+  {
+    "id": "7.3.3",
+    "title": "DELETE A SPECIFICATION RECORD",
+    "level": 3,
+    "pdfPage": 88
+  },
+  {
+    "id": "7.3.4",
+    "title": "DELETE A PART FROM THE SCC FILE",
+    "level": 3,
+    "pdfPage": 88
+  },
+  {
+    "id": "7.3.5",
+    "title": "DELETE A CATEGORY FROM THE LOOKUP TABLE",
+    "level": 3,
+    "pdfPage": 90
+  },
+  {
+    "id": "7.4",
+    "title": "SEARCH OPTION",
+    "level": 2,
+    "pdfPage": 91
+  },
+  {
+    "id": "7.4.1",
+    "title": "SEARCH OPTIONS FOR DRAWINGS AND PARTS",
+    "level": 3,
+    "pdfPage": 92
+  },
+  {
+    "id": "7.4.2",
+    "title": "SEARCH OPTIONS FOR SCC FILE",
+    "level": 3,
+    "pdfPage": 96
+  },
+  {
+    "id": "7.5",
+    "title": "REPORT OPTION",
+    "level": 2,
+    "pdfPage": 98
+  },
+  {
+    "id": "8.0",
+    "title": "ELECTRICAL DRAWING FILE",
+    "level": 1,
+    "pdfPage": 106
+  },
+  {
+    "id": "8.1",
+    "title": "INPUT OPTION",
+    "level": 2,
+    "pdfPage": 107
+  },
+  {
+    "id": "8.1.1",
+    "title": "INPUT TO DRAWING FILE",
+    "level": 3,
+    "pdfPage": 107
+  },
+  {
+    "id": "8.1.2",
+    "title": "INPUT TO CATEGORY LOOKUP TABLE",
+    "level": 3,
+    "pdfPage": 108
+  },
+  {
+    "id": "8.2",
+    "title": "UPDATE OPTION",
+    "level": 2,
+    "pdfPage": 110
+  },
+  {
+    "id": "8.2.1",
+    "title": "UPDATE A DRAWING",
+    "level": 3,
+    "pdfPage": 110
+  },
+  {
+    "id": "8.2.2",
+    "title": "UPDATE A DRAWING PART",
+    "level": 3,
+    "pdfPage": 111
+  },
+  {
+    "id": "8.2.3",
+    "title": "UPDATE THE CATEGORY LOOKUP TABLE",
+    "level": 3,
+    "pdfPage": 112
+  },
+  {
+    "id": "8.3",
+    "title": "DELETE OPTION",
+    "level": 2,
+    "pdfPage": 113
+  },
+  {
+    "id": "8.3.1",
+    "title": "DELETE A PART",
+    "level": 3,
+    "pdfPage": 114
+  },
+  {
+    "id": "8.3.2",
+    "title": "DELETE A DRAWING",
+    "level": 3,
+    "pdfPage": 115
+  },
+  {
+    "id": "8.3.3",
+    "title": "DELETE RECORD FROM CATEGORY LOOKUP TABLE",
+    "level": 3,
+    "pdfPage": 116
+  },
+  {
+    "id": "8.4",
+    "title": "SEARCH OPTION",
+    "level": 2,
+    "pdfPage": 117
+  },
+  {
+    "id": "8.5",
+    "title": "REPORT OPTION",
+    "level": 2,
+    "pdfPage": 129
+  },
+  {
+    "id": "9.0",
+    "title": "FIPPS PROCESSING FILE",
+    "level": 1,
+    "pdfPage": 134
+  },
+  {
+    "id": "9.1",
+    "title": "INPUT OPTION",
+    "level": 2,
+    "pdfPage": 134
+  },
+  {
+    "id": "9.2",
+    "title": "UPDATE OPTION",
+    "level": 2,
+    "pdfPage": 136
+  },
+  {
+    "id": "9.3",
+    "title": "DELETE OPTION",
+    "level": 2,
+    "pdfPage": 138
+  },
+  {
+    "id": "9.4",
+    "title": "SEARCH OPTION",
+    "level": 2,
+    "pdfPage": 140
+  },
+  {
+    "id": "9.5",
+    "title": "ARCHIVE OPTION",
+    "level": 2,
+    "pdfPage": 147
+  },
+  {
+    "id": "10.0",
+    "title": "ACEE CONFERENCE REGISTRATION FILE",
+    "level": 1,
+    "pdfPage": 150
+  },
+  {
+    "id": "10.1",
+    "title": "INPUT OPTION",
+    "level": 2,
+    "pdfPage": 151
+  },
+  {
+    "id": "10.1.1",
+    "title": "INPUT TO CONFERENCE FILE",
+    "level": 3,
+    "pdfPage": 151
+  },
+  {
+    "id": "10.1.2",
+    "title": "SORTING AND HOUSEKEEPING ROUTINE",
+    "level": 3,
+    "pdfPage": 152
+  },
+  {
+    "id": "10.2",
+    "title": "UPDATE OPTION",
+    "level": 2,
+    "pdfPage": 153
+  },
+  {
+    "id": "10.2.1",
+    "title": "UPDATE CONFERENCE FILE",
+    "level": 3,
+    "pdfPage": 153
+  },
+  {
+    "id": "10.2.2",
+    "title": "SORTING AND HOUSEKEEPING ROUTINE",
+    "level": 3,
+    "pdfPage": 154
+  },
+  {
+    "id": "10.3",
+    "title": "DELETE OPTION",
+    "level": 2,
+    "pdfPage": 154
+  },
+  {
+    "id": "10.3.1",
+    "title": "DELETE RECORD FROM CONFERENCE FILE",
+    "level": 3,
+    "pdfPage": 155
+  },
+  {
+    "id": "10.3.2",
+    "title": "SORTING AND HOUSEKEEPING ROUTINE",
+    "level": 3,
+    "pdfPage": 156
+  },
+  {
+    "id": "10.4",
+    "title": "REPORT OPTION",
+    "level": 2,
+    "pdfPage": 156
+  },
+  {
+    "id": "10.5",
+    "title": "SEARCH OPTION",
+    "level": 2,
+    "pdfPage": 162
+  },
+  {
+    "id": "11.0",
+    "title": "LSAST CONFERENCE REGISTRATION FILE",
+    "level": 1,
+    "pdfPage": 172
+  },
+  {
+    "id": "11.1",
+    "title": "INPUT OPTION",
+    "level": 2,
+    "pdfPage": 173
+  },
+  {
+    "id": "11.1.1",
+    "title": "INPUT TO CONFERENCE REGISTRATION FILE",
+    "level": 3,
+    "pdfPage": 173
+  },
+  {
+    "id": "11.1.2",
+    "title": "SORTING AND HOUSEKEEPING ROUTINE",
+    "level": 3,
+    "pdfPage": 174
+  },
+  {
+    "id": "11.2",
+    "title": "UPDATE OPTION",
+    "level": 2,
+    "pdfPage": 175
+  },
+  {
+    "id": "11.2.1",
+    "title": "UPDATE CONFERENCE FILE",
+    "level": 3,
+    "pdfPage": 175
+  },
+  {
+    "id": "11.2.2",
+    "title": "SORTING AND HOUSEKEEPING ROUTINE",
+    "level": 3,
+    "pdfPage": 176
+  },
+  {
+    "id": "11.3",
+    "title": "DELETE OPTION",
+    "level": 2,
+    "pdfPage": 176
+  },
+  {
+    "id": "11.3.1",
+    "title": "DELETE RECORD FROM CONFERENCE FILE",
+    "level": 3,
+    "pdfPage": 177
+  },
+  {
+    "id": "11.3.2",
+    "title": "SORTING AND HOUSEKEEPING ROUTINE",
+    "level": 3,
+    "pdfPage": 178
+  },
+  {
+    "id": "11.4",
+    "title": "REPORT OPTION",
+    "level": 2,
+    "pdfPage": 178
+  },
+  {
+    "id": "11.5",
+    "title": "SEARCH OPTION",
+    "level": 2,
+    "pdfPage": 187
+  },
+  {
+    "id": "12.0",
+    "title": "ERBE CONFERENCE REGISTRATION FILE",
+    "level": 1,
+    "pdfPage": 193
+  },
+  {
+    "id": "12.1",
+    "title": "INPUT OPTION",
+    "level": 2,
+    "pdfPage": 194
+  },
+  {
+    "id": "12.1.1",
+    "title": "INPUT TO CONFERENCE REGISTRATION FILE",
+    "level": 3,
+    "pdfPage": 194
+  },
+  {
+    "id": "12.1.2",
+    "title": "INPUT TO LOGO ORDER ACCOUNTING FILE",
+    "level": 3,
+    "pdfPage": 195
+  },
+  {
+    "id": "12.1.3",
+    "title": "SORTING AND HOUSEKEEPING ROUTINE",
+    "level": 3,
+    "pdfPage": 196
+  },
+  {
+    "id": "12.2",
+    "title": "UPDATE OPTION",
+    "level": 2,
+    "pdfPage": 198
+  },
+  {
+    "id": "12.2.1",
+    "title": "UPDATE CONFERENCE FILE",
+    "level": 3,
+    "pdfPage": 198
+  },
+  {
+    "id": "12.2.2",
+    "title": "UPDATE LOGO ORDER FILE",
+    "level": 3,
+    "pdfPage": 199
+  },
+  {
+    "id": "12.2.3",
+    "title": "SORTING AND HOUSEKEEPING ROUTINE",
+    "level": 3,
+    "pdfPage": 199
+  },
+  {
+    "id": "12.3",
+    "title": "DELETE OPTION",
+    "level": 2,
+    "pdfPage": 199
+  },
+  {
+    "id": "12.3.1",
+    "title": "DELETE RECORD FROM CONFERENCE FILE",
+    "level": 3,
+    "pdfPage": 200
+  },
+  {
+    "id": "12.3.2",
+    "title": "DELETE RECORD FROM LOGO ORDER FILE",
+    "level": 3,
+    "pdfPage": 201
+  },
+  {
+    "id": "12.3.3",
+    "title": "SORTING AND HOUSEKEEPING ROUTINE",
+    "level": 3,
+    "pdfPage": 203
+  },
+  {
+    "id": "12.4",
+    "title": "REPORT OPTION",
+    "level": 2,
+    "pdfPage": 203
+  },
+  {
+    "id": "12.5",
+    "title": "SEARCH OPTION",
+    "level": 2,
+    "pdfPage": 207
+  },
+  {
+    "id": "appendices",
+    "title": "APPENDICES",
+    "level": 1,
+    "pdfPage": 213
+  }
+]

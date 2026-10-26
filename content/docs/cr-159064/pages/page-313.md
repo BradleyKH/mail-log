@@ -1,0 +1,53 @@
+---
+pdfPage: 313
+folio: null
+sectionId: "C.FMAIN"
+kind: listing
+source: ocr
+confidence: 47.4
+figures: []
+listing:
+  appendix: "C"
+  routines: ["FMAIN"]
+  listingPage: 84
+---
+```fortran
+(0952)       SUBROUTINE FMAIN
+(0953) C
+(0953) C     COMMON BLOCK FOR THE DIR FILE
+(0953) C
+(0953)       COMMON TITYPTIT,OIRARPT, OT eSYS oWAN,CON, ID,VEHSACT OR
+(0953)       COMMON COMP «REV,3DATSWA
+(0953) C
+(0953) C
+(0953) C     DATA DECLARATION BLOCK FOR THE DIR FILE
+(0953) C
+(0953)       INTEGER #4 TIT(21) @PTIT(19) DIR (4) RPT C4 .9SYS(3) 9 CON(S) os IDG ACT.
+(0953)       INTEGER *4 COMP(21)
+(0953)       INTEGER #2 DT(3) eWAN(4) 9 VEH(292) (RoREV,RDATOS) 9 WA(4)
+(0953) C
+(0954)
+(0955) C
+(0956) C      THIS IS THE BASIC OUTPUT ROUTINE FOR THE SPOOLER AND TERMINAL
+(0957) C
+(0958)        WRITE (12998)
+(0959)  998   FORMAT(//)
+(0960)  999   FORMAT(IHO)
+(0961)        WRITE(79999)
+(0962)  103   WRITE(1,101)
+(0963)        WRITE(7,101)
+(0964)        FORMAT(' (1) TITLE '/)
+(0965)        WRITE (1,102)PTIT                       .
+(0966)        WRITE(T,102)PTIT
+(0967)  102   FORMAT(1X919A4)
+(0968)        IFCREV.NE.*     SOTO 201
+(0969)        WRITE C1,15020IR sREV                      F
+(0970)       WRITE(TSLSQ)DIRGREV
+(0971) C 150° FORMATC® (2) DIR/REPCRT NUMBER  (CP) REVISION® o/91Xe SA4oA29SXK e1LA2/)
+(0972)        GO TO 400
+(0973)  201   WRITE(L 9 202)DIR,REV
+(0974)  202   FORMAT((' (2) DIR/REPORT NUFBER (8) REVISION' s/o1Xe3A49A29 9X9
+(0975)      1  REV  ol A2/)
+(0976)        WRITE(7,202) DIR REV
+(0977)  400  WRITECT,4(2)0T,ROAT
+```

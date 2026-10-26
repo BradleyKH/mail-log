@@ -1,0 +1,162 @@
+---
+pdfPage: 542
+folio: null
+sectionId: "6.4.1"
+kind: mixed
+source: ocr
+confidence: 69.6
+figures: []
+---
+```text
+x /*              kkkkke
+x    KSIUFD = :8,    f*
+x    KSISEG = :108, /*
+```
+
+K . KSCACC = :1908, /*
+
+```text
+Xft          kkkkke
+x    KSNSAM = :G,  
+P.4    KSNDAM = :2808,
+
+Xx    KSNSGS = :4088, /*
+xX    KSNSG = :6088, /*
+xX    KSCURR = :177777,/*
+```
+
+xX /*
+
+KX /RRRRRRERERERERERRRRER
+
+```text
+x /*            . kkkkkk
+xX   KSIMFD = :8,    /*
+x    KSICUR = :2,  
+x /*              KkkKKK
+X    KSSETC = :@,  
+xX /*           ake
+X  KSHOME = :4,.    /*
+xX /*             KaKKKK
+xX   KSALLD = :100°20,/*
+```
+
+X /* KSCURR = :177777,/*
+Xx /*
+
+Ko [RRR RIRRR IRR IR ERIE
+
+```text
+xX /®              akRKKK
+xX   KSSPOS = :1,  
+X   KSGOND = :2,     /*
+X   KSGPOS = :3,     /*
+xX   KSMSIZ = :4,    /*
+X    KSMVNT = :5,  
+```
+
+KBR RR IIR RR IIIA
+X /* kkkKKK
+X /* KSREAD = :1,
+x KSRSUB = :2, /*
+X /* KSGPOS = 3:3,
+xX KSUPOS = :4, /*
+Xx /*
+
+XBR RI i ik i tk
+
+```text
+X /*           akkkik
+D4    KSPROT = 31, 
+X    KSDTIM = :2,  
+xX    KSDMPB = 3:3,.
+```
+
+X /KRKRRRRERRERERKER EKER
+
+```text
+xX /*              RkKKKE
+X    KSNRIN = 38,  
+X    KSSRIN = :1,  
+D4    KSIRIN = :2  
+```
+
+X /*
+
+xX /*
+
+REF kkakhe
+
+FILE ENTRY IS IN UFD
+
+FILE ENTRY IS IN SEGMENT DIRECTORY
+CHANGE ACCESS
+
+NEWFIL kkkkak
+
+NEW SAM FILE
+
+/* NEW DAM FILE
+
+NEW SAM SEGMENT DIRECTORY
+NEW DAM SEGMENT DIRECTORY
+CURRENTLY ATTACHED UFD ~
+
+ATCHSS #8#RRREKRRARERERRRRER
+KEY KRAKKE
+
+UFD IS IN MFD -
+
+UFD IS IN CURRENT UFD
+
+KEYMOD *keeeR
+
+SET CURRENT UFD (DO NOT SET HOME)
+SET HOME -UFD (AS WELL AS CURRENT) -
+NAME -k#kRARR
+
+RETURN TO HOME UFD (KEY=KSIMFD)
+LDISK *ekeee
+
+SEARCH ALL DISKS
+
+SEARCH MFD OF CURRENT DISK
+
+SGDRSS RRRKAKAKERKEREKK KK KE
+
+KEY *ktkee
+
+POSITION TO ENTRY NUMBER IN SEGDIR
+POSITION TO END OF SEGDIR
+
+. RETURN CURRENT ENTRY NUMBER .
+
+MAKE SEGDIR GIVEN NR OF ENTRIES
+MOVE FILE ENTRY TO NEW POSITION
+
+RDENSS KRERKEKERERRER ARERR >
+KEY khkhkk
+
+READ NEXT ENTRY __
+READ NEXT SUB-ENTRY
+
+RETURN CURRENT POSITION IN UFD
+POSITION IN UFD
+
+SATRSS #kRRARAARRRRAAAARR REE
+KEY ReKKKE
+
+SET PROTECTION
+SET DATE/TIME MODIFIED -
+SET DUMPED BIT
+
+ERRPRSS *&k kkk a RRR Re
+KEY khekkk
+
+NEVER RETURN TO USER
+RETURN AFTER START COMMAND -
+IMMEDIATE RETURN TO USER
+
+TTT TITEL TT TILT TT TTC TC LETTE LL
+
+\- 528 - |

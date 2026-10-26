@@ -1,0 +1,10 @@
+      SUBROUTINE OPEN .
+       SYSCOMDKEYS.F
+      CALL SRCH$$ (KSROWR +KSNOAM, 9SHEET SeB eBeLeLC)
+      CALL SRCH$$(KSROWROKSNOAM, PREVS "e604 eLeIC)
+       REWIND 12
+       REWIND 16
+       REWIND 14
+        REWIND &
+      RETURN
+       END

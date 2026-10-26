@@ -1,0 +1,89 @@
+---
+pdfPage: 38
+folio: "30"
+sectionId: "4.1.2"
+kind: text
+source: ocr
+confidence: 92.1
+figures: []
+---
+ENTER OPTION > 1
+
+THE FOLLOWING FIELD NAMES ARE AVAILABLE:
+
+```text
+1) DATE                  2) STATUS                3)
+4) RNTM                  5) SYSNUM                6)
+7) MOD                   8) CNT                   9)
+10) NR                   11) CR                   12)
+13) PR                   14) CONT                 15)
+16) TASKAS               17) TASKSB               18)
+19) WACODE               20) COMPLETE             21)
+22) R.T.BOM              23) ACTBOM               24)
+25) TOTHRS               26) TOTDOL
+```
+
+ENTER FIELD # OR (H) HELP (RETURN IF NO MORE) > 5
+
+ENTER VALUE > 3
+
+REMARKS
+RBK
+TASK
+WAN
+R.T.HRS
+TABLE
+
+ENTER FIELD # OR (H) HELP (RETURN IF NO MORE) > ** return *%
+
+DATE: SAT, OCT 16 1982 STATUS:AUT J.0.S:10 MONTHS: 1 SYS ITEM NO:
+
+TITLE:PROGRAM MANAGEMENT
+
+MOD: , 4, , CONTRACTOR : VOUGHT
+
+REMRK ;
+
+```text
+NASA RESPONSIBLE ENGR:             KTR RESPONSIBLE ENGR:
+RBK :                PURCHASE REQUEST:
+```
+
+CONTRACT/PURCHASE ORDER:NAS1-12500 TASK:A SUBTASK:
+
+```text
+WORK AUTHORITY:3381 WA CODE:AB     COMPLETED TASK:YES
+
+R.T. HRS:          O R.T. DOLLARS:          0
+TOTAL AUT HOURS:            TOTAL AUT DOLLARS:
+```
+
+MORE ? > N
+
+(1) MOD, (2) NEXT, (3) SPOOL, (4) DELETE ((RETURN IF
+(1) ADD, (2) REPLACE (RETURN IF FINISHED) > 1
+
+(1) HEADER (2) JOBORDER (RETURN) > 2
+
+TABLE : SUST
+
+FEE: 7.190%
+
+FINISHED) > 1
+
+(1) ADD, (2) DELETE, (3) CHANGE, (4) AUTO (RETURN IF FINISHED) > 2
+
+DELETE ALL OR PART (RETURN IF FINISHED) > ALL
+
+JOB ORDER(S) DELETED
+
+(1) ADD, (2) DELETE, (3) CHANGE, (4) AUTO (RETURN IF FINISHED) > 4
+
+JOB ORDER E6000A FOUND.
+JOB ORDER E7000A FOUND.
+JOB ORDER E6186A FOUND.
+
+JOB ORDER E6188A FOUND.
+JOB ORDER E6189A FOUND.
+
+4

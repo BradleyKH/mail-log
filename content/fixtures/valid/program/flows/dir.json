@@ -1,0 +1,18 @@
+{
+  "record": "dir",
+  "title": "Fixture",
+  "entryStep": 1,
+  "steps": [
+    {
+      "n": 1,
+      "mode": "common",
+      "prompt": [
+        "FIXTURE"
+      ],
+      "branches": [],
+      "next": "exit",
+      "figures": [],
+      "pdfPage": 1
+    }
+  ]
+}

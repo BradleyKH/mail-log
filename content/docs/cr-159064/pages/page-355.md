@@ -1,0 +1,49 @@
+---
+pdfPage: 355
+folio: null
+sectionId: "D.ARCDW"
+kind: listing
+source: ocr
+confidence: 57.9
+figures: []
+listing:
+  appendix: "D"
+  routines: ["ARCDW"]
+  listingPage: 28
+---
+```fortran
+(0392) 327      CONTINUE
+(0393)       GO TO 325
+(0394) 323   CONTINUE
+(0395)       GO TO 330
+(0396) 325   WRITECL3, EONGETITSEPTITSEOREV,EDT,EROT sEQVEH
+(0397)       REWIND 12
+(0398)       GO TO 320
+(0399) 335   REWIND 12
+(0400) 340   READ C6,END= SSODRAW oTIT,PTIT,DT,SYS,VEH,SECTY NSHT,FREV,FNEO,FEOREF
+(0401)       IF (FNEOEG.0) GO TO 340°                                A
+(0402)       DO 343 I=1s10
+(0403)         DO 337 JZ192
+(0404)         IF (FEOREF CL eJI.NE.CEON(U)) GOTO 343
+(0405) 337   CONTINUE
+(0406)       GO TO 345
+(0407) 343   CONTINUE
+(0408)       GO TO 240
+(0409) 345    WRITE(IS)EONSETITSEPTIT,EOREV,EDT sEROT PEQVEH
+(0410)       REWIND 6
+(0411)       GO TO 320
+(0412) 350   WRITE(L7) EONGETITGEPTIT, EOREV,CDT,ERDT eEOVEH
+(0413)       REWIND 6
+(0414)       REWIND 12
+(0415)       WRITE (1,360)EON
+(0416) 360   FORMAT(' EeOe %92A4e' HAS BEEN ARCHIVED.
+(0417)       GO TO 320
+(0418) 406   CALL SRCH$$(KSCLOS,s "£0  46009000)
+(0419)       CALL SRCH$$(KSCLOSY*ETEMP 96909090)
+(0420)       CALL SRCH$$(KSCLOS, *INACTE%e6909000)
+(0421)       CALL SRCH$$(KSDELE* "EO   %e6909090)
+(0422)       CALL CNAM$$(*ETEMP *e6e"%E0   *e6,IC)
+(0423)       CALL SRCH$$(KSROWR+KSNDAM, PEO   "e6,14,1,IC)
+(0424)       RETURN
+(0425)       END
+```

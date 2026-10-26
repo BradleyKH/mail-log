@@ -1,0 +1,53 @@
+---
+pdfPage: 489
+folio: null
+sectionId: "D.FIXSHT"
+kind: listing
+source: ocr
+confidence: 45
+figures: []
+listing:
+  appendix: "D"
+  routines: ["FIXSHT"]
+  listingPage: 162
+---
+```fortran
+(2368)          SUBROUTINE FIXSHT
+(2369) C
+(2369) C      COMMON BLOCK FOR THE DRAW-E0 FILE
+(2369) C
+(2369)        COMMON DRAW sTIT,PTIT,DToSY¥S,VEH,SECT oNSHToFREV oF NEO sFEOREF »
+(2369)      1        ORWeSHTNeREVsNEOsEOREFs
+(2369)      1        EONSETITeEPTITeEOREVsEDTsERDTsEQVEHs
+(2369)      1        Re IDRe INEQeKNT oFIRSTeSECONDsTTIT
+(2369) C
+(2369)        DATA DECLARATION BLOCK FOR THE DRAW-EO: FILE                    oo
+(2369) C
+(2369)        INTEGER*4 DRAW(4) oP TIT(21) sPTIT(19) oSYS(3)9SECT(3) sFEOREF(IO G2) 5
+(2369)      1           DRWC04) gEOREF (1002) sEPTIT(19) sETITC21) sEONC2) 4
+(2369)      1           IORC49eKNToTTITC19)
+(2369)        INTEGER*#2 DT(3),VEH(292) sNSHT,SHTN(2) sFREV,FNEQO,REV,NEOs
+(2369)      1            EGREVsED TCS) ,ERDOTC3) SEQVEH(C2¢2) Ro INEDs
+(2369)      1            FIRSTsSECOND
+(2369) C                                        *
+(2369) C S
+(2370) C  SYSCOMDKEYS oF     MNEMONIC KEYS FOR FILE SYSTEM (FTN)     3L MAY» 1977
+(2370)        NOLIST
+(2371)        REWIND 12
+(2372)        CALL SRCH$$(KSRDWREKSNDAMe*STEMP %o6510519IC)    oo
+(2373)
+(2374)  50    READ(12,END=1000) ORW,SHTN,REV,NEO,EOREF
+(2375)        DO 100 I=194
+(2376)        IF(ORAW(I) SNESORW(I)) GOTO 200.                  LY
+(2377)  100    CONTINUE
+(2378)        RETURN
+(2379)  200   WRITE(14)ORW,SHTN,REV,NEO,EOREF
+(2380)        GO TO 50        .
+(2381)  1000   WRITE(1,300)
+(2382) C 300  FORMATC*® AN ERROR HAS OCCURRED DURING THIS OPERATION®)
+(2383)        CALL SRCH$$(KSCLOSs*STEMP %06900090)
+(2384)        CALL SRCH$$(KSCLOS( * DRAW "96000005)
+(2385)        CALL SRCH$$(KSCLOS, EO   "06009090)
+(2386)        CALL SRCH$$(KSCLOSs*SHEET *e6,0,050) .   .
+(2387)        CALL SRCH$$(KSCLOSs*REVS  %e6,00000)
+```

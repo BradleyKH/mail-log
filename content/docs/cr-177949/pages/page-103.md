@@ -1,0 +1,61 @@
+---
+pdfPage: 103
+folio: "95"
+sectionId: "8.5.1"
+kind: mixed
+source: ocr
+confidence: 90.8
+figures: []
+---
+ENTER (M) MANUAL OR (E) EAC AUTOMATIC > M
+
+```text
+ENTER TASK    (RETURN IF FINISHED) > A
+TASK A FEE = 7.000                         ** BOGUS **
+```
+
+IS THIS THE CORRECT ITEM (Y OR N) > Y
+ENTER NEW FEE
+INN.NNN!
+9.999
+ENTER (M) MANUAL OR (E) EAC AUTOMATIC > ** return **
+TABLE SELECTION: (ENTER ZERO OR RETURN IF DONE)
+
+```text
+(1) FEE         (2) RATE         (3) SUSTAINING
+(4) PROG-JO     (5) TIME         (6) SECURITY
+```
+
+ENTER OPTION # > ** return **
+
+ENTER UPDATE DESIRED: (RETURN IF FINISHED)
+
+(1) DALLAS TAPE
+(2) BALANCE SHEET
+(3) ETC EAC-BUDGET
+(4) QUICKIE HEADER
+(5) EDIT TABLES
+(6) RE-SORT DATA BASE
+(7) BOOK ALL OUTPUTS
+(8) JOB ORDERS
+ENTER OPTION # > 5
+TABLE SELECTION: (ENTER ZERO OR RETURN IF DONE)
+
+```text
+(1) FEE         (2) RATE         (3) SUSTAINING
+(4) PROG-JO     (5) TIME         (6) SECURITY
+```
+
+ENTER OPTION # > 1
+ENTER (M) MANUAL OR (E) EAC AUTOMATIC > E
+
+```text
+ENTER TASK    (RETURN IF FINISHED) > A
+TASK A FEE = 0.000                              ** BOGUS **
+```
+
+1S THIS THE CORRECT ITEM (Y OR N) > N
+TASK A FEE = 7.000 ** BOGUS **
+1S THIS THE CORRECT !TEM (Y OR N) > N
+
+ENTER (M) MANUAL OR (E) EAC AUTOMATIC > E

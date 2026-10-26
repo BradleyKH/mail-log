@@ -1,0 +1,7 @@
+      SUBROUTINE OPEN
+$INSERT SYSCOM>KEYS.F
+      CALL SRCH$$(K$RDWR+K$NDAM,'DRAW  ',6,2,1,IC)
+      CALL SRCH$$(K$RDWR+K$NSAM,'OUT   ',6,3,0,0)
+      REWIND 6
+      RETURN
+      END

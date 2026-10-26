@@ -1,0 +1,775 @@
+{
+  "record": "dir",
+  "title": "Design Information Release/Report",
+  "entryStep": 1,
+  "steps": [
+    {
+      "n": 1,
+      "mode": "common",
+      "title": "LOGIN",
+      "prompt": [],
+      "input": { "pattern": "LOGIN XXX", "description": "XXX represents the user initials." },
+      "response": "XXX (N) LOGGED IN AT HR'MN  MMDDYY. N is the terminal location number; HR and MN is the time the user entered the system in hours and minutes; and MMDDYY is the month, day, and year. This login allows user XXX to access any of the active programs on the SPADS system.",
+      "branches": [],
+      "next": 2,
+      "figures": [],
+      "pdfPage": 16
+    },
+    {
+      "n": 2,
+      "mode": "common",
+      "title": "PROGRAM ENTRY",
+      "prompt": [
+        "THE FOLLOWING IS A LIST OF CURRENT APPLICATIONS",
+        "PLEASE INDICATE YOUR APPLICATION/PROJECT BY SELECTING THE APPROPRIATE KEY",
+        "",
+        "APPLICATION/PROJECT     KEY",
+        "",
+        "CHANGE REQUEST          CHG",
+        "SCHEDULE 15000          150",
+        "SCHEDULE 15100          151",
+        "ANALYSIS I              ANAL",
+        "MAIL LOG                MAIL",
+        "ELOPE                   ELOP",
+        "PROGRAM DEVELOPMENT     DEV",
+        "SOFTWARE MAINT          SOMA",
+        "MISCELLANEOUS           MISC",
+        "",
+        "PLEASE ENTER THE APPROPRIATE KEY"
+      ],
+      "input": { "pattern": "MAIL", "description": "The user must specify the program selection MAIL LOG." },
+      "branches": [{ "when": "MAIL", "goto": 3 }],
+      "figures": [],
+      "pdfPage": 17
+    },
+    {
+      "n": 3,
+      "mode": "common",
+      "title": "DATA BASE SUBFILE SELECTION",
+      "prompt": [
+        "WELCOME TO SPADS",
+        "",
+        "MAIL LOG FILE",
+        "",
+        "DO YOU WISH TO WORK WITH THE DIR/REPORT DATA --- ENTER DIR",
+        "                          OR DRAWING DATA     --- ENTER DRAW",
+        "                          OR DAILY CORRESPONDENCE  --- COR",
+        "                          OR QUIT                  --- QU"
+      ],
+      "input": { "pattern": "DIR", "description": "In order for the user to select one of the four modes of operation, one of three main data base subfiles must first be designated." },
+      "branches": [
+        { "when": "DIR", "goto": 4 },
+        { "when": "QU", "goto": "exit" }
+      ],
+      "figures": [],
+      "pdfPage": 17
+    },
+    {
+      "n": 4,
+      "mode": "common",
+      "title": "MODE SELECTION",
+      "prompt": [
+        "PLEASE CHOSE ONE OF THE FOLLOWING",
+        "MODE                KEY",
+        "INPUT               INP",
+        "REVISE              REV",
+        "SEARCH              SEA",
+        "ARCHIVE             ARC",
+        "QUIT                QUIT"
+      ],
+      "input": { "pattern": "AAAA", "description": "Enter the key for the desired mode." },
+      "response": "The user must have clearance to execute within the INPUT, REVISE, and ARCHIVE modes; otherwise, an invalid user message will be displayed at the terminal: SORRY, YOU ARE NOT VALIDATED TO USE THIS MODE. IF IT IS NECESSARY, PLEASE CONTACT SYSTEM OPERATOR AT EXT. 2621. To leave the program the user must enter QUIT twice.",
+      "branches": [
+        { "when": "INP", "goto": 101 },
+        { "when": "REV", "goto": 201 },
+        { "when": "SEA", "goto": 301 },
+        { "when": "ARC", "goto": 401 },
+        { "when": "QUIT", "goto": 3 }
+      ],
+      "figures": [],
+      "pdfPage": 17
+    },
+    {
+      "n": 101,
+      "mode": "input",
+      "title": "Step #1",
+      "prompt": [
+        "WELCOME TO THE DIR-REPORT FILE INPUT ROUTINE.  PLEASE INPUT",
+        "INFORMATION BETWEEN EXCLAMATION MARKS AND LEFT JUSTIFY ALL",
+        "ENTRIES.",
+        "ENTER THE DIR OR REPORT NUMBER"
+      ],
+      "input": { "pattern": "XXX", "description": "Enter number XXX up to 14 characters", "maxLength": 14 },
+      "response": "The DIR/REPORT data record for each document consists of up to nine data items. See Figure 6. The first item entered is the DIR/REPORT Number. The file is then checked for a previous entry containing this number.",
+      "branches": [],
+      "next": 102,
+      "figures": ["6"],
+      "pdfPage": 47
+    },
+    {
+      "n": 102,
+      "mode": "input",
+      "title": "Step #2",
+      "prompt": ["THIS DIR/REPORT IS ALREADY IN THE DATA FILE"],
+      "response": "If number found, display message and entire record on terminal.",
+      "branches": [
+        { "when": "If number not found in file", "goto": 106 },
+        { "when": "If number found", "goto": 103 }
+      ],
+      "figures": [],
+      "pdfPage": 47
+    },
+    {
+      "n": 103,
+      "mode": "input",
+      "title": "Step #3",
+      "prompt": ["DO YOU WISH TO REVISE (YES OR NO)"],
+      "input": { "pattern": "YES/NO", "description": "Yes or No" },
+      "branches": [
+        { "when": "If Yes", "goto": 104 },
+        { "when": "If No", "goto": 116 }
+      ],
+      "figures": [],
+      "pdfPage": 47
+    },
+    {
+      "n": 104,
+      "mode": "input",
+      "title": "Step #4",
+      "prompt": ["HOW MANY ITEMS DO YOU WISH TO REVISE (MAX OF 8)"],
+      "input": { "pattern": "X", "description": "Enter number X" },
+      "branches": [],
+      "next": 105,
+      "figures": [],
+      "pdfPage": 47
+    },
+    {
+      "n": 105,
+      "mode": "input",
+      "title": "Step #5",
+      "prompt": ["INPUT THE ITEM NUMBER THAT YOU WISH TO REVISE"],
+      "input": { "pattern": "N", "description": "Enter number N" },
+      "response": "Repeat X number of times. Branch to data item N to be revised as shown in Steps #6 thru #15.",
+      "branches": [
+        { "when": "N = 1 (TITLE)", "goto": 106 },
+        { "when": "N = 2 (DIR OR REPORT NUMBER)", "goto": 107 },
+        { "when": "N = 3 (DOCUMENT DATE)", "goto": 108 },
+        { "when": "N = 4 (SYSTEM)", "goto": 109 },
+        { "when": "N = 5 (W.A. NUMBER/ID CODE)", "goto": 110 },
+        { "when": "N = 6 (VEHICLE)", "goto": 112 },
+        { "when": "N = 7 (REVISION)", "goto": 113 },
+        { "when": "N = 8 (REVISION DATE)", "goto": 114 }
+      ],
+      "figures": [],
+      "pdfPage": 47
+    },
+    {
+      "n": 106,
+      "mode": "input",
+      "title": "Step #6",
+      "prompt": ["(1) TITLE (7 WORDS - 10 CHAR.)", "!                                        !"],
+      "input": { "pattern": "!AAAA!", "description": "Enter title. If legal entry, the entry is displayed on terminal. If not legal, step is repeated. This is done for all entries to follow. NOTE: User must skip a space before entering data." },
+      "branches": [],
+      "next": 107,
+      "figures": [],
+      "pdfPage": 47
+    },
+    {
+      "n": 107,
+      "mode": "input",
+      "title": "Step #7",
+      "prompt": ["(2) DIR OR REPORT NUMBER", "!              !"],
+      "input": { "pattern": "!XXX!", "description": "DIR or report number" },
+      "branches": [{ "when": "If input mode", "goto": 108 }],
+      "next": 108,
+      "figures": [],
+      "pdfPage": 48
+    },
+    {
+      "n": 108,
+      "mode": "input",
+      "title": "Step #8",
+      "prompt": ["(3) DOCUMENT DATE", "!MMDDYY!"],
+      "input": { "pattern": "MMDDYY", "description": "Enter month, day, year", "maxLength": 6 },
+      "branches": [],
+      "next": 109,
+      "figures": [],
+      "pdfPage": 48
+    },
+    {
+      "n": 109,
+      "mode": "input",
+      "title": "Step #9",
+      "prompt": ["(4) SYSTEM (ELEC,GSE,GUID,MECH,PROP,RF,SOP,MGS,EGS,PERF)", "!    !!    !!    !"],
+      "input": { "pattern": "!AAAA!", "description": "System" },
+      "branches": [],
+      "next": 110,
+      "figures": [],
+      "pdfPage": 48
+    },
+    {
+      "n": 110,
+      "mode": "input",
+      "title": "Step #10",
+      "prompt": ["(5) W.A. NUMBER/ID CODE", "!        !"],
+      "input": { "pattern": "!NNNNIIII!", "description": "W.A. number/ID code" },
+      "branches": [],
+      "next": 111,
+      "figures": [],
+      "pdfPage": 48
+    },
+    {
+      "n": 111,
+      "mode": "input",
+      "title": "Step #11a / #11b",
+      "prompt": [],
+      "response": "If W.A. number/ID code is found in the contract table, the contract number will be displayed on the terminal as follows: CONTRACT NUMBER XXXXX, where XXXXX represents the number up to 20 characters. If W.A. number/ID code is not found in the contract table, a special message will be displayed: CONTRACT NUMBER WA NOT FOUND SEE RJK",
+      "branches": [
+        { "when": "Step #11a: W.A. number/ID code found in the contract table", "goto": 112 },
+        { "when": "Step #11b: W.A. number/ID code not found in the contract table", "goto": 112 }
+      ],
+      "figures": [],
+      "pdfPage": 48
+    },
+    {
+      "n": 112,
+      "mode": "input",
+      "title": "Step #12",
+      "prompt": ["(6) VEHICLE", "!    !!    !"],
+      "input": { "pattern": "XXXA", "description": "Enter vehicle number XXXA up to two numbers where XXX represents the numbers. The 'A' represents the letter 'S' which stands for all subsequent vehicle numbers after XXX." },
+      "branches": [],
+      "next": 113,
+      "figures": [],
+      "pdfPage": 48
+    },
+    {
+      "n": 113,
+      "mode": "input",
+      "title": "Step #13",
+      "prompt": ["(7) REVISION", "! !"],
+      "input": { "pattern": "!X!", "description": "If none, no user entry." },
+      "branches": [],
+      "next": 114,
+      "figures": [],
+      "pdfPage": 49
+    },
+    {
+      "n": 114,
+      "mode": "input",
+      "title": "Step #14",
+      "prompt": ["(8) REVISION DATE", "!MMDDYY!"],
+      "input": { "pattern": "MMDDYY", "description": "If none, no user entry.", "maxLength": 6 },
+      "branches": [],
+      "next": 115,
+      "figures": [],
+      "pdfPage": 49
+    },
+    {
+      "n": 115,
+      "mode": "input",
+      "title": "Step #15",
+      "prompt": [],
+      "response": "Entire record displayed on terminal",
+      "branches": [],
+      "next": 116,
+      "figures": [],
+      "pdfPage": 49
+    },
+    {
+      "n": 116,
+      "mode": "input",
+      "title": "Step #16",
+      "prompt": ["IS THERE FURTHER INFORMATION TO BE INPUT (YES OR NO)"],
+      "input": { "pattern": "YES/NO", "description": "Yes or No" },
+      "branches": [
+        { "when": "If Yes", "goto": 101 },
+        { "when": "If No, exit INPUT/REVISE mode", "goto": 4 }
+      ],
+      "figures": [],
+      "pdfPage": 49
+    },
+    {
+      "n": 201,
+      "mode": "revise",
+      "title": "Step #1",
+      "prompt": ["PLEASE INPUT THE SPO DIR-REPORT NUMBER OF THE DOCUMENT TO BE", "REVISED"],
+      "input": { "pattern": "XXX", "description": "The only information needed in order to revise or delete a DIR or Report is the DIR number." },
+      "branches": [
+        { "when": "If not found, exit REVISE mode", "goto": 4 },
+        { "when": "If found", "goto": 202 }
+      ],
+      "figures": [],
+      "pdfPage": 51
+    },
+    {
+      "n": 202,
+      "mode": "revise",
+      "title": "Step #2",
+      "prompt": ["IS THIS THE CORRECT RECORD TO BE REVISED OR DELETED (YES OR NO)"],
+      "input": { "pattern": "YES/NO", "description": "Yes or No" },
+      "response": "Entire record displayed on terminal",
+      "branches": [
+        { "when": "If Yes", "goto": 203 },
+        { "when": "If no, continue search for document. When found, repeat Step #2", "goto": 202 },
+        { "when": "If not found, exit REVISE mode", "goto": 4 }
+      ],
+      "figures": [],
+      "pdfPage": 51
+    },
+    {
+      "n": 203,
+      "mode": "revise",
+      "title": "Step #3",
+      "prompt": ["IS THIS RECORD TO BE REVISED OR DELETED (REV OR DEL)"],
+      "input": { "pattern": "REV/DEL", "description": "REV or DEL" },
+      "branches": [
+        { "when": "If REV", "goto": 204 },
+        { "when": "If DEL, record Deleted; exit REVISE mode", "goto": 4 }
+      ],
+      "figures": [],
+      "pdfPage": 51
+    },
+    {
+      "n": 204,
+      "mode": "revise",
+      "title": "Step #4",
+      "prompt": [],
+      "response": "Perform steps #4 thru #15 in input mode section 4.2.1.2",
+      "branches": [{ "when": "Perform steps #4 thru #15 in input mode section 4.2.1.2", "goto": 104 }],
+      "next": 205,
+      "figures": [],
+      "pdfPage": 51
+    },
+    {
+      "n": 205,
+      "mode": "revise",
+      "title": "Step #5",
+      "prompt": [],
+      "response": "Exit REVISE mode",
+      "branches": [],
+      "next": 4,
+      "figures": [],
+      "pdfPage": 51
+    },
+    {
+      "n": 301,
+      "mode": "menu",
+      "title": "Step #1",
+      "prompt": [
+        "YOU ARE NOW VALIDATED TO SEARCH DATA IN THE DIR/REPORT FILE --",
+        "THE FOLLOWING SEARCH MODES ARE AVAILABLE FOR YOUR USE -",
+        "",
+        "MODE                               KEY",
+        "TITLE                              TITLE",
+        "DIR-REPORT NUMBER                  DIR",
+        "DOCUMENT DATE                      DATE",
+        "SYSTEM                             SYS",
+        "W.A. NUMBER/ID CODE                WAN",
+        "CONTRACT NUMBER                    CON",
+        "VEHICLE                            VEH",
+        "ALL                                ALL",
+        "QUIT                               QUIT",
+        "",
+        "PLEASE SELECT THE DESIRED MODE"
+      ],
+      "input": { "pattern": "AAAA", "description": "Enter key for desired mode" },
+      "response": "Of the nine (9) possible data items within a DIR/REPORT record, all but one, REVISION, are searchable. See Figure 7.",
+      "branches": [],
+      "next": 302,
+      "figures": ["7"],
+      "pdfPage": 54
+    },
+    {
+      "n": 302,
+      "mode": "search",
+      "title": "Step #2",
+      "prompt": [],
+      "branches": [
+        { "when": "If key selected is ALL", "goto": 303 },
+        { "when": "If key selected is TITLE", "goto": 308 },
+        { "when": "If key selected is DIR", "goto": 315 },
+        { "when": "If key selected is DATE", "goto": 317 },
+        { "when": "If key selected is WAN", "goto": 319 },
+        { "when": "If key selected is SYS", "goto": 321 },
+        { "when": "If key selected is CON", "goto": 323 },
+        { "when": "If key selected is VEH", "goto": 325 },
+        { "when": "If key selected is QUIT", "goto": 329 }
+      ],
+      "figures": [],
+      "pdfPage": 54
+    },
+    {
+      "n": 303,
+      "mode": "search",
+      "title": "Step #3",
+      "prompt": [
+        "THIS IS THE PRINT ALL ROUTINE",
+        "",
+        "ALL DOCUMENTS STORED IN THE DIR FILE WILL BE SPOOLED AND A",
+        "TOTAL COUNT OF THE DOCUMENTS WILL BE GIVEN.  YOU HAVE A",
+        "CHOICE OF TWO (2) OPTIONS OF OUTPUT",
+        "(1) FULL LISTING OF ALL FIELDS FOR EACH DIR RECORD",
+        "(2) BRIEF LISTING OF DIR NUMBER AND REVISION",
+        "",
+        "ENTER OPTION (1 OR 2)"
+      ],
+      "input": { "pattern": "X", "description": "1 or 2" },
+      "branches": [
+        { "when": "If X=1", "goto": 304 },
+        { "when": "If X=2", "goto": 305 }
+      ],
+      "figures": [],
+      "pdfPage": 54
+    },
+    {
+      "n": 304,
+      "mode": "search",
+      "title": "Step #4",
+      "prompt": [],
+      "response": "Entire record is displayed on the terminal for each document; See Figure 39.",
+      "branches": [],
+      "next": 306,
+      "figures": ["39"],
+      "pdfPage": 55
+    },
+    {
+      "n": 305,
+      "mode": "search",
+      "title": "Step #5",
+      "prompt": [],
+      "response": "A number indicating how many records read will be displayed on the terminal.",
+      "branches": [],
+      "next": 306,
+      "figures": [],
+      "pdfPage": 55
+    },
+    {
+      "n": 306,
+      "mode": "search",
+      "title": "Step #6",
+      "prompt": ["THERE ARE XXX DOCUMENTS IN THE DIR FILE"],
+      "response": "Where XXX represents the number of documents found.",
+      "branches": [],
+      "next": 307,
+      "figures": [],
+      "pdfPage": 55
+    },
+    {
+      "n": 307,
+      "mode": "search",
+      "title": "Step #7",
+      "prompt": [],
+      "response": "Output file is automatically spooled to the high speed printer; Exit the SEARCH mode.",
+      "branches": [],
+      "next": 4,
+      "figures": [],
+      "pdfPage": 55
+    },
+    {
+      "n": 308,
+      "mode": "search",
+      "title": "Step #8",
+      "prompt": ["HOW MANY WORDS DO YOU WISH TO MATCH (MAX OF 4)"],
+      "input": { "pattern": "X", "description": "Enter number X" },
+      "branches": [],
+      "next": 309,
+      "figures": [],
+      "pdfPage": 55
+    },
+    {
+      "n": 309,
+      "mode": "search",
+      "title": "Step #9",
+      "prompt": ["WHAT IS THE DESIRED WORD"],
+      "input": { "pattern": "AAAA", "description": "Enter word AAAA." },
+      "branches": [{ "when": "If word is Quit", "goto": 314 }],
+      "next": 310,
+      "figures": [],
+      "pdfPage": 55
+    },
+    {
+      "n": 310,
+      "mode": "search",
+      "title": "Step #10",
+      "prompt": ["THERE ARE XXX DOCUMENTS CONTAINING THE WORD AAAA"],
+      "response": "As each title is found containing the desired word, the title is displayed on the terminal. Following the last title is displayed a message. Where XXX represents the number of documents found and AAAA is the desired word entered.",
+      "branches": [],
+      "next": 311,
+      "figures": [],
+      "pdfPage": 55
+    },
+    {
+      "n": 311,
+      "mode": "search",
+      "title": "Step #11",
+      "prompt": [],
+      "response": "Steps #9 and #10 are repeated X number of times from Step #8 unless zero (0) documents are found.",
+      "branches": [
+        { "when": "Repeat Steps #9 and #10 X number of times", "goto": 309 },
+        { "when": "If no documents are found", "goto": 314 }
+      ],
+      "next": 312,
+      "figures": [],
+      "pdfPage": 55
+    },
+    {
+      "n": 312,
+      "mode": "search",
+      "title": "Step #12",
+      "prompt": [],
+      "response": "For all documents found, document data is displayed after the last word is searched. See Figure 39.",
+      "branches": [],
+      "next": 313,
+      "figures": ["39"],
+      "pdfPage": 55
+    },
+    {
+      "n": 313,
+      "mode": "search",
+      "title": "Step #13",
+      "prompt": [],
+      "branches": [],
+      "next": 301,
+      "figures": [],
+      "pdfPage": 56
+    },
+    {
+      "n": 314,
+      "mode": "search",
+      "title": "Step #14",
+      "prompt": ["DO YOU WISH TO TRY THE TITLE SEARCH AGAIN (YES OR NO)"],
+      "input": { "pattern": "YES/NO", "description": "Yes or No" },
+      "branches": [
+        { "when": "If Yes", "goto": 308 },
+        { "when": "If No", "goto": 301 }
+      ],
+      "figures": [],
+      "pdfPage": 56
+    },
+    {
+      "n": 315,
+      "mode": "search",
+      "title": "Step #15",
+      "prompt": ["WHAT IS THE DESIRED DIR-REPORT NUMBER"],
+      "input": { "pattern": "XXX", "description": "Enter number up to 14 characters", "maxLength": 14 },
+      "branches": [],
+      "next": 316,
+      "figures": [],
+      "pdfPage": 56
+    },
+    {
+      "n": 316,
+      "mode": "search",
+      "title": "Step #16a / #16b",
+      "prompt": [],
+      "response": "If found, the entire record is displayed on the terminal. See Figure 39.",
+      "branches": [
+        { "when": "Step #16a: If found", "goto": 301 },
+        { "when": "Step #16b: If not found", "goto": 301 }
+      ],
+      "figures": ["39"],
+      "pdfPage": 56
+    },
+    {
+      "n": 317,
+      "mode": "search",
+      "title": "Step #17",
+      "prompt": ["WHAT IS THE DATE THAT YOU WANT", "!MMDDYY!"],
+      "input": { "pattern": "MMDDYY", "description": "Enter month, day, and year after skipping one space.", "maxLength": 6 },
+      "response": "The Date search has the capability of retrieving an entire month's or year's worth of data by entering 00 for the day or month. The Revision Date is searched during a Date search.",
+      "branches": [],
+      "next": 318,
+      "figures": [],
+      "pdfPage": 56
+    },
+    {
+      "n": 318,
+      "mode": "search",
+      "title": "Step #18",
+      "prompt": ["THERE ARE XXX DOCUMENTS WITH A DATE OF MM-DD-YY"],
+      "response": "Entire document record is displayed on the terminal for each found. See Figure 39. Where XXX represents the number of documents found and MMDDYY is the date entered fo the search.",
+      "branches": [],
+      "next": 301,
+      "figures": ["39"],
+      "pdfPage": 56
+    },
+    {
+      "n": 319,
+      "mode": "search",
+      "title": "Step #19",
+      "prompt": ["WHAT IS THE DESIRED W.A. NUMBER"],
+      "input": { "pattern": "NNNNIIII", "description": "Enter W.A. No. NNNN and ID Code IIII" },
+      "branches": [],
+      "next": 320,
+      "figures": [],
+      "pdfPage": 56
+    },
+    {
+      "n": 320,
+      "mode": "search",
+      "title": "Step #20",
+      "prompt": ["THERE ARE XXX DOCUMENTS WITH A W.A. NUMBER OF NNNNIIII"],
+      "response": "Entire document record is displayed on the terminal for each found. See Figure 39. Where XXX represents the number of documents found and NNNIII is the W.A. number entered for the search.",
+      "branches": [],
+      "next": 301,
+      "figures": ["39"],
+      "pdfPage": 56
+    },
+    {
+      "n": 321,
+      "mode": "search",
+      "title": "Step #21",
+      "prompt": ["WHAT IS THE DESIRED SYSTEM (ELEC,GSE,GUID,MECH,DROP,RF,SOP,MGS,EGS,PERF)"],
+      "input": { "pattern": "AAAA", "description": "Enter system AAAA" },
+      "branches": [],
+      "next": 322,
+      "figures": [],
+      "pdfPage": 57
+    },
+    {
+      "n": 322,
+      "mode": "search",
+      "title": "Step #22",
+      "prompt": ["THERE ARE XXX DOCUMENTS WITH A SYSTEM OF AAA"],
+      "response": "Entire document record is displayed on the terminal for each found. See Figure 39. Where XXX represents the number of documents found and AAAA is the system entered for the search.",
+      "branches": [],
+      "next": 301,
+      "figures": ["39"],
+      "pdfPage": 57
+    },
+    {
+      "n": 323,
+      "mode": "search",
+      "title": "Step #23",
+      "prompt": ["WHAT IS THE DESIRED CONTRACT NUMBER"],
+      "input": { "pattern": "AAAA", "description": "Enter contract number up to 20 characters.", "maxLength": 20 },
+      "branches": [],
+      "next": 324,
+      "figures": [],
+      "pdfPage": 57
+    },
+    {
+      "n": 324,
+      "mode": "search",
+      "title": "Step #24",
+      "prompt": ["THERE ARE XXX DOCUMENTS WITH A CONTRACT NUMBER OF AAA"],
+      "response": "Entire document record is displayed on the terminal for each found. See Figure 39. Where XXX represents the number of documents found and AAAA is the contract number entered for the search.",
+      "branches": [],
+      "next": 301,
+      "figures": ["39"],
+      "pdfPage": 57
+    },
+    {
+      "n": 325,
+      "mode": "search",
+      "title": "Step #25",
+      "prompt": ["WHAT IS THE DESIRED VEHICLE NUMBER", "!NNN !"],
+      "input": { "pattern": "NNN", "description": "Enter number NNN after skipping one space." },
+      "branches": [],
+      "next": 326,
+      "figures": [],
+      "pdfPage": 57
+    },
+    {
+      "n": 326,
+      "mode": "search",
+      "title": "Step #26",
+      "prompt": ["WHAT IS THE FIRST VALID VEHICLE NUMBER"],
+      "input": { "pattern": "NNN", "description": "Enter number; no spacing. If information on a specific vehicle is desired, enter the same vehicle as in Step #25." },
+      "response": "A group of vehicles may be found by using the first and last valid vehicle options. Default for the first valid vehicle number is zero (0) whereas, the last valid vehicle number becomes 999.",
+      "branches": [],
+      "next": 327,
+      "figures": [],
+      "pdfPage": 57
+    },
+    {
+      "n": 327,
+      "mode": "search",
+      "title": "Step #27",
+      "prompt": ["WHAT IS THE LAST VALID VEHICLE NUMBER", "NOTE - THE DEFAULT IS VEHICLE 999"],
+      "input": { "pattern": "NNN", "description": "Enter number; no spacing. If information on a specific vehicle is enter the same number as in Step #25." },
+      "branches": [],
+      "next": 328,
+      "figures": [],
+      "pdfPage": 58
+    },
+    {
+      "n": 328,
+      "mode": "search",
+      "title": "Step #28",
+      "prompt": ["THERE ARE XXX DIR/REPORTS RELATING TO VEHICLE NNN"],
+      "response": "Entire document record is displayed on the terminal for each found. See Figure 39. Where XXX represents the number of documents found and NNN is the vehicle number entered for the search.",
+      "branches": [],
+      "next": 301,
+      "figures": ["39"],
+      "pdfPage": 58
+    },
+    {
+      "n": 329,
+      "mode": "search",
+      "title": "Step #29",
+      "prompt": ["DO YOU WANT A HARD COPY OF THE INFORMATION FOUND"],
+      "input": { "pattern": "YES/NO", "description": "Yes or No" },
+      "response": "If Yes, output spooled to printer. See Section 5.2.1 for outputs.",
+      "branches": [],
+      "next": 330,
+      "figures": [],
+      "pdfPage": 58
+    },
+    {
+      "n": 330,
+      "mode": "search",
+      "title": "Step #30",
+      "prompt": [],
+      "response": "Exit SEARCH mode",
+      "branches": [],
+      "next": 4,
+      "figures": [],
+      "pdfPage": 58
+    },
+    {
+      "n": 401,
+      "mode": "archive",
+      "title": "Step #1",
+      "prompt": ["WELCOME TO THE DIR-REPORT FILE ARCHIVE ROUTINE", "HOW MANY DOCUMENTS DO YOU WISH TO ARCHIVE"],
+      "input": { "pattern": "XX", "description": "Enter number XX" },
+      "branches": [],
+      "next": 402,
+      "figures": [],
+      "pdfPage": 60
+    },
+    {
+      "n": 402,
+      "mode": "archive",
+      "title": "Step #2",
+      "prompt": ["WHAT IS THE DIR-REPORT NUMBER OF THE DOCUMENT YOU WISH TO ARCHIVE"],
+      "input": { "pattern": "AAAA", "description": "Enter number AAAA up to 14 characters", "maxLength": 14 },
+      "branches": [],
+      "next": 403,
+      "figures": [],
+      "pdfPage": 60
+    },
+    {
+      "n": 403,
+      "mode": "archive",
+      "title": "Step #3",
+      "prompt": [],
+      "response": "Pause for system housekeeping to be completed.",
+      "branches": [{ "when": "Repeat Steps #2 and #3 XX number of times", "goto": 402 }],
+      "next": 404,
+      "figures": [],
+      "pdfPage": 60
+    },
+    {
+      "n": 404,
+      "mode": "archive",
+      "title": "Step #4",
+      "prompt": [],
+      "response": "Exit ARCHIVE mode when done. When the document has been archived, the user is automatically returned to the program mode selection level.",
+      "branches": [],
+      "next": 4,
+      "figures": [],
+      "pdfPage": 60
+    }
+  ]
+}

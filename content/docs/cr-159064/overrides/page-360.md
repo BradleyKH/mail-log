@@ -1,0 +1,53 @@
+---
+pdfPage: 360
+folio: null
+sectionId: "D.SEADW"
+kind: listing
+source: reviewed
+confidence: 44.7
+figures: []
+listing:
+  appendix: "D"
+  routines: ["SEADW"]
+  listingPage: 33
+---
+```fortran
+(0426)       SUBROUTINE SEADW
+(0427) C
+(0427) C     COMMON BLOCK FOR THE DRAW-EO FILE
+(0427) C
+(0427)       COMMON DRAW,TIT,PTIT,DT,SYS,VEH,SECT,NSHT,FREV,FNEO,FEOREF,
+(0427)      1        DRW,SHTN,REV,NEO,EOREF,
+(0427)      1        EON,ETIT,EPTIT,EOREV,EDT,ERDT,EOVEH,
+(0427)      1        R,IDR,INEO,KNT,FIRST,SECOND,TTIT
+(0427) C
+(0427) C     DATA DECLARATION BLOCK FOR THE DRAW-EO FILE
+(0427) C
+(0427)       INTEGER*4 DRAW(4),TIT(21),PTIT(19),SYS(3),SECT(3),FEOREF(10,2),
+(0427)      1          DRW(4),EOREF(10,2),EPTIT(19),ETIT(21),EON(2),
+(0427)      1          IDR(4),KNT,TTIT(19)
+(0427)       INTEGER*2 DT(3),VEH(2,2),NSHT,SHTN(2),FREV,FNEO,REV,NEO,
+(0427)      1           EOREV,EDT(3),ERDT(3),EOVEH(2,2),R,INEO,
+(0427)      1           FIRST,SECOND
+(0427) C
+(0427) C
+(0428) C SYSCOM>KEYS.F       MNEMONIC KEYS FOR FILE SYSTEM (FTN)      31 MAY, 1977
+(0428)       NOLIST
+(0429)       INTEGER*2 IDES,IOPT
+(0430) C
+(0431) C     THIS IS THE SEARCH DRIVER ROUTINE FOR THE DRAW FILE
+(0432) C
+(0433)       J=401
+(0434)         R=0
+(0435)       CALL SRCH$$(K$RDWR+K$NSAM,'OUT   ',6,3,0,0)
+(0436)       WRITE(7,9999)J
+(0437) 9999  FORMAT(1A2)
+(0438)       WRITE(1,1)
+(0439) 1     FORMAT(' YOU ARE NOW VALIDATED TO SEARCH DATA IN THE ',/
+(0440)      1' DRAWING FILE - THE FOLLOWING SEARCH MODES ',/'
+(0441)      1' ARE AVAILABLE FOR YOUR USE - ',/
+(0442)      1'MODE                   KEY',/
+(0443)      2'TITLE                  TITLE',/
+(0444)      3'DRAWING NUMBER         DRAW',/
+(0445)      4'DRAWING DATE           DATE',/
+```

@@ -1,0 +1,104 @@
+---
+pdfPage: 513
+folio: null
+sectionId: "E.CLEAR"
+kind: figure
+source: ocr
+confidence: 30.5
+figures: []
+---
+i ounb
+
+RARKEHETARAEERAAARAERRHAREREED ERATE SRRRT AHA E ERE ESTEE R ETH EE RE REE ARTE ERAER AERA EREREERARAEEE ERE REORDER AAT
+
+PANRARAH ERE AHHH ERE HARE RHEE EA ERHERER TED REAR hee ARRARHEKHHRARRHRERARAERDRER
+
+wr
+an
+ah
+ae
+
+at
+ae
+
+ax
+ak
+
+rer
+
+Teewvetre
+
+Eerereec
+
+With
+
+www
+
+WWW
+
+W W
+WoW W
+wow WwW
+w oWW
+wow WW
+wow WwW
+
+Ww W
+
+wow
+
+W
+
+W
+
+WW
+Ww WW W
+
+WWW Wh.
+
+Eeeceree
+pad ss
+Eeercrrnke
+
+WWW W
+
+Ww
+
+W
+WWW
+W
+We
+Wi Wh
+
+Wid W
+
+HEAHEERREANADA REE REED
+
+he
+at
+at
+an
+ae
+at
+ar
+ae
+wa
+te
+at
+
+SO RRERREAERERSSER ERASER EERE RE EE ERASE RESET TE SEER ET EERE ERR ER ERD ERE REE REREERE EERE ERNE EEEN REDE DER DOSER O ES
+
+NEREEERAAASRRERREAEREEE SEER ER EEA EEEE EEE TEER AEE A TEATRO TEETER EEE EEE EE RARER DERE ETAT ERE ER A EERE Ad ES
+
+SUARGUTINE CLEAR
+
+SUBROUTINE CLEAR
+
+WRITEC191)
+
+FORMATC*C ES)
+
+RETURN
+END
+
+F C661

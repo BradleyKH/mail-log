@@ -1,0 +1,45 @@
+---
+pdfPage: 205
+folio: "196"
+sectionId: "15.4"
+kind: text
+source: ocr
+confidence: 93.8
+figures: []
+---
+the example below.
+
+SELECT OPTION BY ENTERING NUMBER (RETURN TO QUIT) > 1
+THIS PROGRAM WILL DELETE A SELECTED RECORD FROM THE DATA BASE
+TYPE ZERO (0) TO RETURN TO MAIN MENU
+ENTER DWI NUMBER > 452
+NO SUCH DWI NUMBER IN THE CURRENT DATA FILE **** TRY AGAIN
+ENTER DWI NUMBER > 1963
+THE FOLLOWING HAS BEEN FOUND:
+
+```text
+DWI NUMBER >1963     ORIGIN DATE > 2/21/1984
+
+SYSTEMS >EL EG     ENGINEER >BOSSERT
+```
+
+TITLE >BLH 80130 STRAIN GAGE EQUIP CALIB. FOR QUARTER BRIDGE CONFIGURATION
+
+DELETE THIS RECORD (Y or N) > Y
+PLEASE NOTE ::: RECORD DELETED ... MUST RUN HOUSEKEEPING TO PURGE RECORD
+
+THIS PROGRAM WILL DELETE A SELECTED RECORD FROM THE DATA BASE
+TYPE ZERO (0) TO RETURN TO MAIN MENU
+
+ENTER DWI NUMBER > ** return **
+15.3.2 SORTING and HOUSKEEPING ROUTINE
+
+Option 2 of the Delete menu performs the same Sorting & Housekeeping
+
+routine discussed In detail in section 15.1.2 of this document.
+
+15.4 REPORT OPTION
+
+Due to the design of the Daily Work Items file data base program
+
+and data files, no report generator exists In this area.

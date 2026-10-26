@@ -1,0 +1,74 @@
+---
+pdfPage: 63
+folio: "54"
+sectionId: "6.6"
+kind: mixed
+source: ocr
+confidence: 75.4
+figures: []
+---
+There are Two (2) Options for the Action Due Search
+\0. Return to Search Menu
+\1. A Complete listing of al! current Action Dues
+\2. A Listing of those within 5 Days or Past Due
+
+1
+PLEASE STAND BY. SEARCH IN PROGRESS
+
+KRKKKK KHER KEKE KEK KEKE KKK KEKEKEKEKKEK KEKE KER KEKKEKK EKER KKK KKK KEK EK KEK EKER
+
+\* ACTION DUE DATE
+\* SUBJECT
+
+```text
+* TYPE/LETTER NUMBER     FILE SYSTEM CCDE        INPUT DATE-CODE
+*® AUTHOR / SOURCE        RESPONSIBLE ENGINEER    DUE DATE
+```
+
+HEKKKKKKEKKEK KKK KKEKEK EK KEKE KEE EER KEK EERE KEEKEK KEKE KEK KEK ERK KEE KEK KEE KEK HEK EK
+
+EO 51754 (ELEC) SPECIFICATION 305-917 FOR APPROVAL
+
+```text
+2-19200/3L-3185        684.4.2 /                4-15-83    6
+
+HORNE, R.C.                   DMF                 5-13-83
+```
+
+23DIR2187 PREFLIGHT ASSIGNMENT AND PERFORMANCE PREDICTION OF MOTORS, S-205
+
+```text
+2-19200/3L-3220        302.2     /                4~26-83    6
+
+URASH, R.G.                   LRT                 5-25-83
+```
+
+RETURN TO CONTINUE > ** return **
+
+Refer to Appendix B-1 for an example of the Mail Log Action Due Search
+
+output report format.
+
+EXAMPLE FOR OPTION # 6: (SUBJECT SEARCH)
+
+SUB FILE SELECTION:
+\1. TRANSMITTAL/SPECIFICATION SUB-F ILE
+
+```text
+2. MEMO/LETTER               SUB-F ILE
+3. TWX/MAGNAF AX/RAP | FAX      SUB-F ILE
+4. ANNOUNCEMENT              SUB-F ILE
+5. PURCHASE REQUEST          SUB-F ILE
+6. MISCELLANEOUS/REPORT      SUE-F ILE
+```
+
+JO IR II EK
+HOW MANY SUBFILES DC WISH TO OPEN > 2
+
+ENTER SUB-F ILE NUMBER (1 TC 6) > 2
+ENTER SUB-F ILE NUMBER (1 TO 6) > 3
+
+WHAT 1S THE FIRST VALID DATE (MMDDYY) > 010183
+WHAT IS THE LAST VALID DATE (MMDDYY) > 042983
+
+WHAT |S THE DESIRED WORD (FINISHED, TYPE ‘QUIT')

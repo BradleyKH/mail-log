@@ -1,0 +1,130 @@
+[
+  {
+    "name": "mailStatus",
+    "label": "MAIL STATUS",
+    "length": 2,
+    "searchable": true,
+    "description": "2 characters.",
+    "pdfPage": 22
+  },
+  {
+    "name": "authorSource",
+    "label": "AUTHOR/SOURCE",
+    "length": 28,
+    "searchable": true,
+    "description": "28 characters.",
+    "pdfPage": 22
+  },
+  {
+    "name": "documentDate",
+    "label": "DOCUMENT DATE",
+    "length": 6,
+    "searchable": true,
+    "description": "6 characters, MMDDYY.",
+    "pdfPage": 22
+  },
+  {
+    "name": "toAddressee",
+    "label": "TO/ADDRESSEE",
+    "length": 32,
+    "searchable": true,
+    "description": "32 characters.",
+    "pdfPage": 22
+  },
+  {
+    "name": "documentLetterNumber",
+    "label": "DOCUMENT LETTER NUMBER",
+    "length": 18,
+    "searchable": true,
+    "description": "18 characters.",
+    "pdfPage": 22
+  },
+  {
+    "name": "subject",
+    "label": "SUBJECT",
+    "length": 10,
+    "searchable": true,
+    "description": "10 characters per word, 7 words.",
+    "pdfPage": 22
+  },
+  {
+    "name": "routing",
+    "label": "ROUTING",
+    "length": 3,
+    "searchable": false,
+    "description": "3 characters, 6 entries.",
+    "pdfPage": 22
+  },
+  {
+    "name": "inputDate",
+    "label": "INPUT DATE",
+    "length": 6,
+    "searchable": true,
+    "description": "6 characters, MMDDYY.",
+    "pdfPage": 22
+  },
+  {
+    "name": "waNumberIdCode",
+    "label": "WA NUMBER/ID CODE",
+    "length": 8,
+    "searchable": true,
+    "description": "8 characters.",
+    "pdfPage": 22
+  },
+  {
+    "name": "contractNumber",
+    "label": "CONTRACT NUMBER",
+    "length": 20,
+    "searchable": true,
+    "description": "20 characters.",
+    "pdfPage": 22
+  },
+  {
+    "name": "actionDueDate",
+    "label": "ACTION DUE DATE",
+    "length": 6,
+    "searchable": true,
+    "description": "6 characters, MMDDYY.",
+    "pdfPage": 22
+  },
+  {
+    "name": "referencedDocuments",
+    "label": "REFERENCED DOCUMENTS",
+    "length": 18,
+    "searchable": false,
+    "description": "18 characters, 6 entries.",
+    "pdfPage": 22
+  },
+  {
+    "name": "fileSystemCode",
+    "label": "FILE SYSTEM CODE",
+    "length": 10,
+    "searchable": false,
+    "description": "10 characters, 2 entries.",
+    "pdfPage": 22
+  },
+  {
+    "name": "responsibleEngineer",
+    "label": "RESPONSIBLE ENGINEER",
+    "length": 3,
+    "searchable": true,
+    "description": "3 characters, 3 entries.",
+    "pdfPage": 22
+  },
+  {
+    "name": "dailyCounter",
+    "label": "DAILY COUNTER",
+    "length": 4,
+    "searchable": false,
+    "description": "4 characters.",
+    "pdfPage": 22
+  },
+  {
+    "name": "description",
+    "label": "DESCRIPTION",
+    "length": 10,
+    "searchable": false,
+    "description": "10 characters per word, 7 words, 30 entries. Only used in the transmittal subfile.",
+    "pdfPage": 22
+  }
+]

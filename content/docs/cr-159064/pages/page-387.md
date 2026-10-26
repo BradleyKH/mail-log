@@ -1,0 +1,47 @@
+---
+pdfPage: 387
+folio: null
+sectionId: "D.ACTDUE"
+kind: listing
+source: ocr
+confidence: 54
+figures: []
+listing:
+  appendix: "D"
+  routines: ["ACTDUE"]
+  listingPage: 60
+---
+```fortran
+(0920)       AH=AMIN/60-0
+(0921)       IH=AH
+(0922)       IMM=IH*60
+(0923)       IMIN=AMIN
+(0924)        IDMZIMIN-I1MM
+(0925)        WRITE( 798008) IHY IQM, CARRAY( 1) 512193)
+(0926)       WRITE(798000)
+(0927)        WRITE (798001)
+(0928)       CALL HEADER
+(0929) C      SET HEADER DONE FLAG
+(0930)       IPAGE=1
+(0931) C      DISPLAY AND PRINT ORAWING ON TERMINAL AND PRINTER OUTPUT
+(0932) 50    CALL MAIND
+(0933) 150   CONTINUE
+(0934)       FIRST=0
+(0935)       SECOND=0
+(0936)       INEO=0
+(0937)       GO TO 15
+(0938) 100    WRITE (19 200)  KNT,KNTT
+(0939) 200   FORMAT(IXs'THERE ARE %e19e' DRAWINGS WITH A TOTAL OF '%9I9e/s
+(0940)      1  SHEET(S) IN THE ORAWING SUBFILE WHICH MUST BE REVISED®)
+(0941)       IF(KNT.EQ.0) RETURN
+(0942)       CALL SRCH$$(KSCLOS, "DRAW  96909090)
+(0943)       CALL SRCH$$(KSCLOS, £0    96000099).
+(0944)       CALL SRCH$$ (KSCLOSs*SHEET  96905090)
+(0945)       CALL SRCH$$(KSCLOS» "OUT  56909090)
+(0946)        CALL COMI( SOUT o49129I1C)
+(0947)       CALL EXIT
+(0948) 1000  WRITE(1,1001)
+(0949) 1002   FORMAT(' AN-ERROK HAS OCCURRED DURING DATA 'SEARCH!
+(0950)       RETURN                                       .
+(0951)       END
+```

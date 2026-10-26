@@ -1,0 +1,10 @@
+[
+  {
+    "name": "author",
+    "label": "AUTHOR/SOURCE",
+    "length": 4,
+    "searchable": true,
+    "description": "Fixture field.",
+    "pdfPage": 2
+  }
+]

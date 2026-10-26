@@ -1,0 +1,71 @@
+---
+pdfPage: 83
+folio: "75"
+sectionId: "7.2.4"
+kind: text
+source: ocr
+confidence: 85.6
+figures: []
+---
+will be returned to the Update menu. See the following example.
+
+SELECT OPTION BY ENTERING NUMBER (RETURN TO QUIT) > 4
+
+THIS PROGRAM ALLOWS REVISIONS TO THE SCC FILE FOR ANY DRAWING
+ENTER DRAWING NUMBER OF PART TO BE CHANGED > 10101
+
+DRAWING FOUND HAS 1 ITEM(S)
+
+ENTER NOTHING FOR “|TEM-NO" WHEN UPDATE !S COMPLETED
+
+ENTER RETURN FOR THOSE FIELDS THAT ARE TO REMAIN UNCHANGED
+
+| TEM-NO?>57
+
+1
+
+```text
+| TEM-NO         =57
+DRAW-NUMBER     =10101
+PART~NUMBER     =999
+DESCRIPTION     =NUTS AND BOLTS
+SUSCEPT         =9
+ALSTOCK         =4
+ANNEALED        =]
+STEXPOSED       =2
+PROTECTED       =N
+```
+
+LOGIC-RELEASE =Y
+FAILSAFE-REQD =8
+FAILSAFE-DONE =7
+PART-CONTAINED =Y
+RELEASED .03
+MLP-REQD
+MLP-DONE
+FRACTURE
+COMME NT
+HAVE-COUNT
+FILLER1
+QUANTITY
+FILLER2
+
+Zim DO
+
+21
+
+ITEM-NO> ** return **
+DRAW-NUMBER> ** return **
+PART-NUMBER> ** return **
+DESCRIPTION> ** return **
+SUSCEPT>8
+
+ALSTOCK> ** return **
+ANNEALED> ** return **
+STEXPOSED> ** return **
+PROTECTED> ** return **
+LOGIC=RELEASE> ** return **
+FAILSAFE-REQD> ** return **
+
+FAILSAFE-DONE> ** return **
+PART-CONTAINED> ** return **

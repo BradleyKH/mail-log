@@ -1,0 +1,107 @@
+---
+pdfPage: 11
+folio: null
+sectionId: null
+kind: mixed
+source: ocr
+confidence: 69
+figures: []
+---
+oma
+
+A$ NOON AO PWD —
+
+ms es st ss
+WON DOM & Ww A
+
+em et ed et ed ed ed es ed os
+
+ee ee ee
+NO PO MP AO Po
+wh —oO
+
+~1-25
+. 1-26
+-1-27
+. 1-28
+. 1-29
+
+FIGURES
+
+SPADS MAIL LOG MODES OF OPERATION
+SPADS MAIL LOG SUBFILED DATA BASE
+
+MAIN
+*DIR
+
+*DRAW ©
+
+INPTC
+REVSC
+SEAC
+ARCC
+SHOWC
+INPSC
+OPEN
+CLOSE
+WHERE
+BRAKET
+ALC
+RESEA
+WHO
+DDAT
+CNUM
+CWAID
+AUSEA
+DLSEA
+DATC
+SUBJ
+MSTAT
+ADAT
+CKIR
+RDSUB
+SCRNHD
+SCRNPT
+HARDHD
+HARDPT
+UPDATE
+
+PAGE
+
+WP
+
+42
+50
+
+78
+
+90
+
+99
+108
+111
+132
+134
+136
+142
+145
+148
+15]
+154
+157
+160
+166
+169
+172
+175
+187
+193
+199
+201
+204
+209
+212
+
+217
+
+219

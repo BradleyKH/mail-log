@@ -1,0 +1,75 @@
+---
+pdfPage: 36
+folio: "28"
+sectionId: "4.1.1"
+kind: text
+source: ocr
+confidence: 89.3
+figures: []
+---
+\10) $FY6 11) $FY7 12) ZFY8
+ENTER FIELD # OR (H) HELP (RETURN IF NO MORE) > 6
+
+I NNN.NNNI
+100.000
+
+WHICH JOB ORDER IS TO BE CHANGED
+ANNNNA
+E7200A
+ENTER FIELD # OR (H) HELP (RETURN IF NO MORE) > ** return **
+
+DATE: SAT, OCT 16 1982 STATUS:AUT J.0.S: 8 MONTHS: 1 SYS ITEM NO: 6
+TITLE: TEST ENTRY FOR SAMPLE MOD / ADD
+
+MOD: , , ; CONTRACTOR: VOUGHT
+
+REMRK :
+
+```text
+NASA RESPONSIBLE ENGR:             KTR RESPONSIBLE ENGR:
+RBK :                PURCHASE REQUEST:
+```
+
+CONTRACT/PURCHASE ORDER:NAS1-12500 TASK:Z SUBTASK:
+
+```text
+WORK AUTHORITY:3381 WA CODE:AE     COMPLETED TASK:YES TABLE:SUST
+R.T. HRS:         O R.T. DOLLARS:         0
+
+TOTAL AUT HOURS:            TOTAL AUT DOLLARS:            FEE: 0.000%
+
+E6000A    49002026600000400    0.000 11.063    0.000    0.000    0.000
+0.000    0.000    0.000    0.000
+
+E7000A    49002027700000400    0.000 30.583    0.000    0.000    0.000
+0.000    0.000    0.000    0.000
+
+E6186A    490040806000004835    0.000    4.431    0.000    0.000    0.000
+0.000    0.000    0.000    0.000
+
+E6188A    49004160600000700    0.000    2.683    0.000    0.000    0.000
+0.000    0.000    0.000    0.000
+
+E6189A    49002020600000400    0.000    7.211    0.000    0.000    0.000
+0.000    0.000    0.000    0.000
+
+E6191A    49002021600000400    0.000    6.876    0.000    0.000    0.000
+0.000    0.000    0.000    0.000
+
+E7193A    49002023700000400    0.000 14.537    0.000    0.000    0.000
+0.000    0.000    0.000    0.000
+
+E7200A    490041727000004835    0.000    6.271 100.000    0.000    0.000
+0.000    0.000    0.000    0.000
+
+(1) HEADER      (2) JOBORDER      (RETURN) > ** return **
+```
+
+DATA CHANGE DESIRED (Y OR N) > N
+ITEM ADDED TO DATA BASE Note: acopy of the retrieval record
+with modifications hes been added
+
+to the data base. The original
+record has not been changed.
+
+SYSTEM ITEM NUMBER = 615

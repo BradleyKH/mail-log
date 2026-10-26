@@ -1,0 +1,22 @@
+{
+  "routine": "OPEN@F-PHASE4",
+  "lineIds": [
+    "u1",
+    "u2",
+    "u3",
+    "u4",
+    "u5",
+    "u6",
+    "u7",
+    "u8",
+    "u9",
+    "u10"
+  ],
+  "pages": [
+    {
+      "pdfPage": 530,
+      "firstLine": 1,
+      "lastLine": 10
+    }
+  ]
+}

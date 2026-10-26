@@ -1,0 +1,53 @@
+---
+pdfPage: 152
+folio: null
+sectionId: "B.REVSC"
+kind: listing
+source: ocr
+confidence: 60.8
+figures: []
+listing:
+  appendix: "B"
+  routines: ["REVSC"]
+  listingPage: 137
+---
+```fortran
+(1789)        IN=13
+(1790)        GO TO 2000
+(1791) C 1004 IFCFINISHeFGe1) GOTO 3000
+(1792)        IF(IPR.EQ.0) GOTO 1005
+(1793)        IN=14
+(1794)        GOTO 2000
+(1795) 1005   IF (FINISHSEO.1) GOTO 3000
+(1796)        IF(IMIS,ER.0) GOTO 3000 .
+(1797)        IN=15
+(1798) 2000   CONTINUE
+(1799) 101   READ CIN,END=201 MS, ATHR,DD, TO,DLN,SUB,PTITs
+(1800)      1 ROUTsILDsCOUNTsCWAsCONT sADDs TWXoFSCeNRE
+(1801) C      1S THIS. REVISE COMPLETED
+(1802)       IF(FINISH.EQ.1) GOTO 126
+(1803)       FIND DOCUMENT TO BE REVISED
+(1804)       IF(COUNT.NE.ICOUN) GOTO 126
+(1805)       DO 111 12143.
+(1806)       IF(IOO(I) NED(T))? GO TO 126
+(1807) 111   CONTINUE
+(1808)       IF(ITRSP.EG20) GOTO 21
+(1809)       ITRSP=0
+(1810)       TA=1
+(1811) C      CONFIRM RECORD TO BE REVISED
+(1812) 21    CALL SHOWC
+(1813)       IF(IA.EQ.0) GOTO 31
+(1814)       TTRSP=1
+(1815)       TA=0
+(1816) 31    WRITE (191700)
+(1817) 2801  READ(19S0)10PT
+(1818)       IF(IOPT.EQ.*NO*) GOTO 126
+(1819)       IF(IOPTNES*YE*)  GOTO 1401
+(1820) 1901  WRITE(1,2100)
+(1821)       READC1(50) OPT
+(1822)       IF(IOPT.EQ.*RE®) GOTO 121
+(1823)       IF(IOPT.NE.*DE*) GOTO 1901
+(1824)       FINISH=1
+(1825)       GOTO 161
+(1826) C      SET REVISE FLAG
+```

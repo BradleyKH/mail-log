@@ -1,0 +1,14 @@
+[
+  { "n": 1, "name": "JO", "label": "Job order", "description": "JOB ORDER FIELD - EXAMPLE : E8212A", "pdfPage": 34 },
+  { "n": 2, "name": "JOSUB", "label": "Sub job order", "description": "SUB JOB ORDER - MAXIMUM LENGTH OF TWO CHARACTERS", "pdfPage": 34 },
+  { "n": 3, "name": "PROGNO", "label": "Program number", "description": "PROGRAM NUMBER - EXAMPLE - 49002024400000400", "pdfPage": 34 },
+  { "n": 4, "name": "%ALL", "label": "All fiscal years percent", "description": "ALL FISCAL YEARS PERCENT - 3 DECIMAL PLACES", "pdfPage": 34 },
+  { "n": 5, "name": "%FY1", "label": "1st fiscal year percent", "description": "1ST FISCAL YEAR PERCENT - 3 DECIMAL PLACES", "pdfPage": 34 },
+  { "n": 6, "name": "%FY2", "label": "2nd fiscal year percent", "description": "2ND FISCAL YEAR PERCENT - 3 DECIMAL PLACES", "pdfPage": 34 },
+  { "n": 7, "name": "%FY3", "label": "3rd fiscal year percent", "description": "3RD FISCAL YEAR PERCENT - 3 DECIMAL PLACES", "pdfPage": 34 },
+  { "n": 8, "name": "%FY4", "label": "4th fiscal year percent", "description": "4TH FISCAL YEAR PERCENT - 3 DECIMAL PLACES", "pdfPage": 34 },
+  { "n": 9, "name": "%FY5", "label": "5th fiscal year percent", "description": "5TH FISCAL YEAR PERCENT - 3 DECIMAL PLACES", "pdfPage": 34 },
+  { "n": 10, "name": "%FY6", "label": "6th fiscal year percent", "description": "6TH FISCAL YEAR PERCENT - 3 DECIMAL PLACES", "pdfPage": 34 },
+  { "n": 11, "name": "%FY7", "label": "7th fiscal year percent", "description": "7TH FISCAL YEAR PERCENT - 3 DECIMAL PLACES", "pdfPage": 34 },
+  { "n": 12, "name": "%FY8", "label": "8th fiscal year percent", "description": "8TH FISCAL YEAR PERCENT - 3 DECIMAL PLACES", "pdfPage": 34 }
+]

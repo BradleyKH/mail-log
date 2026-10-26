@@ -1,0 +1,53 @@
+---
+pdfPage: 210
+folio: null
+sectionId: "B.INPTC"
+kind: listing
+source: reviewed
+confidence: 95
+figures: []
+listing:
+  appendix: "B"
+  routines: ["INPTC"]
+  listingPage: 195
+---
+```fortran
+(2434)           JOUT=0
+(2435)        READ(1,10)IOPT
+(2436)        IF(IOPT.EQ.'YE') GOTO 12
+(2437)       IF(IOPT.NE.'NO') GOTO 3
+(2438) 13     WRITE(1,14)
+(2439) 14    FORMAT(' DO YOU WISH TO START A NEW ENTRY ( NEW )',/,
+(2440)      1'    OR SPOOL LAST OUTPUT AGAIN ( LAST )',/,
+(2441)      1'    OR SPOOL NEW DATA ENTERED (DATA)')
+(2442)        READ(1,10) IOPT
+(2443)        IF(IOPT.EQ.'NE') GOTO 15
+(2444)        IF(IOPT.EQ.'LA') GOTO 21
+(2445)        IF(IOPT.NE.'DA') GOTO 13
+(2446)         JOUT=1
+(2447)         GO TO 15
+(2448)  21    CALL SRCH$$(K$CLOS,'REVS  ',6,0,0,0)
+(2449)        CALL SRCH$$(K$CLOS,'DATE  ',6,0,0,0)
+(2450)         CALL CNAM$$('SAVE  ',6,'OUT   ',6,IC)
+(2451)        CALL COMI$$('SOUT',4,12,IC)
+(2452)        CALL EXIT
+(2453) 15    CALL SRCH$$(K$DELE,'SAVE  ',6,0,0,0)
+(2454)        WRITE(1,3030)
+(2455) 3030   FORMAT(1X,'STAND BY. SYSTEM NOW PERFORMING FILE HOUSEKEEPING'/)
+(2456)        REWIND 10
+(2457)        COUNTR=0
+(2458)        WRITE(10,16)COUNTR
+(2459) 16     FORMAT(6X,I3)
+(2460)        REWIND 10
+(2461) C      OPEN TEMPORARY FILE FOR VOUGHT CORRESPONDENCE
+(2462) 12    CALL SRCH$$(K$RDWR+K$NDAM,'VC ',3,14,1,IC)
+(2463) C      OPEN TEMPORARY FILE FOR OUTGOING MAIL
+(2464)       CALL SRCH$$(K$RDWR+K$NDAM,'OM ',3,13,1,IC)
+(2465) C      OPEN TEMPORARY FILE FOR INCOMING MAIL
+(2466)       CALL SRCH$$(K$RDWR+K$NDAM,'IM ',3,12,1,IC)
+(2467) C
+(2468) C      OPEN ALL SUB FILES FOR INPUT MODE
+(2469) C
+(2470)         IF(JOUT.EQ.1) GOTO 1001
+(2471)       CALL OPEN
+```

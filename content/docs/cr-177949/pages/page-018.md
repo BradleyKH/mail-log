@@ -1,0 +1,69 @@
+---
+pdfPage: 18
+folio: "10"
+sectionId: "2.4"
+kind: mixed
+source: ocr
+confidence: 74.1
+figures: []
+---
+\3. ACTIVE USERS
+\4. DISCONNECT
+
+CMD>1
+
+WHO DO YOU WISH TO CALL
+*
+
+CGH
+
+ONE MOMENT PLEASE...
+
+%
+
+PHONE IS RINGING...
+*
+
+YOUR PARTY 1S NOT RESPONDING... «CONTINUE WAITING(Y/N)
+Y
+
+WAITING...
+
+TYPE CNTL -P- TO HANGUP PHONE
+
+TYPE CNTL -E- TO END MESSAGE
+
+SEND>THIS |S A TEST MESSAGE
+
+SEND>THIS 1S THE LAST LINE OF THE MESSAGE
+SEND>(* CNTL E * return *)
+
+*
+
+DATA SENT....WAITING FOR RESPONSE
+FI LILLIA SSIS IS SIS IIIS SIS SIN SS SISISI SSSI SS SIA SAIS SHISHA
+
+THANK YOU FOR MESSAGE. GOODBYE.
+IIIT DEENA L ID IIIS IDI SI SISSIES SINS ILD SIS SIAN SIS SII SII SSIS SAAS SASSI SA
+
+TYPE CNTL -P- TO HANGUP PHONE
+*
+
+TYPE CNTL -E- TO END MESSAGE
+
+SEND>(* CNTL E * return *)
+
+LINE DISCONNECTED
+
+AVAILABLE COMMANDS
+\1. CALL
+\2. ANSWER
+3, ACTIVE USERS
+\4. DISCONNECT
+
+CMD> 4
+
+Option 77 allows the user to receive a multiple line message from
+another user currently logged into the system. This option is also Invoked
+
+by option 12 on the OAS main menu (see section 4.0 of Volume 1).

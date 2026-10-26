@@ -1,0 +1,67 @@
+---
+pdfPage: 77
+folio: "68"
+sectionId: "7.2.3"
+kind: mixed
+source: ocr
+confidence: 86.4
+figures: []
+---
+5
+
+```text
+STAGE           =5
+STAGE-NAME      =ANTARES |!
+```
+
+STAGE>5
+
+STAGE-NAME>ANTARES |
+
+RECNO?> ¥*¥ return **
+
+THE STAGE LOOKUP TABLE NOW CONTAINS THE FOLLOWING RECORDS
+
+$RECNO STAGE STAGE-NAME
+
+```text
+1   1     ALGOL ||
+2 2     ALGOL IIIA
+3 3     CASTOR ||
+4 4     CASTOR IIA
+5 5     ANTARES |
+6 6     ANTARES {1A
+7 #7     ANTARES 1!B
+&@ 8     ANTARES II
+9 9     ALTAIR IIIA
+```
+
+Example #2 - option 6 - Update the Category Lookup Table
+
+SELECT OPTION BY ENTERING NUMBER (RETURN TO QUIT) > 6
+THIS PROGRAM UPDATES RECORDS IN THE CATEGORY LOOKUP TABLE
+
+THE CURRENT CATEGCRY LOOKUP TABLE CONTAINS THE FOLLOWING RECORDS
+
+$RECNO CATEGORY DESCRIPTION
+
+```text
+1   1        MOTOR
+
+2 2        CASE
+
+3 3        NOZZLE
+
+4 4        IGNITER
+
+5 5        MISCELLANEOUS
+6 6        CONTAIN/DOLLY
+```
+
+RECNO?> 6
+6
+CATEGORY = 6
+DESCRIPTION = CONTA!N/DOLLY
+
+CATEGCRY> 6
+DESCRIPTION? OBSOLETE

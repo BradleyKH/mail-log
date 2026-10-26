@@ -1,0 +1,59 @@
+---
+pdfPage: 62
+folio: "54"
+sectionId: "6.4.2"
+kind: text
+source: ocr
+confidence: 81.4
+figures: []
+---
+) UARS
+) STFE
+
+(7
+( 8
+ENTER PROJECT # TO BE SELECTED (ZERO - 0 - FOR ALL) > 5
+
+YOU HAVE SELECTED 754 RECORDS FROM THE CORRESPONDENCE FILE FOR QUERY
+
+ENTER FIRST VALID DOCUMENT DATE > 2/23/84
+ENTER SECOND VALID DOCUMENT DATE > 2/23/84
+
+DOCUMENT DATE SEARCH FOR 2/23/84 TO 2/23/84 FOUND 1 RECORDS
+
+TERMINAL OUTPUT NOW BEING GENERATED ..... PLEASE STAND BY .
+
+10/ 9/84 PAGE 1
+PROJECTS CORRESPONDENCE FILE :: DOCUMENT DATE :: 1984 223 & 1984 223
+
+```text
+| NDEX                      SOURCE                     FILE CODE
+PROJECT                   AUTHOR                    FiLE FOLDER
+DOCDATE                REFERENCE NUMBER         DOCUMENT FILE
+10421                    TRW                      099000
+ERBE                                               15900
+```
+
+2/23/1984
+
+DESCRIPTION: NAS1-15900, INTEGRATING SPHERE TEMPERATURE ERRORS
+
+Option 9 performs the Input Date search, which searches on a single
+date only. The format for inputting the date is MM/DD/YY. See the fol lowing
+
+example.
+
+SELECT OPTION BY ENTERING NUMBER (RETURN TO QUIT) > 9
+THIS SEARCH ROUTINE PERFORMS THE INPUT DATE QUERY / RETRIEVAL
+
+THE CURRENT PROJECTS AVAILABLE FOR SEARCHING ARE:
+
+SHSSSSSSSHST STP ST SSeS SeT LSS SSS SSS SSS SSS SST Tl TTT SS SES
+
+nn RRR RRA
+OanNAWA WHA —
+ww Sw Sw YS WY
+
+lus)
+
+m

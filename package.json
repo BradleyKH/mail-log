@@ -1,0 +1,14 @@
+{
+  "name": "maillog",
+  "private": true,
+  "packageManager": "pnpm@11.7.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "pnpm --filter site dev",
+    "build": "pnpm --filter site build",
+    "test": "pnpm --filter site test",
+    "validate": "pnpm --filter site validate"
+  }
+}

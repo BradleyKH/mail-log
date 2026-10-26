@@ -1,0 +1,66 @@
+---
+pdfPage: 57
+folio: "49"
+sectionId: "6.4.2"
+kind: text
+source: ocr
+confidence: 92
+figures: []
+---
+THE CURRENT PROJECTS AVAILABLE FOR SEARCHING ARE:
+
+LDEF
+ODP
+
+ACEE
+TRW
+
+ERBE
+ALSO
+UARS
+STFE
+
+ae a a i a a a a
+
+ENTER PROJECT # TO BE SELECTED (ZERO - O - FOR ALL) > 5
+
+PLEASE STAND BY .... PROJECT SELECTION BEING MADE
+
+YOU HAVE SELECTED 754 RECORDS FROM THE CORRESPONDENCE FILE FOR QUERY
+ENTER REFERENCE NUMBER TO BE SEARCHED ON > 7
+
+PLEASE STAND BY .... SEARCH NOW IN PROGRESS ...
+
+REFERENCE NUMBER SEARCH FOR 7 FOUND 1 RECORDS
+
+TERMINAL OUTPUT NOW BEING GENERATED .... PLEASE STAND BY ...
+
+10/ 9/84 PAGE 1
+
+PROJECTS CORRESPONDENCE FILE :: REFERENCE NUMBER :: 7
+
+```text
+| NDEX                     SOURCE                    FILE CODE
+
+PROJECT                   AUTHOR                    FILE FOLDER
+
+DOCDATE                   REFERENCE NUMBER          DOCUMENT FILE
+
+10175                    TRW                      110000
+
+ERBE                                              15900
+
+1/ 2/1984                 QQ-17C-10A                15900-ET033
+```
+
+DESCRIPTION: NAS1-15900, PROCEDURE CHANGE ORDER B2 TO ERBE SCANNER
+INSTRUMENT ASSEMBLY FUNCTIONAL TEST PROCEDURE
+
+Option 4 performs the File Code search. This is also a partial search
+
+and operates similarly to the Reference Number search In option 3. See the
+
+following example.
+
+SELECT OPTION BY ENTERING NUMBER (RETURN TO QUIT) > 4
+THIS SEARCH ROUTINE PERFORMS THE CORRESPONDENCE FILE CODE QUERY / RETRIEVAL

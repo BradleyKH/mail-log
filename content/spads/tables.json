@@ -1,0 +1,2582 @@
+{
+  "fee": [
+    {
+      "contract": "NAS1-16200",
+      "task": "A",
+      "subtask": "ALL",
+      "fee": null,
+      "masked": "**.000",
+      "pdfPage": 122
+    },
+    {
+      "contract": "NAS1-16200",
+      "task": "B",
+      "subtask": "ALL",
+      "fee": null,
+      "masked": "**.000",
+      "pdfPage": 122
+    },
+    {
+      "contract": "NAS1-16200",
+      "task": "C",
+      "subtask": "ALL",
+      "fee": 0.6,
+      "pdfPage": 122
+    },
+    {
+      "contract": "NAS1-16200",
+      "task": "D",
+      "subtask": "ALL",
+      "fee": null,
+      "masked": "**.000",
+      "pdfPage": 122
+    },
+    {
+      "contract": "NAS1-16200",
+      "task": "E",
+      "subtask": "ALL",
+      "fee": 6.06,
+      "pdfPage": 122
+    },
+    {
+      "contract": "NAS1-16200",
+      "task": "F",
+      "subtask": "ALL",
+      "fee": null,
+      "masked": "**.060",
+      "pdfPage": 122
+    },
+    {
+      "contract": "NAS1-16200",
+      "task": "G",
+      "subtask": "ALL",
+      "fee": null,
+      "masked": "**.000",
+      "pdfPage": 122
+    },
+    {
+      "contract": "NAS1-16200",
+      "task": "H",
+      "subtask": "ALL",
+      "fee": null,
+      "masked": "**.060",
+      "pdfPage": 122
+    },
+    {
+      "contract": "NAS1-16200",
+      "task": "J",
+      "subtask": "ALL",
+      "fee": 0,
+      "pdfPage": 122
+    },
+    {
+      "contract": "NAS1-16200",
+      "task": "K",
+      "subtask": "ALL",
+      "fee": 0,
+      "pdfPage": 122
+    },
+    {
+      "contract": "NAS1-16200",
+      "task": "L",
+      "subtask": "ALL",
+      "fee": null,
+      "masked": "**.020",
+      "pdfPage": 122
+    },
+    {
+      "contract": "NAS1-16200",
+      "task": "M",
+      "subtask": "ALL",
+      "fee": 0,
+      "pdfPage": 122
+    },
+    {
+      "contract": "NAS1-16200",
+      "task": "N",
+      "subtask": "ALL",
+      "fee": null,
+      "masked": "**.061",
+      "pdfPage": 122
+    },
+    {
+      "contract": "NAS1-16200",
+      "task": "P",
+      "subtask": "ALL",
+      "fee": null,
+      "masked": "**.010",
+      "pdfPage": 122
+    },
+    {
+      "contract": "NAS1-16200",
+      "task": "R",
+      "subtask": "ALL",
+      "fee": 0,
+      "pdfPage": 122
+    },
+    {
+      "contract": "NAS1-16200",
+      "task": "S",
+      "subtask": "ALL",
+      "fee": 0,
+      "pdfPage": 122
+    },
+    {
+      "contract": "NAS1-16200",
+      "task": "T",
+      "subtask": "ALL",
+      "fee": -0.006,
+      "pdfPage": 122
+    },
+    {
+      "contract": "NAS1-16200",
+      "task": "V",
+      "subtask": "ALL",
+      "fee": null,
+      "masked": "**.020",
+      "pdfPage": 122
+    },
+    {
+      "contract": "NAS1-16200",
+      "task": "W",
+      "subtask": "ALL",
+      "fee": 0,
+      "pdfPage": 122
+    },
+    {
+      "contract": "NAS1-16200",
+      "task": "X",
+      "subtask": "ALL",
+      "fee": 0,
+      "pdfPage": 122
+    },
+    {
+      "contract": "NAS1-16200",
+      "task": "Y",
+      "subtask": "ALL",
+      "fee": 0,
+      "pdfPage": 122
+    }
+  ],
+  "rates": [
+    {
+      "task": "A",
+      "fy": "1982",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "A",
+      "fy": "1983",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "A",
+      "fy": "1984",
+      "hourRate": 11.01,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "A",
+      "fy": "1985",
+      "hourRate": 11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "A",
+      "fy": "1986",
+      "hourRate": 11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "B",
+      "fy": "1982",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "B",
+      "fy": "1983",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "B",
+      "fy": "1984",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "B",
+      "fy": "1985",
+      "hourRate": 11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "B",
+      "fy": "1986",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "C",
+      "fy": "1982",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "C",
+      "fy": "1983",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "C",
+      "fy": "1984",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "C",
+      "fy": "1985",
+      "hourRate": 11.01,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "C",
+      "fy": "1986",
+      "hourRate": 11.01,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "D",
+      "fy": "1982",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "D",
+      "fy": "1983",
+      "hourRate": 11.01,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "D",
+      "fy": "1984",
+      "hourRate": 11.11,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "D",
+      "fy": "1985",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "D",
+      "fy": "1986",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "E",
+      "fy": "1982",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "E",
+      "fy": "1983",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "E",
+      "fy": "1984",
+      "hourRate": 10.11,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "E",
+      "fy": "1985",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "E",
+      "fy": "1986",
+      "hourRate": 11.11,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "F",
+      "fy": "1982",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "F",
+      "fy": "1983",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "F",
+      "fy": "1984",
+      "hourRate": 10.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "F",
+      "fy": "1985",
+      "hourRate": 10.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "F",
+      "fy": "1986",
+      "hourRate": 10.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "G",
+      "fy": "1982",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "G",
+      "fy": "1983",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "G",
+      "fy": "1984",
+      "hourRate": 0.01,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "G",
+      "fy": "1985",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "G",
+      "fy": "1986",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "H",
+      "fy": "1982",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "H",
+      "fy": "1983",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "H",
+      "fy": "1984",
+      "hourRate": 11.11,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "H",
+      "fy": "1985",
+      "hourRate": 11.11,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "H",
+      "fy": "1986",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "I",
+      "fy": "1982",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "I",
+      "fy": "1983",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "I",
+      "fy": "1984",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "I",
+      "fy": "1985",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "I",
+      "fy": "1986",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "J",
+      "fy": "1982",
+      "hourRate": 11.11,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "J",
+      "fy": "1983",
+      "hourRate": 11.11,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "J",
+      "fy": "1984",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "J",
+      "fy": "1985",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "J",
+      "fy": "1986",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "K",
+      "fy": "1982",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "K",
+      "fy": "1983",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "K",
+      "fy": "1984",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "K",
+      "fy": "1985",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "K",
+      "fy": "1986",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "L",
+      "fy": "1982",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "L",
+      "fy": "1983",
+      "hourRate": 11.01,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "L",
+      "fy": "1984",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "L",
+      "fy": "1985",
+      "hourRate": 11.01,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "L",
+      "fy": "1986",
+      "hourRate": 11.01,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "M",
+      "fy": "1982",
+      "hourRate": 10.1,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "M",
+      "fy": "1983",
+      "hourRate": 10.1,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "M",
+      "fy": "1984",
+      "hourRate": 11.11,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "M",
+      "fy": "1985",
+      "hourRate": 11.11,
+      "dollarRate": 110.11,
+      "illustrative": true
+    },
+    {
+      "task": "M",
+      "fy": "1986",
+      "hourRate": 11.11,
+      "dollarRate": 110.11,
+      "illustrative": true
+    },
+    {
+      "task": "N",
+      "fy": "1982",
+      "hourRate": 0,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "N",
+      "fy": "1983",
+      "hourRate": 0,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "N",
+      "fy": "1984",
+      "hourRate": 0,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "N",
+      "fy": "1985",
+      "hourRate": 0,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "N",
+      "fy": "1986",
+      "hourRate": 0,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "O",
+      "fy": "1982",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "O",
+      "fy": "1983",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "O",
+      "fy": "1984",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "O",
+      "fy": "1985",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "O",
+      "fy": "1986",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "P",
+      "fy": "1982",
+      "hourRate": 0,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "P",
+      "fy": "1983",
+      "hourRate": 0,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "P",
+      "fy": "1984",
+      "hourRate": 0,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "P",
+      "fy": "1985",
+      "hourRate": 0,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "P",
+      "fy": "1986",
+      "hourRate": 0,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "Q",
+      "fy": "1982",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "Q",
+      "fy": "1983",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "Q",
+      "fy": "1984",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "Q",
+      "fy": "1985",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "Q",
+      "fy": "1986",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "R",
+      "fy": "1982",
+      "hourRate": 11.11,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "R",
+      "fy": "1983",
+      "hourRate": 11.11,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "R",
+      "fy": "1984",
+      "hourRate": 11.11,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "R",
+      "fy": "1985",
+      "hourRate": 11.11,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "R",
+      "fy": "1986",
+      "hourRate": 11.11,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "S",
+      "fy": "1982",
+      "hourRate": 10.11,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "S",
+      "fy": "1983",
+      "hourRate": 10.11,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "S",
+      "fy": "1984",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "S",
+      "fy": "1985",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "S",
+      "fy": "1986",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "T",
+      "fy": "1982",
+      "hourRate": 11.1,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "T",
+      "fy": "1983",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "T",
+      "fy": "1984",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "T",
+      "fy": "1985",
+      "hourRate": 11.01,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "T",
+      "fy": "1986",
+      "hourRate": 11.01,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "U",
+      "fy": "1982",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "U",
+      "fy": "1983",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "U",
+      "fy": "1984",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "U",
+      "fy": "1985",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "U",
+      "fy": "1986",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "V",
+      "fy": "1982",
+      "hourRate": 11.11,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "V",
+      "fy": "1983",
+      "hourRate": 11.1,
+      "dollarRate": 111.1,
+      "illustrative": true
+    },
+    {
+      "task": "V",
+      "fy": "1984",
+      "hourRate": 11.11,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "V",
+      "fy": "1985",
+      "hourRate": 11.11,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "V",
+      "fy": "1986",
+      "hourRate": 11.01,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "W",
+      "fy": "1982",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "W",
+      "fy": "1983",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "W",
+      "fy": "1984",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "W",
+      "fy": "1985",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "W",
+      "fy": "1986",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "X",
+      "fy": "1982",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "X",
+      "fy": "1983",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "X",
+      "fy": "1984",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "X",
+      "fy": "1985",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "X",
+      "fy": "1986",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "Y",
+      "fy": "1982",
+      "hourRate": 10.11,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "Y",
+      "fy": "1983",
+      "hourRate": 10.11,
+      "dollarRate": 111.11,
+      "illustrative": true
+    },
+    {
+      "task": "Y",
+      "fy": "1984",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "Y",
+      "fy": "1985",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "Y",
+      "fy": "1986",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "Z",
+      "fy": "1982",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "Z",
+      "fy": "1983",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "Z",
+      "fy": "1984",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "Z",
+      "fy": "1985",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    },
+    {
+      "task": "Z",
+      "fy": "1986",
+      "hourRate": 0,
+      "dollarRate": 0,
+      "illustrative": true
+    }
+  ],
+  "sustaining": [
+    {
+      "task": "A",
+      "jo": "E8002A",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 50,
+        "1983": 50,
+        "1984": 50,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "A",
+      "jo": "K8005A",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 0,
+        "1983": 0,
+        "1984": 0,
+        "1985": 50,
+        "1986": 50,
+        "1987": 50,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "A",
+      "jo": "K8002A",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 0,
+        "1983": 0,
+        "1984": 0,
+        "1985": 50,
+        "1986": 50,
+        "1987": 50,
+        "1988": 100,
+        "1989": 0
+      }
+    },
+    {
+      "task": "A",
+      "jo": "E8005A",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 50,
+        "1983": 50,
+        "1984": 50,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "B",
+      "jo": "E7199B",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 0.435,
+        "1983": 5.313,
+        "1984": 1.792,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "B",
+      "jo": "K7207B",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 0,
+        "1983": 0,
+        "1984": 0,
+        "1985": 8.333,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "B",
+      "jo": "K7002B",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 0,
+        "1983": 0,
+        "1984": 0,
+        "1985": 16.667,
+        "1986": 22.222,
+        "1987": 28.572,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "B",
+      "jo": "E7204B",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 0.435,
+        "1983": 0,
+        "1984": 11.077,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "B",
+      "jo": "E7205B",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 0.106,
+        "1983": 16.73,
+        "1984": 0,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "B",
+      "jo": "E7207B",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 0.061,
+        "1983": 5.225,
+        "1984": 8.225,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "B",
+      "jo": "E8002B",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 2.701,
+        "1983": 0.574,
+        "1984": 1.169,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "B",
+      "jo": "E8005B",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 3.271,
+        "1983": 0.574,
+        "1984": 1.169,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "B",
+      "jo": "E8208B",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 0.435,
+        "1983": 0,
+        "1984": 17.02,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "B",
+      "jo": "E8209B",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 11.25,
+        "1983": 1.722,
+        "1984": 2.124,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "B",
+      "jo": "E8210B",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 14.502,
+        "1983": 0,
+        "1984": 0,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "B",
+      "jo": "E8211B",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 5.758,
+        "1983": 1.825,
+        "1984": 7.998,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "B",
+      "jo": "E8212B",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 5.447,
+        "1983": 16.033,
+        "1984": 1.926,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "B",
+      "jo": "E8213B",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 17.743,
+        "1983": 1.825,
+        "1984": 7.998,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "B",
+      "jo": "E8214B",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 16.506,
+        "1983": 4.725,
+        "1984": 24.092,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "B",
+      "jo": "E8215B",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 21.292,
+        "1983": 7.25,
+        "1984": 10.636,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "B",
+      "jo": "E8216B",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 0.058,
+        "1983": 18.08,
+        "1984": 1.686,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "B",
+      "jo": "E8217B",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 0,
+        "1983": 20.124,
+        "1984": 3.088,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "B",
+      "jo": "K8002B",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 0,
+        "1983": 0,
+        "1984": 0,
+        "1985": 41.667,
+        "1986": 44.445,
+        "1987": 42.857,
+        "1988": 100,
+        "1989": 0
+      }
+    },
+    {
+      "task": "B",
+      "jo": "K8005B",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 0,
+        "1983": 0,
+        "1984": 0,
+        "1985": 33.333,
+        "1986": 33.333,
+        "1987": 28.571,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "T",
+      "jo": "E8000T",
+      "subtask": "1",
+      "fy": {
+        "1982": 11.429,
+        "1983": 14.815,
+        "1984": 0,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "T",
+      "jo": "K8005T",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 0,
+        "1983": 0,
+        "1984": 50,
+        "1985": 50,
+        "1986": 50,
+        "1987": 50,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "T",
+      "jo": "K8002T",
+      "subtask": "ALL",
+      "fy": {
+        "1982": 0,
+        "1983": 0,
+        "1984": 50,
+        "1985": 50,
+        "1986": 50,
+        "1987": 50,
+        "1988": 100,
+        "1989": 0
+      }
+    },
+    {
+      "task": "T",
+      "jo": "E8006Z",
+      "subtask": "1",
+      "fy": {
+        "1982": 17.142,
+        "1983": 22.223,
+        "1984": 0,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "T",
+      "jo": "E8007Z",
+      "subtask": "1",
+      "fy": {
+        "1982": 5.715,
+        "1983": 7.408,
+        "1984": 0,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "T",
+      "jo": "E8210T",
+      "subtask": "1",
+      "fy": {
+        "1982": 5.715,
+        "1983": 0,
+        "1984": 0,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "T",
+      "jo": "E8211T",
+      "subtask": "1",
+      "fy": {
+        "1982": 14.285,
+        "1983": 18.518,
+        "1984": 0,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "T",
+      "jo": "E8213T",
+      "subtask": "1",
+      "fy": {
+        "1982": 14.285,
+        "1983": 18.518,
+        "1984": 0,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "T",
+      "jo": "E8214T",
+      "subtask": "1",
+      "fy": {
+        "1982": 20,
+        "1983": 18.518,
+        "1984": 0,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "T",
+      "jo": "E8217T",
+      "subtask": "1",
+      "fy": {
+        "1982": 11.429,
+        "1983": 0,
+        "1984": 0,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "T",
+      "jo": "E8000T",
+      "subtask": "2",
+      "fy": {
+        "1982": 9.091,
+        "1983": 11.111,
+        "1984": 0,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "T",
+      "jo": "E8006Z",
+      "subtask": "2",
+      "fy": {
+        "1982": 13.637,
+        "1983": 16.667,
+        "1984": 0,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "T",
+      "jo": "E8007Z",
+      "subtask": "2",
+      "fy": {
+        "1982": 4.546,
+        "1983": 5.556,
+        "1984": 0,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "T",
+      "jo": "E8210T",
+      "subtask": "2",
+      "fy": {
+        "1982": 4.546,
+        "1983": 0,
+        "1984": 0,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "T",
+      "jo": "E8211T",
+      "subtask": "2",
+      "fy": {
+        "1982": 18.181,
+        "1983": 22.222,
+        "1984": 0,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "T",
+      "jo": "E8213T",
+      "subtask": "2",
+      "fy": {
+        "1982": 18.181,
+        "1983": 22.222,
+        "1984": 0,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "T",
+      "jo": "E8214T",
+      "subtask": "2",
+      "fy": {
+        "1982": 22.727,
+        "1983": 22.222,
+        "1984": 0,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "T",
+      "jo": "E8217T",
+      "subtask": "2",
+      "fy": {
+        "1982": 9.091,
+        "1983": 0,
+        "1984": 0,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E7002M",
+      "subtask": "1",
+      "fy": {
+        "1982": 12.5,
+        "1983": 6.25,
+        "1984": 7.143,
+        "1985": 0,
+        "1986": 16.667,
+        "1987": 20,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E8209M",
+      "subtask": "1",
+      "fy": {
+        "1982": 6.25,
+        "1983": 3.125,
+        "1984": 3.571,
+        "1985": 50,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E8208M",
+      "subtask": "1",
+      "fy": {
+        "1982": 6.25,
+        "1983": 3.125,
+        "1984": 50,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E8005M",
+      "subtask": "7",
+      "fy": {
+        "1982": 50,
+        "1983": 50,
+        "1984": 50,
+        "1985": 50,
+        "1986": 50,
+        "1987": 50,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E8005M",
+      "subtask": "6",
+      "fy": {
+        "1982": 50,
+        "1983": 50,
+        "1984": 50,
+        "1985": 50,
+        "1986": 50,
+        "1987": 50,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E8005M",
+      "subtask": "5",
+      "fy": {
+        "1982": 50,
+        "1983": 50,
+        "1984": 50,
+        "1985": 50,
+        "1986": 50,
+        "1987": 50,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E8002M",
+      "subtask": "7",
+      "fy": {
+        "1982": 50,
+        "1983": 50,
+        "1984": 50,
+        "1985": 50,
+        "1986": 50,
+        "1987": 50,
+        "1988": 100,
+        "1989": 100
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E8002M",
+      "subtask": "6",
+      "fy": {
+        "1982": 50,
+        "1983": 50,
+        "1984": 50,
+        "1985": 50,
+        "1986": 50,
+        "1987": 50,
+        "1988": 100,
+        "1989": 100
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E8002M",
+      "subtask": "5",
+      "fy": {
+        "1982": 50,
+        "1983": 50,
+        "1984": 50,
+        "1985": 50,
+        "1986": 50,
+        "1987": 50,
+        "1988": 100,
+        "1989": 100
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E8005M",
+      "subtask": "4",
+      "fy": {
+        "1982": 26.667,
+        "1983": 26.667,
+        "1984": 28.571,
+        "1985": 30.769,
+        "1986": 33.333,
+        "1987": 28.572,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E8002M",
+      "subtask": "4",
+      "fy": {
+        "1982": 40,
+        "1983": 40,
+        "1984": 42.857,
+        "1985": 38.462,
+        "1986": 44.445,
+        "1987": 42.857,
+        "1988": 100,
+        "1989": 100
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E7207M",
+      "subtask": "4",
+      "fy": {
+        "1982": 6.667,
+        "1983": 6.667,
+        "1984": 7.143,
+        "1985": 7.692,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E7206M",
+      "subtask": "4",
+      "fy": {
+        "1982": 6.666,
+        "1983": 6.666,
+        "1984": 7.143,
+        "1985": 7.692,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E7205M",
+      "subtask": "4",
+      "fy": {
+        "1982": 6.667,
+        "1983": 6.667,
+        "1984": 0,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E7002M",
+      "subtask": "4",
+      "fy": {
+        "1982": 13.333,
+        "1983": 13.333,
+        "1984": 14.286,
+        "1985": 15.385,
+        "1986": 22.222,
+        "1987": 28.571,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E8005M",
+      "subtask": "3",
+      "fy": {
+        "1982": 26.667,
+        "1983": 26.667,
+        "1984": 28.571,
+        "1985": 30.769,
+        "1986": 33.333,
+        "1987": 28.572,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E8002M",
+      "subtask": "3",
+      "fy": {
+        "1982": 40,
+        "1983": 40,
+        "1984": 42.857,
+        "1985": 38.462,
+        "1986": 44.445,
+        "1987": 42.857,
+        "1988": 100,
+        "1989": 100
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E7207M",
+      "subtask": "3",
+      "fy": {
+        "1982": 6.667,
+        "1983": 6.667,
+        "1984": 7.143,
+        "1985": 7.692,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E7206M",
+      "subtask": "3",
+      "fy": {
+        "1982": 6.666,
+        "1983": 6.666,
+        "1984": 7.143,
+        "1985": 7.692,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E7205M",
+      "subtask": "3",
+      "fy": {
+        "1982": 6.667,
+        "1983": 6.667,
+        "1984": 0,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E7002M",
+      "subtask": "3",
+      "fy": {
+        "1982": 13.333,
+        "1983": 13.333,
+        "1984": 14.286,
+        "1985": 15.385,
+        "1986": 22.222,
+        "1987": 28.571,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E8005M",
+      "subtask": "1",
+      "fy": {
+        "1982": 33.333,
+        "1983": 20,
+        "1984": 20,
+        "1985": 0,
+        "1986": 50,
+        "1987": 50,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E8002M",
+      "subtask": "1",
+      "fy": {
+        "1982": 25,
+        "1983": 12.5,
+        "1984": 14.286,
+        "1985": 0,
+        "1986": 33.333,
+        "1987": 30,
+        "1988": 100,
+        "1989": 100
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E7207M",
+      "subtask": "1",
+      "fy": {
+        "1982": 8.333,
+        "1983": 5,
+        "1984": 5,
+        "1985": 50,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    },
+    {
+      "task": "M",
+      "jo": "E7205M",
+      "subtask": "1",
+      "fy": {
+        "1982": 8.334,
+        "1983": 50,
+        "1984": 0,
+        "1985": 0,
+        "1986": 0,
+        "1987": 0,
+        "1988": 0,
+        "1989": 0
+      }
+    }
+  ],
+  "programNumbers": [
+    {
+      "jo": "1244R",
+      "progno": "18006520300001400"
+    },
+    {
+      "jo": "1249R",
+      "progno": "18017500100001400"
+    },
+    {
+      "jo": "1260R",
+      "progno": "16017500200002400"
+    },
+    {
+      "jo": "1277R",
+      "progno": "18032510500003400"
+    },
+    {
+      "jo": "4144A",
+      "progno": "49002024400000400"
+    },
+    {
+      "jo": "4144B",
+      "progno": "49002044400000400"
+    },
+    {
+      "jo": "4144C",
+      "progno": "49002024400000400"
+    },
+    {
+      "jo": "4144D",
+      "progno": "49002024400000400"
+    },
+    {
+      "jo": "4144E",
+      "progno": "49002024400000400"
+    },
+    {
+      "jo": "6192A",
+      "progno": "49022680600000493"
+    },
+    {
+      "jo": "6192B",
+      "progno": "49021680600000493"
+    },
+    {
+      "jo": "6192C",
+      "progno": "49021680600000493"
+    },
+    {
+      "jo": "6192D",
+      "progno": "49021680600000493"
+    },
+    {
+      "jo": "6192E",
+      "progno": "49022680600000493"
+    },
+    {
+      "jo": "6192F",
+      "progno": "49022680600000493"
+    },
+    {
+      "jo": "6192G",
+      "progno": "49022680600000493"
+    },
+    {
+      "jo": "6192H",
+      "progno": "49001680600000493"
+    },
+    {
+      "jo": "6192I",
+      "progno": "49021680600000493"
+    },
+    {
+      "jo": "6192J",
+      "progno": "49001680600000493"
+    },
+    {
+      "jo": "6192K",
+      "progno": "49022680600000493"
+    },
+    {
+      "jo": "6192L",
+      "progno": "49022680600000493"
+    },
+    {
+      "jo": "6192M",
+      "progno": "49001680600000493"
+    },
+    {
+      "jo": "6192N",
+      "progno": "49021680600000493"
+    },
+    {
+      "jo": "6192O",
+      "progno": "49022680600000493"
+    },
+    {
+      "jo": "6192P",
+      "progno": "49022680600000493"
+    },
+    {
+      "jo": "6192Q",
+      "progno": "49021680600000493"
+    },
+    {
+      "jo": "6192R",
+      "progno": "49022680600000493"
+    },
+    {
+      "jo": "6192S",
+      "progno": "49001680600000493"
+    },
+    {
+      "jo": "6192T",
+      "progno": "49001680600000493"
+    },
+    {
+      "jo": "6192U",
+      "progno": "49022680600000293"
+    },
+    {
+      "jo": "6192V",
+      "progno": "49001680600000493"
+    },
+    {
+      "jo": "6192W",
+      "progno": "49021680600000493"
+    },
+    {
+      "jo": "6192X",
+      "progno": "49021680600000493"
+    },
+    {
+      "jo": "6192Y",
+      "progno": "49001680600000493"
+    },
+    {
+      "jo": "6192Z",
+      "progno": "49001680600000493"
+    },
+    {
+      "jo": "7000A",
+      "progno": "49002027700000400"
+    },
+    {
+      "jo": "7000B",
+      "progno": "49002047700000400"
+    },
+    {
+      "jo": "7000C",
+      "progno": "49002047700000400"
+    },
+    {
+      "jo": "7000D",
+      "progno": "49002047700000400"
+    },
+    {
+      "jo": "7000E",
+      "progno": "49002027700000400"
+    },
+    {
+      "jo": "7000F",
+      "progno": "49002027700000400"
+    },
+    {
+      "jo": "7000G",
+      "progno": "49002027700000400"
+    },
+    {
+      "jo": "8209A",
+      "progno": "49022680800000493"
+    },
+    {
+      "jo": "8209B",
+      "progno": "49021680800000493"
+    },
+    {
+      "jo": "8209C",
+      "progno": "49021680800000493"
+    },
+    {
+      "jo": "8209D",
+      "progno": "49021680800000493"
+    },
+    {
+      "jo": "8209E",
+      "progno": "49022680800000493"
+    },
+    {
+      "jo": "8209F",
+      "progno": "49022680800000493"
+    },
+    {
+      "jo": "8209G",
+      "progno": "49022680800000493"
+    },
+    {
+      "jo": "8209H",
+      "progno": "49001680800000493"
+    },
+    {
+      "jo": "8209I",
+      "progno": "49021680800000493"
+    },
+    {
+      "jo": "8209J",
+      "progno": "49001680800000493"
+    },
+    {
+      "jo": "8209K",
+      "progno": "49022680800000493"
+    },
+    {
+      "jo": "8218A",
+      "progno": "56322850800001493"
+    },
+    {
+      "jo": "8218B",
+      "progno": "56321850800001493"
+    },
+    {
+      "jo": "8218C",
+      "progno": "56321850800001493"
+    },
+    {
+      "jo": "8218D",
+      "progno": "56321850800001493"
+    },
+    {
+      "jo": "8218E",
+      "progno": "56322850800001493"
+    },
+    {
+      "jo": "8218F",
+      "progno": "56322850800001493"
+    },
+    {
+      "jo": "8218G",
+      "progno": "56322850800001493"
+    },
+    {
+      "jo": "8218H",
+      "progno": "56301850800001493"
+    },
+    {
+      "jo": "8218I",
+      "progno": "56321850800001493"
+    },
+    {
+      "jo": "8218J",
+      "progno": "56301850800001493"
+    },
+    {
+      "jo": "8218K",
+      "progno": "56322850800001493"
+    },
+    {
+      "jo": "8218L",
+      "progno": "56322850800001493"
+    },
+    {
+      "jo": "8218M",
+      "progno": "56301850800001493"
+    },
+    {
+      "jo": "8218N",
+      "progno": "56321850800001493"
+    },
+    {
+      "jo": "8218O",
+      "progno": "56322850800001493"
+    },
+    {
+      "jo": "8218P",
+      "progno": "56322850800001493"
+    },
+    {
+      "jo": "8218Q",
+      "progno": "56321850800001493"
+    },
+    {
+      "jo": "8218R",
+      "progno": "56322850800001493"
+    },
+    {
+      "jo": "8218S",
+      "progno": "56301850800001493"
+    },
+    {
+      "jo": "8218T",
+      "progno": "56301850800001493"
+    },
+    {
+      "jo": "8218U",
+      "progno": "56322850800000293"
+    },
+    {
+      "jo": "8218V",
+      "progno": "56301850800001493"
+    },
+    {
+      "jo": "8218W",
+      "progno": "56321850800001493"
+    },
+    {
+      "jo": "8218X",
+      "progno": "56322850800001493"
+    },
+    {
+      "jo": "8218Y",
+      "progno": "56301850800001493"
+    },
+    {
+      "jo": "8218Z",
+      "progno": "56301850800001493"
+    }
+  ],
+  "time": [
+    {
+      "task": "A",
+      "start": "10-81",
+      "end": "1-86",
+      "contractValue": 7805,
+      "baseFee": 701.96
+    },
+    {
+      "task": "B",
+      "start": "10-81",
+      "end": "1-86",
+      "contractValue": 358,
+      "baseFee": 32.2
+    },
+    {
+      "task": "C",
+      "start": "10-81",
+      "end": "1-86",
+      "contractValue": 344,
+      "baseFee": 30.94
+    },
+    {
+      "task": "D",
+      "start": "10-81",
+      "end": "1-86",
+      "contractValue": 833,
+      "baseFee": 74.92
+    },
+    {
+      "task": "E",
+      "start": "10-81",
+      "end": "1-86",
+      "contractValue": 2599,
+      "baseFee": 233.74
+    },
+    {
+      "task": "F",
+      "start": "10-81",
+      "end": "1-86",
+      "contractValue": 3061,
+      "baseFee": 275.3
+    },
+    {
+      "task": "G",
+      "start": "10-81",
+      "end": "1-86",
+      "contractValue": 1455,
+      "baseFee": 130.86
+    },
+    {
+      "task": "H",
+      "start": "10-81",
+      "end": "1-86",
+      "contractValue": 3926,
+      "baseFee": 353.09
+    },
+    {
+      "task": "I",
+      "start": "0- 0",
+      "end": "0- 0",
+      "contractValue": 0,
+      "baseFee": 0
+    },
+    {
+      "task": "J",
+      "start": "10-81",
+      "end": "1-86",
+      "contractValue": 0,
+      "baseFee": 0
+    },
+    {
+      "task": "K",
+      "start": "0- 0",
+      "end": "0- 0",
+      "contractValue": 0,
+      "baseFee": 0
+    },
+    {
+      "task": "L",
+      "start": "10-81",
+      "end": "1-86",
+      "contractValue": 1266,
+      "baseFee": 113.86
+    },
+    {
+      "task": "M",
+      "start": "10-81",
+      "end": "1-86",
+      "contractValue": 0,
+      "baseFee": 0
+    },
+    {
+      "task": "N",
+      "start": "10-81",
+      "end": "1-86",
+      "contractValue": 10421,
+      "baseFee": 937.23
+    },
+    {
+      "task": "O",
+      "start": "0- 0",
+      "end": "0- 0",
+      "contractValue": 0,
+      "baseFee": 0
+    },
+    {
+      "task": "P",
+      "start": "10-81",
+      "end": "1-86",
+      "contractValue": 754,
+      "baseFee": 67.81
+    },
+    {
+      "task": "Q",
+      "start": "0- 0",
+      "end": "0- 0",
+      "contractValue": 0,
+      "baseFee": 0
+    },
+    {
+      "task": "R",
+      "start": "10-81",
+      "end": "1-86",
+      "contractValue": 0,
+      "baseFee": 0
+    },
+    {
+      "task": "S",
+      "start": "12-84",
+      "end": "10-86",
+      "contractValue": 2400,
+      "baseFee": 0
+    },
+    {
+      "task": "T",
+      "start": "10-81",
+      "end": "1-86",
+      "contractValue": 314,
+      "baseFee": 28.24
+    },
+    {
+      "task": "U",
+      "start": "0- 0",
+      "end": "0- 0",
+      "contractValue": 0,
+      "baseFee": 0
+    },
+    {
+      "task": "V",
+      "start": "10-81",
+      "end": "1-86",
+      "contractValue": 999,
+      "baseFee": 89.85
+    },
+    {
+      "task": "W",
+      "start": "10-81",
+      "end": "1-86",
+      "contractValue": 0,
+      "baseFee": 0
+    },
+    {
+      "task": "X",
+      "start": "10-81",
+      "end": "1-86",
+      "contractValue": 0,
+      "baseFee": 0
+    },
+    {
+      "task": "Y",
+      "start": "0- 0",
+      "end": "0- 0",
+      "contractValue": 0,
+      "baseFee": 0
+    },
+    {
+      "task": "Z",
+      "start": "0- 0",
+      "end": "0- 0",
+      "contractValue": 0,
+      "baseFee": 0
+    }
+  ]
+}

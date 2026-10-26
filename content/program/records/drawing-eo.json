@@ -1,0 +1,564 @@
+[
+  {
+    "title": "ADAPT RING TRANS SECT B",
+    "drawingNumber": "23 000039",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "D",
+    "eosReferenced": "V24818",
+    "sourceFigure": "42"
+  },
+  {
+    "title": "BUSHING HOIST RING TRAN SECT B",
+    "drawingNumber": "23 000119",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "D",
+    "eosReferenced": "V31123",
+    "sourceFigure": "42"
+  },
+  {
+    "title": "STUD HOIST RING TRANS SECT B",
+    "drawingNumber": "23 000121",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "C",
+    "eosReferenced": null,
+    "sourceFigure": "42"
+  },
+  {
+    "title": "RING AFT ATTACH TRANS SECT B",
+    "drawingNumber": "23 000122",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "C",
+    "eosReferenced": "V40081",
+    "sourceFigure": "42"
+  },
+  {
+    "title": "FIN ASSY BASE SECT A",
+    "drawingNumber": "23 000021",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "S",
+    "eosReferenced": "V34535, D37288, V39621, V50313, V51265, V51001",
+    "sourceFigure": "47"
+  },
+  {
+    "title": "FIN ASSY BASE SECT A",
+    "drawingNumber": "23 000021",
+    "date": "10-27-78",
+    "sheetNumber": "2",
+    "sheetRevision": "S",
+    "eosReferenced": "V34535, V50313",
+    "sourceFigure": "47"
+  },
+  {
+    "title": "FIN ASSY BASE SECT A",
+    "drawingNumber": "23 000021",
+    "date": "10-27-78",
+    "sheetNumber": "3",
+    "sheetRevision": "S",
+    "eosReferenced": "V34535, V50313",
+    "sourceFigure": "47"
+  },
+  {
+    "title": "FIN ASSY BASE SECT A",
+    "drawingNumber": "23 000021",
+    "date": "10-27-78",
+    "sheetNumber": "4",
+    "sheetRevision": "S",
+    "eosReferenced": "V34535, V50313",
+    "sourceFigure": "47"
+  },
+  {
+    "title": "FIN ASSY BASE SECT A",
+    "drawingNumber": "23 000021",
+    "date": "10-27-78",
+    "sheetNumber": "5",
+    "sheetRevision": "S",
+    "eosReferenced": "V34535, V50313",
+    "sourceFigure": "47"
+  },
+  {
+    "title": "STRUCT ASSY TRANS LWR D",
+    "drawingNumber": "23 000026",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "U",
+    "eosReferenced": "V36559, V34519",
+    "sourceFigure": "47"
+  },
+  {
+    "title": "STRUCT ASSY TRANS LWR D",
+    "drawingNumber": "23 000026",
+    "date": "10-27-78",
+    "sheetNumber": "2",
+    "sheetRevision": "U",
+    "eosReferenced": "V36559",
+    "sourceFigure": "47"
+  },
+  {
+    "title": "STRUCT ASSY TRANS LWR D",
+    "drawingNumber": "23 000026",
+    "date": "10-27-78",
+    "sheetNumber": "3",
+    "sheetRevision": "U",
+    "eosReferenced": "V36559",
+    "sourceFigure": "47"
+  },
+  {
+    "title": "STRUCT ASSY TRANS LWR D",
+    "drawingNumber": "23 000026",
+    "date": "10-27-78",
+    "sheetNumber": "4",
+    "sheetRevision": "U",
+    "eosReferenced": "V36559",
+    "sourceFigure": "47"
+  },
+  {
+    "title": "COMPONENTS INST TLM BASE SECT A",
+    "drawingNumber": "23 000097",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "J",
+    "eosReferenced": "V27229, V24391, V37787, D20245, D24285, V51354",
+    "sourceFigure": "48"
+  },
+  {
+    "title": "SYS INST 2ND ST RCS TRAN B UPPR",
+    "drawingNumber": "23 000469",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "AA",
+    "eosReferenced": "V40048, D40041, D40038, D50311, D40010, D39482, D37800, D24141, V50415, D50429",
+    "sourceFigure": "48"
+  },
+  {
+    "title": "INSTRUMENTATION INST 3RD ST RCS",
+    "drawingNumber": "23 000472",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "V",
+    "eosReferenced": "V40048, D24391",
+    "sourceFigure": "49"
+  },
+  {
+    "title": "INSTRUMENTATION INST 3RD ST RCS",
+    "drawingNumber": "23 000472",
+    "date": "10-27-78",
+    "sheetNumber": "1. 1",
+    "sheetRevision": "V",
+    "eosReferenced": "V40048",
+    "sourceFigure": "49"
+  },
+  {
+    "title": "INSTRUMENTATION INST 3RD ST RCS",
+    "drawingNumber": "23 000472",
+    "date": "10-27-78",
+    "sheetNumber": "2",
+    "sheetRevision": "V",
+    "eosReferenced": "V40048",
+    "sourceFigure": "49"
+  },
+  {
+    "title": "INSTRUMENTATION INST 3RD ST RCS",
+    "drawingNumber": "23 000472",
+    "date": "10-27-78",
+    "sheetNumber": "2. 1",
+    "sheetRevision": "V",
+    "eosReferenced": "V40048",
+    "sourceFigure": "49"
+  },
+  {
+    "title": "INSTRUMENTATION INST 3RD ST RCS",
+    "drawingNumber": "23 000472",
+    "date": "10-27-78",
+    "sheetNumber": "3. 2",
+    "sheetRevision": "V",
+    "eosReferenced": "V40048",
+    "sourceFigure": "49"
+  },
+  {
+    "title": "INSTRUMENTATION INST 3RD ST RCS",
+    "drawingNumber": "23 000472",
+    "date": "10-27-78",
+    "sheetNumber": "7",
+    "sheetRevision": "V",
+    "eosReferenced": "V40048",
+    "sourceFigure": "49"
+  },
+  {
+    "title": "INSTRUMENTATION INST 3RD ST RCS",
+    "drawingNumber": "23 000472",
+    "date": "10-27-78",
+    "sheetNumber": "10",
+    "sheetRevision": "V",
+    "eosReferenced": "V40048",
+    "sourceFigure": "49"
+  },
+  {
+    "title": "SAMPLE DRAWING USING SECTION AND SYSTEM",
+    "drawingNumber": "401 00001",
+    "date": "12-1-78",
+    "sheetNumber": "1",
+    "sheetRevision": null,
+    "eosReferenced": null,
+    "sourceFigure": "50"
+  },
+  {
+    "title": "SAMPLE DRAWING USING SYSTEM :MANUEL INPUT",
+    "drawingNumber": "401 000002",
+    "date": "12-1-78",
+    "sheetNumber": "1",
+    "sheetRevision": "B",
+    "eosReferenced": "V000001",
+    "sourceFigure": "50"
+  },
+  {
+    "title": "SECT ASSY P/L INTERFACE",
+    "drawingNumber": "23 003082",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "A",
+    "eosReferenced": "V51363",
+    "sourceFigure": "52"
+  },
+  {
+    "title": "SECT ASSY P/L INTERFACE",
+    "drawingNumber": "23 003082",
+    "date": "10-27-78",
+    "sheetNumber": "2",
+    "sheetRevision": "A",
+    "eosReferenced": "V51363",
+    "sourceFigure": "52"
+  },
+  {
+    "title": "MOD INSTL 25 SERIES SAGE P/L",
+    "drawingNumber": "23 004523",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "NC",
+    "eosReferenced": "V50591",
+    "sourceFigure": "52"
+  },
+  {
+    "title": "UMB CABLE ASSY-HCMM/SAGE SC",
+    "drawingNumber": "331 39724",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "A",
+    "eosReferenced": "V51457",
+    "sourceFigure": "52"
+  },
+  {
+    "title": "SAGE P/L TEST CABLES",
+    "drawingNumber": "331 39734",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "NC",
+    "eosReferenced": "V51477",
+    "sourceFigure": "52"
+  },
+  {
+    "title": "RADAR BEAC ASSY S RADAR B KIT",
+    "drawingNumber": "401 00411",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "NC",
+    "eosReferenced": null,
+    "sourceFigure": "54"
+  },
+  {
+    "title": "BEAC RADAR CVRT 6B.61B.61C",
+    "drawingNumber": "401 01331",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "A",
+    "eosReferenced": null,
+    "sourceFigure": "54"
+  },
+  {
+    "title": "COMP ASSY TLM PKG INSTR",
+    "drawingNumber": "401 01500",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "G",
+    "eosReferenced": "V27964",
+    "sourceFigure": "54"
+  },
+  {
+    "title": "SCHEM COMP ASSY TLM PKG",
+    "drawingNumber": "401 01501",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "B",
+    "eosReferenced": null,
+    "sourceFigure": "54"
+  },
+  {
+    "title": "SCHEM COMP ASSY TLM PKG",
+    "drawingNumber": "401 01501",
+    "date": "10-27-78",
+    "sheetNumber": "2",
+    "sheetRevision": "C",
+    "eosReferenced": null,
+    "sourceFigure": "54"
+  },
+  {
+    "title": "SCHEM COMP ASSY TLM PKG",
+    "drawingNumber": "401 01501",
+    "date": "10-27-78",
+    "sheetNumber": "3",
+    "sheetRevision": "B",
+    "eosReferenced": "V19033",
+    "sourceFigure": "54"
+  },
+  {
+    "title": "RADAR BEACON ASSY",
+    "drawingNumber": "401 01861",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "A",
+    "eosReferenced": null,
+    "sourceFigure": "54"
+  },
+  {
+    "title": "BATT CASE RADAR BEAC KIT",
+    "drawingNumber": "401 01862",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "A",
+    "eosReferenced": null,
+    "sourceFigure": "54"
+  },
+  {
+    "title": "RACK SCO MTG REWORK",
+    "drawingNumber": "401 03354",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "B",
+    "eosReferenced": "V07150",
+    "sourceFigure": "54"
+  },
+  {
+    "title": "BATTERY SIMULATOR C SECT",
+    "drawingNumber": "321 00076",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "C",
+    "eosReferenced": "V39099, V39049",
+    "sourceFigure": "55"
+  },
+  {
+    "title": "BATTERY SIMULATOR C SECT",
+    "drawingNumber": "321 00076",
+    "date": "10-27-78",
+    "sheetNumber": "2",
+    "sheetRevision": "B",
+    "eosReferenced": "V39049",
+    "sourceFigure": "55"
+  },
+  {
+    "title": "TEST BATTERIES TRANS D",
+    "drawingNumber": "321 00077",
+    "date": "10-27-78",
+    "sheetNumber": "1",
+    "sheetRevision": "E",
+    "eosReferenced": "V39099, V39049",
+    "sourceFigure": "55"
+  },
+  {
+    "title": "TEST BATTERIES TRANS D",
+    "drawingNumber": "321 00077",
+    "date": "10-27-78",
+    "sheetNumber": "2",
+    "sheetRevision": "E",
+    "eosReferenced": "V39099, V39049",
+    "sourceFigure": "55"
+  },
+  {
+    "title": "TEST BATTERIES TRANS D",
+    "drawingNumber": "321 00077",
+    "date": "10-27-78",
+    "sheetNumber": "3",
+    "sheetRevision": "E",
+    "eosReferenced": "V39099, V39049",
+    "sourceFigure": "55"
+  },
+  {
+    "eoNumber": "V34535",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": null,
+    "sourceFigure": "56"
+  },
+  {
+    "eoNumber": "D37288",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": null,
+    "sourceFigure": "56"
+  },
+  {
+    "eoNumber": "V39621",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": null,
+    "sourceFigure": "56"
+  },
+  {
+    "eoNumber": "V50313",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": null,
+    "sourceFigure": "56"
+  },
+  {
+    "eoNumber": "V51265",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": null,
+    "sourceFigure": "56"
+  },
+  {
+    "eoNumber": "V51001",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": null,
+    "sourceFigure": "56"
+  },
+  {
+    "eoNumber": "V36559",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": null,
+    "sourceFigure": "56"
+  },
+  {
+    "eoNumber": "V34519",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": null,
+    "sourceFigure": "56"
+  },
+  {
+    "eoNumber": "V24815",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": null,
+    "sourceFigure": "56"
+  },
+  {
+    "eoNumber": "V24818",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": null,
+    "sourceFigure": "56"
+  },
+  {
+    "eoNumber": "V40080",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": null,
+    "sourceFigure": "56"
+  },
+  {
+    "eoNumber": "V32206",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": null,
+    "sourceFigure": "56"
+  },
+  {
+    "eoNumber": "V37467",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": null,
+    "sourceFigure": "56"
+  },
+  {
+    "eoNumber": "V50363",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": null,
+    "sourceFigure": "56"
+  },
+  {
+    "eoNumber": "V50419",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": null,
+    "sourceFigure": "56"
+  },
+  {
+    "eoNumber": "V51362",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": null,
+    "sourceFigure": "56"
+  },
+  {
+    "eoNumber": "V39784",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": null,
+    "sourceFigure": "56"
+  },
+  {
+    "eoNumber": "V30984",
+    "eoRevision": "A",
+    "eoDate": "10-27-78",
+    "eoVehicle": null,
+    "sourceFigure": "56"
+  },
+  {
+    "eoNumber": "V31123",
+    "eoRevision": "A",
+    "eoDate": "10-27-78",
+    "eoVehicle": null,
+    "sourceFigure": "42"
+  },
+  {
+    "eoNumber": "V40081",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": null,
+    "sourceFigure": "57"
+  },
+  {
+    "eoNumber": "V40044",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": "201",
+    "sourceFigure": "44"
+  },
+  {
+    "eoNumber": "V39092",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": "201",
+    "sourceFigure": "44"
+  },
+  {
+    "eoNumber": "V50505",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": "201",
+    "sourceFigure": "44"
+  },
+  {
+    "eoNumber": "V39091",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": "201",
+    "sourceFigure": "44"
+  },
+  {
+    "eoNumber": "V51311",
+    "eoRevision": "NC",
+    "eoDate": "10-27-78",
+    "eoVehicle": "201",
+    "sourceFigure": "44"
+  }
+]

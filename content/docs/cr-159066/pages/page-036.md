@@ -1,0 +1,57 @@
+---
+pdfPage: 36
+folio: "24"
+sectionId: "5.3.3"
+kind: text
+source: ocr
+confidence: 75.6
+figures: ["5.3.1.1"]
+---
+CORRESPONDENCE
+SEARCHABLE DATA ITEMS
+
+SEARCHABLE OUTPUT ~
+
+MAIL STATUS
+
+```text
+AUTHOR/ SOURCE               ok
+
+DOCUMENT DATE                   Ps
+```
+
+TO /ADDRESSEE
+
+```text
+DOCUMENT LETTER NUMBER          .
+SUBJECT      P     
+```
+
+ROUTING
+
+INPUT DATE | *
+DAILY COUNTER
+W.A. NUMBER/ID CODE
+
+CONTRACT NUMBER
+
+```text
+ACTION DUE DATE                 rs
+REFERENCED DOCUMENTS                                ik
+```
+
+FILE SYSTEM CODE
+RESPONSIBLE ENGINEER ‘ we
+
+*** DESCRIPTION
+
+```text
+*     OUTPUT IN ALL SEARCHES
+
+**    ONLY OUTPUT DURING AN ACTION DUE SEARCH
+```
+
+***k ~~ QUTPUT IN ALL BUT AN ACTION DUE OR ALL SEARCH
+*#xee ONLY USED IN TRANSMITTAL SUBFILE
+
+FIGURE 5.3.1.1

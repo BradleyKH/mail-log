@@ -1,0 +1,60 @@
+---
+pdfPage: 53
+folio: "45"
+sectionId: "6.4.1"
+kind: text
+source: ocr
+confidence: 89.1
+figures: []
+---
+REMARKS : CLASS | - LARC APPROVAL REQUIRED
+
+Option 5 performs the Current Status search. This search is also
+a partial search, and operates similarly to the Initiator search in option
+
+\3. See the following example.
+
+SELECT OPTION BY ENTERING NUMBER (RETURN TO QUIT) > 5
+THIS SEARCH ROUTINE PERFORMS THE CURRENT STATUS QUERY / RETRIEVAL
+
+THE CURRENT PROJECTS AVAILABLE FOR SEARCHING ARE:
+
+LDEF
+ODP
+
+ACEE
+TRW
+
+ERBE
+ALSO
+UARS
+STFE
+
+RRR RRR
+ana WNPWRD =
+wwewurvwurv ws
+
+ENTER PROJECT # TO BE SELECTED (ZERO - O - FOR ALL) > ** return **
+YOU HAVE SELECTED 411 RECORDS FROM THE CCR FILE FOR QUERY
+
+ENTER CURRENT STATUS TO BE SEARCHED ON > WITH
+
+CURRENT STATUS SEARCH FOR WITH FOUND 1 RECORDS
+TERMINAL OUTPUT NOW BEING GENERATED .... PLEASE STAND BY ...
+
+```text
+10/ 9/84                                                       PAGE    1
+
+ERBE      PROJECT CCR FILE : CURRENT STATUS :: A7
+
+CCR NUMBER          DATE !ISSUED   INITIATOR               DOCUMENT AFFECTED
+
+7178                 3/ 5/1982    LARC/WILL1AMS           UIIS
+
+CURRENT STATUS      DISPOSITION
+
+WITHDRAWN           LARC APPROVED 03/08/82
+```
+
+TIROS ACTION PENDING
+DESCRIPTION : ATTITUDE DETERMINATION COORDINATE SYSTEM

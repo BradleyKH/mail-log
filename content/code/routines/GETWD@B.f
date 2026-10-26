@@ -1,0 +1,40 @@
+      SUBROUTINE  GETWD(BUFF,NAME)
+C
+      COMMON /X/ PEDL
+C
+      INTEGER BUFF(1),PEDL,NAME(1),CHAR,
+     +     ANL,ACOMMA,ASCOL,ASP,ASPSP
+C
+C     ANL,ACOMMA,ASCOL,ASP,ASPSP
+C         ARE OCTAL
+C     212,254,273,240,120240
+C
+      DATA ANL,ACOMMA,ASCOL/138,172,187/,
+     +     ASP,ASPSP/160,2H  /
+C
+      DO 100 I=1,19
+100   NAME(I)=ASPSP
+C
+      N=1
+      IF(BUFF(1).NE.ASP) GO TO 200
+      DO 999 I=2,77
+      II=I-1
+      BUFF(II)=BUFF(I)
+999   CONTINUE
+200   CHAR=BUFF(PEDL)
+      PEDL=PEDL+1
+      IF(PEDL.GT.77)  RETURN
+      IF(CHAR.EQ.ANL)  GOTO 400
+      I=(N+1)/2
+      J=N-2*(N/2)
+      N=N+1
+      IF(J.EQ.1) GOTO 250
+      NAME(I)=LT(NAME(I),8) + CHAR
+      GOTO 200
+250   NAME(I)= RT(NAME(I),8) + LS(CHAR,8)
+      GOTO 200
+C
+C
+400   PEDL=77
+      RETURN
+      END

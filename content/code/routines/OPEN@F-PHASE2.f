@@ -1,0 +1,13 @@
+      SUBROUTINE OPEN
+C SINSERT SYSCOMDKEYSeF
+      CALL SRCH$$(KSROWR+K SNDAM 5 *NEW *s6,5,1010)
+      CALL SRCH$$(KSRDOWREKSNDAM 9 PV  *eBe6eLeIC)
+       CALL SRCH$$(KSROWR+KSNDAMS® TITLES P69 99 LeL CD:
+         CALL SRCH$$(KSROWR*KSNDAMS* FINAL "eGeL2,191C):
+      REWIND 7
+      REWIND. 10.
+       REWIND 13
+         REWIND 16
+       RETURN
+       END:
+                                          oD

@@ -1,0 +1,1019 @@
+[
+  {
+    "routine": "BFILE",
+    "figure": "5.3-1",
+    "caption": "Figure 5.3-1, sheets 1 to 5",
+    "pdfPages": [
+      56,
+      57,
+      58,
+      59,
+      60
+    ]
+  },
+  {
+    "routine": "*DIR",
+    "figure": "5.3-2",
+    "caption": "Figure 5.3-2, sheets 1 to 3",
+    "pdfPages": [
+      61,
+      62,
+      63
+    ]
+  },
+  {
+    "routine": "*DRAW",
+    "figure": "5.3-3",
+    "caption": "Figure 5.3-3, sheets 1 to 6",
+    "pdfPages": [
+      64,
+      65,
+      66,
+      67,
+      68,
+      69
+    ]
+  },
+  {
+    "routine": "INPTC",
+    "figure": "5.4.1-1",
+    "caption": "Figure 5.4.1-1, sheets 1 to 21",
+    "pdfPages": [
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91
+    ]
+  },
+  {
+    "routine": "REVSC",
+    "figure": "5.4.1-2",
+    "caption": "Figure 5.4.1-2, sheets 1 to 12",
+    "pdfPages": [
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103
+    ]
+  },
+  {
+    "routine": "SEAC",
+    "figure": "5.4.1-3",
+    "caption": "Figure 5.4.1-3, sheets 1 to 9",
+    "pdfPages": [
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112
+    ]
+  },
+  {
+    "routine": "ARCC",
+    "figure": "5.4.1-4",
+    "caption": "Figure 5.4.1-4, sheets 1 to 9",
+    "pdfPages": [
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121
+    ]
+  },
+  {
+    "routine": "SHOWC",
+    "figure": "5.4.1-5",
+    "caption": "Figure 5.4.1-5, sheets 1 to 3",
+    "pdfPages": [
+      122,
+      123,
+      124
+    ]
+  },
+  {
+    "routine": "INPSC",
+    "figure": "5.4.1-6",
+    "caption": "Figure 5.4.1-6, sheets 1 to 21",
+    "pdfPages": [
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145
+    ]
+  },
+  {
+    "routine": "OPEN",
+    "figure": "5.4.1-7",
+    "caption": "Figure 5.4.1-7, sheets 1 to 2",
+    "pdfPages": [
+      146,
+      147
+    ]
+  },
+  {
+    "routine": "CLOSE",
+    "figure": "5.4.1-8",
+    "caption": "Figure 5.4.1-8, sheets 1 to 2",
+    "pdfPages": [
+      148,
+      149
+    ]
+  },
+  {
+    "routine": "WHERE",
+    "figure": "5.4.1-9",
+    "caption": "Figure 5.4.1-9, sheets 1 to 6",
+    "pdfPages": [
+      150,
+      151,
+      152,
+      153,
+      154,
+      155
+    ]
+  },
+  {
+    "routine": "BRAKET",
+    "figure": "5.4.1-10",
+    "caption": "Figure 5.4.1-10, sheets 1 to 3",
+    "pdfPages": [
+      156,
+      157,
+      158
+    ]
+  },
+  {
+    "routine": "ALC",
+    "figure": "5.4.1-11",
+    "caption": "Figure 5.4.1-11, sheets 1 to 3",
+    "pdfPages": [
+      159,
+      160,
+      161
+    ]
+  },
+  {
+    "routine": "RESEA",
+    "figure": "5.4.1-12",
+    "caption": "Figure 5.4.1-12, sheets 1 to 3",
+    "pdfPages": [
+      162,
+      163,
+      164
+    ]
+  },
+  {
+    "routine": "WHO",
+    "figure": "5.4.1-13",
+    "caption": "Figure 5.4.1-13, sheets 1 to 3",
+    "pdfPages": [
+      165,
+      166,
+      167
+    ]
+  },
+  {
+    "routine": "DDAT",
+    "figure": "5.4.1-14",
+    "caption": "Figure 5.4.1-14, sheets 1 to 3",
+    "pdfPages": [
+      168,
+      169,
+      170
+    ]
+  },
+  {
+    "routine": "CNUM",
+    "figure": "5.4.1-15",
+    "caption": "Figure 5.4.1-15, sheets 1 to 3",
+    "pdfPages": [
+      171,
+      172,
+      173
+    ]
+  },
+  {
+    "routine": "CWAID",
+    "figure": "5.4.1-16",
+    "caption": "Figure 5.4.1-16, sheets 1 to 6",
+    "pdfPages": [
+      174,
+      175,
+      176,
+      177,
+      178,
+      179
+    ]
+  },
+  {
+    "routine": "AUSEA",
+    "figure": "5.4.1-17",
+    "caption": "Figure 5.4.1-17, sheets 1 to 3",
+    "pdfPages": [
+      180,
+      181,
+      182
+    ]
+  },
+  {
+    "routine": "DLSEA",
+    "figure": "5.4.1-18",
+    "caption": "Figure 5.4.1-18, sheets 1 to 3",
+    "pdfPages": [
+      183,
+      184,
+      185
+    ]
+  },
+  {
+    "routine": "DATC",
+    "figure": "5.4.1-19",
+    "caption": "Figure 5.4.1-19, sheets 1 to 3",
+    "pdfPages": [
+      186,
+      187,
+      188
+    ]
+  },
+  {
+    "routine": "SUBJ",
+    "figure": "5.4.1-20",
+    "caption": "Figure 5.4.1-20, sheets 1 to 12",
+    "pdfPages": [
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      200
+    ]
+  },
+  {
+    "routine": "MSTAT",
+    "figure": "5.4.1-21",
+    "caption": "Figure 5.4.1-21, sheets 1 to 6",
+    "pdfPages": [
+      201,
+      202,
+      203,
+      204,
+      205,
+      206
+    ]
+  },
+  {
+    "routine": "ADAT",
+    "figure": "5.4.1-22",
+    "caption": "Figure 5.4.1-22, sheets 1 to 6",
+    "pdfPages": [
+      207,
+      208,
+      209,
+      210,
+      211,
+      212
+    ]
+  },
+  {
+    "routine": "CKIR",
+    "figure": "5.4.1-23",
+    "caption": "Figure 5.4.1-23, sheets 1 to 2",
+    "pdfPages": [
+      213,
+      214
+    ]
+  },
+  {
+    "routine": "RDSUB",
+    "figure": "5.4.1-24",
+    "caption": "Figure 5.4.1-24, sheets 1 to 3",
+    "pdfPages": [
+      215,
+      216,
+      217
+    ]
+  },
+  {
+    "routine": "SCRNHD",
+    "figure": "5.4.1-25",
+    "caption": "Figure 5.4.1-25, sheets 1 to 5",
+    "pdfPages": [
+      218,
+      219,
+      220,
+      221,
+      222
+    ]
+  },
+  {
+    "routine": "SCRNPT",
+    "figure": "5.4.1-26",
+    "caption": "Figure 5.4.1-26, sheets 1 to 3",
+    "pdfPages": [
+      223,
+      224,
+      225
+    ]
+  },
+  {
+    "routine": "HARDHD",
+    "figure": "5.4.1-27",
+    "caption": "Figure 5.4.1-27, sheets 1 to 5",
+    "pdfPages": [
+      226,
+      227,
+      228,
+      229,
+      230
+    ]
+  },
+  {
+    "routine": "HARDPT",
+    "figure": "5.4.1-28",
+    "caption": "Figure 5.4.1-28, sheets 1 to 2",
+    "pdfPages": [
+      231,
+      232
+    ]
+  },
+  {
+    "routine": "UPDATE",
+    "figure": "5.4.1-29",
+    "caption": "Figure 5.4.1-29, sheets 1 to 3",
+    "pdfPages": [
+      233,
+      234,
+      235
+    ]
+  },
+  {
+    "routine": "INPTDR",
+    "figure": "5.4.2-1",
+    "caption": "Figure 5.4.2-1, sheets 1 to 6",
+    "pdfPages": [
+      236,
+      237,
+      238,
+      239,
+      240,
+      241
+    ]
+  },
+  {
+    "routine": "SEADR",
+    "figure": "5.4.2-2",
+    "caption": "Figure 5.4.2-2, sheets 1 to 3",
+    "pdfPages": [
+      242,
+      243,
+      244
+    ]
+  },
+  {
+    "routine": "REVSDR",
+    "figure": "5.4.2-3",
+    "caption": "Figure 5.4.2-3, sheets 1 to 5",
+    "pdfPages": [
+      245,
+      246,
+      247,
+      248,
+      249
+    ]
+  },
+  {
+    "routine": "ARCDR",
+    "figure": "5.4.2-4",
+    "caption": "Figure 5.4.2-4, sheets 1 to 5",
+    "pdfPages": [
+      250,
+      251,
+      252,
+      253,
+      254
+    ]
+  },
+  {
+    "routine": "SHOWDR",
+    "figure": "5.4.2-5",
+    "caption": "Figure 5.4.2-5, sheets 1 to 2",
+    "pdfPages": [
+      255,
+      256
+    ]
+  },
+  {
+    "routine": "INPSDR",
+    "figure": "5.4.2-6",
+    "caption": "Figure 5.4.2-6, sheets 1 to 9",
+    "pdfPages": [
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      263,
+      264,
+      265
+    ]
+  },
+  {
+    "routine": "ALDR",
+    "figure": "5.4.2-7",
+    "caption": "Figure 5.4.2-7, sheets 1 to 3",
+    "pdfPages": [
+      266,
+      267,
+      268
+    ]
+  },
+  {
+    "routine": "TITDR",
+    "figure": "5.4.2-8",
+    "caption": "Figure 5.4.2-8, sheets 1 to 9",
+    "pdfPages": [
+      269,
+      270,
+      271,
+      272,
+      273,
+      274,
+      275,
+      276,
+      277
+    ]
+  },
+  {
+    "routine": "DIRN",
+    "figure": "5.4.2-9",
+    "caption": "Figure 5.4.2-9, sheets 1 to 2",
+    "pdfPages": [
+      278,
+      279
+    ]
+  },
+  {
+    "routine": "DATDR",
+    "figure": "5.4.2-10",
+    "caption": "Figure 5.4.2-10, sheets 1 to 5",
+    "pdfPages": [
+      280,
+      281,
+      282,
+      283,
+      284
+    ]
+  },
+  {
+    "routine": "WANUM",
+    "figure": "5.4.2-11",
+    "caption": "Figure 5.4.2-11, sheets 1 to 2",
+    "pdfPages": [
+      285,
+      286
+    ]
+  },
+  {
+    "routine": "SYSDR",
+    "figure": "5.4.2-12",
+    "caption": "Figure 5.4.2-12, sheets 1 to 2",
+    "pdfPages": [
+      287,
+      288
+    ]
+  },
+  {
+    "routine": "CONN",
+    "figure": "5.4.2-13",
+    "caption": "Figure 5.4.2-13, sheets 1 to 3",
+    "pdfPages": [
+      289,
+      290,
+      291
+    ]
+  },
+  {
+    "routine": "VEHN",
+    "figure": "5.4.2-14",
+    "caption": "Figure 5.4.2-14, sheets 1 to 3",
+    "pdfPages": [
+      292,
+      293,
+      294
+    ]
+  },
+  {
+    "routine": "FMAIN",
+    "figure": "5.4.2-15",
+    "caption": "Figure 5.4.2-15, sheets 1 to 2",
+    "pdfPages": [
+      295,
+      296
+    ]
+  },
+  {
+    "routine": "CMAIN",
+    "figure": "5.4.2-16",
+    "caption": "Figure 5.4.2-16, sheets 1 to 2",
+    "pdfPages": [
+      297,
+      298
+    ]
+  },
+  {
+    "routine": "INPTDW",
+    "figure": "5.4.3-1",
+    "caption": "Figure 5.4.3-1, sheets 1 to 3",
+    "pdfPages": [
+      299,
+      300,
+      301
+    ]
+  },
+  {
+    "routine": "REVSDW",
+    "figure": "5.4.3-2",
+    "caption": "Figure 5.4.3-2, sheets 1 to 9",
+    "pdfPages": [
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310
+    ]
+  },
+  {
+    "routine": "SEADW",
+    "figure": "5.4.3-3",
+    "caption": "Figure 5.4.3-3, sheets 1 to 6",
+    "pdfPages": [
+      311,
+      312,
+      313,
+      314,
+      315,
+      316
+    ]
+  },
+  {
+    "routine": "ARCDW",
+    "figure": "5.4.3-4",
+    "caption": "Figure 5.4.3-4, sheets 1 to 12",
+    "pdfPages": [
+      317,
+      318,
+      319,
+      320,
+      321,
+      322,
+      323,
+      324,
+      325,
+      326,
+      327,
+      328
+    ]
+  },
+  {
+    "routine": "SHOWEO",
+    "figure": "5.4.3-5",
+    "caption": "Figure 5.4.3-5, sheets 1 to 2",
+    "pdfPages": [
+      329,
+      330
+    ]
+  },
+  {
+    "routine": "SHOWDW",
+    "figure": "5.4.3-6",
+    "caption": "Figure 5.4.3-6, sheets 1 to 3",
+    "pdfPages": [
+      331,
+      332,
+      333
+    ]
+  },
+  {
+    "routine": "INPSE",
+    "figure": "5.4.3-7",
+    "caption": "Figure 5.4.3-7, sheets 1 to 8",
+    "pdfPages": [
+      334,
+      335,
+      336,
+      337,
+      338,
+      339,
+      340,
+      341
+    ]
+  },
+  {
+    "routine": "INPSDW",
+    "figure": "5.4.3-8",
+    "caption": "Figure 5.4.3-8, sheets 1 to 21",
+    "pdfPages": [
+      342,
+      343,
+      344,
+      345,
+      346,
+      347,
+      348,
+      349,
+      350,
+      351,
+      352,
+      353,
+      354,
+      355,
+      356,
+      357,
+      358,
+      359,
+      360,
+      361,
+      362
+    ]
+  },
+  {
+    "routine": "INPSS",
+    "figure": "5.4.3-9",
+    "caption": "Figure 5.4.3-9, sheets 1 to 6",
+    "pdfPages": [
+      363,
+      364,
+      365,
+      366,
+      367,
+      368
+    ]
+  },
+  {
+    "routine": "FIXSHT",
+    "figure": "5.4.3-10",
+    "caption": "Figure 5.4.3-10, sheets 1 to 3",
+    "pdfPages": [
+      369,
+      370,
+      371
+    ]
+  },
+  {
+    "routine": "SHTADD",
+    "figure": "5.4.3-11",
+    "caption": "Figure 5.4.3-11, sheets 1 to 3",
+    "pdfPages": [
+      372,
+      373,
+      374
+    ]
+  },
+  {
+    "routine": "NEOADD",
+    "figure": "5.4.3-12",
+    "caption": "Figure 5.4.3-12, sheets 1 to 9",
+    "pdfPages": [
+      375,
+      376,
+      377,
+      378,
+      379,
+      380,
+      381,
+      382,
+      383
+    ]
+  },
+  {
+    "routine": "HEADER",
+    "figure": "5.4.3-13",
+    "caption": "Figure 5.4.3-13, sheets 1 to 2",
+    "pdfPages": [
+      384,
+      385
+    ]
+  },
+  {
+    "routine": "MAIND",
+    "figure": "5.4.3-14",
+    "caption": "Figure 5.4.3-14, sheets 1 to 9",
+    "pdfPages": [
+      386,
+      387,
+      388,
+      389,
+      390,
+      391,
+      392,
+      393,
+      394
+    ]
+  },
+  {
+    "routine": "DMAIN",
+    "figure": "5.4.3-15",
+    "caption": "Figure 5.4.3-15, sheets 1 to 12",
+    "pdfPages": [
+      395,
+      396,
+      397,
+      398,
+      399,
+      400,
+      401,
+      402,
+      403,
+      404,
+      405,
+      406
+    ]
+  },
+  {
+    "routine": "TITDW",
+    "figure": "5.4.3-16",
+    "caption": "Figure 5.4.3-16, sheets 1 to 14",
+    "pdfPages": [
+      407,
+      408,
+      409,
+      410,
+      411,
+      412,
+      413,
+      414,
+      415,
+      416,
+      417,
+      418,
+      419,
+      420
+    ]
+  },
+  {
+    "routine": "ALDW",
+    "figure": "5.4.3-17",
+    "caption": "Figure 5.4.3-17, sheets 1 to 9",
+    "pdfPages": [
+      421,
+      422,
+      423,
+      424,
+      425,
+      426,
+      427,
+      428,
+      429
+    ]
+  },
+  {
+    "routine": "ACTDUE",
+    "figure": "5.4.3-18",
+    "caption": "Figure 5.4.3-18, sheets 1 to 9",
+    "pdfPages": [
+      430,
+      431,
+      432,
+      433,
+      434,
+      435,
+      436,
+      437,
+      438
+    ]
+  },
+  {
+    "routine": "DRAWN",
+    "figure": "5.4.3-19",
+    "caption": "Figure 5.4.3-19, sheets 1 to 6",
+    "pdfPages": [
+      439,
+      440,
+      441,
+      442,
+      443,
+      444
+    ]
+  },
+  {
+    "routine": "DATDW",
+    "figure": "5.4.3-20",
+    "caption": "Figure 5.4.3-20, sheets 1 to 6",
+    "pdfPages": [
+      445,
+      446,
+      447,
+      448,
+      449,
+      450
+    ]
+  },
+  {
+    "routine": "SYSDW",
+    "figure": "5.4.3-21",
+    "caption": "Figure 5.4.3-21, sheets 1 to 6",
+    "pdfPages": [
+      451,
+      452,
+      453,
+      454,
+      455,
+      456
+    ]
+  },
+  {
+    "routine": "VEHND",
+    "figure": "5.4.3-22",
+    "caption": "Figure 5.4.3-22, sheets 1 to 12",
+    "pdfPages": [
+      457,
+      458,
+      459,
+      460,
+      461,
+      462,
+      463,
+      464,
+      465,
+      466,
+      467,
+      468
+    ]
+  },
+  {
+    "routine": "SECTN",
+    "figure": "5.4.3-23",
+    "caption": "Figure 5.4.3-23, sheets 1 to 6",
+    "pdfPages": [
+      469,
+      470,
+      471,
+      472,
+      473,
+      474
+    ]
+  },
+  {
+    "routine": "CODE",
+    "figure": "5.4.3-24",
+    "caption": "Figure 5.4.3-24, sheets 1 to 6",
+    "pdfPages": [
+      475,
+      476,
+      477,
+      478,
+      479,
+      480
+    ]
+  },
+  {
+    "routine": "EONN",
+    "figure": "5.4.3-25",
+    "caption": "Figure 5.4.3-25, sheets 1 to 12",
+    "pdfPages": [
+      481,
+      482,
+      483,
+      484,
+      485,
+      486,
+      487,
+      488,
+      489,
+      490,
+      491,
+      492
+    ]
+  },
+  {
+    "routine": "IDENT",
+    "figure": "5.4.4-1",
+    "caption": "Figure 5.4.4-1, sheets 1 to 3",
+    "pdfPages": [
+      493,
+      494,
+      495
+    ]
+  },
+  {
+    "routine": "TINPUT",
+    "figure": "5.4.4-2",
+    "caption": "Figure 5.4.4-2, sheets 1 to 2",
+    "pdfPages": [
+      496,
+      497
+    ]
+  },
+  {
+    "routine": "RDCOM",
+    "figure": "5.4.4-3",
+    "caption": "Figure 5.4.4-3, sheets 1 to 3",
+    "pdfPages": [
+      498,
+      499,
+      500
+    ]
+  },
+  {
+    "routine": "GETWRD",
+    "figure": "5.4.4-4",
+    "caption": "Figure 5.4.4-4, sheets 1 to 5",
+    "pdfPages": [
+      501,
+      502,
+      503,
+      504,
+      505
+    ]
+  },
+  {
+    "routine": "GETWD",
+    "figure": "5.4.4-5",
+    "caption": "Figure 5.4.4-5, sheets 1 to 3",
+    "pdfPages": [
+      506,
+      507,
+      508
+    ]
+  },
+  {
+    "routine": "GETCON",
+    "figure": "5.4.4-6",
+    "caption": "Figure 5.4.4-6, sheets 1 to 3",
+    "pdfPages": [
+      509,
+      510,
+      511
+    ]
+  },
+  {
+    "routine": "IDUSER",
+    "figure": "5.4.4-7",
+    "caption": "Figure 5.4.4-7, sheets 1 to 2",
+    "pdfPages": [
+      512,
+      513
+    ]
+  }
+]

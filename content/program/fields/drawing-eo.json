@@ -1,0 +1,146 @@
+[
+  {
+    "name": "title",
+    "label": "TITLE",
+    "length": 10,
+    "searchable": true,
+    "description": "Drawing. 10 characters per word, 7 words.",
+    "pdfPage": 62
+  },
+  {
+    "name": "drawingNumber",
+    "label": "DRAWING NUMBER",
+    "length": 14,
+    "searchable": true,
+    "description": "Drawing. 14 characters.",
+    "pdfPage": 62
+  },
+  {
+    "name": "vendorCode",
+    "label": "VENDOR CODE",
+    "length": 3,
+    "searchable": true,
+    "description": "Drawing. 3 characters; contained within the drawing number.",
+    "pdfPage": 62
+  },
+  {
+    "name": "date",
+    "label": "DATE",
+    "length": 6,
+    "searchable": true,
+    "description": "Drawing. 6 characters, MMDDYY.",
+    "pdfPage": 62
+  },
+  {
+    "name": "system",
+    "label": "SYSTEM",
+    "length": 4,
+    "searchable": true,
+    "description": "Drawing. 4 characters, 3 entries. Not contained in Dallas data.",
+    "pdfPage": 62
+  },
+  {
+    "name": "vehicle",
+    "label": "VEHICLE",
+    "length": 4,
+    "searchable": true,
+    "description": "Drawing. 4 characters, 2 entries.",
+    "pdfPage": 62
+  },
+  {
+    "name": "section",
+    "label": "SECTION",
+    "length": 12,
+    "searchable": true,
+    "description": "Drawing. 12 characters. Not contained in Dallas data.",
+    "pdfPage": 62
+  },
+  {
+    "name": "numberOfSheets",
+    "label": "NUMBER OF SHEETS",
+    "length": 2,
+    "searchable": false,
+    "description": "Drawing. 2 characters.",
+    "pdfPage": 62
+  },
+  {
+    "name": "sheetNumber",
+    "label": "SHEET NUMBER",
+    "length": 2,
+    "searchable": false,
+    "description": "Drawing. 2 characters.",
+    "pdfPage": 62
+  },
+  {
+    "name": "sheetRevision",
+    "label": "SHEET REVISION",
+    "length": 2,
+    "searchable": false,
+    "description": "Drawing. 2 characters.",
+    "pdfPage": 62
+  },
+  {
+    "name": "numberOfEos",
+    "label": "NUMBER OF E.O.'s",
+    "length": 2,
+    "searchable": false,
+    "description": "Drawing. 2 characters. Checked when performing a revision action due search.",
+    "pdfPage": 62
+  },
+  {
+    "name": "eosReferenced",
+    "label": "E.O.'s REFERENCED",
+    "length": 8,
+    "searchable": true,
+    "description": "Drawing. 8 characters, 10 entries.",
+    "pdfPage": 62
+  },
+  {
+    "name": "eoTitle",
+    "label": "E.O. TITLE",
+    "length": 10,
+    "searchable": false,
+    "description": "Engineering order. 10 characters per word, 7 words. Not present in Dallas data.",
+    "pdfPage": 63
+  },
+  {
+    "name": "eoNumber",
+    "label": "E.O. NUMBER",
+    "length": 8,
+    "searchable": true,
+    "description": "Engineering order. 8 characters.",
+    "pdfPage": 63
+  },
+  {
+    "name": "eoRevision",
+    "label": "E.O. REVISION",
+    "length": 2,
+    "searchable": false,
+    "description": "Engineering order. 2 characters.",
+    "pdfPage": 63
+  },
+  {
+    "name": "eoDate",
+    "label": "E.O. DATE",
+    "length": 6,
+    "searchable": false,
+    "description": "Engineering order. 6 characters, MMDDYY.",
+    "pdfPage": 63
+  },
+  {
+    "name": "eoRevisionDate",
+    "label": "E.O. REVISION DATE",
+    "length": 6,
+    "searchable": false,
+    "description": "Engineering order. 6 characters, MMDDYY.",
+    "pdfPage": 63
+  },
+  {
+    "name": "eoVehicle",
+    "label": "VEHICLE",
+    "length": 4,
+    "searchable": true,
+    "description": "Engineering order. 4 characters, 2 entries. Not output during a vehicle search.",
+    "pdfPage": 63
+  }
+]

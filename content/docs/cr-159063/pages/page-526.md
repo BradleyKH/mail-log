@@ -1,0 +1,59 @@
+---
+pdfPage: 526
+folio: null
+sectionId: "6.2.3"
+kind: text
+source: ocr
+confidence: 79
+figures: ["6.2.2.2"]
+---
+ITEM
+NO.
+
+Oo won Do oOo FSP W
+
+KKK
+
+kkk
+
+DIR/ REPORT
+
+SEARCHABLE DATA ITEMS
+
+DESCRIPTION
+
+‘TITLE
+
+DIR/REPORT NUMBER
+DATE
+
+SYSTEM
+
+VEHICLE
+
+W.A. NUMBER/ID CODE
+CONTRACT NUMBER
+REVISION
+
+REVISION DATE
+
+SEARCHABLE
+
+*
+
+*
+
+INCLUDED WITHIN THE DATE SEARCH
+NOT STORED IN DATA BASE SUBFILE
+CONTAINED IN W.A./CONTRACT TABLE
+
+FIGURE 6.2.2.2
+
+\- 512 -
+
+OUTPUT
+*
+
+*
+
+*

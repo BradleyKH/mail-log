@@ -1,0 +1,24 @@
+---
+pdfPage: 9
+folio: "vii"
+sectionId: null
+kind: text
+source: ocr
+confidence: 84.7
+figures: []
+---
+TABLE OF CONTENTS (Continued)
+
+PAGE
+9.0 SPECIAL SUPPORT ROUTINES : 535
+VOL. II
+
+```text
+APPENDIX A     GLOSSARY OF TERMS             A-1
+APPENDIX B     L FILE FOR MAIL CORRESPONDENCE                 B-]
+
+APPENDIX C     L_FILE FOR DESIGN INFORMATION RELEASE/REPORT   C-1
+APPENDIX D     L FILE FOR DRAWING/ENGINEERING ORDER           D-]
+APPENDIX E     SOURCE FOR MISCELLANEOUS EXTERNAL ROUTINES ~— E-1
+APPENDIX F     SOURCE FOR SPECIAL SUPPORT ROUTINES    ,       F~]
+```

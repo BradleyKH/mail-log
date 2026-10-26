@@ -1,0 +1,42 @@
+---
+pdfPage: 485
+folio: null
+sectionId: "D.INPSS"
+kind: listing
+source: ocr
+confidence: 50.4
+figures: []
+listing:
+  appendix: "D"
+  routines: ["INPSS"]
+  listingPage: 158
+---
+```fortran
+(2341) 2502  FORMAT(' (9) REFERENCED E.0.''S')
+(2342)       DO 2550 K=19NEO                                             .
+(2343) 2508  WRITE(1,2510)
+(2344) 2510  FORMAT PEGS BXg tf)
+(2345)        READ(192520,ERR=2508) CEOREF(KoL) 9L=192)
+(2346) C 2520 FORMATC1X92A4)
+(2347)       WRITE (191205)
+(2348)       REWIND 18
+(2349) 2530  READ (C18 sEND=124 0) EON sETIT,EPTIT sEOREV,EDT,ERDT,EOVEH
+(2350)       DO 2532 L=1Y52
+(2351)       IF (EON(L).NE.EOREF(K,L)) GOTO 2530
+(2352) 2532  CONTINUE
+(2353)       GO TO 2550
+(2354) 1240  R=0
+(2355)       FIRST=1
+(2356) 2522   READ(ILS,END=2545)EONGETIT,EPTIT sEQREV,EDTSERDT,EQVEH .  A
+(2357)       GO TO 2522
+(2358) 2545  CALL INPSE
+(2359)       DO 2546 M=1LY2
+(2360)       EON(M)=EOREF (K 9M)
+(2361) 2546  CONTINUE
+(2362)       WRITE (18) EONSETIT 9EPTIT sEOREV eEDT GERDT,EOVEH
+(2363) 2550  CONTINUE
+(2364) 2700  WRITE(12)DRAW,SHTNYREV,NEO,EOREF
+(2365) 2800  CONTINUE
+(2366)       RETURN
+(2367)       END
+```

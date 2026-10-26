@@ -1,0 +1,53 @@
+---
+pdfPage: 435
+folio: null
+sectionId: "D.REVSDW"
+kind: listing
+source: ocr
+confidence: 54.6
+figures: []
+listing:
+  appendix: "D"
+  routines: ["REVSDW"]
+  listingPage: 108
+---
+```fortran
+(1609)       IF(IC.NE.0) GCTO 3000
+(1610)         FINISH=0
+(1611) 308   WRITE(1,301)
+(1612) 301   FORMAT('' 00 YOU WISH THE (EeOe OR THE DRAWING FILE CEO OR ORAW)')
+(1613)       READ(1,302) TANS
+(1614) 302   FORMAT(LAL)
+(1615)       IF(IANS.EQ.*"E*) GOTO 31
+(1616)       IF(IANS eNE2*D*®) GOTO 300
+(1617) C 5-  WRITE C1Lel)
+(1618) 1     FORMAT(' PLEASE INPUT THE SPO DRAWING NUMBER OF THE %o/
+(1619)      1  RECORD TO BE REVISED* e/ ott Pol 4Xe PtP)
+(1620)       READC1,2,ERR=5VIDRAW
+(1621)       FORMAT(1% 9 3A49A2)
+(1622)       REWIND 6
+(1623) 100   READ (E,END=2Z00)DRAW,TIT,PTIT,DT,SYS,VEH,SECT sNSHT sFREV,FNEO,FEOREF
+(1624)         IF(FINISH.EQ.1) GOTO 125
+(1625)       DO 110 I=154
+(1626)       IF (IORAW(I).NE.DRAW(I)) GO TO 125
+(1627) 1190  CONTINUE
+(1628)       CALL SHOWDW
+(1629)       WRITEC1(1700)
+(1630) 1700  FORMAT(/e1HOe/e' IS THIS THE CORRECT RECORD TO BE REVISED OR DELET
+(1631)       LED%,/5* (YES OR NO)*)
+(1632) 1800  READ(1,50)10PT
+(1633) 508   FORMAT(IA2)
+(1634)       IF(IOPTSEGe*NO*) GOTO 125
+(1635)       IF(IOPT.NE.*YE*) GOTO 1790
+(1636) 1900  WRITE(1,2000)
+(1637) 2000  FORMAT(' IS THIS RECORD TO BE REVISED OR DELETED 9/y
+(1638)      1 * CREV OR DEL)
+(1639)       READ(1950) IOPT
+(1640)       IF(IOPT.EQ.*RE*) GOTO 120
+(1641)       IF(CIOPT.VE.*DE*) GOTO 1900                                      oO
+(1642)       FINISH=1
+(1643)       GOTO 1906                                                  A
+(1644) 120    R=1
+(1645)       CALL INPSDW
+(1646) 119   WRITE (19122)
+```

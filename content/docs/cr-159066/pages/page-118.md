@@ -1,0 +1,50 @@
+---
+pdfPage: 118
+folio: null
+sectionId: "7.3.2"
+kind: figure
+source: ocr
+confidence: 37.5
+figures: ["7.3.2.15"]
+---
+-90L-
+
+DRAWING/ENGINEERING ORDER: DRAWING E.0. NUMBER SEARCH: PRINTER OUTPUT
+
+153 9 11/30/78 -
+
+SHER ARHH AR AEA RHR AHHH ERAH ERR HHA RAR EAA RARE HAAR HH AARAREKAAAREAR EERE ARERR HEEHRAAHA A TKAKRARSEHREEHAHRAESKESEREREERHARORS
+ORAWING - E20. NUMBER SEARCH V39049
+DhawthG Tide ORAWING NUMBER DATE
+SEEELT LUMPE&
+fale MUMELR
+
+RHKRAHTERESH AEE RAR ARS HARARE HART AEHARREAAHAEAAH EAA HEAAHHAH EAA RARHAH EERE ARR ERHAAEERA THEE ERA RHR ERATE HHARA TEAR RE RE AREREES
+
+```text
+1. AFTIFRY SIMULATOR © SFCT                                                       321 00076           "10-27-76
+SHEETa# 1        REV C                  ,                                      ‘
+```
+
+le V30099
+ve V39049
+
+```text
+SHEETa 2?        REV
+le V39049       ;
+Ze TEST WATTERILES TRANS 0                     321 90077             10-27-78
+SHEETHO 1        REV £.
+```
+
+le Viv
+ae V39044
+SHEE TH ? REV ¢t
+
+le V3S90949
+2e V39049
+SHEETH 3 REV t .
+
+be V39099
+2e V39049 :
+
+| FIGURE 7.3.2.15

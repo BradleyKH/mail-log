@@ -1,0 +1,76 @@
+---
+pdfPage: 37
+folio: null
+sectionId: "5.3.3"
+kind: text
+source: ocr
+confidence: 78.3
+figures: ["5.3.1.2"]
+---
+PARAMETER
+
+MAIL STATUS
+
+AUTHOR
+
+DOCUMENT DATE
+
+T0
+
+DOCUMENT LETTER NUMBER
+SUBJECT
+
+INPUT DATE
+
+W.A. NUMBER/ID CODE
+CONTRACT NUMBER
+ACTION DUE
+RESPONSIBLE ENGINEER
+ALL
+
+CORRESPONDENCE
+SEARCHES
+
+~SUBFILE SELECTION
+
+ANY
+ANY
+ANY
+ANY
+ANY
+ANY
+ANY
+ANY
+ANY
+ALL
+ANY
+
+o ao fos) an fo.) in o fo.) fo] ao nn fo.)
+
+ANY
+
+FIGURE 5.3.1.2
+
+225.
+
+TIME FRAME
+
+ANY
+ANY
+
+DAY/MONTH/ YEAR
+ANY
+
+ANY
+
+ANY |
+DAY/MONTH/ YEAR
+AKY
+
+ANY
+
+NONE
+
+ANY
+
+ANY

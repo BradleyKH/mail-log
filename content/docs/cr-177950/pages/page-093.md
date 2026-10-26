@@ -1,0 +1,50 @@
+---
+pdfPage: 93
+folio: "85"
+sectionId: "7.4.1"
+kind: text
+source: ocr
+confidence: 90.6
+figures: []
+---
+screen In a specltally formatted report which may be spooled for printer
+output. The following example illustrates search option 3, the Material /
+Supply search. See Appendix C-2 for an example of the drawings with parts
+
+list report output format.
+
+SELECT OPTION BY ENTERING NUMBER (RETURN TO QUIT) > 3
+
+THIS SEARCH ROUTINE PERFORMS THE MATERIAL / SUPPLIER QUERY / RETRIEVAL
+ON THE PARTS LIST OF THE UARS MECHANICAL DRAWING FILE
+
+THE CURRENT CATEGORIES AVAILABLE FOR SEARCHING ARE:
+
+( 1) *
+
+( 2) INORGANIC
+( 3) POLYMERIC
+( 4) LUBRICANT
+( 5) PROCESS
+
+( 15) NONE
+
+ENTER CATEGORY TO BE SELECTED (ZERO - 0 - FOR ALL) > ** return **
+YOU HAVE SELECTED 3,562 RECORDS FROM THE PARTS FILE FOR QUERY
+ENTER MATERIAL / SUPPLIER TO BE SEARCHED ON > NYLON
+MATERIAL / SUPPLIER SEARCH FOR NYLON F OUND 5 RECORDS
+TERMINAL OUTPUT NOW BEING GENERATED ...... PLEASE STAND BY.
+12/12/84 PAGE 1
+PARTS INVENTORY LIST FOR LARC DRAWING LA 817341
+REVISION A
+
+TRW REFERENCED DRAWING : C425326 NEXT ASSEMBLIES : 425328
+TITLED : MOTOR, 1.8 DEGREE STEPPING - BIAXIAL GIMBAL ~ HALOE
+
+```text
+PROCESSES :         PR 5-33      PR 12-6        PR 10-2      PR 7-19
+ITEM PART NUMBER           DESCRIPTION
+40 -1(PR 5~33)           CLAMP
+
+NYLON                                     POLYMERIC       5      10
+```

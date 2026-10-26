@@ -1,0 +1,53 @@
+---
+pdfPage: 434
+folio: null
+sectionId: "D.REVSDW"
+kind: listing
+source: ocr
+confidence: 46.4
+figures: []
+listing:
+  appendix: "D"
+  routines: ["REVSDW"]
+  listingPage: 107
+---
+```fortran
+(1589)       SUBROUTINE REVSDW
+(1590) C
+(1590) C     COMMON BLOCK FOR THE DRAW~EO FILE
+(1590) C
+(1590)       COMMON DRAW, TIToPTIT,DTYSYS,VEH,SECT,NSHT oFREV sFNEO sFEOREF 9
+(1590)      1       ORW sSHTNsREV eNEQgEOREF
+(1590)      1       EONSETITsEPTITsLOREVsEDTeERDTSEOVEHs
+(1590)      1       Re IDRe INEO oANToFIRST pSECONDeTTIT
+(1590) C
+(1590) C     DATA DECLARATION BLOCK FOR THE DRAW-EO FILE
+(1590) C
+(1590)       INTEGER*4 DRAW(4) oTIT(21),PTIT(19) oSYS(3) eSECT(3) eFEOREF(1092)9
+(1590)      1          CRWC4) LEOREF (1062) sEPTITC19) s9ETITC 21) ¢EONC2) 9
+(1590)      1          TOR C4) gKNToTTIT(19)
+(1590)       INTEGER*2 DT(2) eVEH (292) »NSHT,SHTN(2) oFREV,FNEQ,REV,NEO,
+(1590)      1           EOREVsE2T(3) sERDTC3) gEQVEH (202) oRe INEOG
+(1590)      1           FIRSTsSECOND
+(1590) C
+(1590) C
+(1591) C SYSCOM>KEYS.F      MNEMONIC KEYS FOR FILE SYSTEM (FIN)     31 MAYs 1977
+(1591)       NOLIST
+(1592) C
+(1593)       INTEGER*4 IDRAW(4) »IEO(2)
+(1594)         INTEGER*2 IOPT,FINISH,A(15)
+(1595) C                               4
+(1596) C     THIS IS THE REVISE ROUTINE FOR THE DRAW-EO FILE
+(1597)
+(1598) C     "VALIDATE USER
+(1599)       CALL TIMDAT(A915)
+(1600)       IF CA(13) CE Ge SIU LOR CA(13).EQ. *NHYSORSA(I3).EQ. PRIM LORSACIZ SEOs
+(1601)       1*DK*) GOTO 3
+(1602)       WRITE(1,4)
+(1603) 4     FORMAT('' SORRY, YOU ARE NOT VALIDATED TO USE THIS MODEs's/9
+(1604)      1  IF IT IS NECESSARY, PLEASE CONTACT SYSTEM OPERATOR AT EXT.2621
+(1605)       1.*)
+(1606) C     RETURN                                                        a
+(1607) 3     CONTINUE
+(1608)       CALL SRCH$$(KSROWRAKSNDAMe*REVS  %0604eLeIC)
+```

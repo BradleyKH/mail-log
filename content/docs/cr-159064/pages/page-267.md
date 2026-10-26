@@ -1,0 +1,53 @@
+---
+pdfPage: 267
+folio: null
+sectionId: "C.REVSDR"
+kind: listing
+source: reviewed
+confidence: 96
+figures: []
+listing:
+  appendix: "C"
+  routines: ["REVSDR"]
+  listingPage: 38
+---
+```fortran
+(0479) 5     WRITE(1,1)
+(0480) 1     FORMAT(' PLEASE INPUT THE SPO DIR-REPORT NUMBER OF THE ',/
+(0481)      1' DOCUMENT TO BE REVISED',/)
+(0482)       READ(1,2,ERR=5)IDIR
+(0483) 2     FORMAT(3A4,A2)
+(0484)       REWIND 6
+(0485) 100   READ(6,END=200)TIT,PTIT,DIR,DT,SYS,WAN,VEH,REV,RDAT
+(0486)         IF(FINISH.EQ.1) GOTO 125
+(0487)       DO 110 I=1,4
+(0488)       IF(IDIR(I).NE.DIR(I)) GO TO 125
+(0489) 110   CONTINUE
+(0490)       CALL SHOWDR
+(0491)       WRITE(1,1700)
+(0492) 1700  FORMAT(/,1H0,/,' IS THIS THE CORRECT RECORD TO BE REVISED OR DELET
+(0493)      1ED',/,' (YES OR NO)')
+(0494) 1800  READ(1,50)IOPT
+(0495) 50    FORMAT(1A2)
+(0496)       IF(IOPT.EQ.'NO') GOTO 125
+(0497)       IF(IOPT.NE.'YE') GOTO 1800
+(0498) 1900  WRITE(1,2000)
+(0499) 2000  FORMAT(' IS THIS RECORD TO BE REVISED OR DELETED',/,
+(0500)      1 ' (REV OR DEL)')
+(0501)       READ(1,50) IOPT
+(0502)       IF(IOPT.EQ.'RE') GOTO 120
+(0503)       IF(IOPT.NE.'DE') GOTO 1900
+(0504)       FINISH=1
+(0505)       GOTO 100
+(0506) 120    R=1
+(0507)       CALL INPSDR
+(0508)         FINISH=1
+(0509) 125   WRITE(8)TIT,PTIT,DIR,DT,SYS,WAN,VEH,REV,RDAT
+(0510)       GO TO 100
+(0511) 200   ENDFILE 8
+(0512)        CALL SRCH$$(K$CLOS,'DIR   ',6,0,0,0)
+(0513)         CALL SRCH$$(K$DELE,'DIR   ',6,0,0,0)
+(0514)         CALL CNAM$$('REVS  ',6,'DIR   ',6,IC)
+(0515)       CALL SRCH$$(K$RDWR+K$NDAM,'DIR   ',6,2,IT,IC)
+(0516)         CALL SRCH$$(K$RDWR+K$NDAM,'REVS  ',6,4,IT,IC)
+```

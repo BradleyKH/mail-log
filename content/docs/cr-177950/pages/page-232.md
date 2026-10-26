@@ -1,0 +1,58 @@
+---
+pdfPage: 232
+folio: null
+sectionId: "appendices"
+kind: mixed
+source: ocr
+confidence: 82.8
+figures: ["G-6"]
+---
+9-9
+
+INOLNIYd HIYV3S GYVONVLS 3390V
+
+```text
+a     we ee Be ee eee eee ee
+
+T/ 5/85                                                                      PAGE   1
+```
+
+REGISTRATION ATTENDEE LIST
+
+```text
+FORMS               EXTRA TICKETS
+RECEIVED       PREPAID                                                                       TOTAL
+
+ENTRY DATE NAME tee nema ann    REG. BLAKE BOEING 7000       LUNCHEONS RECEIVED
+COMPANY                              FEDD ALIEN      FEE ISLAND TOUR TOUR SOCIAL TUES WED
+
+7/31/1984 ANDERSON      » ROBERT L.              Y   N     70.00    0     0     0    0   0   0      70.00
+```
+
+HERCULES INCORPORATED
+
+7/31/1984 CROWLEY »> WwW 1. Y N 0 0 0 0 0 0
+ROCKWELL INTERNATIONAL
+
+6/28/1984 DOYAL » FRANK H, Y N 0 0 0 0 0 0
+AVCO AEROSTRUCTURES DIVISION
+
+7/18/1984 JAMES » ARTHUR M, Y N 70.00 0 0 23 0 0 0 93.00
+LOCKHEED-CAL IFORNIA COMPANY
+
+7/16/1984 KLOTZSCHE » MAX Y N 70.00 0 0 0 0 0 0 70.00
+DOUGLAS AIRCRAFT COMPANY
+
+6/29/1984 MCTAHON » PAUL E. Y N 70.00 0 0 0 0 0 0 70.00
+CEL ANESE CORPORATION
+
+7/10/1984 RANDOLPH » ROBERT E. Y N 70.00 0 0 0 0 0 0 70.00
+HERCULES INCORPORATED
+
+7/23/1984 SJOSTEOT » ROB Y N 70.00 0 1 0 0 0 0 70.00
+GOLDWORTHY ENGINEERING INCORPORATED
+
+7/13/1984 WARD Y N 70.00 0 0 0 0 0 0 70.00
+
+Je Pe
+ROHR INDUSTRIES, INCORPORATED

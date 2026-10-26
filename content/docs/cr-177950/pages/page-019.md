@@ -1,0 +1,74 @@
+---
+pdfPage: 19
+folio: "11"
+sectionId: "2.8"
+kind: text
+source: ocr
+confidence: 85.7
+figures: []
+---
+cece sececcccscese sACIIVE USER LEST. ccccccccccccceves
+
+```text
+CGH                 ABR                   DKH
+SL1                  GMG                   PMK
+CH1                  CL1                   FS2
+```
+
+AVAILABLE COMMANDS
+
+\1. CALL
+
+\2. ANSWER
+
+\3. ACTIVE USERS
+\4. DISCONNECT
+
+CMD>1
+
+WHO DO YOU WISH TO CALL
+
+CGG
+
+ONE MOMENT PLEASE...
+
+PARTY NOT LOGGED IN !
+
+AVAILABLE COMMANDS
+
+\1. CALL
+
+\2. ANSWER
+
+\3. ACTIVE USERS
+\4. DISCONNECT
+
+CMD>1
+WHO DO YOU WISH TO CALL
+*
+
+CGH
+ONE MOMENT PLEASE...
+
+PHONE IS RINGING...
+
+%
+
+YOUR PARTY 1S NOT RESPONDING...CONTINUE WAITING(Y/N)
+Y
+
+WAITING...
+
+TYPE CNTL -P=- TO HANGUP PHONE
+*
+
+TYPE CNTL -E- TO END MESSAGE
+
+SEND>THIS IS A TEST MESSAGE
+
+SEND>THIS IS THE LAST LINE OF THE MESSAGE
+SEND>(* CNTL E * return *)
+
+*
+
+DATA SENT....WAITING FOR RESPONSE

@@ -1,0 +1,356 @@
+[
+  {
+    "id": "1.0",
+    "title": "INTRODUCTION",
+    "level": 1,
+    "pdfPage": 13
+  },
+  {
+    "id": "2.0",
+    "title": "BASIC OPERATING PROCEDURES",
+    "level": 1,
+    "pdfPage": 16
+  },
+  {
+    "id": "2.1",
+    "title": "LOGIN",
+    "level": 2,
+    "pdfPage": 16
+  },
+  {
+    "id": "2.2",
+    "title": "PROGRAM ENTRY",
+    "level": 2,
+    "pdfPage": 17
+  },
+  {
+    "id": "2.3",
+    "title": "PROGRAM EXIT",
+    "level": 2,
+    "pdfPage": 18
+  },
+  {
+    "id": "3.0",
+    "title": "DATA BASE",
+    "level": 1,
+    "pdfPage": 19
+  },
+  {
+    "id": "3.1",
+    "title": "CORRESPONDENCE DATA",
+    "level": 2,
+    "pdfPage": 19
+  },
+  {
+    "id": "3.2",
+    "title": "DESIGN INFORMATION RELEASE/RELEASE DATA",
+    "level": 2,
+    "pdfPage": 19
+  },
+  {
+    "id": "3.3",
+    "title": "DRAWING/ENGINEERING ORDER DATA",
+    "level": 2,
+    "pdfPage": 19
+  },
+  {
+    "id": "4.0",
+    "title": "OPERATING PROCEDURES",
+    "level": 1,
+    "pdfPage": 20
+  },
+  {
+    "id": "4.1",
+    "title": "CORRESPONDENCE",
+    "level": 2,
+    "pdfPage": 21
+  },
+  {
+    "id": "4.1.1",
+    "title": "INPUT MODE",
+    "level": 3,
+    "pdfPage": 21
+  },
+  {
+    "id": "4.1.1.1",
+    "title": "DESCRIPTION OF INPUT MODE",
+    "level": 4,
+    "pdfPage": 21
+  },
+  {
+    "id": "4.1.1.2",
+    "title": "ACTION/RESPONSE DURING INPUT MODE",
+    "level": 4,
+    "pdfPage": 23
+  },
+  {
+    "id": "4.1.2",
+    "title": "REVISE MODE",
+    "level": 3,
+    "pdfPage": 28
+  },
+  {
+    "id": "4.1.2.1",
+    "title": "DESCRIPTION OF REVISE MODE",
+    "level": 4,
+    "pdfPage": 28
+  },
+  {
+    "id": "4.1.2.2",
+    "title": "ACTION/RESPONSE DURING REVISE MODE",
+    "level": 4,
+    "pdfPage": 28
+  },
+  {
+    "id": "4.1.3",
+    "title": "SEARCH MODE",
+    "level": 3,
+    "pdfPage": 32
+  },
+  {
+    "id": "4.1.3.1",
+    "title": "DESCRIPTION OF SEARCH MODE",
+    "level": 4,
+    "pdfPage": 32
+  },
+  {
+    "id": "4.1.3.2",
+    "title": "ACTION/RESPONSE DURING SEARCH MODE",
+    "level": 4,
+    "pdfPage": 35
+  },
+  {
+    "id": "4.1.4",
+    "title": "ARCHIVE MODE",
+    "level": 3,
+    "pdfPage": 43
+  },
+  {
+    "id": "4.1.4.1",
+    "title": "DESCRIPTION OF ARCHIVE MODE",
+    "level": 4,
+    "pdfPage": 43
+  },
+  {
+    "id": "4.1.4.2",
+    "title": "ACTION/RESPONSE DURING ARCHIVE MODE",
+    "level": 4,
+    "pdfPage": 44
+  },
+  {
+    "id": "4.2",
+    "title": "DESIGN INFORMATION RELEASE/REPORT",
+    "level": 2,
+    "pdfPage": 45
+  },
+  {
+    "id": "4.2.1",
+    "title": "INPUT MODE",
+    "level": 3,
+    "pdfPage": 45
+  },
+  {
+    "id": "4.2.1.1",
+    "title": "DESCRIPTION OF INPUT MODE",
+    "level": 4,
+    "pdfPage": 45
+  },
+  {
+    "id": "4.2.1.2",
+    "title": "ACTION/RESPONSE DURING INPUT MODE",
+    "level": 4,
+    "pdfPage": 46
+  },
+  {
+    "id": "4.2.2",
+    "title": "REVISE MODE",
+    "level": 3,
+    "pdfPage": 50
+  },
+  {
+    "id": "4.2.2.1",
+    "title": "DESCRIPTION OF REVISE MODE",
+    "level": 4,
+    "pdfPage": 50
+  },
+  {
+    "id": "4.2.2.2",
+    "title": "ACTION/RESPONSE DURING REVISE MODE",
+    "level": 4,
+    "pdfPage": 51
+  },
+  {
+    "id": "4.2.3",
+    "title": "SEARCH MODE",
+    "level": 3,
+    "pdfPage": 52
+  },
+  {
+    "id": "4.2.3.1",
+    "title": "DESCRIPTION OF SEARCH MODE",
+    "level": 4,
+    "pdfPage": 52
+  },
+  {
+    "id": "4.2.3.2",
+    "title": "ACTION/RESPONSE DURING SEARCH MODE",
+    "level": 4,
+    "pdfPage": 54
+  },
+  {
+    "id": "4.2.4",
+    "title": "ARCHIVE MODE",
+    "level": 3,
+    "pdfPage": 59
+  },
+  {
+    "id": "4.2.4.1",
+    "title": "DESCRIPTION OF ARCHIVE MODE",
+    "level": 4,
+    "pdfPage": 59
+  },
+  {
+    "id": "4.2.4.2",
+    "title": "ACTION/RESPONSE DURING ARCHIVE MODE",
+    "level": 4,
+    "pdfPage": 60
+  },
+  {
+    "id": "4.3",
+    "title": "DRAWING/ENGINEERING ORDER",
+    "level": 2,
+    "pdfPage": 61
+  },
+  {
+    "id": "4.3.1",
+    "title": "INPUT MODE",
+    "level": 3,
+    "pdfPage": 61
+  },
+  {
+    "id": "4.3.1.1",
+    "title": "DESCRIPTION OF INPUT MODE",
+    "level": 4,
+    "pdfPage": 61
+  },
+  {
+    "id": "4.3.1.2",
+    "title": "ACTION/RESPONSE DURING INPUT MODE",
+    "level": 4,
+    "pdfPage": 64
+  },
+  {
+    "id": "4.3.2",
+    "title": "REVISE MODE",
+    "level": 3,
+    "pdfPage": 69
+  },
+  {
+    "id": "4.3.2.1",
+    "title": "DESCRIPTION OF REVISE MODE",
+    "level": 4,
+    "pdfPage": 69
+  },
+  {
+    "id": "4.3.2.2",
+    "title": "ACTION/RESPONSE DURING REVISE MODE",
+    "level": 4,
+    "pdfPage": 70
+  },
+  {
+    "id": "4.3.3",
+    "title": "SEARCH MODE",
+    "level": 3,
+    "pdfPage": 74
+  },
+  {
+    "id": "4.3.3.1",
+    "title": "DESCRIPTION OF SEARCH MODE",
+    "level": 4,
+    "pdfPage": 74
+  },
+  {
+    "id": "4.3.3.2",
+    "title": "ACTION/RESPONSE DURING SEARCH MODE",
+    "level": 4,
+    "pdfPage": 79
+  },
+  {
+    "id": "4.3.4",
+    "title": "ARCHIVE MODE",
+    "level": 3,
+    "pdfPage": 87
+  },
+  {
+    "id": "4.3.4.1",
+    "title": "DESCRIPTION OF ARCHIVE MODE",
+    "level": 4,
+    "pdfPage": 87
+  },
+  {
+    "id": "4.3.4.2",
+    "title": "ACTION/RESPONSE DURING ARCHIVE MODE",
+    "level": 4,
+    "pdfPage": 88
+  },
+  {
+    "id": "5.0",
+    "title": "MAIL LOG OUTPUTS",
+    "level": 1,
+    "pdfPage": 89
+  },
+  {
+    "id": "5.1",
+    "title": "CORRESPONDENCE - OUTPUT FORMATS",
+    "level": 2,
+    "pdfPage": 90
+  },
+  {
+    "id": "5.1.1",
+    "title": "INPUT MODE FOR CORRESPONDENCE",
+    "level": 3,
+    "pdfPage": 90
+  },
+  {
+    "id": "5.1.2",
+    "title": "SEARCH MODE FOR CORRESPONDENCE",
+    "level": 3,
+    "pdfPage": 98
+  },
+  {
+    "id": "5.2",
+    "title": "DESIGN INFORMATION RELEASE/REPORT - OUTPUT FORMATS",
+    "level": 2,
+    "pdfPage": 123
+  },
+  {
+    "id": "5.2.1",
+    "title": "SEARCH MODE FOR DIR",
+    "level": 3,
+    "pdfPage": 123
+  },
+  {
+    "id": "5.3",
+    "title": "DRAWING/ENGINEERING ORDER - OUTPUT FORMATS",
+    "level": 2,
+    "pdfPage": 125
+  },
+  {
+    "id": "5.3.1",
+    "title": "INPUT MODE FOR DRAWING/E.O.",
+    "level": 3,
+    "pdfPage": 125
+  },
+  {
+    "id": "5.3.2",
+    "title": "SEARCH MODE FOR DRAWING/E.O.",
+    "level": 3,
+    "pdfPage": 127
+  },
+  {
+    "id": "6.0",
+    "title": "GLOSSARY OF TERMS",
+    "level": 1,
+    "pdfPage": 146
+  }
+]

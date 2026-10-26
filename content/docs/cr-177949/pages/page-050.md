@@ -1,0 +1,89 @@
+---
+pdfPage: 50
+folio: "42"
+sectionId: "5.0"
+kind: mixed
+source: ocr
+confidence: 63.3
+figures: []
+---
+KH HEKK KKK HEHEHE EKER KEKE KER KEKEKKEHKE KEKE EKER EKER EE KEKE EEE KEKEREREEEE
+
+```text
+NASA ENG.    CONT. ENG. RBK      PURCHASE REQUEST
+!            !            !        !
+```
+
+WINTERS
+
+HHRKKKKHK KK KKK EERE IE
+
+TASK TSKSUB TOTAL=HRS. ODC-MAT DOL. ETC-ODC DOL.
+re | | ! !
+Z
+
+KEK KEKKKEK EKER EEK EKER KEKE EK EKEKEKE KEKE KER ERE KER EEE KEE EEK KHER KKK EKER EKER
+
+```text
+STATUS MOD         CONTRACTOR TOTAL HRS. TOTAL DOL.
+ee rr          !          !
+```
+
+** return **
+
+*** STATUS MUST BE "AUT" or "FUT" *** > AUT
+** CONTRACTOR MUST BE "LTV" or "VOUGHT" ** > LTV
+
+JOB ORDERS BUILT BY: (1) MANUAL
+(2) AUTOMATIC
+RETURN IF FINISHED
+
+ENTER OPTION # > 1
+
+ENTER NUMBER OF JOB ORDERS (MAX 25) >2
+
+PTTL ETT ITT tLe LTT rLiLeeLLl iri ereercittr ier ereiti tri eecereerrterereiterer tr
+
+```text
+J. 0.    ALL-%    771-4    78-4    719-%    80-%    81-2    82-4    83-%    84-4
+!      INNN..NNNINNN .NNNENNN.NNNENNN.NNNINNN.NNNINNN.NNNINNN.NNNINNN.NNNINNN.NNN
+```
+
+E7202G 50.000
+
+JOB ORDER SUB-CODE (2 CHAR.) > ** return **
+
+TT PrIIiTiiritit tir ttt titi teEULeiriictitiieiiiriii tet eee ee ere eeere eee
+
+```text
+J. 0.    ALL-%    771-%    78-4    79-4    80-%    81-%    82-4    83-4    84-4
+!      INNN.NNNINNN .NNNINNN .NNNINNN.NNNINNN NNN ENNN NNN ENNN NNN IENNN NNN ENNN NNN
+```
+
+E7206H 50.000
+
+JOB ORDER SUB-CODE (2 CHAR.) > G
+
+DATE: WED, JUN 27 1984 STATUS:AUT J.0.S: 2 MONTHS: SYS ITEM NO: 615
+TITLEsTEST ENTRY FOR SAMPLE OF INPUT MODE
+
+MOD: , » 4» CONTRACTOR:LTV
+
+REMRK : NONE
+
+```text
+NASA RESPONSIBLE ENGR: WINTERS      KTR RESPONSIBLE ENGR:
+RBK :                PURCHASE REQUEST:
+```
+
+CONTRACT/PURCHASE ORDER:NAS1-12500 TASK:Z SUBTASK:
+
+```text
+WORK AUTHORITY:3333 WA CODE:ZXY    COMPLETED TASK:NO    TABLE :MANL
+R.T. HRS:         O R.T. DOLLARS:         0
+
+TOTAL AUT HOURS:         O TOTAL AUT DOLLARS:         0 FEE: 0.000%
+
+E7202G    49002023700000400 50.000    0.000    0.000    0.000    0.000
+0.000    0.000    0.000    0.000
+```

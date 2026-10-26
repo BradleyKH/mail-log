@@ -1,0 +1,55 @@
+---
+pdfPage: 237
+folio: "228"
+sectionId: "17.3.1"
+kind: text
+source: ocr
+confidence: 92.5
+figures: []
+---
+the example below.
+
+THIS PROGRAM WILL DELETE SELECTED RECORD FROM DATA BASE
+TYPE QUIT TO RETURN TO MAIN MENU
+ENTER LAST NAME > HARRIS
+ENTER FIRST NAME M.I. > DANNY K.
+SEARCH IN PROGRESS
+PLEASE STAND BY ...
+
+2 RECORDS WERE FOUND ::: LAST NAME = HARRIS
+AND FIRST NAME = DANNY K.
+
+```text
+$RECNO COMPANY                                 CITY                STATE
+3  KENTRON INTERNATIONAL                    HAMPTON              VA
+4 KENTRON                                 HAMPTON             VA
+```
+
+(Note that the record numbers displayed here are 3 and 4)
+ENTER RECORD NUMBER TO BE DELETED > 4
+
+THE FOLLOWING HAS BEEN FOUND:
+
+```text
+LAST NAME >HARRIS              FIRST NAME >DANNY K.            CITIZENSHIP >USA
+TITLE >COMPUTER SPECIALIST             COMPANY >KENTRON
+
+STREET >                                         CITY >HAMPTON
+
+STATE >VA ZIP CODE >23666            AREA CODE > OQ PHONE NO. >          EXT.
+PREPAID FEE >                TOUR >
+
+CAR PASS >        DINNER >        WHOLE PACKAGE >
+
+SOCIAL > 0     BREAKFASTS: 1 >     2>
+```
+
+TOTAL RECEIVED >
+
+DELETE THIS RECORD (Y OR N) > Y
+PLEASE NOTE ::: RECORD DELETED ... MUST RUN HOUSEKEEPING TO PURGE RECORD
+
+THIS PROGRAM WILL DELETE SELECTED RECORD FROM DATA BASE
+TYPE QUIT TO RETURN TO MAIN MENU
+
+ENTER LAST NAME > QUIT

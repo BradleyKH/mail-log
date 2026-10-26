@@ -1,0 +1,60 @@
+---
+pdfPage: 123
+folio: "115"
+sectionId: "8.4"
+kind: text
+source: ocr
+confidence: 87.5
+figures: []
+---
+15.) TRANSISTORS
+\16) WIRE & CABLE
+17.) MISCELLANEOUS
+18 ) NONE
+
+19 ) MAGNETIC PT
+
+a ate tt ae ae aa
+
+ENTER CATEGORY TO BE SELECTED (ZERO - C - FOR ALL) > ** return **
+
+YOU HAVE SELECTED 1,475 RECORDS FROM THE PARTS FILE FOR QUERY
+
+ENTER GENERIC NUMBER TO BE SEARCHED ON > 22
+
+GENERIC NUMBER SEARCH FOR 22 FOUND 24 RECORDS
+
+TERMINAL OUTPUT NOW BEING GENERATED .... PLEASE STAND BY.
+
+11/ 8/84 PAGE 1
+PARTS INVENTORY LIST FOR DRAWING : D424085
+
+TITLED : FINE SUN SENSCR ANALOG
+
+```text
+1TEM PART NUMBER        MANUFACTURER       GENERIC NUMBER       CATEGORY
+
+38 1P085-001V-203     TI                 JANTXV2N2222A        TRANSISTORS
+
+REQD HAVE TYPE APPROVAL INFORMATION                         LOCATION
+
+4    78 =*P                                                   L5 $2
+```
+
+DESCRIPTION:
+
+MCRE? N
+
+OUTPUT TO PRINTER (Y OR N) > N
+
+NO OUTPUT SPOOLED !!1!
+
+Option 5 performs the Location search for the Parts File. This search
+Is also a partial search and operates similarly to search option two (2).
+
+See the followirg example.
+
+SELECT OPTION BY ENTERING NUMBER (RETURN TO QUIT) > 5
+
+THIS SEARCH ROUTINE PERFORMS THE LOCATION QUERY / RETRIEVAL
+ON THE PARTS LIST OF THE UARS ELECTRICAL DRAWING FILE.

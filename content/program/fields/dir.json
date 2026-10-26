@@ -1,0 +1,74 @@
+[
+  {
+    "name": "title",
+    "label": "TITLE",
+    "length": 10,
+    "searchable": true,
+    "description": "10 characters per word, 7 words.",
+    "pdfPage": 46
+  },
+  {
+    "name": "dirReportNumber",
+    "label": "DIR/REPORT NUMBER",
+    "length": 14,
+    "searchable": true,
+    "description": "14 characters.",
+    "pdfPage": 46
+  },
+  {
+    "name": "date",
+    "label": "DATE",
+    "length": 6,
+    "searchable": true,
+    "description": "6 characters, MMDDYY.",
+    "pdfPage": 46
+  },
+  {
+    "name": "system",
+    "label": "SYSTEM",
+    "length": 4,
+    "searchable": true,
+    "description": "4 characters, 3 entries.",
+    "pdfPage": 46
+  },
+  {
+    "name": "vehicle",
+    "label": "VEHICLE",
+    "length": 4,
+    "searchable": true,
+    "description": "4 characters, 2 entries.",
+    "pdfPage": 46
+  },
+  {
+    "name": "waNumberIdCode",
+    "label": "W.A. NUMBER/ID CODE",
+    "length": 8,
+    "searchable": true,
+    "description": "8 characters.",
+    "pdfPage": 46
+  },
+  {
+    "name": "contractNumber",
+    "label": "CONTRACT NUMBER",
+    "length": 20,
+    "searchable": true,
+    "description": "20 characters. Not stored in the data base subfile; contained in the WA/contract table.",
+    "pdfPage": 46
+  },
+  {
+    "name": "revision",
+    "label": "REVISION",
+    "length": 2,
+    "searchable": false,
+    "description": "2 characters.",
+    "pdfPage": 46
+  },
+  {
+    "name": "revisionDate",
+    "label": "REVISION DATE",
+    "length": 6,
+    "searchable": true,
+    "description": "6 characters, MMDDYY. Included within the date search.",
+    "pdfPage": 46
+  }
+]

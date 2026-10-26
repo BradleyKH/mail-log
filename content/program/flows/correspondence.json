@@ -1,0 +1,2077 @@
+{
+  "record": "correspondence",
+  "title": "Correspondence",
+  "entryStep": 1,
+  "steps": [
+    {
+      "n": 1,
+      "mode": "common",
+      "title": "LOGIN",
+      "prompt": [],
+      "input": {
+        "pattern": "LOGIN XXX",
+        "description": "XXX represents the user initials. All user actions are terminated with a carriage return; designated by the key marked RETURN on the terminal."
+      },
+      "response": "XXX (N) LOGGED IN AT HR'MN  MMDDYY. N is the terminal location number; HR and MN is the time the user entered the system in hours and minutes; and MMDDYY is the month, day, and year. This login allows user XXX to access any of the active programs on the SPADS system.",
+      "branches": [],
+      "next": 2,
+      "figures": [],
+      "pdfPage": 16
+    },
+    {
+      "n": 2,
+      "mode": "common",
+      "title": "PROGRAM ENTRY",
+      "prompt": [
+        "THE FOLLOWING IS A LIST OF CURRENT APPLICATIONS",
+        "PLEASE INDICATE YOUR APPLICATION/PROJECT BY SELECTING THE APPROPRIATE KEY",
+        "",
+        "APPLICATION/PROJECT     KEY",
+        "",
+        "CHANGE REQUEST          CHG",
+        "SCHEDULE 15000          150",
+        "SCHEDULE 15100          151",
+        "ANALYSIS I              ANAL",
+        "MAIL LOG                MAIL",
+        "ELOPE                   ELOP",
+        "PROGRAM DEVELOPMENT     DEV",
+        "SOFTWARE MAINT          SOMA",
+        "MISCELLANEOUS           MISC",
+        "",
+        "PLEASE ENTER THE APPROPRIATE KEY"
+      ],
+      "input": {
+        "pattern": "MAIL",
+        "description": "After system LOGIN is completed, the user must specify the program selection MAIL LOG.",
+        "maxLength": 4
+      },
+      "response": "MAIL",
+      "branches": [
+        {
+          "when": "MAIL",
+          "goto": 3
+        }
+      ],
+      "figures": [],
+      "pdfPage": 17
+    },
+    {
+      "n": 3,
+      "mode": "common",
+      "title": "DATA BASE SUBFILE SELECTION",
+      "prompt": [
+        "WELCOME TO SPADS",
+        "",
+        "MAIL LOG FILE",
+        "",
+        "DO YOU WISH TO WORK WITH THE DIR/REPORT DATA --- ENTER DIR",
+        "                          OR DRAWING DATA     --- ENTER DRAW",
+        "                          OR DAILY CORRESPONDENCE  --- COR",
+        "                          OR QUIT                  --- QU"
+      ],
+      "input": {
+        "pattern": "COR",
+        "description": "In order for the user to select one of the four modes of operation, one of three main data base subfiles must first be designated. To leave the program the user must enter QUIT TWICE (section 2.3)."
+      },
+      "branches": [
+        {
+          "when": "COR",
+          "goto": 4
+        },
+        {
+          "when": "QU",
+          "goto": "exit"
+        }
+      ],
+      "figures": [],
+      "pdfPage": 17
+    },
+    {
+      "n": 4,
+      "mode": "common",
+      "title": "MODE SELECTION",
+      "prompt": [
+        "PLEASE CHOSE ONE OF THE FOLLOWING",
+        "MODE            KEY",
+        "INPUT           INP",
+        "REVISE          REV",
+        "SEARCH          SEA",
+        "ARCHIVE         ARC",
+        "QUIT            QUIT"
+      ],
+      "input": {
+        "pattern": "INP/REV/SEA/ARC/QUIT",
+        "description": "Select one of the four modes of operation. To leave the program the user must enter QUIT TWICE (section 2.3)."
+      },
+      "branches": [
+        {
+          "when": "INP",
+          "goto": 101
+        },
+        {
+          "when": "REV",
+          "goto": 201
+        },
+        {
+          "when": "SEA",
+          "goto": 301
+        },
+        {
+          "when": "ARC",
+          "goto": 401
+        },
+        {
+          "when": "QUIT",
+          "goto": 3
+        }
+      ],
+      "figures": [],
+      "pdfPage": 17
+    },
+    {
+      "n": 101,
+      "mode": "input",
+      "title": "Step #1",
+      "prompt": [
+        "IS THIS A CONTINUATION OF INPUT (YES OR NO)"
+      ],
+      "input": {
+        "pattern": "YES/NO",
+        "description": "Continuation of input"
+      },
+      "branches": [
+        {
+          "when": "Yes",
+          "goto": 104
+        },
+        {
+          "when": "No",
+          "goto": 102
+        }
+      ],
+      "figures": [],
+      "pdfPage": 23
+    },
+    {
+      "n": 102,
+      "mode": "input",
+      "title": "Step #2",
+      "prompt": [
+        "DO YOU WISH TO START A NEW ENTRY (NEW)",
+        "OR SPOOL LAST OUTPUT AGAIN (LAST)",
+        "OR SPOOL NEW DATA ENTERED (DATA)"
+      ],
+      "input": {
+        "pattern": "NEW/LAST/DATA",
+        "description": "Start a new entry, spool last output again, or spool new data entered"
+      },
+      "branches": [
+        {
+          "when": "New",
+          "goto": 103
+        },
+        {
+          "when": "Last, output spooled to printer. Exit input mode",
+          "goto": 4
+        },
+        {
+          "when": "Data",
+          "goto": 103
+        }
+      ],
+      "figures": [],
+      "pdfPage": 23
+    },
+    {
+      "n": 103,
+      "mode": "input",
+      "title": "Step #3",
+      "prompt": [
+        "STAND BY.  SYSTEM NOW PERFORMING FILE HOUSEKEEPING."
+      ],
+      "response": "System pauses 10 to 35 seconds. No user response required.",
+      "branches": [],
+      "next": 104,
+      "figures": [],
+      "pdfPage": 23
+    },
+    {
+      "n": 104,
+      "mode": "input",
+      "title": "Step #4",
+      "prompt": [
+        "WELCOME TO THE MAIL LOG FILE INPUT ROUTINE.",
+        "PLEASE NOTE THAT ALL ENTRIES ARE TO BE PLACED BETWEEN THE",
+        "EXCLAMATION MARKS AND SHOULD BE LEFT JUSTIFIED",
+        "FIRST - PLEASE ENTER THE CURRENT DATE",
+        "!MMDDYY!"
+      ],
+      "input": {
+        "pattern": "MMDDYY",
+        "description": "Input desired date for daily input - month, day, and year. Note: User must skip a space to start.",
+        "maxLength": 6
+      },
+      "branches": [],
+      "next": 105,
+      "figures": [],
+      "pdfPage": 23
+    },
+    {
+      "n": 105,
+      "mode": "input",
+      "title": "Step #5",
+      "prompt": [],
+      "branches": [
+        {
+          "when": "Data option taken in Step #2",
+          "goto": 131
+        },
+        {
+          "when": "Data option not taken",
+          "goto": 106
+        }
+      ],
+      "figures": [],
+      "pdfPage": 23
+    },
+    {
+      "n": 106,
+      "mode": "input",
+      "title": "Step #6",
+      "prompt": [
+        "(1) MAIL STATUS - (VC) VOUGHT CORRESPONDENCE",
+        "                  (IM) INCOMING MAIL",
+        "                  (OM) OUTGOING MAIL",
+        "!  !"
+      ],
+      "input": {
+        "pattern": "AA",
+        "description": "Enter mail status as given.",
+        "maxLength": 2
+      },
+      "branches": [],
+      "next": 107,
+      "figures": [],
+      "pdfPage": 23
+    },
+    {
+      "n": 107,
+      "mode": "input",
+      "title": "Step #7",
+      "prompt": [],
+      "response": "If legal entry, entry displayed on terminal. This is done for all entries to follow.",
+      "branches": [
+        {
+          "when": "Legal entry",
+          "goto": 108
+        },
+        {
+          "when": "Not legal",
+          "goto": 106
+        }
+      ],
+      "figures": [],
+      "pdfPage": 23
+    },
+    {
+      "n": 108,
+      "mode": "input",
+      "title": "Step #8",
+      "prompt": [
+        "(2) AUTHOR/SOURCE",
+        "!                            !"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "Author/source, 28 characters (Figure 3)",
+        "maxLength": 28
+      },
+      "branches": [],
+      "next": 109,
+      "figures": [],
+      "pdfPage": 24
+    },
+    {
+      "n": 109,
+      "mode": "input",
+      "title": "Step #9",
+      "prompt": [
+        "(3) DOCUMENT DATE",
+        "!MMDDYY!"
+      ],
+      "input": {
+        "pattern": "MMDDYY",
+        "description": "Document date, 6 characters - MMDDYY (Figure 3)",
+        "maxLength": 6
+      },
+      "branches": [],
+      "next": 110,
+      "figures": [],
+      "pdfPage": 24
+    },
+    {
+      "n": 110,
+      "mode": "input",
+      "title": "Step #10",
+      "prompt": [
+        "(4) TO",
+        "!                                !"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "To/addressee, 32 characters (Figure 3)",
+        "maxLength": 32
+      },
+      "branches": [],
+      "next": 111,
+      "figures": [],
+      "pdfPage": 24
+    },
+    {
+      "n": 111,
+      "mode": "input",
+      "title": "Step #11",
+      "prompt": [
+        "(5) DOCUMENT/LETTER NUMBER",
+        "!                  !"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "Document letter number, 18 characters (Figure 3)",
+        "maxLength": 18
+      },
+      "branches": [],
+      "next": 112,
+      "figures": [],
+      "pdfPage": 24
+    },
+    {
+      "n": 112,
+      "mode": "input",
+      "title": "Step #12",
+      "prompt": [
+        "(6) SUBJECT (7 WORDS - 10 CHAR/WORD)",
+        "!                                                                      !"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "Subject, 10 characters/word - 7 words (Figure 3)",
+        "maxLength": 70
+      },
+      "branches": [],
+      "next": 113,
+      "figures": [],
+      "pdfPage": 24
+    },
+    {
+      "n": 113,
+      "mode": "input",
+      "title": "Step #13",
+      "prompt": [
+        "(7) ROUTING",
+        "!   !!   !!   !!   !!   !!   !"
+      ],
+      "input": {
+        "pattern": "AAA",
+        "description": "Routing, 3 characters - 6 entries (Figure 3)",
+        "maxLength": 3
+      },
+      "branches": [],
+      "next": 114,
+      "figures": [],
+      "pdfPage": 24
+    },
+    {
+      "n": 114,
+      "mode": "input",
+      "title": "Step #14",
+      "prompt": [
+        "(8) INPUT DATA DATE",
+        "!MMDDYY!"
+      ],
+      "response": "Note: This date will automatically be entered from the current date earlier and be displayed on terminal",
+      "branches": [],
+      "next": 115,
+      "figures": [],
+      "pdfPage": 24
+    },
+    {
+      "n": 115,
+      "mode": "input",
+      "title": "Step #15",
+      "prompt": [
+        "(9) W.A. NUMBER/ID.CODE",
+        "!        !"
+      ],
+      "input": {
+        "pattern": "NNNNIIII",
+        "description": "W.A. number/ID code, 8 characters (Figure 3)",
+        "maxLength": 8
+      },
+      "response": "If this W.A. number is found in the contract table, the contract number will be automatically entered and displayed on the terminal.",
+      "branches": [
+        {
+          "when": "W.A. number found in contract table",
+          "goto": 118
+        },
+        {
+          "when": "Not found in table",
+          "goto": 116
+        }
+      ],
+      "figures": [],
+      "pdfPage": 24
+    },
+    {
+      "n": 116,
+      "mode": "input",
+      "title": "Step #16",
+      "prompt": [
+        "IS THERE A CONTRACT NUMBER FOR THIS DOCUMENT (YES OR NO)"
+      ],
+      "input": {
+        "pattern": "YES/NO",
+        "description": "Contract number exists"
+      },
+      "branches": [
+        {
+          "when": "Yes",
+          "goto": 117
+        },
+        {
+          "when": "No",
+          "goto": 118
+        }
+      ],
+      "figures": [],
+      "pdfPage": 24
+    },
+    {
+      "n": 117,
+      "mode": "input",
+      "title": "Step #17",
+      "prompt": [
+        "(10) CONTRACT NUMBER",
+        "!                    !"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "Contract number, 20 characters (Figure 3)",
+        "maxLength": 20
+      },
+      "branches": [],
+      "next": 118,
+      "figures": [],
+      "pdfPage": 25
+    },
+    {
+      "n": 118,
+      "mode": "input",
+      "title": "Step #18",
+      "prompt": [
+        "(11) ACTION ITEM DUE DATE",
+        "!MMDDYY!"
+      ],
+      "input": {
+        "pattern": "MMDDYY",
+        "description": "Action due date, 6 characters - MMDDYY (Figure 3)",
+        "maxLength": 6
+      },
+      "branches": [],
+      "next": 119,
+      "figures": [],
+      "pdfPage": 25
+    },
+    {
+      "n": 119,
+      "mode": "input",
+      "title": "Step #19",
+      "prompt": [
+        "HOW MANY REFERENCE NUMBERS ARE THERE (MAX OF 6)",
+        "(12) REFERENCED DOCUMENT NUMBER",
+        "!                  !"
+      ],
+      "input": {
+        "pattern": "X",
+        "description": "Enter number X. (12) REFERENCED DOCUMENT NUMBER (18 characters, Figure 3) repeated X number of times"
+      },
+      "branches": [],
+      "next": 120,
+      "figures": [],
+      "pdfPage": 25
+    },
+    {
+      "n": 120,
+      "mode": "input",
+      "title": "Step #20",
+      "prompt": [
+        "(13) FILE SYSTEM CODE (S)",
+        "!          !!          !"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "File system code, 10 characters - 2 entries (Figure 3)",
+        "maxLength": 10
+      },
+      "branches": [],
+      "next": 121,
+      "figures": [],
+      "pdfPage": 25
+    },
+    {
+      "n": 121,
+      "mode": "input",
+      "title": "Step #21",
+      "prompt": [
+        "HOW MANY NASA RESPONSIBLE ENGINEER(S) ARE THERE (MAX OF 3)",
+        "(14) RESPONSIBLE ENGINEER(S)",
+        "!   !!   !!   !"
+      ],
+      "input": {
+        "pattern": "X",
+        "description": "Enter number X. (14) RESPONSIBLE ENGINEER(S), 3 characters - 3 entries (Figure 3)"
+      },
+      "branches": [],
+      "next": 122,
+      "figures": [],
+      "pdfPage": 25
+    },
+    {
+      "n": 122,
+      "mode": "input",
+      "title": "Step #22",
+      "prompt": [
+        "HOW MANY DESCRIPTIONS ARE TO BE ENTERED (MAX OF 30)",
+        "(15) DESCRIPTION OF DOCUMENT TRANSMITTED",
+        "7 WORDS - 10 CHAR/WORD",
+        "!                                                                      !"
+      ],
+      "input": {
+        "pattern": "X",
+        "description": "Enter number X. (15) DESCRIPTION OF DOCUMENT TRANSMITTED repeated X number of times. Description is only used in the transmittal subfile (Figure 3)."
+      },
+      "branches": [],
+      "next": 123,
+      "figures": [],
+      "pdfPage": 25
+    },
+    {
+      "n": 123,
+      "mode": "input",
+      "title": "Step #23",
+      "prompt": [
+        "CHECK RECORD FOR ERRORS: IF CORRECT, ENTER COR",
+        "                         IF REVISION NEEDED, ENTER REV"
+      ],
+      "input": {
+        "pattern": "COR/REV",
+        "description": "Entire record displayed on terminal"
+      },
+      "response": "Entire record displayed on terminal",
+      "branches": [
+        {
+          "when": "COR",
+          "goto": 126
+        },
+        {
+          "when": "REV",
+          "goto": 124
+        }
+      ],
+      "figures": [],
+      "pdfPage": 26
+    },
+    {
+      "n": 124,
+      "mode": "input",
+      "title": "Step #24",
+      "prompt": [
+        "HOW MANY ITEMS DO YOU WISH TO REVISE (MAX OF 14)"
+      ],
+      "input": {
+        "pattern": "XX",
+        "description": "Enter number XX",
+        "maxLength": 2
+      },
+      "branches": [],
+      "next": 125,
+      "figures": [],
+      "pdfPage": 26
+    },
+    {
+      "n": 125,
+      "mode": "input",
+      "title": "Step #25",
+      "prompt": [
+        "INPUT THE ITEM NUMBER THAT YOU WISH TO REVISE"
+      ],
+      "input": {
+        "pattern": "NN",
+        "description": "Enter number NN. Repeat XX number of times",
+        "maxLength": 2
+      },
+      "response": "Branches to data item to be revised, then returns to #23",
+      "branches": [
+        {
+          "when": "Data item revised, returns to #23",
+          "goto": 123
+        }
+      ],
+      "figures": [],
+      "pdfPage": 26
+    },
+    {
+      "n": 126,
+      "mode": "input",
+      "title": "Step #26",
+      "prompt": [
+        "WHICH SUB-FILE IS THIS RECORD TO BE STORED (NUMBER)",
+        "1. TRANSMITTAL/SPECIFICATION      2. MEMO/LETTER",
+        "3. TWX/MAGNAFAX/RAPIFAX           4. ANNOUNCEMENT",
+        "5. PURCHASE REQUEST               6. MISCELLANEOUS/REPORT"
+      ],
+      "input": {
+        "pattern": "X",
+        "description": "Subfile number",
+        "maxLength": 1
+      },
+      "branches": [],
+      "next": 127,
+      "figures": [],
+      "pdfPage": 26
+    },
+    {
+      "n": 127,
+      "mode": "input",
+      "title": "Step #27",
+      "prompt": [
+        "STAND BY.  SYSTEM NOW IN AUTOMATIC UPDATE MODE"
+      ],
+      "response": "If referenced document field is blank, go to #30. If not blank, the following message is displayed: STAND BY. SYSTEM NOW IN AUTOMATIC UPDATE MODE",
+      "branches": [
+        {
+          "when": "Referenced document field is blank",
+          "goto": 130
+        }
+      ],
+      "next": 128,
+      "figures": [],
+      "pdfPage": 26
+    },
+    {
+      "n": 128,
+      "mode": "input",
+      "title": "Step #28",
+      "prompt": [],
+      "branches": [
+        {
+          "when": "Word delay or delayed is found in the subject",
+          "goto": 129
+        },
+        {
+          "when": "Approval, approved, disapproved, disapproval, or disposition of the above",
+          "goto": 130
+        }
+      ],
+      "figures": [],
+      "pdfPage": 26
+    },
+    {
+      "n": 129,
+      "mode": "input",
+      "title": "Step #29",
+      "prompt": [
+        "ACTION DUE DATE MM-DD-YY",
+        "ENTER NEW DUE DATE (IF NONE, REPEAT OLD DATE)",
+        "MMDDYY"
+      ],
+      "input": {
+        "pattern": "MMDDYY",
+        "description": "MMDDYY represents the old date actual displayed month, day, and year",
+        "maxLength": 6
+      },
+      "branches": [],
+      "next": 130,
+      "figures": [],
+      "pdfPage": 27
+    },
+    {
+      "n": 130,
+      "mode": "input",
+      "title": "Step #30",
+      "prompt": [
+        "FURTHER DATA TO BE INPUT (YES OR NO)"
+      ],
+      "input": {
+        "pattern": "YES/NO",
+        "description": "Further data to be input"
+      },
+      "branches": [
+        {
+          "when": "Yes",
+          "goto": 106
+        },
+        {
+          "when": "No",
+          "goto": 131
+        }
+      ],
+      "figures": [],
+      "pdfPage": 27
+    },
+    {
+      "n": 131,
+      "mode": "input",
+      "title": "Step #31",
+      "prompt": [
+        "DO YOU DESIRE THE DAILY OUTPUT (NOW OR WAIT)"
+      ],
+      "input": {
+        "pattern": "NOW/WAIT",
+        "description": "Daily output now or wait"
+      },
+      "branches": [
+        {
+          "when": "Now",
+          "goto": 132
+        },
+        {
+          "when": "Wait, exit from input mode",
+          "goto": 4
+        }
+      ],
+      "figures": [],
+      "pdfPage": 27
+    },
+    {
+      "n": 132,
+      "mode": "input",
+      "title": "Step #32",
+      "prompt": [
+        "WILL YOU WANT A COMPLETE DATA PRINTOUT ALONG WITH THE DAILY",
+        "BRIEF OFFICE OUTPUT (YES OR NO)"
+      ],
+      "input": {
+        "pattern": "YES/NO",
+        "description": "Complete data printout along with the daily brief office output"
+      },
+      "branches": [
+        {
+          "when": "Yes, formats and spools both complete and brief outputs to the high speed printer",
+          "goto": 133
+        },
+        {
+          "when": "No, formats and spools only the brief output to the high speed printer",
+          "goto": 133
+        }
+      ],
+      "figures": [],
+      "pdfPage": 27
+    },
+    {
+      "n": 133,
+      "mode": "input",
+      "title": "Step #33",
+      "prompt": [],
+      "response": "Exit from the input mode",
+      "branches": [],
+      "next": 4,
+      "figures": [],
+      "pdfPage": 27
+    },
+    {
+      "n": 201,
+      "mode": "revise",
+      "title": "Step #1",
+      "prompt": [
+        "PLEASE ENTER THE INPUT DATE AND COUNT CODE OF THE DOCUMENT",
+        "TO BE REVISED OR DELETED",
+        "!      !!    !"
+      ],
+      "input": {
+        "pattern": "MMDDYYNNNN",
+        "description": "Input date and daily counter code of the document; the unique identifier for its location (input date 6 characters - MMDDYY, daily counter 4 characters, Figure 3)",
+        "maxLength": 10
+      },
+      "branches": [],
+      "next": 202,
+      "figures": [],
+      "pdfPage": 29
+    },
+    {
+      "n": 202,
+      "mode": "revise",
+      "title": "Step #2",
+      "prompt": [
+        "IS THIS A SPECIAL ACTION DUE SUBFILE REQUEST"
+      ],
+      "input": {
+        "pattern": "YES/NO",
+        "description": "Special action due subfile request"
+      },
+      "branches": [
+        {
+          "when": "Yes",
+          "goto": 205
+        },
+        {
+          "when": "No",
+          "goto": 203
+        }
+      ],
+      "figures": [],
+      "pdfPage": 29
+    },
+    {
+      "n": 203,
+      "mode": "revise",
+      "title": "Step #3",
+      "prompt": [
+        "SUBFILE SELECTION:",
+        "",
+        "1. TRANSMITTAL/SPECIFICATION SUBFILE",
+        "2. MEMO/LETTER SUBFILE",
+        "3. TWX/MAGNAFAX/RAPIFAX SUBFILE",
+        "4. ANNOUNCEMENT SUBFILE",
+        "5. PURCHASE REQUEST SUBFILE",
+        "6. MISCELLANEOUS/REPORT SUBFILE",
+        "HOW MANY SUBFILES DO YOU WISH TO OPEN"
+      ],
+      "input": {
+        "pattern": "X",
+        "description": "Enter number to be searched",
+        "maxLength": 1
+      },
+      "branches": [
+        {
+          "when": "X=6",
+          "goto": 205
+        },
+        {
+          "when": "X≠6",
+          "goto": 204
+        }
+      ],
+      "figures": [],
+      "pdfPage": 29
+    },
+    {
+      "n": 204,
+      "mode": "revise",
+      "title": "Step #4",
+      "prompt": [
+        "DO YOU WANT SUBFILE NUMBER N (YES OR NO)"
+      ],
+      "input": {
+        "pattern": "YES/NO",
+        "description": "Where N is file number 1 thru 6. Repeated until X number of files designated"
+      },
+      "branches": [],
+      "next": 205,
+      "figures": [],
+      "pdfPage": 29
+    },
+    {
+      "n": 205,
+      "mode": "revise",
+      "title": "Step #5",
+      "prompt": [
+        "IS THIS THE CORRECT RECORD TO BE REVISED OR DELETED (YES OR NO)"
+      ],
+      "input": {
+        "pattern": "YES/NO",
+        "description": "Document displayed on terminal when found"
+      },
+      "response": "Document displayed on terminal when found",
+      "branches": [
+        {
+          "when": "Yes",
+          "goto": 206
+        },
+        {
+          "when": "No, continue search for document. When found repeat Step #5",
+          "goto": 205
+        },
+        {
+          "when": "Not found, exit revise mode",
+          "goto": 4
+        }
+      ],
+      "figures": [],
+      "pdfPage": 29
+    },
+    {
+      "n": 206,
+      "mode": "revise",
+      "title": "Step #6",
+      "prompt": [
+        "IS THIS RECORD TO BE REVISED OR DELETED (REV. OR DEL)"
+      ],
+      "input": {
+        "pattern": "REV/DEL",
+        "description": "Revise or delete the record"
+      },
+      "branches": [
+        {
+          "when": "Rev",
+          "goto": 207
+        },
+        {
+          "when": "Del, record deleted; exit revise mode",
+          "goto": 4
+        }
+      ],
+      "figures": [],
+      "pdfPage": 31
+    },
+    {
+      "n": 207,
+      "mode": "revise",
+      "title": "Step #7",
+      "prompt": [],
+      "branches": [
+        {
+          "when": "Action due file previously selected in Step #2",
+          "goto": 211
+        }
+      ],
+      "next": 208,
+      "figures": [],
+      "pdfPage": 31
+    },
+    {
+      "n": 208,
+      "mode": "revise",
+      "title": "Step #8",
+      "prompt": [
+        "HOW MANY ITEMS DO YO WISH TO REVISE (MAX OF 14)"
+      ],
+      "input": {
+        "pattern": "XX",
+        "description": "Enter number XX",
+        "maxLength": 2
+      },
+      "branches": [],
+      "next": 209,
+      "figures": [],
+      "pdfPage": 31
+    },
+    {
+      "n": 209,
+      "mode": "revise",
+      "title": "Step #9",
+      "prompt": [
+        "INPUT THE ITEM NUMBER THAT YOU WISH TO REVISE."
+      ],
+      "input": {
+        "pattern": "NN",
+        "description": "Enter number NN. Repeat XX number of times. Branch to data item NN to be revised. See input mode (4.1.1.2 Steps #6 thru #22).",
+        "maxLength": 2
+      },
+      "branches": [
+        {
+          "when": "Branch to data item NN to be revised (input mode Steps #6 thru #22)",
+          "goto": 106
+        }
+      ],
+      "next": 210,
+      "figures": [],
+      "pdfPage": 31
+    },
+    {
+      "n": 210,
+      "mode": "revise",
+      "title": "Step #10",
+      "prompt": [],
+      "input": {
+        "pattern": "COR/REV",
+        "description": "Entire record displayed on terminal. Check record for errors: If correct, enter COR; If revision needed, enter REV"
+      },
+      "response": "Entire record displayed on terminal.",
+      "branches": [
+        {
+          "when": "COR, exit from REVISE MODE",
+          "goto": 4
+        },
+        {
+          "when": "REV",
+          "goto": 208
+        }
+      ],
+      "figures": [],
+      "pdfPage": 31
+    },
+    {
+      "n": 211,
+      "mode": "revise",
+      "title": "Step #11",
+      "prompt": [
+        "REVISE OPTIONS:",
+        "1. AUTHOR",
+        "2. DOCUMENT/LETTER NUMBER",
+        "3. ACTION DUE DATE",
+        "4. FILE SYSTEM CODE",
+        "5. RESPONSIBLE ENGINEER",
+        "ENTER NUMBER ONLY"
+      ],
+      "input": {
+        "pattern": "X",
+        "description": "Enter number X",
+        "maxLength": 1
+      },
+      "branches": [
+        {
+          "when": "X=1",
+          "goto": 212
+        },
+        {
+          "when": "X=2",
+          "goto": 213
+        },
+        {
+          "when": "X=3",
+          "goto": 214
+        },
+        {
+          "when": "X=4",
+          "goto": 215
+        },
+        {
+          "when": "X=5",
+          "goto": 216
+        }
+      ],
+      "figures": [],
+      "pdfPage": 31
+    },
+    {
+      "n": 212,
+      "mode": "revise",
+      "title": "Step #12",
+      "prompt": [
+        "ENTER AUTHOR",
+        "!                            !"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "Author/source, 28 characters (Figure 3)",
+        "maxLength": 28
+      },
+      "response": "Exit from REVISE mode after brief pause to update file",
+      "branches": [],
+      "next": 4,
+      "figures": [],
+      "pdfPage": 30
+    },
+    {
+      "n": 213,
+      "mode": "revise",
+      "title": "Step #13",
+      "prompt": [
+        "ENTER DOC./LETTER NUMBER",
+        "!                  !"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "Document letter number, 18 characters (Figure 3)",
+        "maxLength": 18
+      },
+      "response": "Exit from REVISE mode after brief pause to update file",
+      "branches": [],
+      "next": 4,
+      "figures": [],
+      "pdfPage": 30
+    },
+    {
+      "n": 214,
+      "mode": "revise",
+      "title": "Step #14",
+      "prompt": [
+        "ENTER ACTION DUE DATE",
+        "!MMDDYY!"
+      ],
+      "input": {
+        "pattern": "MMDDYY",
+        "description": "Action due date",
+        "maxLength": 6
+      },
+      "response": "Exit from REVISE mode after brief pause to update file",
+      "branches": [],
+      "next": 4,
+      "figures": [],
+      "pdfPage": 30
+    },
+    {
+      "n": 215,
+      "mode": "revise",
+      "title": "Step #15",
+      "prompt": [
+        "ENTER FILE SYSTEM CODE",
+        "!          !!          !"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "File system code, 10 characters - 2 entries (Figure 3)",
+        "maxLength": 10
+      },
+      "response": "Exit from REVISE mode after brief pause to update file",
+      "branches": [],
+      "next": 4,
+      "figures": [],
+      "pdfPage": 30
+    },
+    {
+      "n": 216,
+      "mode": "revise",
+      "title": "Step #16",
+      "prompt": [
+        "ENTER RESPONSIBLE ENGINEER",
+        "!   !!   !!   !"
+      ],
+      "input": {
+        "pattern": "AAA",
+        "description": "Responsible engineer, 3 characters - 3 entries (Figure 3)",
+        "maxLength": 3
+      },
+      "response": "Exit from REVISE mode after brief pause to update file",
+      "branches": [],
+      "next": 4,
+      "figures": [],
+      "pdfPage": 30
+    },
+    {
+      "n": 301,
+      "mode": "menu",
+      "title": "Step #1",
+      "prompt": [
+        "YOU ARE NOW VALIDATED TO SEARCH DATA IN THE MAIL LOG FILE -",
+        "THE FOLLOWING SEARCH MODES ARE AVAILABLE FOR YOUR USE -",
+        "MODE                                    KEY",
+        "MAIL STATUS                             MS",
+        "AUTHOR/SOURCE                           AUTH",
+        "DOCUMENT DATE                           DOC",
+        "TO/ADDRESSEE                            TO",
+        "DOCUMENT/LETTER NUMBER                  DLN",
+        "SUBJECT                                 SUB",
+        "INPUT DATA DATE                         IDD",
+        "W.A. NUMBER/ID CODE                     CWN",
+        "CONTRACT NUMBER                         CON",
+        "ACTION ITEM DUE DATE                    ADD",
+        "RESPONSIBLE ENGINEER                    NRE",
+        "ALL                                     ALL",
+        "QUIT                                    QUIT",
+        "PLEASE SELECT THE DESIRED MODE"
+      ],
+      "input": {
+        "pattern": "MS/AUTH/DOC/TO/DLN/SUB/IDD/CWN/CON/ADD/NRE/ALL/QUIT",
+        "description": "Enter key for desired mode",
+        "maxLength": 4
+      },
+      "branches": [],
+      "next": 302,
+      "figures": [
+        "4",
+        "5"
+      ],
+      "pdfPage": 35
+    },
+    {
+      "n": 302,
+      "mode": "search",
+      "title": "Step #2",
+      "prompt": [],
+      "response": "No user response",
+      "branches": [
+        {
+          "when": "Quit",
+          "goto": 350
+        }
+      ],
+      "next": 303,
+      "figures": [],
+      "pdfPage": 35
+    },
+    {
+      "n": 303,
+      "mode": "search",
+      "title": "Step #3",
+      "prompt": [
+        "PLEASE INPUT THE CURRENT DATE",
+        "MMDDYY"
+      ],
+      "input": {
+        "pattern": "MMDDYY",
+        "description": "Current date",
+        "maxLength": 6
+      },
+      "branches": [
+        {
+          "when": "DOC, IDD, ADD, or ALL selected for key",
+          "goto": 307
+        }
+      ],
+      "next": 304,
+      "figures": [],
+      "pdfPage": 35
+    },
+    {
+      "n": 304,
+      "mode": "search",
+      "title": "Step #4",
+      "prompt": [
+        "WHAT IS THE FIRST VALID DATE",
+        "MMDDYY"
+      ],
+      "input": {
+        "pattern": "MMDDYY",
+        "description": "Enter month, day, year",
+        "maxLength": 6
+      },
+      "branches": [],
+      "next": 305,
+      "figures": [],
+      "pdfPage": 35
+    },
+    {
+      "n": 305,
+      "mode": "search",
+      "title": "Step #5",
+      "prompt": [
+        "WHAT IS THE LAST VALID DATE",
+        "MMDDYY"
+      ],
+      "input": {
+        "pattern": "MMDDYY",
+        "description": "Enter month, day, year",
+        "maxLength": 6
+      },
+      "branches": [],
+      "next": 306,
+      "figures": [],
+      "pdfPage": 35
+    },
+    {
+      "n": 306,
+      "mode": "search",
+      "title": "Step #6",
+      "prompt": [],
+      "response": "If not legal, the following message is displayed: ERROR IN DATES - PLEASE TRY AGAIN",
+      "branches": [
+        {
+          "when": "Legal dates entered",
+          "goto": 307
+        },
+        {
+          "when": "Not legal: ERROR IN DATES - PLEASE TRY AGAIN",
+          "goto": 304
+        }
+      ],
+      "figures": [],
+      "pdfPage": 36
+    },
+    {
+      "n": 307,
+      "mode": "search",
+      "title": "Step #7",
+      "prompt": [],
+      "response": "No user response. Continue to #8",
+      "branches": [
+        {
+          "when": "ADD selected for KEY",
+          "goto": 311
+        }
+      ],
+      "next": 308,
+      "figures": [],
+      "pdfPage": 36
+    },
+    {
+      "n": 308,
+      "mode": "search",
+      "title": "Step #8",
+      "prompt": [
+        "SUBFILE SELECTION:",
+        "1. TRANSMITTAL/SPECIFICATION SUBFILE",
+        "2. MEMO/LETTER SUBFILE",
+        "3. TWX/MAGNAFAX/RAPIFAX SUBFILE",
+        "4. ANNOUNCEMENT SUBFILE",
+        "5. PURCHASE REQUEST SUBFILE",
+        "6. MISCELLANEOUS/REPORT SUBFILE",
+        "HOW MANY SUBFILES DO YOU WISH TO OPEN"
+      ],
+      "input": {
+        "pattern": "X",
+        "description": "Enter number X to be searched",
+        "maxLength": 1
+      },
+      "branches": [
+        {
+          "when": "X=6",
+          "goto": 310
+        },
+        {
+          "when": "X≠6",
+          "goto": 309
+        }
+      ],
+      "figures": [],
+      "pdfPage": 36
+    },
+    {
+      "n": 309,
+      "mode": "search",
+      "title": "Step #9",
+      "prompt": [
+        "DO YOU WANT SUBFILE NUMBER N (YES OR NO)"
+      ],
+      "input": {
+        "pattern": "YES/NO",
+        "description": "Where N is file number 1 thru 6. Repeated until X number of files designated"
+      },
+      "branches": [],
+      "next": 310,
+      "figures": [],
+      "pdfPage": 36
+    },
+    {
+      "n": 310,
+      "mode": "search",
+      "title": "Step #10",
+      "prompt": [],
+      "branches": [
+        {
+          "when": "Key selected is ALL",
+          "goto": 313
+        },
+        {
+          "when": "Key selected is NRE",
+          "goto": 315
+        },
+        {
+          "when": "Key selected is TO",
+          "goto": 318
+        },
+        {
+          "when": "Key selected is DOC",
+          "goto": 321
+        },
+        {
+          "when": "Key selected is CON",
+          "goto": 324
+        },
+        {
+          "when": "Key selected is CWN",
+          "goto": 327
+        },
+        {
+          "when": "Key selected is AUTH",
+          "goto": 330
+        },
+        {
+          "when": "Key selected is DLN",
+          "goto": 333
+        },
+        {
+          "when": "Key selected is IDD",
+          "goto": 336
+        },
+        {
+          "when": "Key selected is SUB",
+          "goto": 339
+        },
+        {
+          "when": "Key selected is MS",
+          "goto": 346
+        }
+      ],
+      "figures": [],
+      "pdfPage": 36
+    },
+    {
+      "n": 311,
+      "mode": "search",
+      "title": "Step #11",
+      "prompt": [
+        "THIS IS THE ACTION ITEM DUE DATE ROUTINE",
+        "NOTE - BREAK KEY HAS BEEN DISABLED FOR THIS RUN",
+        "THERE ARE TWO (2) OPTIONS FOR THE ACTION DUE SEARCH",
+        "1. A COMPLETE LISTING OF ALL ACTION DUE (1)",
+        "2. A NORMAL WITHIN 5 DAYS OR PAST DUE (2)"
+      ],
+      "input": {
+        "pattern": "X",
+        "description": "Enter number X",
+        "maxLength": 1
+      },
+      "branches": [],
+      "next": 312,
+      "figures": [],
+      "pdfPage": 37
+    },
+    {
+      "n": 312,
+      "mode": "search",
+      "title": "Step #12",
+      "prompt": [],
+      "response": "If none found, the following message is displayed: THERE ARE NO DOCUMENTS AWAITING ACTION / IF YOU WISH TO CONTINUE, DEPRESS THE RETURN. If documents are found, a header is displayed. Document data then follows. See Figure 37. After the last document is found and displayed, the following message is written on the terminal: THERE ARE XXX DOCUMENTS AWAITING ACTION. Where XXX represents the number found, the output is spooled, exit search mode. See Figure 38.",
+      "branches": [
+        {
+          "when": "None found; when return key is used",
+          "goto": 301
+        },
+        {
+          "when": "Documents found; after the last, the output is spooled, exit search mode",
+          "goto": 4
+        }
+      ],
+      "figures": [
+        "37",
+        "38"
+      ],
+      "pdfPage": 37
+    },
+    {
+      "n": 313,
+      "mode": "search",
+      "title": "Step #13",
+      "prompt": [
+        "THIS IS THE PRINT ALL ROUTINE",
+        "ALL DOCUMENTS IN THE MAIL LOG FILE WILL BE PRINTED"
+      ],
+      "branches": [],
+      "next": 314,
+      "figures": [],
+      "pdfPage": 37
+    },
+    {
+      "n": 314,
+      "mode": "search",
+      "title": "Step #14",
+      "prompt": [],
+      "response": "A header followed by document data is displayed. See Figure 15. The output file is spooled. See Figure 16. Exit search mode.",
+      "branches": [],
+      "next": 4,
+      "figures": [
+        "15",
+        "16"
+      ],
+      "pdfPage": 37
+    },
+    {
+      "n": 315,
+      "mode": "search",
+      "title": "Step #15",
+      "prompt": [
+        "RESPONSIBLE ENGINEER SEARCH",
+        "WHO IS THE NASA RESPONSIBLE ENGINEER",
+        "(INITIALS ONLY)"
+      ],
+      "input": {
+        "pattern": "AAA",
+        "description": "Enter initials AAA",
+        "maxLength": 3
+      },
+      "branches": [],
+      "next": 316,
+      "figures": [],
+      "pdfPage": 37
+    },
+    {
+      "n": 316,
+      "mode": "search",
+      "title": "Step #16",
+      "prompt": [
+        "THERE ARE XXX DOCUMENTS WITH A RESPONSIBLE ENGINEER OF AAA"
+      ],
+      "response": "A header followed by document data is displayed. See Figure 17. Terminal message is displayed after last found. Where XXX represents the number of documents found and AAA are is initials entered for search",
+      "branches": [],
+      "next": 317,
+      "figures": [
+        "17"
+      ],
+      "pdfPage": 38
+    },
+    {
+      "n": 317,
+      "mode": "search",
+      "title": "Step #17",
+      "prompt": [
+        "IF YOU WISH TO CONTINUE, DEPRESS THE RETURN KEY"
+      ],
+      "input": {
+        "pattern": "RETURN",
+        "description": "Depress the return key"
+      },
+      "branches": [
+        {
+          "when": "Return key is used",
+          "goto": 301
+        }
+      ],
+      "figures": [],
+      "pdfPage": 38
+    },
+    {
+      "n": 318,
+      "mode": "search",
+      "title": "Step #18",
+      "prompt": [
+        "THIS IS THE WHO TO/ADDRESSEE SEARCH",
+        "WHAT IS THE DESIRED ADDRESSEE"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "Enter name AAAA up to 32 characters. Last name, comma, space, first initial, period, space, middle initial, period.",
+        "maxLength": 32
+      },
+      "branches": [],
+      "next": 319,
+      "figures": [],
+      "pdfPage": 38
+    },
+    {
+      "n": 319,
+      "mode": "search",
+      "title": "Step #19",
+      "prompt": [
+        "THERE ARE XXX DOCUMENTS WITH AN ADDRESSEE OF AAAA"
+      ],
+      "response": "A header followed by document data is displayed. See Figure 19. Terminal message is displayed after last found. Where XXX represents the number of documents found and AAAA the addressee entered for search",
+      "branches": [],
+      "next": 320,
+      "figures": [
+        "19"
+      ],
+      "pdfPage": 38
+    },
+    {
+      "n": 320,
+      "mode": "search",
+      "title": "Step #20",
+      "prompt": [],
+      "branches": [],
+      "next": 317,
+      "figures": [],
+      "pdfPage": 38
+    },
+    {
+      "n": 321,
+      "mode": "search",
+      "title": "Step #21",
+      "prompt": [
+        "DOCUMENT DATA SEARCH ROUTINE",
+        "WHAT IS THE DATE THAT YOU WANT",
+        "MMDDYY"
+      ],
+      "input": {
+        "pattern": "MMDDYY",
+        "description": "Enter Date: month, day, year",
+        "maxLength": 6
+      },
+      "branches": [],
+      "next": 322,
+      "figures": [],
+      "pdfPage": 38
+    },
+    {
+      "n": 322,
+      "mode": "search",
+      "title": "Step #22",
+      "prompt": [
+        "THERE ARE XXX DOCUMENTS WITH A DOCUMENT DATE OF MM-DD-YY"
+      ],
+      "response": "A header followed by document data is displayed. See Figure 21. Terminal message is displayed after last found. Where XXX represents the number of documents found and MMDDYY is the document date entered for search.",
+      "branches": [],
+      "next": 323,
+      "figures": [
+        "21"
+      ],
+      "pdfPage": 38
+    },
+    {
+      "n": 323,
+      "mode": "search",
+      "title": "Step #23",
+      "prompt": [],
+      "branches": [],
+      "next": 317,
+      "figures": [],
+      "pdfPage": 39
+    },
+    {
+      "n": 324,
+      "mode": "search",
+      "title": "Step #24",
+      "prompt": [
+        "CONTRACT NUMBER SEARCH",
+        "WHAT IS THE DESIRED CONTRACT"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "Enter contract number AAAA up to 20 characters",
+        "maxLength": 20
+      },
+      "branches": [],
+      "next": 325,
+      "figures": [],
+      "pdfPage": 39
+    },
+    {
+      "n": 325,
+      "mode": "search",
+      "title": "Step #25",
+      "prompt": [
+        "THERE ARE XXX DOCUMENTS WITH A CONTRACT NUMBER OF AAAA"
+      ],
+      "response": "A header followed by document data is displayed. See Figure 23. Terminal message is displayed after last found. Where XXX represents the number of documents found and AAAA is the contract number entered for search.",
+      "branches": [],
+      "next": 326,
+      "figures": [
+        "23"
+      ],
+      "pdfPage": 39
+    },
+    {
+      "n": 326,
+      "mode": "search",
+      "title": "Step #26",
+      "prompt": [],
+      "branches": [],
+      "next": 317,
+      "figures": [],
+      "pdfPage": 39
+    },
+    {
+      "n": 327,
+      "mode": "search",
+      "title": "Step #27",
+      "prompt": [
+        "W.A. NUMBER/ID CODE SEARCH",
+        "WHAT IS THE DESIRED CODE"
+      ],
+      "input": {
+        "pattern": "NNNNIIII",
+        "description": "Enter W.A. No. NNNN and ID Code IIII",
+        "maxLength": 8
+      },
+      "branches": [],
+      "next": 328,
+      "figures": [],
+      "pdfPage": 39
+    },
+    {
+      "n": 328,
+      "mode": "search",
+      "title": "Step #28",
+      "prompt": [
+        "THERE ARE XXX DOCUMENTS WITH A W.A. NUMBER/ID CODE OF NNNNIIII."
+      ],
+      "response": "A header followed by document data is displayed. See Figure 25. Terminal message is displayed after last found. Where XXX represents the number of documents found and NNNNIIII is the W.A. number/ID code entered for search.",
+      "branches": [],
+      "next": 329,
+      "figures": [
+        "25"
+      ],
+      "pdfPage": 39
+    },
+    {
+      "n": 329,
+      "mode": "search",
+      "title": "Step #29",
+      "prompt": [],
+      "branches": [],
+      "next": 317,
+      "figures": [],
+      "pdfPage": 39
+    },
+    {
+      "n": 330,
+      "mode": "search",
+      "title": "Step #30",
+      "prompt": [
+        "THIS IS THE DOCUMENT AUTHOR/SOURCE SEARCH",
+        "WHAT IS THE DESIRED AUTHOR/SOURCE"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "Enter Author/Source AAAA up to 28 characters. Note: Author - last name, space, first initial, period, space middle initial, period.",
+        "maxLength": 28
+      },
+      "branches": [],
+      "next": 331,
+      "figures": [],
+      "pdfPage": 40
+    },
+    {
+      "n": 331,
+      "mode": "search",
+      "title": "Step #31",
+      "prompt": [
+        "THERE ARE XXX DOCUMENTS WITH AN AUTHOR/SOURCE OF AAAA"
+      ],
+      "response": "A header followed by document data is displayed. See Figure 27. Terminal message is displayed after last found. Where XXX represents the number of documents found and AAAA is the author/source entered for search",
+      "branches": [],
+      "next": 332,
+      "figures": [
+        "27"
+      ],
+      "pdfPage": 40
+    },
+    {
+      "n": 332,
+      "mode": "search",
+      "title": "Step #32",
+      "prompt": [],
+      "branches": [],
+      "next": 317,
+      "figures": [],
+      "pdfPage": 40
+    },
+    {
+      "n": 333,
+      "mode": "search",
+      "title": "Step #33",
+      "prompt": [
+        "DOCUMENT/LETTER NUMBER SEARCH",
+        "WHAT IS THE DESIRED DOCUMENT NUMBER"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "Enter document number AAAA up to 18 characters",
+        "maxLength": 18
+      },
+      "branches": [],
+      "next": 334,
+      "figures": [],
+      "pdfPage": 40
+    },
+    {
+      "n": 334,
+      "mode": "search",
+      "title": "Step #34",
+      "prompt": [
+        "THERE ARE XXX DOCUMENTS WITH DOCUMENT/LETTER NUMBER OF AAAA"
+      ],
+      "response": "A header followed by document data is displayed. See Figure 29. Terminal message is displayed after last found. Where XXX represents the number of documents found and AAAA is the document number entered for search.",
+      "branches": [],
+      "next": 335,
+      "figures": [
+        "29"
+      ],
+      "pdfPage": 40
+    },
+    {
+      "n": 335,
+      "mode": "search",
+      "title": "Step #35",
+      "prompt": [],
+      "branches": [],
+      "next": 317,
+      "figures": [],
+      "pdfPage": 40
+    },
+    {
+      "n": 336,
+      "mode": "search",
+      "title": "Step #36",
+      "prompt": [
+        "INPUT DATA DATE SEARCH ROUTINE",
+        "WHAT IS THE DATE THAT YOU WANT",
+        "MMDDYY"
+      ],
+      "input": {
+        "pattern": "MMDDYY",
+        "description": "Enter date: month, day, year",
+        "maxLength": 6
+      },
+      "branches": [],
+      "next": 337,
+      "figures": [],
+      "pdfPage": 40
+    },
+    {
+      "n": 337,
+      "mode": "search",
+      "title": "Step #37",
+      "prompt": [
+        "THERE ARE XXX DOCUMENTS WITH A DATE OF MM-DD-YY"
+      ],
+      "response": "A header followed by document data is displayed. See Figure 31. Terminal message is displayed after last found. Where XXX represents the number of documents found and MMDDYY is the input date entered for search.",
+      "branches": [],
+      "next": 338,
+      "figures": [
+        "31"
+      ],
+      "pdfPage": 41
+    },
+    {
+      "n": 338,
+      "mode": "search",
+      "title": "Step #38",
+      "prompt": [],
+      "branches": [],
+      "next": 317,
+      "figures": [],
+      "pdfPage": 41
+    },
+    {
+      "n": 339,
+      "mode": "search",
+      "title": "Step #39",
+      "prompt": [
+        "HOW MANY WORDS DO YOU WISH TO MATCH (MAX OF 4)"
+      ],
+      "input": {
+        "pattern": "X",
+        "description": "Enter number X",
+        "maxLength": 1
+      },
+      "branches": [],
+      "next": 340,
+      "figures": [],
+      "pdfPage": 41
+    },
+    {
+      "n": 340,
+      "mode": "search",
+      "title": "Step #40",
+      "prompt": [
+        "WHAT IS THE DESIRED WORD"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "Enter word AAAA"
+      },
+      "branches": [
+        {
+          "when": "Word is QUIT",
+          "goto": 345
+        }
+      ],
+      "next": 341,
+      "figures": [],
+      "pdfPage": 41
+    },
+    {
+      "n": 341,
+      "mode": "search",
+      "title": "Step #41",
+      "prompt": [
+        "THERE ARE XXX DOCUMENTS CONTAINING THE WORD AAAA"
+      ],
+      "response": "As each subject is found containing the desired word, the subject is displayed on the terminal. Following the last subject is displayed a message. Where XXX represents the number of documents found and AAAA is the desired word entered.",
+      "branches": [],
+      "next": 342,
+      "figures": [],
+      "pdfPage": 41
+    },
+    {
+      "n": 342,
+      "mode": "search",
+      "title": "Step #42",
+      "prompt": [],
+      "response": "Steps #40 and #41 are repeated X number of times from Step #39, unless zero (0) documents are found. If no documents are found, go to #45.",
+      "branches": [
+        {
+          "when": "Repeated X number of times from Step #39",
+          "goto": 340
+        },
+        {
+          "when": "No documents are found",
+          "goto": 345
+        }
+      ],
+      "next": 343,
+      "figures": [],
+      "pdfPage": 41
+    },
+    {
+      "n": 343,
+      "mode": "search",
+      "title": "Step #43",
+      "prompt": [],
+      "response": "A header followed by document data is displayed after the last word is searched. See Figure 33.",
+      "branches": [],
+      "next": 344,
+      "figures": [
+        "33"
+      ],
+      "pdfPage": 41
+    },
+    {
+      "n": 344,
+      "mode": "search",
+      "title": "Step #44",
+      "prompt": [],
+      "branches": [],
+      "next": 317,
+      "figures": [],
+      "pdfPage": 41
+    },
+    {
+      "n": 345,
+      "mode": "search",
+      "title": "Step #45",
+      "prompt": [
+        "DO YOU WISH TO TRY THE SUBJECT SEARCH AGAIN (YES OR NO)"
+      ],
+      "input": {
+        "pattern": "YES/NO",
+        "description": "Try the subject search again"
+      },
+      "branches": [
+        {
+          "when": "Yes",
+          "goto": 339
+        },
+        {
+          "when": "No",
+          "goto": 317
+        }
+      ],
+      "figures": [],
+      "pdfPage": 42
+    },
+    {
+      "n": 346,
+      "mode": "search",
+      "title": "Step #46",
+      "prompt": [
+        "THIS IS THE MAIL STATUS SEARCH ROUTINE",
+        "PLEASE INPUT THE DESIRED MAIL STATUS",
+        "(VC, IM, OM)"
+      ],
+      "input": {
+        "pattern": "AA",
+        "description": "Enter mail status AA: Vought Correspondence, Incoming Mail, or Outgoing Mail",
+        "maxLength": 2
+      },
+      "branches": [],
+      "next": 347,
+      "figures": [],
+      "pdfPage": 42
+    },
+    {
+      "n": 347,
+      "mode": "search",
+      "title": "Step #47",
+      "prompt": [],
+      "response": "If AA not legal, message displayed: ERROR IN MAIL STATUS AA NOT ALLOWABLE. TRY AGAIN. Where AA is the mail status entered, go to #46.",
+      "branches": [
+        {
+          "when": "AA is a legal entry",
+          "goto": 348
+        },
+        {
+          "when": "AA not legal: ERROR IN MAIL STATUS AA NOT ALLOWABLE. TRY AGAIN",
+          "goto": 346
+        }
+      ],
+      "figures": [],
+      "pdfPage": 42
+    },
+    {
+      "n": 348,
+      "mode": "search",
+      "title": "Step #48",
+      "prompt": [
+        "THERE ARE XXX DOCUMENTS WITH A MAIL STATUS OF AA"
+      ],
+      "response": "A header followed by document data is displayed. See Figure 35. Terminal message is displayed after last found. Where XXX represents the number of documents found and AA is the mail status entered for search",
+      "branches": [],
+      "next": 349,
+      "figures": [
+        "35"
+      ],
+      "pdfPage": 42
+    },
+    {
+      "n": 349,
+      "mode": "search",
+      "title": "Step #49",
+      "prompt": [],
+      "branches": [],
+      "next": 317,
+      "figures": [],
+      "pdfPage": 42
+    },
+    {
+      "n": 350,
+      "mode": "search",
+      "title": "Step #50",
+      "prompt": [
+        "DO YOU WANT A HARD COPY OF THE INFORMATION FOUND"
+      ],
+      "input": {
+        "pattern": "YES/NO",
+        "description": "Hard copy of the information found"
+      },
+      "response": "If Yes, output spooled to printer. See Section 5.1.2 for outputs",
+      "branches": [],
+      "next": 351,
+      "figures": [],
+      "pdfPage": 42
+    },
+    {
+      "n": 351,
+      "mode": "search",
+      "title": "Step #51",
+      "prompt": [],
+      "response": "Exit search mode",
+      "branches": [],
+      "next": 4,
+      "figures": [],
+      "pdfPage": 42
+    },
+    {
+      "n": 401,
+      "mode": "archive",
+      "title": "Step #1",
+      "prompt": [
+        "PLEASE ENTER THE INPUT DATE AND COUNT CODE OF THE DOCUMENT",
+        "TO BE ARCHIVED",
+        "!      !!    !"
+      ],
+      "input": {
+        "pattern": "MMDDYYNNNN",
+        "description": "Input date and daily counter code of the document (input date 6 characters - MMDDYY, daily counter 4 characters, Figure 3)",
+        "maxLength": 10
+      },
+      "branches": [],
+      "next": 402,
+      "figures": [],
+      "pdfPage": 44
+    },
+    {
+      "n": 402,
+      "mode": "archive",
+      "title": "Step #2",
+      "prompt": [
+        "WHICH SUBFILE IS THIS DOCUMENT LOCATED:",
+        "1. TRANSMITTAL/SPECIFICATION         2. MEMO/LETTER",
+        "3. TWX/MAGNAFAX/RAPIFAX              4. ANNOUNCEMENT",
+        "5. PURCHASE REQUEST                  6. MISCELLANEOUS/REPORT"
+      ],
+      "input": {
+        "pattern": "X",
+        "description": "Enter number X of subfile 1 thru 6",
+        "maxLength": 1
+      },
+      "branches": [],
+      "next": 403,
+      "figures": [],
+      "pdfPage": 44
+    },
+    {
+      "n": 403,
+      "mode": "archive",
+      "title": "Step #3",
+      "prompt": [],
+      "response": "Pause for system housekeeping to be completed. Exit ARCHIVE mode when done. A pause of 15 to 50 seconds occurs for the system to update all files involved; when the document has been archived, the user is automatically returned to the program entry, section 2.2.",
+      "branches": [],
+      "next": 3,
+      "figures": [],
+      "pdfPage": 44
+    }
+  ]
+}

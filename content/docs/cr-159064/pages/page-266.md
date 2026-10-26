@@ -1,0 +1,53 @@
+---
+pdfPage: 266
+folio: null
+sectionId: "C.REVSDR"
+kind: listing
+source: ocr
+confidence: 58.8
+figures: []
+listing:
+  appendix: "C"
+  routines: ["REVSDR"]
+  listingPage: 6037
+---
+```fortran
+(0453)       SUBROUTINE REVSDR
+(0454)
+(0455) C     COMMON GLOCK FOR THE OIR FILE
+(0455) C
+(0455)       COMMON TIT,PTIT,DIF YRPT,DT,SYS,WAN,CON,ID,VEHSACToR
+(0455)       COMMON COMP +REV,RDAT WA
+(0455) C
+(0455) C
+(0455)       DATA DECLARATION BLOCK FOR THE DIR FILE
+(0455) C
+(0455)       INTEGER #4 TIT(21) sPTIT(19) DIR (4) GRPT(A) PSYS(3) (CON CS) ID
+(0455)       INTEGER*4 COMP(21)                                           :
+(0455)       INTEGER *2 DT(3) SWAN (4) 9 VEH( 292) @R,REV,RDAT(3) 9 WA(4)
+(0455)
+(0456) C SYSCOM>KEYS.F      MNEMONIC KEYS FOR FILE SYSTEM CFTN) |   31 MAY, 1977
+(0456)       NOLIST
+(0457)       INTEGER*4 IDIR(4)
+(0458)         INTEGER*2 IOPT,FINISH, A(LS) oIT,IC
+(0459) C
+(0460) C     THIS IS THE REVISE ROUTINE FOR THE DIR FILE
+(0461) C     NOTE: THIS IS LIMITED AXCESS
+(0462) C
+(0463) C     VALIDATE THE INCOMMING USER            a
+(0464) C
+(0465)       CALL TIMDAT(A,1£)
+(0466)       IFCA(13) EQ. UN  OR A(13) SEGo*NHY SOR CA(13) @EGe RUMORS
+(0467)      1    ACL3ICEG2DK")  GO TO 3
+(0468)       WRITE(1,4)
+(0469)       FORMAT('' SORRY» YCU ARE NOT VALIDATED TO USE THIS MODEe'e/(
+(0470)      1  IF IT IS NECESSARY» PLEASE CONTACT SYSTEM OPERATOR AT EXTe2621
+(0471)       LeT)
+(0472)       RETURN
+(0473) 3      CONTINUE
+(0474)
+(0475) C     WHICH DIR DOCUMENT IS TO BE REVISED                             :
+(0476) C     KEY ON THE OIR NUMBER
+(0477)
+(0478)         FINISH=0
+```

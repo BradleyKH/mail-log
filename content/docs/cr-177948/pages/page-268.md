@@ -1,0 +1,55 @@
+---
+pdfPage: 268
+folio: null
+sectionId: "appendices"
+kind: text
+source: ocr
+confidence: 75.4
+figures: ["I-2"]
+---
+HIYVIS T1V dN AYWW
+
+MARK UP FILE
+JOG ITE TE REI EE TI TTS EE IE IIE
+
+```text
+CONTROL C/ R     SOP RESPONSIBLE ENG INEER(S)                   DATE     DATE LTV TWX NASA TWX
+
+NO. M NUMBER   NO, FOR EACH SOP NUMBER                IN    OUT   NUMBER NUMBER     COMMENTS
+```
+
+28H HII EEE EE EEE EE EE EE EE
+
+```text
+1173-4    R- 268 220 EEH/JFD                                  2-25-82 3= 3~82 37-025 S-6508/CWW OK
+1229    DAL 3065 264 EEH/KFT                           10- 7-82 10- 9-82 3T-025 S-6508/CWW OK
+1236     PA 2512 2625 EEH/JFD                                 11-30-82 11-30-82 3T-025 S-6508/CWW OK
+1239     DAL3084C 268 EEH/RLD/KFT                              3- 8-83 3- 7-83 31-026 S-6528/CWH OK VOL 11 37-025 S-6508/CWW
+```
+
+(COMMENTS CONTINUED): OK VOL VI & VII 3T-026 S-6528/CwW
+636 RLD/KFT
+
+710 DMF/JFD/RLD/KFT/EEH/CWW/RLR
+
+```text
+1241    DAL 3098 262 EEH/JFD                           1-18-83 1-20-83 3T-025 S-6508/CWN OK WITH COMMENTS. E-TASK
+1241-1 DAL 3099 2630 EEH/JFD                             1-18-83 1-21-83 37-025 S-6508/CWW OK E-TASK
+1241-2 OAL 3102 2611 EEH/JFD                            3- 8-83 3-10-83 37-025  $-6508/CWW OK WITH COMMENTS
+```
+
+250 EEH/JFD
+
+```text
+1241-3 DAL3103A 2639 EEH/RLD/KFT                         3= 8-83 3-10-83 31-025  $-6508/CWN OK WITH COMMENTS
+1241-4 DAL 3104 2613 EEH/JFD                           3- 2-83 3- 2-83 37-025 $-6508/CWN OK
+1256    DAL3091A 262 EEH/JFD                          4-13-83 4-15-83 37-055  S-6595/CWH OK VOL VI 3T-026 S-6528/CWW
+```
+
+2625 EEH/JFD
+622 EEH/KFT
+631 EEH/KFT
+1283 WI 2491A 269 EEH/RLD/KFT 6- 6-83 6- 8-83 37-073 S-6684/CWH OK VO 11 37-055 S-6595/CWW
+
+2640 EEH/DMR
+622 EEH/KFT

@@ -1,0 +1,27 @@
+       SUBROUTINE SHOWDR
+
+C     COMMON BLOCK FOR THE DIR FILE
+C
+      COMMON TIT,FTIT,DI2,RPT,DT,SYS,WAN,CON,I O, VEH,ACTOR
+      COMMON COMP sREV,RDAT GWA
+
+C
+C     DATA DECLARATION 8LOCK FOR THE DIR FILE
+C                                          mo,
+      INTEGER®4 TIT(21) oF TIT(L9) DIR (4) 9RPT(4) oSYS(3) 9CON(S) ID GACT
+      INTEGER *4 COMP(21)
+      INTEGER #2 DT(3) sWAN(4) VEH( 292) 9RoREVORDAT (CZ) PWA(4)
+C
+C
+       CALL CLEAR
+       WRITE(1,10). TIT
+10     FORMAT(2Xe% le TITLES eS o2Xe TCIXefA49A2))
+        WRITE (1,20)DI R,OT,SYS
+ 20    FORMAT(2X9%26  Ma BAGgAZeSXah Se e229  %—9) gl 2G13Xo
+      194. %eB(ILX9A4D)
+        WRITE (L, SOWAN, COVEH( I oJ) oJ=L02) 612192)
+30     FORMAT(2Xs'Se  Soh A2e11Xe'6o  %o2C1XeT3eA191X))
+       WRITE(1,4C0)REVGRDAT                            .
+40     FORMAT(2Xe%7e MelASgl7TXe'Be %e2C129%=%) 4 J2)
+        RETURN
+        END

@@ -1,0 +1,92 @@
+[
+  {
+    "term": "533 report",
+    "definition": "A standardized contractor financial report the government uses to monitor management contracts. It shows dollar and hourly summaries for Fixed Price Incentive (FPI) and Cost Plus Fixed Fee (CPFF) tasks, and the program produces one of four quarterly versions depending on the current status month (September, December, March, or June).",
+    "pdfPage": 60
+  },
+  {
+    "term": "CPFF",
+    "definition": "Cost Plus Fixed Fee, one of the two kinds of task the 533 report summarizes, alongside FPI.",
+    "pdfPage": 60
+  },
+  {
+    "term": "Dallas tape",
+    "definition": "The monthly tape of actual costs received from the contractor's Dallas, Texas facility. Support staff convert it from tape to disk once a month and build a W.A. list file, after which the Dallas tape update loads the actual dollar figures into the analysis records and spools a conversion report and a list of undefined W.A. records.",
+    "pdfPage": 92
+  },
+  {
+    "term": "EAC",
+    "definition": "Estimate at completion: the projected total hours and dollars for a record. The ETC/EAC-Budget update computes a new budget and EAC from the contractor's latest estimate to complete and the fiscal year rates.",
+    "pdfPage": 95
+  },
+  {
+    "term": "ETC",
+    "definition": "Estimate to complete: the contractor's latest estimate of the hours and dollars still to be spent. The ETC/EAC-Budget update uses it, with the fiscal year rates, to recompute a record's budget and EAC.",
+    "pdfPage": 95
+  },
+  {
+    "term": "FPI",
+    "definition": "Fixed Price Incentive, one of the two kinds of task the 533 report summarizes, alongside CPFF. The report's header asks for fund limitation and billing amounts separately for FPI and CPFF.",
+    "pdfPage": 60
+  },
+  {
+    "term": "job order",
+    "definition": "A cost-accounting code carried in an analysis record (for example E8212A), with an optional two-character sub-job order, a program number, and the percentage of the record's hours and dollars charged to each fiscal year. A record can hold several job orders, which can be added, changed, deleted, or built automatically from the sustaining job orders table.",
+    "pdfPage": 34
+  },
+  {
+    "term": "M/ODC",
+    "definition": "Material charges and Other Direct Charges: the dollar amount, besides engineering hours, that the user enters when the ratetable option spreads hours and dollars over a range of months.",
+    "pdfPage": 41
+  },
+  {
+    "term": "ODC",
+    "definition": "Other Direct Charges, the non-labor costs that go with material. Records carry ODC-material dollars, and the Actual summary report totals actual ODC-material dollars by task.",
+    "pdfPage": 85
+  },
+  {
+    "term": "phantom",
+    "definition": "A background job. A cost or proration report can be run while the user waits, as a fast phantom job, or as a slow batch job; the program reports the phantom number, and system option 55 lists the phantoms and batch jobs the user has submitted.",
+    "pdfPage": 15
+  },
+  {
+    "term": "POP report",
+    "definition": "A report of dollar summaries by program assignment, such as 400 (NASA) and 493 (DOD). POP1 covers the first half of the fiscal year and POP2 the second half.",
+    "pdfPage": 62
+  },
+  {
+    "term": "program number",
+    "definition": "A 17-digit number (for example 49002024400000400) tied to each job order. The program number table supplies it for a job order automatically; when a job order is not in the table, the user enters the program number by hand. Its trailing digits identify the program assignment, such as 400 (NASA) or 493 (DOD).",
+    "pdfPage": 37
+  },
+  {
+    "term": "proration",
+    "definition": "The distribution of hours or costs by vehicle, phase, and program. The proration hourly report and the proration of costs report each come in a regular, a special R subtask, and a sub-job order format, and a DOD version covers multiple contracts.",
+    "pdfPage": 73
+  },
+  {
+    "term": "RBK",
+    "definition": "Requirement Becomes Known, a header field of an analysis record.",
+    "pdfPage": 21
+  },
+  {
+    "term": "spooling",
+    "definition": "The process of sending a listing or report to a printer. The program asks for the printer and the number of copies (at most five), and a zero entry cancels the output.",
+    "pdfPage": 25
+  },
+  {
+    "term": "status date",
+    "definition": "The month and year of the actual figures an analysis record or an update run applies to. The 533 report uses the current status date to choose its quarter, and the ETC/EAC-Budget update lets the user change it temporarily for the current session.",
+    "pdfPage": 95
+  },
+  {
+    "term": "sustaining job order",
+    "definition": "A job order held in the sustaining job orders table, which lists the job orders for each task and subtask combination, each with up to eight fiscal year percentages. The AUTO option builds a record's job orders from this table, and records flagged SUST in their TABLE header field follow it.",
+    "pdfPage": 57
+  },
+  {
+    "term": "W.A.",
+    "definition": "Work Authorization: the authorization under which work is charged, identified by a W.A. number and code. The program has W.A. cost, hourly, summary, and status reports; the W.A. status report lists open records that lack the status month or the current month and likely need their period of performance extended or the record closed.",
+    "pdfPage": 82
+  }
+]

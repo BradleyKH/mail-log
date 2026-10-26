@@ -1,0 +1,42 @@
+---
+pdfPage: 181
+folio: null
+sectionId: "B.ALC"
+kind: listing
+source: ocr
+confidence: 62
+figures: []
+listing:
+  appendix: "B"
+  routines: ["ALC"]
+  listingPage: 166
+---
+```fortran
+(2101)       IF (IPAGE.NE.0) GOTO 160
+(2102) C      SET UP FOR DISPLAY OF THE PRINT ALL HEADING
+(2103)       ITEM=50
+(2104)       IPAGE=)"                                  .
+(2105) C      DISPLAY HEADING ON USER TERMINAL SCREEN
+(2106)       CALL SCRNHD(ITEM)
+(2107) C      DISPLAY RECORD FOUND CN USFR TERMINAL SCREEN                  oo,
+(2108) 160   CALL SCRNPT(ITEH)
+(2109) C      1S THIS FOR TOP OF PRINTER PAGE
+(2110)       IF(IPRINT,NF 20) GOTO 170
+(2111) C      PRINT HEADING FOR PRINT ALL ON PRINTER
+(2112)       CALL HARDHD(ITEM)
+(2113)       IPRINT=1
+(2114) C      FRINT KECOPD FOUND ON PRINTER                               Ce
+(2115) 170   CALL HARDPT(I TEM)
+(2116) C      IS THIS BOTTOM OF PRINTER PAGE» YES SET TOP OF PRINTER PAGE FLAG
+(2117)       IF (KNT/22.EQ.KNT/220). IPRINT=0
+(2118)       GOTO 50
+(2119) C      CLOSE ALL SUB-FILES
+(2120) 100   CALL CLOSE.
+(2121) C      CLOSE ALL OTHER OPEN WORKING FILES                             oe
+(2122)       CALL SRCH$$(KSCLOSs*OUT    969 09040)
+(2123)       CALL SRCH$$(KSCLOSs*REVS  %96900090)
+(2124)       CALL SRCH$$(KSCLOSs*DATE  96909090)
+(2125)       CALL COMI(*SOUTY, 4912910)
+(2126)       CALL EXIT
+(2127)       END
+```

@@ -1,0 +1,23 @@
+{
+  "record": "correspondence",
+  "title": "Broken",
+  "entryStep": 50,
+  "steps": [
+    {
+      "n": 1,
+      "mode": "menu",
+      "prompt": [
+        "X"
+      ],
+      "branches": [
+        {
+          "when": "S",
+          "goto": 99
+        }
+      ],
+      "next": 98,
+      "figures": [],
+      "pdfPage": 1
+    }
+  ]
+}

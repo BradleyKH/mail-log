@@ -1,0 +1,126 @@
+---
+pdfPage: 68
+folio: null
+sectionId: "7.1.1"
+kind: mixed
+source: ocr
+confidence: 60.6
+figures: []
+---
+CORRESPONDENCE INPUT . COMPLETE QUTPUT
+
+REARS RARARHAD AE TARRAER REAR RETA RR EEE REE EERE REE EE REE REET AAA RRR TAREE EER EEARERAREREAERRER AD RERED
+
+36
+
+Se
+
+```text
+ANCOMING MAIL                         INPUT DATE 12- 6-78:
+SUSJECT                                                  ;                   DOCUMENT DATE   FILE SYSTEM CODE
+AUTHOR /SOURCE                  TO                                  ROUTING                    TYPE/LETTER NUMSER
+ACTION DUE DATE                WA NUMBER/ID CODE                   CONTRACT NUMBER
+```
+
+NASA RESPONSIBLE ENGINEERCS)
+REFERENCE DOCUMENT NUMBERCS)
+DESCRIPTION OF TRANSMITTAL OR SPECIFICATION
+
+RHETT RAHREARTARERERA EATER EE RE RE ERR RE RR E RRR ERKEARE RRR HARRAH EREREKA RETA RERERAR
+
+SCOUT/WFC FIELD OPERATIONS DAILY WORK SCHEDULE 12/6/78
+
+```text
+DAWSONe Co Heo                  WINTERS» Co Wes DUNCANs DE ARING
+O- O- 0                       3525FR
+```
+
+Cww
+
+NOWE
+
+VC/VAFB.OPERATIONS DAILY WORK SCHEDULE 12/6/78
+
+```text
+HALE» Ceo Fe                    WINTERSe Co Wes DEARINGse Je Do
+O- O- 0                      3525FR
+```
+
+JOO
+
+NONE
+
+VC/YUFC DAILY STATUS VEHICLE S$~202C
+
+```text
+DAWSONes Ce. Me                  AILOR»s Se Je
+O- = 0                       3525FR
+```
+
+JA
+
+NONE
+
+RESEARCH & TECHNOLOGY ANNUAL REPORT
+
+KRIEGERs Re Le WFC NASA-HOGTS.3 SPO
+
+O- 0- 0
+
+```text
+LaF   So
+NONE                                                      7
+```
+
+LIST JOB-ORDERS CLOSED EFFECTIVE PAY-PERIOD ENDING 12/2/78
+O- G- 0
+
+LRF
+
+NOWE
+
+ALL/
+
+/ /
+
+NAS1-15000°
+
+CWW/JOD/JBT/
+NAS1-15000
+
+ALL/
+
+/ /
+
+NAS1-15000
+
+LRF/
+
+". NHTZAY
+
+\- FIGURE. 7.1.1.7
+
+/OEF/
+
+12- 6-78
+
+eT GT
+12- 6-78
+12- 6-78
+1i- 7-78
+sof
+12~ 1-78
+
+405610 /
+ME X
+40309 Y
+MEX
+131-202 /
+
+MFX B20/F0C
+
+40561 /
+LETTER
+
+509.4.1 /
+MEMO

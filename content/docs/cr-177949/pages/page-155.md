@@ -1,0 +1,26 @@
+---
+pdfPage: 155
+folio: "J-1"
+sectionId: "appendices"
+kind: text
+source: ocr
+confidence: 84.3
+figures: []
+---
+CONTRACT: NAS1=16200
+PRORATION OF COSTS
+BASED ON EACtS
+MANUAL RECORDS ONLY
+TASK(S) RJ ME
+REPORT WITH FEE
+
+ALL PROGRAMS
+
+ALL JOB ORDERS
+
+ONLY OPEN W.A.'S
+
+DATE COMPUTED:
+WED, JUL 10 1985 09:10:53 AM
+
+REGULAR PRORATION OF COSTS REPORT

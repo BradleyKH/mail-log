@@ -1,0 +1,53 @@
+---
+pdfPage: 248
+folio: null
+sectionId: "C.INPSDR"
+kind: listing
+source: reviewed
+confidence: 95
+figures: []
+listing:
+  appendix: "C"
+  routines: ["INPSDR"]
+  listingPage: 19
+---
+```fortran
+(0229)       CALL TINPUT(TIT,LEN)
+(0230)       WRITE(1,102)TIT
+(0231) 102   FORMAT(7(1X,2A4,A2)/)
+(0232) 200   IF(R.EQ.1.AND.IR.NE.2) GO TO 300
+(0233)       IF(R.EQ.0) GOTO 300
+(0234) 201   WRITE(1,202)
+(0235) 202   FORMAT(' (2) DIR OR REPORT NUMBER',/
+(0236)      1'!',14X,'!'/)
+(0237)       READ(1,203,ERR=201)DIR
+(0238) 203   FORMAT(1X,3A4,A2)
+(0239)       WRITE(1,203)DIR
+(0240) 300   CONTINUE
+(0241) 400   IF(R.EQ.1.AND.IR.NE.3) GO TO 500
+(0242) 401   WRITE(1,402)
+(0243) 402   FORMAT(' (3) DOCUMENT DATE',/,'!MMDDYY!'/)
+(0244)       READ(1,403,ERR=401)DT
+(0245) 403   FORMAT(1X,3I2)
+(0246)       WRITE(1,403)DT
+(0247) 500   IF(R.EQ.1.AND.IR.NE.4) GO TO 600
+(0248) 501   WRITE(1,502)
+(0249) 502   FORMAT(' (4) SYSTEM',
+(0250)      11X,'(ELEC,GSE,GUID,MECH,PROP,RF,SOP,MGS,EGS,PERF)',
+(0251)      1,/,3('!',4X,'!')/)
+(0252)       READ(1,503,ERR=501)SYS
+(0253) C     CALL CHKSYS(SYS,IER)
+(0254) C     DO 11 I=1,3
+(0255) C     IF(IER(I).EQ.1) GO TO 501
+(0256) C11   CONTINUE
+(0257) 503   FORMAT(1X,3(A4,2X))
+(0258)       WRITE(1,503) SYS
+(0259) 600   IF(R.EQ.1.AND.IR.NE.5) GO TO 900
+(0260) 601   WRITE(1,602)
+(0261) 602   FORMAT(' (5) W.A. NUMBER/ID CODE',/'!',8X,'!'/)
+(0262)       READ(1,603,ERR=601) WAN
+(0263)       WRITE(1,603)WAN
+(0264) 603   FORMAT(1X,4A2)
+(0265)       CALL GETCON
+(0266) 660   WRITE(1,650) CON
+```

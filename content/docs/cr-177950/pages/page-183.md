@@ -1,0 +1,60 @@
+---
+pdfPage: 183
+folio: "175"
+sectionId: "11.4"
+kind: text
+source: ocr
+confidence: 91.9
+figures: []
+---
+data base. The report is designed for 8.5 x 11 paper and should be spooled
+to a printer using that size paper. An option for excluding certain groups
+of records Is Included as well as an option for a conference date to be
+printed at the head of the sign-in sheet. See Appendix H=-3 for an example of
+
+the sign-in sheet report output format. See the following example.
+
+SELECT OPTION BY ENTERING NUMBER (RETURN TO QUIT) > 3
+
+THIS PROGRAM PROVIDES A SPECIALLY FORMATTED SIGN IN SHEET FOR
+THE LSAST-1984 CONFERENCE AND 1S TO BE SPOOLED TO A LETTER
+QUALITY PRINTER (LQP). PRINTERS E, F, 1, AND P ARE THE
+
+LQP PRINTERS BEST SUITED FOR THIS REPORT.
+
+THE FOLLOWING OPTIONS ARE AVAILABLE:
+
+```text
+(0) QUIT              (2) LANGLEY PERSONNEL ONLY
+(1) ENTIRE FILE       (3) RECORDS OTHER THAN LANGLEY PERSONNEL
+```
+
+ENTER OPTION > 3
+
+PLEASE ENTER THE NUMBER FOR THE DESIRED DATE TO BE PRINTED
+AT TOP OF REPORT: (4) DECEMBER 4, 1984
+
+(5) DECEMBER 5, 1984
+
+(6) DECEMBER 6, 1984
+
+ENTER NUMBER > 6
+PLEASE STAND BY ... OUTPUT BEING FORMATTED.
+OUTPUT TO :
+\0) NO OUTPUT !1!
+\1) SCOUT PROJECT OFFICE / LARC, NASA
+\2) VOUGHT CORPORATION / DALLAS, TX
+\3) PROJECTS DIRECTORATE / LARC, NASA
+ENTER OPTION NUMBER > 3
+
+OUTPUT TO :
+\0) START OVER
+
+\1) LQOP C - SINGLE SHEET
+\2) LQP D - SINGLE SHEET
+\3) LQP E - SINGLE SHEET
+\4) LQP F - SINGLE SHEET
+\5) ETI SYSTEM PRINTER / H
+
+ENTER OPTION NUMBER > 1
+ENTER NUMBER OF COPIES > 1

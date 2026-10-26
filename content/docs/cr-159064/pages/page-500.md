@@ -1,0 +1,53 @@
+---
+pdfPage: 500
+folio: null
+sectionId: "D.INPSE"
+kind: listing
+source: ocr
+confidence: 45.9
+figures: []
+listing:
+  appendix: "D"
+  routines: ["INPSE"]
+  listingPage: 173
+---
+```fortran
+(2444) C     BEGIN INPUT
+(2445) C
+(2446) 100   IF (R.EQ.L .AND.IR.NE.L) GO TO 200
+(2447) 103   WRITE(1»101)
+(2448) 101    FORMAT(' (1) TITLE (7 WORDS - 10 CHARS D POS EE MS TEXS
+(2449)       LEN=10                                                        ‘
+(2450)       CALL TINPUT(ETIT,LEN)
+(2451)       WRITE(L e102) ETIT
+(2452) 102   FORMAT(TC1X9 244942)
+(2453)        DO 105 L=1.19
+(2454)        EPTIT(L)=PTIT(L)
+(2455) 105    CONTINUE
+(2456)         WRITE CL 911 OVEPTIT
+(2457) 110     FORMAT(1X919A4)
+(2458) 200   IF(R.EQ.L .AND.IR.NE.2) GO TO 300
+(2459)       IF(R.EQ.0.AND.FIRST.EQ.1) GOTO 300
+(2460) 201   WRITE (15202)
+(2461) 202   FORMAT(' (2) Ee0. NUMBER o/
+(2462)       LPLTYBXYGTTes/Y
+(2463) C     READ (19203sERR=201)E0N
+(2464) 203   FORMAT(1X92A4)
+(2465)       WRITE (1,203) EON
+(2466) 300   CONTINUE
+(2467) 400   IF (R.EQ.LeANDSIR.NE.3) GO TO 900
+(2468) 401   WRITE C(19501)
+(2469) 501   FORMAT(' (3) REVISION: IF NONE» ENTER NC%g/g'! tes)
+(2470)        READC15502,(ERR=401)EOREV
+(2471) 502    FORMAT(1X91A2)
+(2472)        WRITE (1,502)EOREV
+(2473) 500    IF(RSEQ,1.AND.IR.NE.4) GO TO 1000
+(2474) 901   WRITE (19902)
+(2475) 502   FORMAT(' (4) Ee. DATE s/s '!MMODYY!(/)
+(2476)       READ (1990 3,ERR=901)EDT
+(2477) 903   FORMAT(1X»9312)
+(2478)       WRITE(L S903) EDT
+(2479) 1000  IFC(R.EQ.1,ANG,IR.NE.S) GOTO 1200
+(2480) 1001  WRITE(1,1002)
+(2481) 1002  FORMAT( ©((5) £20. REVISION DATE s/s 'IMMDDYYI#/)
+```

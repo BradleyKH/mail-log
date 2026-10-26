@@ -1,0 +1,53 @@
+---
+pdfPage: 450
+folio: null
+sectionId: "D.DMAIN"
+kind: listing
+source: ocr
+confidence: 43.7
+figures: []
+listing:
+  appendix: "D"
+  routines: ["DMAIN"]
+  listingPage: 123
+---
+```fortran
+(1795) 231   FORMAT(LIXe'SHEETH  1% ,AXg'REV %5A2)
+(1796)       IF (FNEO.EQ.0) GOTO 301
+(1797)         IF(R.EQ.0) GO TO 32
+(1798)        II=FNEO
+(1799)       IF(CFNEO.GT.10) II=10
+(1800)          DO 35 I=LsII
+(1801)        IF(FEOREF (191).EQ.?  *) GOTO 302
+(1802)          WRITE(1,38) I, (FEOREF CI «K) sK=192)
+(1803)          WRITE(7,38) I, (FEOREF CI eK) sK=192)
+(1804) 38    FORMAT(IIXe129%. %92A4)
+(1805) 35    CONTINUE
+(1806)        GOTO 351
+(1807) 32     II=FNZO
+(1808)        IF(FNEG.GT.10) ITI=10
+(1809)       DO 361 I=19II
+(1810) 31    READ(I&YEND=91) LEONG ETIT,EPTIT,EOREV,EDT sERDT sEOVEH
+(1811) C      SEARCH FGR LOREFSEON
+(1812)       DO 401 N=192
+(1813)       IF CEON(N).NE.FEOREF(I9N)? GOTO 31
+(1814) 401   CONTINUE
+(1815)       IFCEOREV.EQ.*N(*). GOTO 151
+(1816)       WRITE (7230) EOKNT SECNoEOREVGEROTSEPTIT
+(1817)       WRITEC1L S140. EOKNT sEONSEOREV,ERDT
+(1818)       GO TO 61
+(1819) 151   WRITE(7T e240) EQKNT o£ ON,EOREVSEDToEPTIT
+(1820)       WRITE (L oL 40) EOKNT sEONGEOREVSEDT
+(1821) 61    EQKNT=EOKNT+1
+(1822)       IF (EPTIT(1) NEo?®     WRITE C1,130)EPTIT
+(1823) 91    REWIND 18
+(1824) 301   CONTINUE
+(1825)       IF (NSHT.EQ.1) GOTO 190
+(1826)        DO    190 K=2YNSHT
+(1827)       EOKNT=1
+(1828) 160   READ (C12 sEND=190)DRWYSHTN,REV, NEO YEOREF
+(1829)         DO 170 J=Le4
+(1830)           IF(ORW(U) NESDRAW(J)) GOTO 160
+(1831) 170       CONTINUE                             .
+(1832)         IF(SHTN(2)2EG.0) GOTO 265
+```

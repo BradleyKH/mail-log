@@ -1,0 +1,40 @@
+---
+pdfPage: 537
+folio: null
+sectionId: "6.3.2"
+kind: text
+source: ocr
+confidence: 77.1
+figures: []
+---
+VARIABLE/ ARRAY
+
+DESCRIPTION ©
+
+VEH]
+VKNT
+VS
+WA
+
+TITLE SEARCH WORD COUNTER
+DESIRED VEHICLE
+VEHICLE FOUND COUNTER ©
+
+~ FIRST AND LAST VALID VEHICLE
+WORK AUTHORIZATION/ID CODE
+
+\- 523 -
+
+SIZE
+
+TYPE
+
+oon rf —
+
+NUMERIC
+
+ALPHA
+NUMERIC
+
+ALPHA
+ALPHA

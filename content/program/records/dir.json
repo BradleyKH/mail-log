@@ -1,0 +1,26 @@
+[
+  {
+    "title": "SCOUT TRAJECTORY DATA ILLUSTRATI QUATERNION GUIDANCE EFFECTS",
+    "dirReportNumber": "23DIR1992",
+    "date": "1-19-78",
+    "system": "GUID TRAJ PERF",
+    "waNumberIdCode": "3526RGAE",
+    "contractNumber": "NAS1-15100",
+    "vehicle": "0 0",
+    "revision": "REV A",
+    "revisionDate": "1-19-78",
+    "sourceFigure": "39"
+  },
+  {
+    "title": "PRELIMINAR WEIGHT DATA ADVANCED SCOUT CONFIGURAT",
+    "dirReportNumber": "23DIR1099",
+    "date": "8-19-76",
+    "system": "MECH",
+    "waNumberIdCode": "3262EAAC",
+    "contractNumber": "NAS1-7256",
+    "vehicle": "0 0",
+    "revision": null,
+    "revisionDate": "0- 0- 0",
+    "sourceFigure": "39"
+  }
+]

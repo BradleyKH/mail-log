@@ -1,0 +1,53 @@
+---
+pdfPage: 442
+folio: null
+sectionId: "D.SHOWDW"
+kind: listing
+source: reviewed
+confidence: 100
+figures: []
+listing:
+  appendix: "D"
+  routines: ["SHOWDW"]
+  listingPage: 115
+---
+```fortran
+(1708)       SUBROUTINE SHOWDW
+(1709) C
+(1709) C     COMMON BLOCK FOR THE DRAW-EO FILE
+(1709) C
+(1709)       COMMON DRAW,TIT,PTIT,DT,SYS,VEH,SECT,NSHT,FREV,FNEO,FEOREF,
+(1709)      1       DRW,SHTN,REV,NEO,EOREF,
+(1709)      1       EON,ETIT,EPTIT,EOREV,EDT,ERDT,EOVEH,
+(1709)      1       R,IDR,INEO,KNT,FIRST,SECOND,TTIT
+(1709) C
+(1709) C     DATA DECLARATION BLOCK FOR THE DRAW-EO FILE
+(1709) C
+(1709)       INTEGER*4 DRAW(4),TIT(21),PTIT(19),SYS(3),SECT(3),FEOREF(10,2),
+(1709)      1          DRW(4),EOREF(10,2),EPTIT(19),ETIT(21),EON(2),
+(1709)      1          IDR(4),KNT,TTIT(19)
+(1709)       INTEGER*2 DT(3),VEH(2,2),NSHT,SHTN(2),FREV,FNEO,REV,NEO,
+(1709)      1          EOREV,EDT(3),ERDT(3),EOVEH(2,2),R,INEO,
+(1709)      1          FIRST,SECOND
+(1709) C
+(1709) C
+(1710) C
+(1711)       CALL CLEAR
+(1712)       WRITE(1,10) PTIT
+(1713) 10    FORMAT(2X,'1.  TITLE:',/,3X,19A4)
+(1714)       WRITE(1,20)DRAW,DT,SYS
+(1715) 20    FORMAT(2X,'2.  ',3A4,A2,3X,'3.  ',2(I2,'-'),I2,7X,
+(1716)      1'4.  ',3(1X,A4))
+(1717)       WRITE(1,30)((VEH(I,J),J=1,2),I=1,2),SECT,NSHT
+(1718) 30    FORMAT(2X,'5.  ',2(1X,I3,A1,1X),5X,'6.  ',3A4,3X,'7.  ',I2,
+(1719)      1' SHEETS')
+(1720)       WRITE(1,35)FREV
+(1721) 35    FORMAT(2X,'8.  SHEET#  1',6X,'REV ',A2)
+(1722)       WRITE(1,70)
+(1723)       IF(FNEO.NE.0) GOTO 36
+(1724)       WRITE(1,72)
+(1725)       GO TO 81
+(1726) 36    DO 81 J=1,FNEO
+(1727)       WRITE(1,85)(FEOREF(J,K),K=1,2)
+(1728) 81    CONTINUE
+```

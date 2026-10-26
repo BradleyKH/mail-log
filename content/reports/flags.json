@@ -1,0 +1,157 @@
+{
+  "thresholds": {
+    "proseConfidence": 70,
+    "mixedConfidence": 60,
+    "listingBadLines": 5
+  },
+  "counts": {
+    "cr-159065": 0,
+    "cr-159063": 0,
+    "cr-159064": 8,
+    "cr-159066": 0,
+    "cr-177948": 3,
+    "cr-177949": 0,
+    "cr-177950": 3
+  },
+  "docs": {
+    "cr-159065": [],
+    "cr-159063": [],
+    "cr-159064": [
+      {
+        "pdfPage": 176,
+        "kind": "listing",
+        "confidence": 45.3,
+        "reasons": [
+          "4 line(s) with unbalanced parentheses",
+          "unresolved: keyword IFUNREC1sL)"
+        ]
+      },
+      {
+        "pdfPage": 98,
+        "kind": "listing",
+        "confidence": 49.6,
+        "reasons": [
+          "2 line(s) with unbalanced parentheses",
+          "unresolved: keyword 1/), keyword DETERMINE, keyword TEXC, routine SKCHSSCKSROUR"
+        ]
+      },
+      {
+        "pdfPage": 109,
+        "kind": "listing",
+        "confidence": 52.6,
+        "reasons": [
+          "unresolved: keyword IDIFF, routine SKCHISCKSROWR"
+        ]
+      },
+      {
+        "pdfPage": 151,
+        "kind": "listing",
+        "confidence": 58,
+        "reasons": [
+          "2 line(s) with unbalanced parentheses",
+          "unresolved: routine SKCHSSCKSCLOS"
+        ]
+      },
+      {
+        "pdfPage": 111,
+        "kind": "listing",
+        "confidence": 59.5,
+        "reasons": [
+          "unresolved: keyword IS, routine SKCHSS"
+        ]
+      },
+      {
+        "pdfPage": 93,
+        "kind": "listing",
+        "confidence": 67.7,
+        "reasons": [
+          "sequence numbers weakly supported (0 of 4 lines read cleanly)"
+        ]
+      },
+      {
+        "pdfPage": 92,
+        "kind": "listing",
+        "confidence": 69.1,
+        "reasons": [
+          "sequence numbers weakly supported (6 of 37 lines read cleanly)",
+          "1 line(s) with unbalanced parentheses"
+        ]
+      },
+      {
+        "pdfPage": 37,
+        "kind": "listing",
+        "confidence": 96.5,
+        "reasons": [
+          "sequence numbers weakly supported (0 of 2 lines read cleanly)"
+        ]
+      }
+    ],
+    "cr-159066": [],
+    "cr-177948": [
+      {
+        "pdfPage": 249,
+        "kind": "mixed",
+        "confidence": 51.5,
+        "reasons": [
+          "mean word confidence 51.5 below 60"
+        ]
+      },
+      {
+        "pdfPage": 248,
+        "kind": "mixed",
+        "confidence": 59.2,
+        "reasons": [
+          "mean word confidence 59.2 below 60"
+        ]
+      },
+      {
+        "pdfPage": 100,
+        "kind": "text",
+        "confidence": 69.8,
+        "reasons": [
+          "mean word confidence 69.8 below 70"
+        ]
+      }
+    ],
+    "cr-177949": [],
+    "cr-177950": [
+      {
+        "pdfPage": 144,
+        "kind": "mixed",
+        "confidence": 55.3,
+        "reasons": [
+          "mean word confidence 55.3 below 60"
+        ]
+      },
+      {
+        "pdfPage": 143,
+        "kind": "mixed",
+        "confidence": 56.4,
+        "reasons": [
+          "mean word confidence 56.4 below 60"
+        ]
+      },
+      {
+        "pdfPage": 39,
+        "kind": "mixed",
+        "confidence": 58.6,
+        "reasons": [
+          "mean word confidence 58.6 below 60"
+        ]
+      }
+    ]
+  },
+  "flowchartMisses": [],
+  "flowchartNotes": [
+    "Range \"Figures 5.4.2-1 thru 5.4.1-16\" read as figures 5.4.2-1 to 5.4.2-16.",
+    "Figure 5.4.3-20: snapped DATDOW to DATDW.",
+    "Figure 5.4.1-2 start at PDF 92 inferred (no caption; previous figure complete).",
+    "PDF 93 caption reads 5.4.3-2; placed in 5.4.1-2.",
+    "Figure 5.4.1-14 start at PDF 168 inferred (no caption; previous figure complete).",
+    "PDF 205 caption reads 5.4.1-2; placed in 5.4.1-21.",
+    "Figure 5.4.1-22 start at PDF 207 inferred (no caption; previous figure complete).",
+    "Figure 5.4.1-29 start at PDF 233 inferred (no caption; previous figure complete).",
+    "PDF 414 reads \"of 74\" in 5.4.3-16 (expected 14).",
+    "Figure 5.4.4-5 start at PDF 506 inferred (no caption; previous figure complete)."
+  ]
+}

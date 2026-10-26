@@ -1,0 +1,41 @@
+---
+pdfPage: 129
+folio: null
+sectionId: "B.CKIR"
+kind: listing
+source: ocr
+confidence: 57.3
+figures: []
+listing:
+  appendix: "B"
+  routines: ["CKIR"]
+  listingPage: 113
+---
+```fortran
+(1382)       SUBROUTINE CKIR(IRs))
+(1383) C      THIS SUBROUTINE PERFORMS A CHECK AND WARNING FUNCTION
+(1384) C       TO THE USER IF A REVISE OF THE MAIL STATUS ITEM IS REQUESTED
+(1385) C
+(1386)       INTEGER *2 IR,I, IAN
+(1387) C      IS THIS A MAIL STATUS RFQUEST
+(1388)       IF(IR£0.1)  GO TO 1ND
+(1389) C      SET LEGAL REVISE FLAG.
+(1390) 50     1=1
+(1391)       RETURN
+(1392) C oh   DISPLAY WARNING TO USSR TERMINAL
+(1393) C       MAIL STATUS IS CHECKED IN EVFRY STEP OF INPUT FOR VALIDITY
+(1394) C       THUS THE CONCERN FOR A REVISE OF THE FOLLOWING DATA FIELD
+(1395) C
+(1396) 100   WRITE (19201)                 Co
+(1397) 101   FORMAT('' PLEASE CHECK TO MAKE SURE THAT YOU WISH TO REVISE %o/(
+(1398)      1  THE MAIL STATUS ITEMs  IF CERTAIN  ENTER YES*o/o
+(1399)      1                                     ELSE NO*s)
+(1400)       READ(1910) TAN
+(1401)  10   FORMAT(CIA2)
+(1402)       IF(IANSEQ.*YE*) GOTO 56
+(1403)       IF(IAN,NES*NO*) GOTO 100
+(1404) C      USER HAS RECONSIDERED REGUEST:  CLFAR LEGAL REVISE FLAG
+(1405)       1=0
+(1406)       RETURN
+(1407)       END                                                             SO
+```

@@ -1,0 +1,6 @@
+      SUBROUTINE CLOSE
+$INSERT SYSCOM>KEYS.F
+      CALL SRCH$$(K$CLOS,'SHEET ',6,0,0,0)
+      CALL SRCH$$(K$CLOS,'SHT   ',6,0,0,0)
+      CALL EXIT
+      END

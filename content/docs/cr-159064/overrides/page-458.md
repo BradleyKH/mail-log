@@ -1,0 +1,53 @@
+---
+pdfPage: 458
+folio: null
+sectionId: "D.MAIND"
+kind: listing
+source: reviewed
+confidence: 45.6
+figures: []
+listing:
+  appendix: "D"
+  routines: ["MAIND"]
+  listingPage: 131
+---
+```fortran
+(1941) 270     FORMAT(11X,'SHEET# ',I2,8X,'REV ',A2)
+(1942) 280   CONTINUE
+(1943)        IF(R.EQ.0) GOTO 33
+(1944)       II=NEO
+(1945)       IF(NEO.GT.10) II=10
+(1946)         DO 37 I=1,II
+(1947)           IF(EOREF(I,1).EQ.'    ') GOTO 190
+(1948)           WRITE(1,38) I,(EOREF(I,K),K=1,2)
+(1949)           WRITE(7,38) I,(EOREF(I,K),K=1,2)
+(1950) 37     CONTINUE
+(1951)       GO TO 190
+(1952) 33    II=NEO
+(1953)        IF(NEO.GT.10) II=10
+(1954)       DO 300 I=1,II
+(1955) 30    READ(18,END=90)EON,ETIT,EPTIT,EOREV,EDT,ERDT,EOVEH
+(1956) C      SEARCH FOR EOREF=EON
+(1957)       DO 400 N=1,2
+(1958)       IF(EON(N).NE.EOREF(I,N)) GOTO 30
+(1959) 400   CONTINUE
+(1960) 130   FORMAT(3X,19A4)
+(1961)       IF(EOREV.EQ.'NC') GOTO 150
+(1962)       WRITE(7,230)EOKNT,EON,EOREV,ERDT,EPTIT
+(1963) 230   FORMAT(11X,I2,'. ',2A4,1X,'REV ',A2,3X,2(I2,'-'),I2,
+(1964)      13X,19A4)
+(1965)       WRITE(1,140)EOKNT,EON,EOREV,ERDT
+(1966) 140   FORMAT(3X,I2,'. ',2A4,1X,'REV ',A2,5X,2(I2,'-'),I2)
+(1967)       GO TO 60
+(1968) 150   WRITE(7,230)EOKNT,EON,EOREV,EDT,EPTIT
+(1969)       WRITE(1,140)EOKNT,EON,EOREV,EDT
+(1970) 60    EOKNT=EOKNT+1
+(1971)       IF(EPTIT(1).NE.'    ') WRITE(1,130)EPTIT
+(1972) 90    REWIND 18
+(1973) 300   CONTINUE
+(1974) 190   CONTINUE
+(1975)       CALL RECYCL
+(1976)       CALL PAUS
+(1977)       RETURN
+(1978)       END
+```

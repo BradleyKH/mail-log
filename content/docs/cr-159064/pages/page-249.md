@@ -1,0 +1,42 @@
+---
+pdfPage: 249
+folio: null
+sectionId: "C.INPSDR"
+kind: listing
+source: ocr
+confidence: 38.4
+figures: []
+listing:
+  appendix: "C"
+  routines: ["INPSDR"]
+  listingPage: 20
+---
+```fortran
+(0267) 650   FORMAT(IXe''CONTRACT NUMBER
+(0268) 960   IF(R.EQ. LL.AND.oIR.NE.G) GO TO 2200
+(0269) 901   WRITE(19902)
+(0270) 962   FORMAT('     VEHICLE %s/2(9!
+(0271)       READ(1,903,ERR=901) CCVEHC I 9D) PJH=192) GP 12192)
+(0272) 903    FORMAT(2C1X%sI3sALe1%))
+(0273)       WRITE(19903) CCVEHCL oD) eUZ192) 912192)
+(0274) 2200  CONTINUE
+(0275)       IFCR.EQ.T.AND.IRONF 27? GOTO 22300
+(0276)         WRITE(1,2201)
+(0277) 2202   FORMAT(' (7) REVISTONt s/t!  EPs)
+(0278)        READ(1,2202)REV                                              A
+(0279) 2202   FORMAT(CIXs1A2)
+(0280)        WRITE (152202)
+(0281) 2300   IF(R.EQ.1.AND.IR.NE.B) GOTO 9999
+(0282) 2304  WRITE(152301)
+(0283) 2301   FORMAT(' CE) REVISION DATE's/ot!MMDDYY!%9/)
+(0284) 2302   READC1L,230Z,ERR=2ZG4IRDAT
+(0285) 2303   FORMAT(1X9 312)
+(0286)        WRITE (1,2303)RDAT
+(0287) C 999 CONTINUE
+(0288)       CALL SHOWDR
+(0289) C
+(0290) C     END OF INPUT/REVISE ITEMS AS OF €/26/78
+(0291)
+(0292)       RETURN
+(0293)       END
+```

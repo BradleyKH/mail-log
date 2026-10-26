@@ -1,0 +1,53 @@
+---
+pdfPage: 403
+folio: null
+sectionId: "D.VEHND"
+kind: listing
+source: reviewed
+confidence: 100
+figures: []
+listing:
+  appendix: "D"
+  routines: ["VEHND"]
+  listingPage: 76
+---
+```fortran
+(1167)       IF(EOVEH(2,1).GT.VS(3)) GO TO 300
+(1168)       IF(EOVEH(1,2).NE.'S'.AND.EOVEH(1,1).EQ.VEH1(1)) GO TO 1002
+(1169)       IF(EOVEH(1,2).EQ.'S'.AND.EOVEH(1,1).LE.VEH1(1)) GO TO 1002
+(1170)       GO TO 300
+(1171) 1002  CONTINUE
+(1172)       KNT=KNT+1
+(1173)       IF(IPAGE.NE.0) GOTO 302
+(1174) C     FETCH AND WRITE TIME AND DATE TO OUTPUT FILE
+(1175)       CALL TIMDAT(ARRAY,15)
+(1176)       AMIN=ARRAY(4)
+(1177)       AH=AMIN/60.0
+(1178)       IH=AH
+(1179)       IMM=IH*60
+(1180)       IMIN=AMIN
+(1181)       IDM=IMIN-IMM
+(1182)       WRITE(7,8008)IH,IDM,(ARRAY(I),I=1,3)
+(1183)       WRITE(7,349)VEH1
+(1184) 349   FORMAT(4X,115('*'),/,50X,'E.O. VEHICLE SEARCH ',2(I3,A1,2X))
+(1185)       WRITE(7,351)
+(1186) 351   FORMAT(14X,'E.O. NUMBER',9X,'DATE',6X,'E.O. TITLE',/,4X,115('*'))
+(1187)       IPAGE=1
+(1188) 302   IF(EOREV.EQ.'NC') GOTO 350
+(1189)       WRITE(1,310)KNT,EON,EOREV,ERDT
+(1190) 310   FORMAT(3X,I9,'. ',
+(1191)      1'E.O. NUMBER: ',2A4,5X,'E.O. REV ',A2,5X,'DATE ',
+(1192)      12(I2,'-'),I2)
+(1193)       WRITE(7,320)KNT,EON,EOREV,ERDT,EPTIT
+(1194) 320   FORMAT('0',2X,I7,'.  ',2A4,2X,'REV ',A2,3X,2(I2,'-'),I2,
+(1195)      13X,19A4)
+(1196)       GO TO 325
+(1197) 350   WRITE(1,310)KNT,EON,EOREV,EDT
+(1198)       WRITE(7,320)KNT,EON,EOREV,EDT,EPTIT
+(1199) 325   CONTINUE
+(1200)       IF(EPTIT(1).NE.'     ') WRITE(1,311)EPTIT
+(1201) 311   FORMAT(3X,19A4)
+(1202)       IF(KNT/21.EQ.KNT/21.) IPAGE=0
+(1203)       CALL PAUS
+(1204)       GO TO 300
+```

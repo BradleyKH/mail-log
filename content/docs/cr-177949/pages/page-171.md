@@ -1,0 +1,31 @@
+---
+pdfPage: 171
+folio: null
+sectionId: "appendices"
+kind: text
+source: ocr
+confidence: 91.9
+figures: []
+---
+CONTRACT: NAS1-16200
+
+MIN-MAX~YEAR REPORT BY FISCAL YEAR
+DOLLARS AND HOURS REPORT
+
+BASED ON EAC'S
+ALL RECORDS
+
+ALL TASKS
+
+REPORT WITHOUT FEE
+ALL PROGRAMS
+
+ALL JOB ORDERS
+ALL W.A.'S
+
+DATE COMPUTED:
+WED, JUL 10 1985 08:52:38 AM
+
+YEARLY MIN-MAX REPORT
+
+0-5

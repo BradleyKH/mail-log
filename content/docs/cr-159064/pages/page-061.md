@@ -1,0 +1,52 @@
+---
+pdfPage: 61
+folio: null
+sectionId: "B.RDSUB"
+kind: listing
+source: ocr
+confidence: 58.1
+figures: []
+listing:
+  appendix: "B"
+  routines: ["RDSUB"]
+  listingPage: 45
+---
+```fortran
+(0527) C      IS THIS A TWX/MAGNAFAX/RAPIFAX SUBFILE READ REQUEST
+(0528)          YES» PERFORM READ
+(0529) C
+(0530) 200   IF(ITWFEX.EQ.20) GOTO 300
+(0531) 201   READ C12,END=300MS,ATHR,DD,TO,DLN,SUB,PTIT eROUT, IDD eCOUNTs
+(0532)      1                CWAsCONTs ADDe TWX eFSCONRE
+(0533)       RETURN
+(0534) C
+(0535) C      IS THIS AN ANNOUNCEMENT SUBFILE READ REQUEST
+(0536) C        YESe PERFORM READ
+(0537) C
+(0538) 300   IF (IANN,EQG.G) GOTO 400                                  .
+(0539) 301   READ CLI SEND=400 IMS oATHK eDD eo TOoILN,SUBeoPTIT eROUT, IDO sCOUNT »
+(0540)      1                CWAsCONT eADDe TWXoFSCoHRE
+(0541)       RETURN
+(0542)
+(0543) C      IS THIS A PURCHASE REQUEST SUUFILE READ REQUEST           .
+(0544) C       YES,y PERFORM READ
+(0545) 6
+(0546) 400   IF(IPR.EQ.0) GOTO £00
+(0547) 401   READ C14 sEND=S06IMS,ATHR,DDYTO,DLN,SUB,PTIT sROUT, IDD» COUNT»
+(0548)      1                CWA CONT a ADDe THXeFSCeNRE
+(0549)       RETURN
+(0550)
+(0551) C      IS THIS A MISCELLANEOUS SUBFILE READ REQUEST
+(0552) C       YESs PERFORM READ
+(0553) C
+(0554) 500   IF(IMIS.EQ.0) GOTO 600
+(0555) 501   READ C15 sEND=600 MS, ATHR, DD, TO sDLN,SUB,PTIT sROUT, IDO A COUNT o
+(0556)      1                CWA sCONTS ADD eo TUXeFSCoNRE
+(0557)       RETURN
+(0558) C
+(0559) C     FINISHED ALL SUBFILES                          o
+(0560) C
+(0561) 600   IREAG=1
+(0562)       RETURN
+(0563)       ENO
+```

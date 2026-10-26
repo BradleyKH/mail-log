@@ -1,0 +1,32 @@
+---
+pdfPage: 137
+folio: "G-1"
+sectionId: "appendices"
+kind: text
+source: ocr
+confidence: 88.8
+figures: []
+---
+CONTRACT: NAS1-16200
+
+COST REPORT BY FISCAL YEAR
+PROGRAM REPORT
+
+06 FISCAL YEARS 82-87 (ALL)
+BASED ON EAC'S
+
+ALL RECORDS
+
+TASK(S) R T
+
+REPORT WITH FEE
+
+ALL PROGRAMS
+
+J.0.: E8 ONLY, ALL VEHICLES
+ALL W.A.'S
+
+DATE COMPUTED:
+WED, JUL 10 1985 09:17:57 AM
+
+PROGRAM COST REPORT

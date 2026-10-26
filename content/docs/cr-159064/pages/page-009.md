@@ -1,0 +1,56 @@
+---
+pdfPage: 9
+folio: null
+sectionId: null
+kind: text
+source: ocr
+confidence: 74.4
+figures: []
+---
+APPENDIX E
+
+APPENDIX F
+
+MAIND
+HEADER
+INPTDW
+INPSDW
+INPSS
+FIXSHT
+SHTADD
+INPSE
+NEQADD
+
+SOURCE FOR MISCELLANEOUS EXTERNAL ROUTINES
+
+CLEAR
+CHKLIN
+JUL
+
+TABLE OF CONTENTS (Continued)
+
+SOURCE FOR SPECIAL SUPPORT ROUTINES ”
+
+PHASE 1
+PHASE 2
+PHASE 3
+PHASE 4
+TTEST
+TEST
+CHECKS
+
+PAGE
+
+D-131
+D~-137
+D-140
+D-145
+D-158
+D-164
+D-169
+D-174
+D-180 °
+
+& WP —
+
+, ealiventiobandtiie He soil bd

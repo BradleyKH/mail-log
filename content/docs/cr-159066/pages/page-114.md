@@ -1,0 +1,39 @@
+---
+pdfPage: 114
+folio: null
+sectionId: "7.3.2"
+kind: figure
+source: ocr
+confidence: 39.3
+figures: ["7.3.2.11"]
+---
+~20L-
+
+DRAWING/ENGINEERING ORDER: DRAWING SYSTEM SEARCH: PRINTER OUTPUT
+
+133 47 12/01/78
+
+i ee TE CEE EPS ESIC ISOC LLSSSLOCSSELSCIOCCTOST TIL ELT EL TT PT eee
+
+SYSTtM SEARCH 3 ELEC
+Ltawlta TEtet
+
+THEE T Rattan
+Felle NUMER
+
+ARR R SAA RA RA EAR EAHA RH ORAS ORR HR HHEDH ERROR EEHEREEH AHA HRA RIREEHAEHHHHERRER AHH HHAAAHRE KHER ARH AAHANH KER EREREREEHORRRES
+
+ORAWING NUMBER DATE
+
+Te SsMPhé UCRAWING USING SECTION AND SYSTEM
+
+```text
+401 aco01             12- 1<78-
+Stee Te ob         RLV
+fe LAMPLE OQKAWING USING SYSTEM SMANUFL INPUT                                      401 000002           .l2- 1-78
+Ctr —ta 2     .    REV ts
+```
+
+\1. voouond
+
+FIGURE 7.3.2.1]

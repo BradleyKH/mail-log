@@ -1,0 +1,57 @@
+{
+  "record": "correspondence",
+  "title": "Correspondence",
+  "entryStep": 1,
+  "steps": [
+    {
+      "n": 1,
+      "mode": "common",
+      "prompt": [
+        "FIXTURE LOGIN"
+      ],
+      "branches": [],
+      "next": 2,
+      "figures": [],
+      "pdfPage": 1
+    },
+    {
+      "n": 2,
+      "mode": "menu",
+      "title": "Menu",
+      "prompt": [
+        "ENTER OPTION"
+      ],
+      "branches": [
+        {
+          "when": "S",
+          "goto": 3
+        },
+        {
+          "when": "E",
+          "goto": "exit"
+        }
+      ],
+      "figures": [
+        "1"
+      ],
+      "pdfPage": 2
+    },
+    {
+      "n": 3,
+      "mode": "search",
+      "prompt": [
+        "ENTER AUTHOR"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "Four letters",
+        "maxLength": 4
+      },
+      "response": "Lists matches.",
+      "branches": [],
+      "next": 2,
+      "figures": [],
+      "pdfPage": 2
+    }
+  ]
+}

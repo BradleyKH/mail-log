@@ -1,0 +1,2318 @@
+{
+  "record": "drawing-eo",
+  "title": "Drawing/Engineering Order",
+  "entryStep": 1,
+  "steps": [
+    {
+      "n": 1,
+      "mode": "common",
+      "title": "LOGIN",
+      "prompt": [],
+      "input": {
+        "pattern": "LOGIN XXX",
+        "description": "XXX represents the user initials."
+      },
+      "response": "XXX (N) LOGGED IN AT HR'MN MMDDYY. XXX represents the user initials; N is the terminal location number; HR and MN is the time the user entered the system in hours and minutes; and MMDDYY is the month, day, and year. This login allows user XXX to access any of the active programs on the SPADS system.",
+      "branches": [],
+      "next": 2,
+      "figures": [],
+      "pdfPage": 16
+    },
+    {
+      "n": 2,
+      "mode": "common",
+      "title": "PROGRAM ENTRY",
+      "prompt": [
+        "THE FOLLOWING IS A LIST OF CURRENT APPLICATIONS",
+        "PLEASE INDICATE YOUR APPLICATION/PROJECT BY SELECTING THE APPROPRIATE KEY",
+        "APPLICATION/PROJECT     KEY",
+        "CHANGE REQUEST          CHG",
+        "SCHEDULE 15000          150",
+        "SCHEDULE 15100          151",
+        "ANALYSIS I              ANAL",
+        "MAIL LOG                MAIL",
+        "ELOPE                   ELOP",
+        "PROGRAM DEVELOPMENT     DEV",
+        "SOFTWARE MAINT          SOMA",
+        "MISCELLANEOUS           MISC",
+        "PLEASE ENTER THE APPROPRIATE KEY"
+      ],
+      "input": {
+        "pattern": "MAIL",
+        "description": "Enter MAIL to select the MAIL LOG program."
+      },
+      "branches": [
+        {
+          "when": "MAIL",
+          "goto": 3
+        }
+      ],
+      "figures": [],
+      "pdfPage": 17
+    },
+    {
+      "n": 3,
+      "mode": "common",
+      "title": "DATA BASE SUBFILE SELECTION",
+      "prompt": [
+        "WELCOME TO SPADS",
+        "MAIL LOG FILE",
+        "DO YOU WISH TO WORK WITH THE DIR/REPORT DATA --- ENTER DIR",
+        "                         OR DRAWING DATA     --- ENTER DRAW",
+        "                         OR DAILY CORRESPONDENCE --- COR",
+        "                         OR QUIT                 --- QU"
+      ],
+      "input": {
+        "pattern": "DIR/DRAW/COR/QU",
+        "description": "One of three main data base subfiles must be designated before one of the four modes of operation can be selected. To leave the program, enter QUIT at the mode selection, then QU here."
+      },
+      "branches": [
+        {
+          "when": "DRAW",
+          "goto": 4
+        },
+        {
+          "when": "QU",
+          "goto": "exit"
+        }
+      ],
+      "figures": [],
+      "pdfPage": 17
+    },
+    {
+      "n": 4,
+      "mode": "common",
+      "title": "MODE SELECTION",
+      "prompt": [
+        "PLEASE CHOSE ONE OF THE FOLLOWING",
+        "MODE                KEY",
+        "INPUT               INP",
+        "REVISE              REV",
+        "SEARCH              SEA",
+        "ARCHIVE             ARC",
+        "QUIT                QUIT"
+      ],
+      "input": {
+        "pattern": "INP/REV/SEA/ARC/QUIT",
+        "description": "Enter the key for the desired mode. A user without clearance for a mode sees: SORRY, YOU ARE NOT VALIDATED TO USE THIS MODE. IF IT IS NECESSARY, PLEASE CONTACT SYSTEM OPERATOR AT EXT. 2621."
+      },
+      "branches": [
+        {
+          "when": "INP",
+          "goto": 101
+        },
+        {
+          "when": "REV",
+          "goto": 201
+        },
+        {
+          "when": "SEA",
+          "goto": 301
+        },
+        {
+          "when": "ARC",
+          "goto": 401
+        },
+        {
+          "when": "QUIT",
+          "goto": 3
+        }
+      ],
+      "figures": [],
+      "pdfPage": 17
+    },
+    {
+      "n": 101,
+      "mode": "input",
+      "title": "Step #1",
+      "prompt": [
+        "WELCOME TO THE DRAW-EO FILE INPUT ROUTINE",
+        "PLEASE INPUT INFORMATION BETWEEN EXCLAMATION MARKS AND LEFT",
+        "JUSTIFY ALL ENTRIES",
+        "IS THIS A DRAWING OR AN E.O. (DRAW OR EO)"
+      ],
+      "input": {
+        "pattern": "DRAW/EO",
+        "description": "Drawing or engineering order."
+      },
+      "branches": [
+        {
+          "when": "DRAW",
+          "goto": 102
+        },
+        {
+          "when": "EO",
+          "goto": 120
+        }
+      ],
+      "figures": [
+        "8",
+        "9"
+      ],
+      "pdfPage": 64
+    },
+    {
+      "n": 102,
+      "mode": "input",
+      "title": "Step #2",
+      "prompt": [
+        "(1) TITLE (7 WORDS - 10 CHAR.)"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "Enter title.",
+        "maxLength": 70
+      },
+      "response": "If legal entry, the entry is displayed on terminal. If not legal, step is repeated. This is done for all entries to follow. NOTE: User must skip a space before entering data.",
+      "branches": [],
+      "next": 103,
+      "figures": [],
+      "pdfPage": 64
+    },
+    {
+      "n": 103,
+      "mode": "input",
+      "title": "Step #3",
+      "prompt": [
+        "(2) DRAWING NUMBER"
+      ],
+      "input": {
+        "pattern": "NNNN",
+        "description": "Enter number up to 14 characters.",
+        "maxLength": 14
+      },
+      "branches": [],
+      "next": 104,
+      "figures": [],
+      "pdfPage": 64
+    },
+    {
+      "n": 104,
+      "mode": "input",
+      "title": "Step #4",
+      "prompt": [
+        "(3) DRAWING DATE"
+      ],
+      "input": {
+        "pattern": "MMDDYY",
+        "description": "Enter month, day, and year.",
+        "maxLength": 6
+      },
+      "branches": [],
+      "next": 105,
+      "figures": [],
+      "pdfPage": 64
+    },
+    {
+      "n": 105,
+      "mode": "input",
+      "title": "Step #5",
+      "prompt": [
+        "(4) SYSTEM (ELEC,GSE,GUID,MECH,PROP,RF,SOP,MGS,EGS,PERF)"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "Enter system."
+      },
+      "branches": [],
+      "next": 106,
+      "figures": [],
+      "pdfPage": 64
+    },
+    {
+      "n": 106,
+      "mode": "input",
+      "title": "Step #6",
+      "prompt": [
+        "(5) VEHICLE"
+      ],
+      "input": {
+        "pattern": "XXXA",
+        "description": "Enter vehicle number XXXA up to two numbers, where XXX represents the numbers. The 'A' represents the letter 'S' which stands for all subsequent vehicle numbers after XXX."
+      },
+      "branches": [],
+      "next": 107,
+      "figures": [],
+      "pdfPage": 64
+    },
+    {
+      "n": 107,
+      "mode": "input",
+      "title": "Step #7",
+      "prompt": [
+        "(6) SECTION",
+        "E SECT      UPPER B     LOWER B     ALCYONE IA    ALCYONE IIA",
+        "G SECT      UPPER C     LOWER C     ALGOL IIA     ALGOL IIIA",
+        "EG SECT     UPPER D     LOWER D     ANTARES IIA   ANTARES IIIA",
+        "BASE A      UPPER F     LOWER F     ALTAIR IIIA   CASTOR IIA",
+        "            H/S 34/-24  H/S 34/-40  H/S 42/-45"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "Enter section."
+      },
+      "branches": [],
+      "next": 108,
+      "figures": [],
+      "pdfPage": 65
+    },
+    {
+      "n": 108,
+      "mode": "input",
+      "title": "Step #8",
+      "prompt": [
+        "(7) NUMBER OF SHEETS"
+      ],
+      "input": {
+        "pattern": "XX",
+        "description": "Enter number X."
+      },
+      "branches": [],
+      "next": 109,
+      "figures": [],
+      "pdfPage": 65
+    },
+    {
+      "n": 109,
+      "mode": "input",
+      "title": "Step #9",
+      "prompt": [
+        "(8) ENTER THE FOLLOWING DATA:",
+        "SHEET #1",
+        "REVISION: IF NONE, NC"
+      ],
+      "input": {
+        "pattern": "AA",
+        "description": "Enter the revision of sheet #1; NC if none."
+      },
+      "branches": [],
+      "next": 110,
+      "figures": [],
+      "pdfPage": 65
+    },
+    {
+      "n": 110,
+      "mode": "input",
+      "title": "Step #10",
+      "prompt": [
+        "NUMBER OF E.O.'S"
+      ],
+      "input": {
+        "pattern": "XX",
+        "description": "Enter number XX E.O.'s against sheet #1; up to maximum of 10 E.O. numbers may be referenced."
+      },
+      "branches": [
+        {
+          "when": "XX=0",
+          "goto": 113
+        },
+        {
+          "when": "XX not 0",
+          "goto": 111
+        }
+      ],
+      "figures": [],
+      "pdfPage": 65
+    },
+    {
+      "n": 111,
+      "mode": "input",
+      "title": "Step #11",
+      "prompt": [
+        "(9) REFERENCED E.O.'S"
+      ],
+      "input": {
+        "pattern": "NNNNNN",
+        "description": "Enter E.O. number."
+      },
+      "branches": [],
+      "next": 112,
+      "figures": [],
+      "pdfPage": 65
+    },
+    {
+      "n": 112,
+      "mode": "input",
+      "title": "Step #12",
+      "prompt": [
+        "ENTER ANY FURTHER AVAILABLE DATA FOR EACH E.O."
+      ],
+      "response": "See Steps #20 thru #25. Repeat Steps #11 and #12 XX number of times. Go to #13.",
+      "branches": [
+        {
+          "when": "More referenced E.O.'s to enter (XX times in all)",
+          "goto": 111
+        },
+        {
+          "when": "All XX E.O.'s entered",
+          "goto": 113
+        }
+      ],
+      "figures": [],
+      "pdfPage": 65
+    },
+    {
+      "n": 113,
+      "mode": "input",
+      "title": "Step #13",
+      "prompt": [],
+      "response": "If X number of sheets = 1, go to #19. If X number of sheet is more than 1, go to #14.",
+      "branches": [
+        {
+          "when": "X = 1",
+          "goto": 119
+        },
+        {
+          "when": "X more than 1",
+          "goto": 114
+        }
+      ],
+      "figures": [],
+      "pdfPage": 65
+    },
+    {
+      "n": 114,
+      "mode": "input",
+      "title": "Step #14",
+      "prompt": [
+        "(8) ENTER THE FOLLOWING DATA:",
+        "EXAMPLE SHEET ENTRY:",
+        "SHEET #2.1 !02!!10!"
+      ],
+      "input": {
+        "pattern": "!NN!!NN!",
+        "description": "Enter the sheet number as in the example."
+      },
+      "branches": [],
+      "next": 115,
+      "figures": [],
+      "pdfPage": 66
+    },
+    {
+      "n": 115,
+      "mode": "input",
+      "title": "Step #15",
+      "prompt": [
+        "REVISION: IF NONE, NC"
+      ],
+      "input": {
+        "pattern": "AA",
+        "description": "Enter the sheet revision; NC if none."
+      },
+      "branches": [],
+      "next": 116,
+      "figures": [],
+      "pdfPage": 66
+    },
+    {
+      "n": 116,
+      "mode": "input",
+      "title": "Step #16",
+      "prompt": [
+        "NUMBER OF E.O.'S"
+      ],
+      "input": {
+        "pattern": "XX",
+        "description": "Enter number XX E.O.'s against sheet entered in Step #14; up to maximum of 10 E.O. numbers may be referenced."
+      },
+      "branches": [
+        {
+          "when": "XX=0",
+          "goto": 119
+        },
+        {
+          "when": "XX not 0",
+          "goto": 117
+        }
+      ],
+      "figures": [],
+      "pdfPage": 66
+    },
+    {
+      "n": 117,
+      "mode": "input",
+      "title": "Step #17",
+      "prompt": [
+        "REFERENCED E.O.'S"
+      ],
+      "input": {
+        "pattern": "NNNNNN",
+        "description": "Enter E.O. number."
+      },
+      "branches": [],
+      "next": 118,
+      "figures": [],
+      "pdfPage": 66
+    },
+    {
+      "n": 118,
+      "mode": "input",
+      "title": "Step #18",
+      "prompt": [
+        "ENTER ANY FURTHER AVAILABLE DATA FOR EACH E.O."
+      ],
+      "response": "See Steps #20 thru #25. Repeat Steps #17 and #18 XX number of times. Go to #19.",
+      "branches": [
+        {
+          "when": "More referenced E.O.'s to enter (XX times in all)",
+          "goto": 117
+        },
+        {
+          "when": "All XX E.O.'s entered",
+          "goto": 119
+        }
+      ],
+      "figures": [],
+      "pdfPage": 66
+    },
+    {
+      "n": 119,
+      "mode": "input",
+      "title": "Step #19",
+      "prompt": [],
+      "response": "Entire drawing record along with referenced E.O.'s are displayed on the terminal. Go to #34.",
+      "branches": [],
+      "next": 134,
+      "figures": [],
+      "pdfPage": 66
+    },
+    {
+      "n": 120,
+      "mode": "input",
+      "title": "Step #20",
+      "prompt": [
+        "(1) TITLE (7 WORDS - 10 CHAR.)"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "Enter title.",
+        "maxLength": 70
+      },
+      "response": "If legal entry, the entry is displayed on terminal. If not legal, step is repeated. This is done for all entries to follow. NOTE: User must skip a space before entering data.",
+      "branches": [],
+      "next": 121,
+      "figures": [],
+      "pdfPage": 66
+    },
+    {
+      "n": 121,
+      "mode": "input",
+      "title": "Step #21",
+      "prompt": [
+        "(2) E.O. NUMBER"
+      ],
+      "input": {
+        "pattern": "NNNNNN",
+        "description": "Enter E.O. number."
+      },
+      "branches": [],
+      "next": 122,
+      "figures": [],
+      "pdfPage": 67
+    },
+    {
+      "n": 122,
+      "mode": "input",
+      "title": "Step #22",
+      "prompt": [
+        "(3) REVISION: IF NONE, ENTER NC"
+      ],
+      "input": {
+        "pattern": "AA",
+        "description": "Enter revision; NC if none."
+      },
+      "branches": [],
+      "next": 123,
+      "figures": [],
+      "pdfPage": 67
+    },
+    {
+      "n": 123,
+      "mode": "input",
+      "title": "Step #23",
+      "prompt": [
+        "(4) E.O. DATE"
+      ],
+      "input": {
+        "pattern": "MMDDYY",
+        "description": "Enter month, day, year.",
+        "maxLength": 6
+      },
+      "branches": [],
+      "next": 124,
+      "figures": [],
+      "pdfPage": 67
+    },
+    {
+      "n": 124,
+      "mode": "input",
+      "title": "Step #24",
+      "prompt": [
+        "(5) E.O. REVISION DATE"
+      ],
+      "input": {
+        "pattern": "MMDDYY",
+        "description": "Enter the revision date.",
+        "maxLength": 6
+      },
+      "branches": [],
+      "next": 125,
+      "figures": [],
+      "pdfPage": 67
+    },
+    {
+      "n": 125,
+      "mode": "input",
+      "title": "Step #25",
+      "prompt": [
+        "(6) VEHICLE"
+      ],
+      "input": {
+        "pattern": "XXXA",
+        "description": "Enter vehicle number XXXA up to two numbers, where XXX represents the numbers. The 'A' represents the letter 'S' which stands for all subsequent vehicle numbers after XXX."
+      },
+      "branches": [],
+      "next": 126,
+      "figures": [],
+      "pdfPage": 67
+    },
+    {
+      "n": 126,
+      "mode": "input",
+      "title": "Step #26",
+      "prompt": [
+        "HOW MANY DRAWINGS DOES THIS E.O. REFERENCE"
+      ],
+      "input": {
+        "pattern": "XX",
+        "description": "Enter number XX; up to maximum of 99."
+      },
+      "branches": [],
+      "next": 127,
+      "figures": [],
+      "pdfPage": 67
+    },
+    {
+      "n": 127,
+      "mode": "input",
+      "title": "Step #27",
+      "prompt": [
+        "WHAT IS THE DRAWING NUMBER"
+      ],
+      "input": {
+        "pattern": "NNNN",
+        "description": "Enter the drawing number."
+      },
+      "branches": [],
+      "next": 128,
+      "figures": [],
+      "pdfPage": 67
+    },
+    {
+      "n": 128,
+      "mode": "input",
+      "title": "Step #28",
+      "prompt": [
+        "HOW MANY SHEETS OF THIS DRAWING ARE REFERENCED BY THIS E.O."
+      ],
+      "input": {
+        "pattern": "NN",
+        "description": "Enter number of sheets NN (Maximum of 99)."
+      },
+      "branches": [],
+      "next": 129,
+      "figures": [],
+      "pdfPage": 67
+    },
+    {
+      "n": 129,
+      "mode": "input",
+      "title": "Step #29",
+      "prompt": [
+        "WHAT IS THE SHEET NUMBER:",
+        "EXAMPLE SHEET #2.1 !02!!10!"
+      ],
+      "input": {
+        "pattern": "!NN!!NN!",
+        "description": "Enter the sheet number as in the example."
+      },
+      "response": "Repeat this step NN number of times. Repeat Steps #27 thru #29 XX number of times.",
+      "branches": [
+        {
+          "when": "More sheets of this drawing (NN times in all)",
+          "goto": 129
+        },
+        {
+          "when": "More drawings (XX times in all)",
+          "goto": 127
+        },
+        {
+          "when": "All drawings and sheets entered",
+          "goto": 130
+        }
+      ],
+      "figures": [],
+      "pdfPage": 67
+    },
+    {
+      "n": 130,
+      "mode": "input",
+      "title": "Step #30",
+      "prompt": [],
+      "response": "If number of E.O.'s on a sheet is: Less than four, go to #34. Five, go to #32. More than five, go to #33.",
+      "branches": [
+        {
+          "when": "Less than four",
+          "goto": 134
+        },
+        {
+          "when": "Five",
+          "goto": 132
+        },
+        {
+          "when": "More than five",
+          "goto": 133
+        }
+      ],
+      "figures": [],
+      "pdfPage": 68
+    },
+    {
+      "n": 131,
+      "mode": "input",
+      "title": "Step #31",
+      "prompt": [],
+      "response": "A warning message is displayed on the terminal prior to displaying the entire engineering order record. See output section 5.3.1. Go to #34.",
+      "branches": [],
+      "next": 134,
+      "figures": [],
+      "pdfPage": 68
+    },
+    {
+      "n": 132,
+      "mode": "input",
+      "title": "Step #32",
+      "prompt": [],
+      "response": "An attention message is displayed on the terminal prior to displaying the entire engineering order record. See output section 5.3.1. Go to #34.",
+      "branches": [],
+      "next": 134,
+      "figures": [],
+      "pdfPage": 68
+    },
+    {
+      "n": 133,
+      "mode": "input",
+      "title": "Step #33",
+      "prompt": [],
+      "response": "An important revision action due message is displayed on the terminal prior to displaying the entire engineering order record. See output section 5.3.1. Go to #34.",
+      "branches": [],
+      "next": 134,
+      "figures": [],
+      "pdfPage": 68
+    },
+    {
+      "n": 134,
+      "mode": "input",
+      "title": "Step #34",
+      "prompt": [
+        "IS THERE FURTHER INFORMATION TO BE INPUT (YES OR NO)"
+      ],
+      "input": {
+        "pattern": "Y/N",
+        "description": "YES or NO."
+      },
+      "branches": [
+        {
+          "when": "YES",
+          "goto": 101
+        },
+        {
+          "when": "NO, exit INPUT mode",
+          "goto": 4
+        }
+      ],
+      "figures": [],
+      "pdfPage": 68
+    },
+    {
+      "n": 201,
+      "mode": "revise",
+      "title": "Step #1",
+      "prompt": [
+        "DO YOU WISH THE E.O. OR THE DRAWING FILE (EO OR DRAW)"
+      ],
+      "input": {
+        "pattern": "EO/DRAW",
+        "description": "E.O. or drawing file."
+      },
+      "branches": [
+        {
+          "when": "EO",
+          "goto": 202
+        },
+        {
+          "when": "DRAW",
+          "goto": 203
+        }
+      ],
+      "figures": [],
+      "pdfPage": 70
+    },
+    {
+      "n": 202,
+      "mode": "revise",
+      "title": "Step #2",
+      "prompt": [
+        "PLEASE INPUT THE SPO EO NUMBER OF THE RECORD TO BE REVISED"
+      ],
+      "input": {
+        "pattern": "NNNNNN",
+        "description": "Enter number; go to #4."
+      },
+      "branches": [],
+      "next": 204,
+      "figures": [],
+      "pdfPage": 70
+    },
+    {
+      "n": 203,
+      "mode": "revise",
+      "title": "Step #3",
+      "prompt": [
+        "PLEASE INPUT THE SPO DRAWING NUMBER OF THE RECORD TO BE REVISED"
+      ],
+      "input": {
+        "pattern": "NNNN",
+        "description": "Enter number after skipping one space; go to #4."
+      },
+      "branches": [],
+      "next": 204,
+      "figures": [],
+      "pdfPage": 70
+    },
+    {
+      "n": 204,
+      "mode": "revise",
+      "title": "Step #4",
+      "prompt": [],
+      "response": "Entire record displayed on terminal when found.",
+      "branches": [],
+      "next": 205,
+      "figures": [],
+      "pdfPage": 70
+    },
+    {
+      "n": 205,
+      "mode": "revise",
+      "title": "Step #5",
+      "prompt": [
+        "IS THIS THE CORRECT RECORD TO BE REVISED OR DELETED (YES OR NO)"
+      ],
+      "input": {
+        "pattern": "Y/N",
+        "description": "YES or NO."
+      },
+      "response": "If No, continue search for number. When found repeat Step #4. If not found, exit REVISE mode.",
+      "branches": [
+        {
+          "when": "YES",
+          "goto": 206
+        },
+        {
+          "when": "NO, next match found",
+          "goto": 204
+        },
+        {
+          "when": "NO, not found: exit REVISE mode",
+          "goto": 4
+        }
+      ],
+      "figures": [],
+      "pdfPage": 70
+    },
+    {
+      "n": 206,
+      "mode": "revise",
+      "title": "Step #6",
+      "prompt": [
+        "IS THIS RECORD TO BE REVISED OR DELETED (REV OR DEL)"
+      ],
+      "input": {
+        "pattern": "REV/DEL",
+        "description": "Revise or delete."
+      },
+      "response": "If DEL, record DELETED; exit REVISE mode.",
+      "branches": [
+        {
+          "when": "REV and EO previously selected",
+          "goto": 207
+        },
+        {
+          "when": "REV and DRAW previously selected",
+          "goto": 210
+        },
+        {
+          "when": "DEL: record deleted, exit REVISE mode",
+          "goto": 4
+        }
+      ],
+      "figures": [],
+      "pdfPage": 70
+    },
+    {
+      "n": 207,
+      "mode": "revise",
+      "title": "Step #7",
+      "prompt": [
+        "HOW MANY ITEMS DO YOU WISH TO REVISE (MAX OF 6)"
+      ],
+      "input": {
+        "pattern": "X",
+        "description": "Enter number X."
+      },
+      "branches": [],
+      "next": 208,
+      "figures": [],
+      "pdfPage": 70
+    },
+    {
+      "n": 208,
+      "mode": "revise",
+      "title": "Step #8",
+      "prompt": [
+        "INPUT THE ITEM NUMBER THAT YOU WISH TO REVISE"
+      ],
+      "input": {
+        "pattern": "N",
+        "description": "Enter number N."
+      },
+      "branches": [],
+      "next": 209,
+      "figures": [],
+      "pdfPage": 70
+    },
+    {
+      "n": 209,
+      "mode": "revise",
+      "title": "Step #9",
+      "prompt": [],
+      "response": "Repeat X number of times. Branch to data item N to be revised as shown in Input mode (4.3.1.2 Steps #20 thru #25). Go to #24.",
+      "branches": [
+        {
+          "when": "Branch to data item N as shown in Input mode (4.3.1.2 Steps #20 thru #25)",
+          "goto": 120
+        },
+        {
+          "when": "Repeat X number of times",
+          "goto": 208
+        }
+      ],
+      "next": 224,
+      "figures": [],
+      "pdfPage": 71
+    },
+    {
+      "n": 210,
+      "mode": "revise",
+      "title": "Step #10",
+      "prompt": [
+        "HOW MANY ITEMS DO YOU WISH TO REVISE (MAX OF 9)"
+      ],
+      "input": {
+        "pattern": "X",
+        "description": "Enter number X."
+      },
+      "branches": [],
+      "next": 211,
+      "figures": [],
+      "pdfPage": 71
+    },
+    {
+      "n": 211,
+      "mode": "revise",
+      "title": "Step #11",
+      "prompt": [
+        "INPUT ITEM NUMBER THAT YOU WISH TO REVISE"
+      ],
+      "input": {
+        "pattern": "N",
+        "description": "Enter item number N."
+      },
+      "branches": [
+        {
+          "when": "N=7",
+          "goto": 212
+        },
+        {
+          "when": "N=8",
+          "goto": 213
+        },
+        {
+          "when": "Otherwise",
+          "goto": 214
+        }
+      ],
+      "figures": [],
+      "pdfPage": 71
+    },
+    {
+      "n": 212,
+      "mode": "revise",
+      "title": "Step #12",
+      "prompt": [
+        "IS THIS A CORRECTION OF SHEET ITEM: ENTER YES",
+        "OR IS THIS A NEW SHEET ENTRY FOR A DRAWING: ENTER NEW"
+      ],
+      "input": {
+        "pattern": "YES/NEW",
+        "description": "Enter response; go to #14."
+      },
+      "branches": [],
+      "next": 214,
+      "figures": [],
+      "pdfPage": 71
+    },
+    {
+      "n": 213,
+      "mode": "revise",
+      "title": "Step #13",
+      "prompt": [
+        "IS THIS A REVISION ENTRY FOR A NEW DRAWING SHEET (YES OR NO)"
+      ],
+      "input": {
+        "pattern": "Y/N",
+        "description": "Note: A No answer indicates a revision item correction. A Yes answer will delete all E.O.'s for this sheet. Enter response; go to #14."
+      },
+      "branches": [],
+      "next": 214,
+      "figures": [],
+      "pdfPage": 71
+    },
+    {
+      "n": 214,
+      "mode": "revise",
+      "title": "Step #14",
+      "prompt": [],
+      "response": "Repeat Step #11 X number of times. Branch to data item N to be revised. See INPUT mode (4.3.1.2 Step #2 thru #8).",
+      "branches": [
+        {
+          "when": "Branch to data item N to be revised (INPUT mode 4.3.1.2 Step #2 thru #8)",
+          "goto": 102
+        },
+        {
+          "when": "Repeat Step #11 X number of times",
+          "goto": 211
+        },
+        {
+          "when": "N=7",
+          "goto": 215
+        },
+        {
+          "when": "N=8",
+          "goto": 217
+        },
+        {
+          "when": "N=9",
+          "goto": 219
+        },
+        {
+          "when": "Otherwise",
+          "goto": 224
+        }
+      ],
+      "figures": [],
+      "pdfPage": 71
+    },
+    {
+      "n": 215,
+      "mode": "revise",
+      "title": "Step #15",
+      "prompt": [
+        "SAME AS INPUT MODE (4.3.1.2 STEP #8)"
+      ],
+      "branches": [
+        {
+          "when": "YES option selected in Step #12",
+          "goto": 224
+        },
+        {
+          "when": "NEW option selected in Step #12",
+          "goto": 216
+        }
+      ],
+      "figures": [],
+      "pdfPage": 72
+    },
+    {
+      "n": 216,
+      "mode": "revise",
+      "title": "Step #16",
+      "prompt": [
+        "ENTER SHEET NUMBER: EXAMPLE SHEET #2.1 !02!!10!"
+      ],
+      "input": {
+        "pattern": "!NN!!NN!",
+        "description": "Enter sheet number; go to #24."
+      },
+      "branches": [],
+      "next": 224,
+      "figures": [],
+      "pdfPage": 72
+    },
+    {
+      "n": 217,
+      "mode": "revise",
+      "title": "Step #17",
+      "prompt": [
+        "WHAT SHEET IS TO BE REVISED.",
+        "EXAMPLE: SHEET #2.1 !02!!10!"
+      ],
+      "input": {
+        "pattern": "!NN!!NN!",
+        "description": "Enter sheet numbers."
+      },
+      "branches": [
+        {
+          "when": "First sheet of drawing",
+          "goto": 224
+        },
+        {
+          "when": "Not first sheet",
+          "goto": 218
+        }
+      ],
+      "figures": [],
+      "pdfPage": 72
+    },
+    {
+      "n": 218,
+      "mode": "revise",
+      "title": "Step #18",
+      "prompt": [
+        "SHEET REVISION: IF NONE, ENTER NC"
+      ],
+      "input": {
+        "pattern": "AA",
+        "description": "Enter Revision; go to #24."
+      },
+      "branches": [],
+      "next": 224,
+      "figures": [],
+      "pdfPage": 72
+    },
+    {
+      "n": 219,
+      "mode": "revise",
+      "title": "Step #19",
+      "prompt": [
+        "WHAT SHEET NUMBER DO YOU WISH TO REVISE A REFERENCED E.O.",
+        "EXAMPLE: SHEET #2.1 !02!!10!"
+      ],
+      "input": {
+        "pattern": "!NN!!NN!",
+        "description": "Enter sheet numbers."
+      },
+      "branches": [],
+      "next": 220,
+      "figures": [],
+      "pdfPage": 72
+    },
+    {
+      "n": 220,
+      "mode": "revise",
+      "title": "Step #20",
+      "prompt": [
+        "HOW MANY DO YOU WISH TO REVISE"
+      ],
+      "input": {
+        "pattern": "XX",
+        "description": "Enter number XX."
+      },
+      "response": "All E.O.'s will be displayed with a counter to number each up to 10.",
+      "branches": [],
+      "next": 221,
+      "figures": [],
+      "pdfPage": 72
+    },
+    {
+      "n": 221,
+      "mode": "revise",
+      "title": "Step #21",
+      "prompt": [
+        "ENTER THE REFERENCED E.O. NUMBER TO BE REVISED",
+        "NOTE: MUST BE FROM 1 TO 10"
+      ],
+      "input": {
+        "pattern": "NN",
+        "description": "Enter number NN."
+      },
+      "branches": [],
+      "next": 222,
+      "figures": [],
+      "pdfPage": 73
+    },
+    {
+      "n": 222,
+      "mode": "revise",
+      "title": "Step #22",
+      "prompt": [
+        "ENTER REVISED REFERENCED E.O."
+      ],
+      "input": {
+        "pattern": "NNNNNN",
+        "description": "Enter EO number. This number will replace the NNth EO listed in Step #20."
+      },
+      "branches": [],
+      "next": 223,
+      "figures": [],
+      "pdfPage": 73
+    },
+    {
+      "n": 223,
+      "mode": "revise",
+      "title": "Step #23",
+      "prompt": [],
+      "response": "Repeat steps #21 and #22 XX number of times as indicated in Step #20. Go to #24.",
+      "branches": [
+        {
+          "when": "More E.O.'s to revise (XX times in all)",
+          "goto": 221
+        },
+        {
+          "when": "All XX E.O.'s revised",
+          "goto": 224
+        }
+      ],
+      "figures": [],
+      "pdfPage": 73
+    },
+    {
+      "n": 224,
+      "mode": "revise",
+      "title": "Step #24",
+      "prompt": [],
+      "response": "Entire record displayed on terminal.",
+      "branches": [],
+      "next": 225,
+      "figures": [],
+      "pdfPage": 73
+    },
+    {
+      "n": 225,
+      "mode": "revise",
+      "title": "Step #25",
+      "prompt": [
+        "CHECK RECORD: IF CORRECT, ENTER (CO)",
+        "IF REVISE NEEDED, ENTER (RE)"
+      ],
+      "input": {
+        "pattern": "CO/RE",
+        "description": "Correct or revise."
+      },
+      "branches": [
+        {
+          "when": "CO: exit REVISE mode",
+          "goto": 4
+        },
+        {
+          "when": "RE and EO previously selected",
+          "goto": 207
+        },
+        {
+          "when": "RE and DRAW previously selected",
+          "goto": 210
+        }
+      ],
+      "figures": [],
+      "pdfPage": 73
+    },
+    {
+      "n": 301,
+      "mode": "menu",
+      "title": "Step #1",
+      "prompt": [
+        "YOU ARE VALIDATED TO SEARCH DATA IN THE DRAWING FILE. THE",
+        "FOLLOWING SEARCH MODES ARE AVAILABLE FOR YOUR USE",
+        "MODE                KEY",
+        "TITLE               TITLE",
+        "DRAWING NUMBER      DRAW",
+        "DRAWING DATE        DATE",
+        "SYSTEM              SYS",
+        "VEHICLE             VEH",
+        "SECTION             SECT",
+        "VENDOR CODE         CODE",
+        "ALL                 ALL",
+        "REV ACTION DUE      ACT",
+        "E.O. NUMBER         EO",
+        "QUIT                QUIT",
+        "PLEASE SELECT THE DESIRED MODE"
+      ],
+      "input": {
+        "pattern": "TITLE/DRAW/DATE/SYS/VEH/SECT/CODE/ALL/ACT/EO/QUIT",
+        "description": "Enter key for desired mode."
+      },
+      "branches": [],
+      "next": 302,
+      "figures": [
+        "10",
+        "11",
+        "12"
+      ],
+      "pdfPage": 79
+    },
+    {
+      "n": 302,
+      "mode": "search",
+      "title": "Step #2",
+      "prompt": [],
+      "response": "If Quit, go to #60. No user reponse.",
+      "branches": [
+        {
+          "when": "QUIT",
+          "goto": 360
+        },
+        {
+          "when": "Any other key",
+          "goto": 303
+        }
+      ],
+      "figures": [],
+      "pdfPage": 79
+    },
+    {
+      "n": 303,
+      "mode": "search",
+      "title": "Step #3",
+      "prompt": [
+        "DO YOU DESIRE THE OPTIONAL BRIEF OUTPUT.",
+        "RECOMMENDED FOR ALL AND ACTION DUE SEARCHES (YES OR NO)"
+      ],
+      "input": {
+        "pattern": "Y/N",
+        "description": "Enter Option: Brief gives faster search response. See sample outputs Figures 41 and 42."
+      },
+      "branches": [],
+      "next": 304,
+      "figures": [
+        "41",
+        "42"
+      ],
+      "pdfPage": 79
+    },
+    {
+      "n": 304,
+      "mode": "search",
+      "title": "Step #4",
+      "prompt": [],
+      "branches": [
+        {
+          "when": "TITLE",
+          "goto": 305
+        },
+        {
+          "when": "ALL",
+          "goto": 312
+        },
+        {
+          "when": "ACT",
+          "goto": 320
+        },
+        {
+          "when": "DRAW",
+          "goto": 325
+        },
+        {
+          "when": "DATE",
+          "goto": 328
+        },
+        {
+          "when": "SYS",
+          "goto": 332
+        },
+        {
+          "when": "VEH",
+          "goto": 336
+        },
+        {
+          "when": "SECT",
+          "goto": 346
+        },
+        {
+          "when": "CODE",
+          "goto": 350
+        },
+        {
+          "when": "EO",
+          "goto": 354
+        }
+      ],
+      "figures": [],
+      "pdfPage": 79
+    },
+    {
+      "n": 305,
+      "mode": "search",
+      "title": "Step #5",
+      "prompt": [
+        "HOW MANY WORDS DO YOU WISH TO MATCH (MAX OF 4)"
+      ],
+      "input": {
+        "pattern": "X",
+        "description": "Enter Number X."
+      },
+      "branches": [],
+      "next": 306,
+      "figures": [],
+      "pdfPage": 80
+    },
+    {
+      "n": 306,
+      "mode": "search",
+      "title": "Step #6",
+      "prompt": [
+        "WHAT IS THE DESIRED WORD"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "Enter word AAAA; up to 10 characters.",
+        "maxLength": 10
+      },
+      "branches": [
+        {
+          "when": "Word is QUIT",
+          "goto": 311
+        },
+        {
+          "when": "Any other word",
+          "goto": 307
+        }
+      ],
+      "figures": [],
+      "pdfPage": 80
+    },
+    {
+      "n": 307,
+      "mode": "search",
+      "title": "Step #7",
+      "prompt": [
+        "THERE ARE XXX DRAWINGS CONTAINING THE WORD AAAA"
+      ],
+      "response": "As each title is found containing the desired word, the title is displayed on the terminal. Following the last title is displayed the message. Where XXX represents the number of drawings found and AAAA is the desired word entered.",
+      "branches": [],
+      "next": 308,
+      "figures": [],
+      "pdfPage": 80
+    },
+    {
+      "n": 308,
+      "mode": "search",
+      "title": "Step #8",
+      "prompt": [],
+      "response": "Steps #6 and #7 are repeated X number of times from Step #5 unless zero (0) drawings are found. If no drawings are found, go to #11.",
+      "branches": [
+        {
+          "when": "No drawings found",
+          "goto": 311
+        },
+        {
+          "when": "More words to match (X times in all)",
+          "goto": 306
+        },
+        {
+          "when": "All X words searched",
+          "goto": 309
+        }
+      ],
+      "figures": [],
+      "pdfPage": 80
+    },
+    {
+      "n": 309,
+      "mode": "search",
+      "title": "Step #9",
+      "prompt": [],
+      "response": "For all drawings found, drawing data is displayed after the last word is searched. See figure 14.",
+      "branches": [],
+      "next": 310,
+      "figures": [],
+      "pdfPage": 80
+    },
+    {
+      "n": 310,
+      "mode": "search",
+      "title": "Step #10",
+      "prompt": [
+        "IF YOU WISH TO CONTINUE, DEPRESS THE RETURN KEY"
+      ],
+      "input": {
+        "pattern": "RETURN",
+        "description": "When Return key is used, go to #1."
+      },
+      "branches": [],
+      "next": 301,
+      "figures": [],
+      "pdfPage": 80
+    },
+    {
+      "n": 311,
+      "mode": "search",
+      "title": "Step #11",
+      "prompt": [
+        "DO YOU WISH TO TRY THE TITLE SEARCH AGAIN (YES OR NO)"
+      ],
+      "input": {
+        "pattern": "Y/N",
+        "description": "YES or NO."
+      },
+      "branches": [
+        {
+          "when": "YES",
+          "goto": 305
+        },
+        {
+          "when": "NO, same as #10",
+          "goto": 310
+        }
+      ],
+      "figures": [],
+      "pdfPage": 80
+    },
+    {
+      "n": 312,
+      "mode": "search",
+      "title": "Step #12",
+      "prompt": [
+        "WHICH PRINT ALL OPTION DO YOU WISH:",
+        "DRAWING AND E.O.s (DE)",
+        "E.O.'s ONLY (EO)"
+      ],
+      "input": {
+        "pattern": "DE/EO",
+        "description": "Print all option."
+      },
+      "branches": [
+        {
+          "when": "DE",
+          "goto": 313
+        },
+        {
+          "when": "EO",
+          "goto": 316
+        }
+      ],
+      "figures": [],
+      "pdfPage": 81
+    },
+    {
+      "n": 313,
+      "mode": "search",
+      "title": "Step #13",
+      "prompt": [
+        "THIS IS THE PRINT ALL ROUTINE",
+        "ALL DRAWINGS STORED IN THE DRAW FILE WILL BE SPOOLED AND A TOTAL",
+        "COUNT OF THE DRAWINGS WILL BE GIVEN"
+      ],
+      "branches": [],
+      "next": 314,
+      "figures": [],
+      "pdfPage": 81
+    },
+    {
+      "n": 314,
+      "mode": "search",
+      "title": "Step #14",
+      "prompt": [],
+      "response": "Drawing data is displayed on the terminal for each drawing found along with referenced E.O.'s. See Figure 41.",
+      "branches": [],
+      "next": 315,
+      "figures": [
+        "41"
+      ],
+      "pdfPage": 81
+    },
+    {
+      "n": 315,
+      "mode": "search",
+      "title": "Step #15",
+      "prompt": [
+        "THERE ARE XXX DRAWINGS IN THE DRAW FILE"
+      ],
+      "response": "Where XXX represents the number of drawings found. Go to #19.",
+      "branches": [],
+      "next": 319,
+      "figures": [],
+      "pdfPage": 81
+    },
+    {
+      "n": 316,
+      "mode": "search",
+      "title": "Step #16",
+      "prompt": [
+        "THIS IS THE PRINT ALL ROUTINE",
+        "ALL ENGINEERING ORDERS STORED IN THE EO FILE WILL BE SPOOLED AND",
+        "A TOTAL COUNT OF THE DRAWINGS WILL BE GIVEN"
+      ],
+      "branches": [],
+      "next": 317,
+      "figures": [],
+      "pdfPage": 81
+    },
+    {
+      "n": 317,
+      "mode": "search",
+      "title": "Step #17",
+      "prompt": [],
+      "response": "Engineering order data is displayed on the terminal for each EO found. See Figure 42.",
+      "branches": [],
+      "next": 318,
+      "figures": [
+        "42"
+      ],
+      "pdfPage": 81
+    },
+    {
+      "n": 318,
+      "mode": "search",
+      "title": "Step #18",
+      "prompt": [
+        "THERE ARE XXX E.O.'s IN THE EO SUBFILE"
+      ],
+      "response": "Where XXX represents the number of engineering orders found. Go to #18.",
+      "branches": [],
+      "next": 319,
+      "figures": [],
+      "pdfPage": 81
+    },
+    {
+      "n": 319,
+      "mode": "search",
+      "title": "Step #19",
+      "prompt": [],
+      "response": "Output file is automatically spooled to the high speed printer; exit the SEARCH mode.",
+      "branches": [],
+      "next": 4,
+      "figures": [],
+      "pdfPage": 81
+    },
+    {
+      "n": 320,
+      "mode": "search",
+      "title": "Step #20",
+      "prompt": [
+        "THIS IS THE REVISION ACTION DUE SEARCH ROUTINE",
+        "ALL DRAWINGS WITH FIVE (5) OR MORE E.O.'s ARE FOUND AND SPOOLED"
+      ],
+      "branches": [],
+      "next": 321,
+      "figures": [],
+      "pdfPage": 81
+    },
+    {
+      "n": 321,
+      "mode": "search",
+      "title": "Step #21",
+      "prompt": [],
+      "response": "Drawing data is displayed on the terminal for each drawing sheet found. See Figure 41.",
+      "branches": [],
+      "next": 322,
+      "figures": [
+        "41"
+      ],
+      "pdfPage": 81
+    },
+    {
+      "n": 322,
+      "mode": "search",
+      "title": "Step #22",
+      "prompt": [
+        "THERE ARE XXX DRAWINGS WITH A TOTAL OF NNN SHEET(S) IN THE",
+        "DRAWING SUBFILE WHICH MUST BE REVISED"
+      ],
+      "response": "Where XXX represents the number of drawings found and NNN represents the number sheets found.",
+      "branches": [],
+      "next": 323,
+      "figures": [],
+      "pdfPage": 82
+    },
+    {
+      "n": 323,
+      "mode": "search",
+      "title": "Step #23",
+      "prompt": [],
+      "response": "If no drawings are found, go to #24. If drawings are found, output file is automatically spooled to the high speed printer; exit the SEARCH mode.",
+      "branches": [
+        {
+          "when": "No drawings found",
+          "goto": 324
+        },
+        {
+          "when": "Drawings found: spooled, exit SEARCH mode",
+          "goto": 4
+        }
+      ],
+      "figures": [],
+      "pdfPage": 82
+    },
+    {
+      "n": 324,
+      "mode": "search",
+      "title": "Step #24",
+      "prompt": [],
+      "response": "Go to #10.",
+      "branches": [],
+      "next": 310,
+      "figures": [],
+      "pdfPage": 82
+    },
+    {
+      "n": 325,
+      "mode": "search",
+      "title": "Step #25",
+      "prompt": [
+        "WHAT IS THE DESIRED DRAWING NUMBER"
+      ],
+      "input": {
+        "pattern": "NNNN",
+        "description": "Enter number NNNN; 14 characters.",
+        "maxLength": 14
+      },
+      "branches": [],
+      "next": 326,
+      "figures": [],
+      "pdfPage": 82
+    },
+    {
+      "n": 326,
+      "mode": "search",
+      "title": "Step #26a / #26b",
+      "prompt": [
+        "THERE IS NO DRAWING WITH NUMBER NNNN IN THE DRAWING FILE"
+      ],
+      "response": "#26a: Drawing data is displayed on the terminal along with referenced E.O.'s. See Figure 41. #26b: If not found, the message is displayed, where NNNN represents the drawing number entered for the search.",
+      "branches": [],
+      "next": 327,
+      "figures": [
+        "41"
+      ],
+      "pdfPage": 82
+    },
+    {
+      "n": 327,
+      "mode": "search",
+      "title": "Step #27",
+      "prompt": [],
+      "response": "Go to #10.",
+      "branches": [],
+      "next": 310,
+      "figures": [],
+      "pdfPage": 82
+    },
+    {
+      "n": 328,
+      "mode": "search",
+      "title": "Step #28",
+      "prompt": [
+        "WHAT IS THE DATE THAT YOU WANT"
+      ],
+      "input": {
+        "pattern": "MMDDYY",
+        "description": "Enter date; month, day, and year after skipping one space. Entering 00 for the day or month retrieves an entire month's or year's worth of data.",
+        "maxLength": 6
+      },
+      "branches": [],
+      "next": 329,
+      "figures": [],
+      "pdfPage": 82
+    },
+    {
+      "n": 329,
+      "mode": "search",
+      "title": "Step #29",
+      "prompt": [],
+      "response": "Drawing data is displayed on the terminal for each drawing found along with referenced E.O.'s. See Figure 41.",
+      "branches": [],
+      "next": 330,
+      "figures": [
+        "41"
+      ],
+      "pdfPage": 82
+    },
+    {
+      "n": 330,
+      "mode": "search",
+      "title": "Step #30",
+      "prompt": [
+        "THERE ARE XXX DRAWINGS WITH A DATE OF MM-DD-YY"
+      ],
+      "response": "Where XXX represents the number of drawings found and MMDDYY represents the date entered for the search.",
+      "branches": [],
+      "next": 331,
+      "figures": [],
+      "pdfPage": 83
+    },
+    {
+      "n": 331,
+      "mode": "search",
+      "title": "Step #31",
+      "prompt": [],
+      "response": "Go to #10.",
+      "branches": [],
+      "next": 310,
+      "figures": [],
+      "pdfPage": 83
+    },
+    {
+      "n": 332,
+      "mode": "search",
+      "title": "Step #32",
+      "prompt": [
+        "WHAT IS THE DESIRED SYSTEM",
+        "(ELEC,GSE,GUID,MECH,PROP,RF,SOP,MGS,EGS,PERF)"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "Enter system AAAA; up to 12 characters.",
+        "maxLength": 12
+      },
+      "branches": [],
+      "next": 333,
+      "figures": [],
+      "pdfPage": 83
+    },
+    {
+      "n": 333,
+      "mode": "search",
+      "title": "Step #33",
+      "prompt": [],
+      "response": "Drawing data is displayed on the terminal for each drawing found along with referenced E.O.'s. See Figure 41.",
+      "branches": [],
+      "next": 334,
+      "figures": [
+        "41"
+      ],
+      "pdfPage": 83
+    },
+    {
+      "n": 334,
+      "mode": "search",
+      "title": "Step #34",
+      "prompt": [
+        "THERE ARE XXX DRAWINGS WITH A SYSTEM OF AAAA"
+      ],
+      "response": "Where XXX represents the number of drawings found and AAAA represents the system entered for the search.",
+      "branches": [],
+      "next": 335,
+      "figures": [],
+      "pdfPage": 83
+    },
+    {
+      "n": 335,
+      "mode": "search",
+      "title": "Step #35",
+      "prompt": [],
+      "response": "Go to #10.",
+      "branches": [],
+      "next": 310,
+      "figures": [],
+      "pdfPage": 83
+    },
+    {
+      "n": 336,
+      "mode": "search",
+      "title": "Step #36",
+      "prompt": [
+        "WHAT IS THE DESIRED VEHICLE NUMBER"
+      ],
+      "input": {
+        "pattern": "NNN",
+        "description": "Enter vehicle number NNN."
+      },
+      "branches": [],
+      "next": 337,
+      "figures": [],
+      "pdfPage": 83
+    },
+    {
+      "n": 337,
+      "mode": "search",
+      "title": "Step #37",
+      "prompt": [
+        "WHAT IS THE FIRST VALID VEHICLE NUMBER"
+      ],
+      "input": {
+        "pattern": "NNN",
+        "description": "Enter number. If information on a specific vehicle is desired, enter the same vehicle as in Step #36. Default is zero (0)."
+      },
+      "branches": [],
+      "next": 338,
+      "figures": [],
+      "pdfPage": 83
+    },
+    {
+      "n": 338,
+      "mode": "search",
+      "title": "Step #38",
+      "prompt": [
+        "WHAT IS THE LAST VALID VEHICLE NUMBER",
+        "NOTE: THE DEFAULT IS VEHICLE 999."
+      ],
+      "input": {
+        "pattern": "NNN",
+        "description": "Enter number. If information on a specific vehicle is desired, enter the same vehicle as in Step #36."
+      },
+      "branches": [],
+      "next": 339,
+      "figures": [],
+      "pdfPage": 83
+    },
+    {
+      "n": 339,
+      "mode": "search",
+      "title": "Step #39",
+      "prompt": [
+        "DO YOU WISH A LIST OF ALL E.O.'S FOR A SPECIFIC VEHICLE:",
+        "ENTER EO",
+        "OR A LIST OF DRAWINGS RELATED TO SPECIFIC VEHICLE:",
+        "ENTER DR"
+      ],
+      "input": {
+        "pattern": "EO/DR",
+        "description": "E.O.'s or drawings."
+      },
+      "branches": [
+        {
+          "when": "EO",
+          "goto": 343
+        },
+        {
+          "when": "DR",
+          "goto": 340
+        }
+      ],
+      "figures": [],
+      "pdfPage": 84
+    },
+    {
+      "n": 340,
+      "mode": "search",
+      "title": "Step #40",
+      "prompt": [],
+      "response": "Drawing data is displayed on the terminal for each drawing found along with referenced E.O.'s. See Figure 41.",
+      "branches": [],
+      "next": 341,
+      "figures": [
+        "41"
+      ],
+      "pdfPage": 84
+    },
+    {
+      "n": 341,
+      "mode": "search",
+      "title": "Step #41",
+      "prompt": [
+        "THERE ARE XXX DRAWINGS RELATING TO VEHICLE NNN"
+      ],
+      "response": "Where XXX represents the number of drawings found and NNN represents the vehicle number entered for the search.",
+      "branches": [],
+      "next": 342,
+      "figures": [],
+      "pdfPage": 84
+    },
+    {
+      "n": 342,
+      "mode": "search",
+      "title": "Step #42",
+      "prompt": [],
+      "response": "Go to #10.",
+      "branches": [],
+      "next": 310,
+      "figures": [],
+      "pdfPage": 84
+    },
+    {
+      "n": 343,
+      "mode": "search",
+      "title": "Step #43",
+      "prompt": [],
+      "response": "Engineering order data is displayed on the terminal for each EO found. See Figure 43.",
+      "branches": [],
+      "next": 344,
+      "figures": [
+        "43"
+      ],
+      "pdfPage": 84
+    },
+    {
+      "n": 344,
+      "mode": "search",
+      "title": "Step #44",
+      "prompt": [
+        "THERE ARE XXX E.O.'S RELATED TO VEHICLE NNN"
+      ],
+      "response": "Where XXX represents the number of engineering orders found and NNN represents the vehicle number entered for the search.",
+      "branches": [],
+      "next": 345,
+      "figures": [],
+      "pdfPage": 84
+    },
+    {
+      "n": 345,
+      "mode": "search",
+      "title": "Step #45",
+      "prompt": [],
+      "response": "Go to #10.",
+      "branches": [],
+      "next": 310,
+      "figures": [],
+      "pdfPage": 84
+    },
+    {
+      "n": 346,
+      "mode": "search",
+      "title": "Step #46",
+      "prompt": [
+        "WHAT IS THE DESIRED SECTION",
+        "E SECT      UPPER B     LOWER B     ALCYONE IA    ALCYONE IIA",
+        "G SECT      UPPER C     LOWER C     ALGOL IIA     ALGOL IIIA",
+        "EG SECT     UPPER D     LOWER D     ANTARES IIA   ANTARES IIIA",
+        "BASE A      UPPER F     LOWER F     ALTAIR IIIA   CASTOR IIA",
+        "H/S 34/-24  H/S 34/-40  H/S 42/-45"
+      ],
+      "input": {
+        "pattern": "AAAA",
+        "description": "Enter section AAAA; up to 12 characters.",
+        "maxLength": 12
+      },
+      "branches": [],
+      "next": 347,
+      "figures": [],
+      "pdfPage": 84
+    },
+    {
+      "n": 347,
+      "mode": "search",
+      "title": "Step #47",
+      "prompt": [],
+      "response": "Drawing data is displayed on the terminal for each drawing found along with referenced E.O.'s. See Figure 41.",
+      "branches": [],
+      "next": 348,
+      "figures": [
+        "41"
+      ],
+      "pdfPage": 85
+    },
+    {
+      "n": 348,
+      "mode": "search",
+      "title": "Step #48",
+      "prompt": [
+        "THERE ARE XXX DRAWINGS RELATED TO SECTION AAAA"
+      ],
+      "response": "Where XXX represents the number of drawings found and AAA represents the section entered for the search.",
+      "branches": [],
+      "next": 349,
+      "figures": [],
+      "pdfPage": 85
+    },
+    {
+      "n": 349,
+      "mode": "search",
+      "title": "Step #49",
+      "prompt": [],
+      "response": "Go to #10.",
+      "branches": [],
+      "next": 310,
+      "figures": [],
+      "pdfPage": 85
+    },
+    {
+      "n": 350,
+      "mode": "search",
+      "title": "Step #50",
+      "prompt": [
+        "WHAT IS THE DESIRED VENDOR CODE"
+      ],
+      "input": {
+        "pattern": "AAA",
+        "description": "Enter vendor code AAA.",
+        "maxLength": 3
+      },
+      "branches": [],
+      "next": 351,
+      "figures": [],
+      "pdfPage": 85
+    },
+    {
+      "n": 351,
+      "mode": "search",
+      "title": "Step #51",
+      "prompt": [],
+      "response": "Drawing data is displayed on the terminal for each drawing found along with referenced E.O.'s. See Figure 41.",
+      "branches": [],
+      "next": 352,
+      "figures": [
+        "41"
+      ],
+      "pdfPage": 85
+    },
+    {
+      "n": 352,
+      "mode": "search",
+      "title": "Step #52",
+      "prompt": [
+        "THERE ARE XXX DRAWINGS WITH THE SPECIFIED VENDOR CODE AAA"
+      ],
+      "response": "Where XXX represents the number of drawings found and AAA represents the vendor code entered for the search.",
+      "branches": [],
+      "next": 353,
+      "figures": [],
+      "pdfPage": 85
+    },
+    {
+      "n": 353,
+      "mode": "search",
+      "title": "Step #53",
+      "prompt": [],
+      "response": "Go to #10.",
+      "branches": [],
+      "next": 310,
+      "figures": [],
+      "pdfPage": 85
+    },
+    {
+      "n": 354,
+      "mode": "search",
+      "title": "Step #54",
+      "prompt": [
+        "WHAT IS THE DESIRED E.O. NUMBER"
+      ],
+      "input": {
+        "pattern": "NNNNNN",
+        "description": "Enter number NNNNNN.",
+        "maxLength": 6
+      },
+      "branches": [],
+      "next": 355,
+      "figures": [],
+      "pdfPage": 85
+    },
+    {
+      "n": 355,
+      "mode": "search",
+      "title": "Step #55",
+      "prompt": [
+        "DO YOU DESIRE THE E.O. FILE SEARCH (EO)",
+        "OR ALL DRAWINGS USING THIS E.O. (DR)"
+      ],
+      "input": {
+        "pattern": "EO/DR",
+        "description": "E.O. file or drawings."
+      },
+      "branches": [
+        {
+          "when": "EO",
+          "goto": 356
+        },
+        {
+          "when": "DR",
+          "goto": 358
+        }
+      ],
+      "figures": [],
+      "pdfPage": 85
+    },
+    {
+      "n": 356,
+      "mode": "search",
+      "title": "Step #56a / #56b",
+      "prompt": [
+        "THERE IS NO E.O. NNNNNN IN THE EO SUBFILE"
+      ],
+      "response": "#56a: Engineering order data is displayed on the terminal when EO number is found. See figure 42. #56b: If not found, the message is displayed, where NNNNNN represents the engineering order number entered for the search.",
+      "branches": [],
+      "next": 357,
+      "figures": [
+        "42"
+      ],
+      "pdfPage": 85
+    },
+    {
+      "n": 357,
+      "mode": "search",
+      "title": "Step #57",
+      "prompt": [],
+      "response": "Go to #10.",
+      "branches": [],
+      "next": 310,
+      "figures": [],
+      "pdfPage": 86
+    },
+    {
+      "n": 358,
+      "mode": "search",
+      "title": "Step #58",
+      "prompt": [
+        "THERE ARE XXX DRAWINGS WITH A TOTAL OF NNN SHEET(S) IN THE DRAWING",
+        "SUBFILE WHICH REFERENCES E.O.",
+        "NNNNNN"
+      ],
+      "response": "Where XXX represents the number of drawings found, NNN represents the number of sheets found, and NNNNNN represents the engineering order number entered for the search.",
+      "branches": [],
+      "next": 359,
+      "figures": [],
+      "pdfPage": 86
+    },
+    {
+      "n": 359,
+      "mode": "search",
+      "title": "Step #59",
+      "prompt": [],
+      "response": "Go to #10.",
+      "branches": [],
+      "next": 310,
+      "figures": [],
+      "pdfPage": 86
+    },
+    {
+      "n": 360,
+      "mode": "search",
+      "title": "Step #60",
+      "prompt": [
+        "DO YOU WANT A HARD COPY OF THE INFORMATION FOUND"
+      ],
+      "input": {
+        "pattern": "Y/N",
+        "description": "If Yes, output spooled to printer. See section 5.3.2 for outputs."
+      },
+      "branches": [],
+      "next": 361,
+      "figures": [],
+      "pdfPage": 86
+    },
+    {
+      "n": 361,
+      "mode": "search",
+      "title": "Step #61",
+      "prompt": [],
+      "response": "Exit SEARCH mode.",
+      "branches": [],
+      "next": 4,
+      "figures": [],
+      "pdfPage": 86
+    },
+    {
+      "n": 401,
+      "mode": "archive",
+      "title": "Step #1",
+      "prompt": [
+        "DO YOU WISH TO ARCHIVE DRAWINGS OR E.O.'s (DR OR EO)"
+      ],
+      "input": {
+        "pattern": "DR/EO",
+        "description": "Drawings or E.O.'s."
+      },
+      "branches": [
+        {
+          "when": "DR",
+          "goto": 402
+        },
+        {
+          "when": "EO",
+          "goto": 405
+        }
+      ],
+      "figures": [],
+      "pdfPage": 88
+    },
+    {
+      "n": 402,
+      "mode": "archive",
+      "title": "Step #2",
+      "prompt": [
+        "WELCOME TO THE DRAWING FILE ARCHIVE ROUTINE.",
+        "HOW MANY DRAWINGS DO YOU WISH TO ARCHIVE"
+      ],
+      "input": {
+        "pattern": "XX",
+        "description": "Enter number XX."
+      },
+      "branches": [],
+      "next": 403,
+      "figures": [],
+      "pdfPage": 88
+    },
+    {
+      "n": 403,
+      "mode": "archive",
+      "title": "Step #3",
+      "prompt": [
+        "WHAT IS THE DRAWING NUMBER OF THE DRAWING YOU WISH TO ARCHIVE"
+      ],
+      "input": {
+        "pattern": "NNNN",
+        "description": "Enter number; 14 characters.",
+        "maxLength": 14
+      },
+      "branches": [],
+      "next": 404,
+      "figures": [],
+      "pdfPage": 88
+    },
+    {
+      "n": 404,
+      "mode": "archive",
+      "title": "Step #4",
+      "prompt": [],
+      "response": "Pause for system housekeeping to be completed. Repeat Step #3 XX number of times. Go to #7.",
+      "branches": [
+        {
+          "when": "More drawings to archive (XX times in all)",
+          "goto": 403
+        },
+        {
+          "when": "All XX drawings archived",
+          "goto": 407
+        }
+      ],
+      "figures": [],
+      "pdfPage": 88
+    },
+    {
+      "n": 405,
+      "mode": "archive",
+      "title": "Step #5",
+      "prompt": [
+        "PLEASE STAND BY. SYSTEM IS NOW ARCHIVING UNREFERENCED E.O.'S"
+      ],
+      "response": "No user response required.",
+      "branches": [],
+      "next": 406,
+      "figures": [],
+      "pdfPage": 88
+    },
+    {
+      "n": 406,
+      "mode": "archive",
+      "title": "Step #6",
+      "prompt": [
+        "E.O. NNNNNN HAS BEEN ARCHIVED."
+      ],
+      "response": "As each E.O. is archived the message is displayed on the terminal, where NNNNNN represents the engineering order number.",
+      "branches": [],
+      "next": 407,
+      "figures": [],
+      "pdfPage": 88
+    },
+    {
+      "n": 407,
+      "mode": "archive",
+      "title": "Step #7",
+      "prompt": [],
+      "response": "Exit ARCHIVE mode when done. The user is automatically returned to the program mode selection level.",
+      "branches": [],
+      "next": 4,
+      "figures": [],
+      "pdfPage": 88
+    }
+  ]
+}

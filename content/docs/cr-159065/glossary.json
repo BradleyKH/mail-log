@@ -1,0 +1,192 @@
+[
+  {
+    "term": "ARCHIVE",
+    "definition": "To save or put away data no longer needed or used",
+    "pdfPage": 146
+  },
+  {
+    "term": "DATA BASE",
+    "definition": "A collection or set of data files; records.",
+    "pdfPage": 146
+  },
+  {
+    "term": "DATA ITEM",
+    "definition": "A subdivision of a data record; for example; author and contract number are data items or fields of a memo record.",
+    "pdfPage": 146
+  },
+  {
+    "term": "DIR",
+    "definition": "Design Information Release",
+    "pdfPage": 146
+  },
+  {
+    "term": "EGS",
+    "definition": "Electrical ground support equipment",
+    "pdfPage": 146
+  },
+  {
+    "term": "ELEC",
+    "definition": "Electrical",
+    "pdfPage": 146
+  },
+  {
+    "term": "E.O.",
+    "definition": "Engineering Order",
+    "pdfPage": 146
+  },
+  {
+    "term": "FIELDS",
+    "definition": "See Data Item",
+    "pdfPage": 146
+  },
+  {
+    "term": "FILE",
+    "definition": "Storage area to place and keep data for later use",
+    "pdfPage": 146
+  },
+  {
+    "term": "FORTRAN",
+    "definition": "Special language used to give instructions to the computer",
+    "pdfPage": 146
+  },
+  {
+    "term": "GSE",
+    "definition": "Ground support equipment",
+    "pdfPage": 146
+  },
+  {
+    "term": "GUID",
+    "definition": "Guidance",
+    "pdfPage": 146
+  },
+  {
+    "term": "HOUSEKEEPING",
+    "definition": "Process by which the computer performs program instructions in order to permit smooth operation - for example, opening, closing, and deleting files.",
+    "pdfPage": 147
+  },
+  {
+    "term": "H/S",
+    "definition": "Heatshield",
+    "pdfPage": 147
+  },
+  {
+    "term": "ID",
+    "definition": "Identification",
+    "pdfPage": 147
+  },
+  {
+    "term": "INPUT",
+    "definition": "To place data into a file",
+    "pdfPage": 147
+  },
+  {
+    "term": "LOGIN",
+    "definition": "User process of being identified to the computer for further operation",
+    "pdfPage": 147
+  },
+  {
+    "term": "MECH",
+    "definition": "Mechanical",
+    "pdfPage": 147
+  },
+  {
+    "term": "MESSAGE",
+    "definition": "A special note displayed on the terminal to the user by the computer program",
+    "pdfPage": 147
+  },
+  {
+    "term": "MGS",
+    "definition": "Mechanical ground support equipment",
+    "pdfPage": 147
+  },
+  {
+    "term": "MODE",
+    "definition": "A type of task for a specific job.",
+    "pdfPage": 147
+  },
+  {
+    "term": "OUTPUT",
+    "definition": "To show or display data",
+    "pdfPage": 147
+  },
+  {
+    "term": "PERF",
+    "definition": "Performance",
+    "pdfPage": 147
+  },
+  {
+    "term": "PRINTOUT",
+    "definition": "A special listing of data provided to the user by the computer for later reference or use.",
+    "pdfPage": 147
+  },
+  {
+    "term": "PROP",
+    "definition": "Propulsion",
+    "pdfPage": 147
+  },
+  {
+    "term": "RECORD",
+    "definition": "A subdivision of a file consisting of a set of data items from a document.",
+    "pdfPage": 148
+  },
+  {
+    "term": "REVISE",
+    "definition": "To change or modify data,",
+    "pdfPage": 148
+  },
+  {
+    "term": "RF",
+    "definition": "Radio frequency for telemetry system",
+    "pdfPage": 148
+  },
+  {
+    "term": "SEARCH",
+    "definition": "To find or locate a specific set of data; records.",
+    "pdfPage": 148
+  },
+  {
+    "term": "SOFTWARE",
+    "definition": "A group or set of fixed computer instructions designed to perform special tasks",
+    "pdfPage": 148
+  },
+  {
+    "term": "SOP",
+    "definition": "Standard operating procedure",
+    "pdfPage": 148
+  },
+  {
+    "term": "SPADS",
+    "definition": "Scout Project Automatic Data System",
+    "pdfPage": 148
+  },
+  {
+    "term": "SPO",
+    "definition": "Scout Project Office",
+    "pdfPage": 148
+  },
+  {
+    "term": "SPOOLED",
+    "definition": "Process by which the computer transfers a special output file to the printer for a printout.",
+    "pdfPage": 148
+  },
+  {
+    "term": "SUBFILE",
+    "definition": "A part or subdivision of a file",
+    "pdfPage": 148
+  },
+  {
+    "term": "TERMINAL",
+    "definition": "A device with typewriter keys used to communicate with the computer.",
+    "pdfPage": 148
+  },
+  {
+    "term": "USER",
+    "definition": "Any person initiating interaction with the computer",
+    "pdfPage": 148
+  },
+  {
+    "term": "W.A.",
+    "definition": "Work authorization.",
+    "pdfPage": 148
+  }
+]

@@ -1,0 +1,611 @@
+[
+  {
+    "routine": "INPTC",
+    "record": "correspondence",
+    "sectionId": "4.1.1",
+    "description": "This subroutine is the input routine for the SPADS MAIL LOG Correspondence subfile. The Correspondence data record for each document consists of up to sixteen (16) data items as shown in Figure 6.2.1.1, Following each complete document entry, all items are displayed on the terminal to be checked for errors at this time. After a document record has been declared correct, the specific subfile must be designated in which this document is to be stored. If all documents can not be entered in one (1) input session, the user has a WAIT option which allows the daily input to be continued at a later time. This continuation is declared upon re-entering the INPUT MODE. If the WAIT option is taken by mistake and there are no other documents to be entered, recovery is accomplished by declaring this is NOT a continuation upon re-entry into the INPUT MODE. When this has been done the user now has three (3) options from which to choose:\n\na) Start a New Entry (NEW)\nb) Spool Last Output Again (LAST)\nc) Spool New Data Entered (DATA)\n\nOption (c) DATA will spool to the high speed printer a sorted output of alll documents entered for that daily input session.\n\nWhen a daily input session is complete, this output is normally spooled to the printer in two (2) formats: a complete record output and a brief or partial record output. If a computer or printer malfunction occurs during this output, another copy may be obtained by re-entering the INPUT MODE as previously described and selecting option (b) LAST. Flowchart Figure 5.4.1-1 depicts the INPUT MODE of the Correspondence subfile.",
+    "pdfPage": 26
+  },
+  {
+    "routine": "REVSC",
+    "record": "correspondence",
+    "sectionId": "4.1.2",
+    "description": "This subroutine is the revise routine for the SPADS MAIL LOG Correspondence subfile. To revise or delete a document, the input date and daily counter code comprise the unique identifier for its location. Additional time can be saved if the user also knows in which of the six (6) correspondence data subfiles the document is stored. When the desired document record is found, it will be displayed on the terminal for verification. If not the correct record, search for the document will continue. After the revision has been made the document record is again displayed on the terminal for user edification.\n\nThe REVISE MODE also can give the user manual revise or delete capability for documents in the ACTION DUE file. Flowchart Figure 5.4.1-2 depicts the REVISE MODE of the Correspondence subfile.",
+    "pdfPage": 27
+  },
+  {
+    "routine": "SEAC",
+    "record": "correspondence",
+    "sectionId": "4.1.3",
+    "description": "This subroutine is the search routine for the SPADS MAIL LOG Correspondence subfile.\n\nOf the sixteen (16) possible data items within a document record, eleven (11) are searchable. The resulting outputs from these searches vary from five (5) to eight (8) data items. See Figure 6.2.1.2. All searches except for the ACTION DUE DATE search have a multiple subfile selection capability in which any single or combination of the six subfiles may be used. The ACTION BUE DATE search automatically searches all six (6) subfiles. There is a specialized ALL search which outputs all document records in a specified subfile or combination of subfiles. However, it is not recommended that the general user call for the search ALL option.\n\nThe searches may also be assigned for a particular time frame. If no time frame is selected, the first valid date becomes the earliest date in the data base and the last valid date defaults to 12-31-99. Of course, the ACTION DUE DATE, DOCUMENT DATE, and INPUT DATE searches do not use the time framing capability. However, the DOCUMENT and INPUT DATE searches can retrieve entire month's or an entire year's worth of data by entering 00. For example, entering 110078 would result in finding all the documents within the data base in the eleventh month, November, for the year 1978. Likewise, an entry of 000078 would retrieve all documents for the year 1978. See Figure 6.2.1.3.\n\nFlowchart Figure 5.4.1-3 depicts the SEARCH MODE of the Correspondence\n\nsubfile.",
+    "pdfPage": 27
+  },
+  {
+    "routine": "ARCC",
+    "record": "correspondence",
+    "sectionId": "4.1.4",
+    "description": "This subroutine is the archive routine for the SPADS MAIL LOG Correspondence subfile. To archive a document not only is the input date and daily counter code needed, but also the specific data subfile in which it is\n\nlocated. After these requirements have been satisfied, a pause of 15 to 50 seconds occurs for the system to update all files involved.\n\nAll archived document records are placed in a file called INACTS, except for those records stored in the TRANSMITTAL data subfile. These records are archived to a file called INACTL, because of their extra data item, DESCRIPTION. Flowchart Figure 5.4.1-4 depicts the ARCHIVE MODE of the Correspondence subfile.",
+    "pdfPage": 28
+  },
+  {
+    "routine": "SHOWC",
+    "record": "correspondence",
+    "sectionId": "4.1.5",
+    "description": "This subroutine is used to display an entire data record on the terminal for the INPUT or REVISE MODE. Each data item is numbered in order to verify the document record as either correctly input or the correct record to be revised or deleted. Flowchart Figure 5.4.1-5 depicts the flow diagram for this subroutine.",
+    "pdfPage": 28
+  },
+  {
+    "routine": "INPSC",
+    "record": "correspondence",
+    "sectionId": "4.1.6",
+    "description": "This subroutine is used by the INPUT or REVISE MODES to input or change specific data items within a document record. Flowchart Figure 5.4.1-6 depicts the flow diagram for this subroutine.",
+    "pdfPage": 28
+  },
+  {
+    "routine": "OPEN",
+    "record": "correspondence",
+    "sectionId": "4.1.7",
+    "description": "This subroutine is used to open all six (6) data subfiles for read and write functions. Flowchart Figure 5.4.1-7 depicts the flow diagram for this subroutine.",
+    "pdfPage": 28
+  },
+  {
+    "routine": "CLOSE",
+    "record": "correspondence",
+    "sectionId": "4.1.8",
+    "description": "This subroutine is used to close all six (6) data subfiles which are open for read and write functions. Flowchart Figure 5.4.1-8 depicts the flow diagram for this subroutine.",
+    "pdfPage": 28
+  },
+  {
+    "routine": "WHERE",
+    "record": "correspondence",
+    "sectionId": "4.1.9",
+    "description": "This subroutine is used by the REVISE or SEARCH MODES to determine how many and which data subfiles are to be opened for searching purposes. These selected subfiles are then opened for the SEARCH MODE of operation. - Flowchart Figure 5.4.1-9 depicts the flow diagram for this subroutine.",
+    "pdfPage": 29
+  },
+  {
+    "routine": "BRAKET",
+    "record": "correspondence",
+    "sectionId": "4.1.10",
+    "description": "This subroutine is used by the SEARCH MODE to determine a first and last valid date for atime framed type of search. Defaults are 0-0-0 and 12-31-99 for the first and last valid dates, respectively. Flowchart Figure 5.4.1-10 depicts the flow diagram for this subroutine.",
+    "pdfPage": 29
+  },
+  {
+    "routine": "ALC",
+    "record": "correspondence",
+    "sectionId": "4.1.11",
+    "description": "This subroutine is called by the SEARCH MODE to perform a PRINT ALL type of search. This routine may search any one or combination of subfiles. The break key is inhibited during this search. When the file(s) have been finished, this routine automatically spools the formatted output file to the high speed printer. Flowchart Figure 5.4.1-11 depicts the flow diagram for this subroutine.",
+    "pdfPage": 29
+  },
+  {
+    "routine": "RESEA",
+    "record": "correspondence",
+    "sectionId": "4.1.12",
+    "description": "This subroutine is called by the SEARCH MODE to perform a RESPONSIBLE ENGINEER type of search. This routine formats document records found and builds an output file with headers. When the file(s) have been finished, this routine returns to the SEARCH MODE. Flowchart Figure 5.4.1-12 depicts the flow diagram for this subroutine.",
+    "pdfPage": 29
+  },
+  {
+    "routine": "WHO",
+    "record": "correspondence",
+    "sectionId": "4.1.13",
+    "description": ". This subroutine is called by the SEARCH MODE to perform a WHO TO/ ADDRESSEE type of search. This routine formats document records found and\n\nbuilds an output file with headers. When the file(s) have been finished, this routine returns to the SEARCH MODE. Flowchart Figure 5.4.1-13 depicts the flow diagram for this subroutine.",
+    "pdfPage": 29
+  },
+  {
+    "routine": "DDAT",
+    "record": "correspondence",
+    "sectionId": "4.1.14",
+    "description": "This subroutine is called by the SEARCH MODE to perform an INPUT DATA DATE type of search.\nThis INPUT DATE search does not use the time framing capability. However, the INPUT DATE search can retrieve entire month's or an entire year's worth of data by entering 00. For example, entering 110078 would result in finding all the documents within the data base in the eleventh month, November, for the year 1978. Likewise, an entry of 000078 would retrieve all documents for the year 1978. See Figure 6.2.1.3.\n\nFlowchart Figure 5.4.1-14 depicts the flow diagram for this subroutine.",
+    "pdfPage": 30
+  },
+  {
+    "routine": "CNUM",
+    "record": "correspondence",
+    "sectionId": "4.1.15",
+    "description": "This subroutine is called by the SEARCH MODE to perform a CONTRACT NUMBER type of search. This routine formats document records found and builds an output file with headers. When the file(s) have been finished, this routine returns to the SEARCH MODE. Flowchart Figure 5.4.1-15 depicts the flow diagram for this subroutine.",
+    "pdfPage": 30
+  },
+  {
+    "routine": "CWAID",
+    "record": "correspondence",
+    "sectionId": "4.1.16",
+    "description": "This subroutine is called by the SEARCH MODE to perform a WORK AUTHORIZATION/ID CODE type of search. This procedure may perform partial\n\nsearches using the W.A. Number only or W.A. Number in conjunction with the\n\nfirst two (2) letters of the ID Code. This routine formats document records found and builds an output file with headers. When the file(s) have been finished, this routine returns to the SEARCH MODE. Flowchart Figure 5.4.1-16 depicts the flow diagram for this subroutine.",
+    "pdfPage": 30
+  },
+  {
+    "routine": "AUSEA",
+    "record": "correspondence",
+    "sectionId": "4.1.17",
+    "description": "This subroutine is called by the SEARCH MODE to perform an AUTHOR/ SOURCE type of search. This routine formats document records found and builds an output file with headers. When the file(s) have been finished, this routine returns to the SEARCH MODE. Flowchart Figure 5.4.1-17 depicts the flow diagram for this subroutine.",
+    "pdfPage": 31
+  },
+  {
+    "routine": "DLSEA",
+    "record": "correspondence",
+    "sectionId": "4.1.18",
+    "description": "This subroutine is called by the SEARCH MODE to perform a DOCUMENT/ LETTER NUMBER type of search. This procedure may perform partial searches as long as the desired parameter is four (4) characters in length. This routine formats document records found and builds an output file with headers. When the file(s) have been finished, this routine returns to the SEARCH MODE. Flowchart Figure 5.4.1-18 depicts the flow diagram for this subroutine.",
+    "pdfPage": 31
+  },
+  {
+    "routine": "DATC",
+    "record": "correspondence",
+    "sectionId": "4.1.19",
+    "description": "This subroutine is called by the SEARCH MODE to perform the DOCUMENT DATE type of search. This DOCUMENT DATE search does not use the time framing capability. However, the DOCUMENT DATE search can retrieve entire month's or\n\nan entire year's worth of data by entering 00. For example, entering 110078 would result in finding all the documents within the data base in the eleventh month, November, for the year 1978. Likewise, an entry of 000078 would retrieve all documents for the year 1978. See Figure 6.2.1.3.\n\nFlowchart Figure 5.4.1-19 depicts the flow diagram for this subroutine.",
+    "pdfPage": 31
+  },
+  {
+    "routine": "SUBJ",
+    "record": "correspondence",
+    "sectionId": "4.1.20",
+    "description": "This subroutine is called by the SEARCH MODE to perform the SUBJECT TITLE search. This procedure allows up to four (4) of the seven (7) possible words in the subject to be searched. As each subject is found containing the desired word, the entire subject is displayed on the terminal. If none are found, the user may restart this subroutine or return to the SEARCH MODE as normally done when the file(s) are finished. When the final word has been searched, document records found will be formatted to an output file with headers. Flowchart Figure 5.4.1-20 depicts the flow diagram for this routine.",
+    "pdfPage": 32
+  },
+  {
+    "routine": "MSTAT",
+    "record": "correspondence",
+    "sectionId": "4.1.21",
+    "description": "This subroutine is called by the SEARCH MODE to perform a MAIL STATUS type of search. If the desired mail status is legal, the search is performed. This routine formats document records found and builds an output file with headers. When the file(s) are finished, this routine returns to the SEARCH MODE. Flowchart Figure 5.4.1-21 depicts the flow diagram for this Subroutine.",
+    "pdfPage": 32
+  },
+  {
+    "routine": "ADAT",
+    "record": "correspondence",
+    "sectionId": "4.1.22",
+    "description": "This subroutine is called by the SEARCH MODE to perform the ACTION DUE DATE search. This procedure has two options: a complete listing of document records with an action due or search for document records within five (5) days or past due using the current date as reference. This routine formats document records found and builds an output file with headers. During this search the break key is inhibited. When the ACTION DUE subfile is finished, this routine automatically spools the output file to the high speed printer. Flowchart Figure 5.4.1-22 depicts the flow diagram for this subroutine.",
+    "pdfPage": 32
+  },
+  {
+    "routine": "CKIR",
+    "record": "correspondence",
+    "sectionId": "4.1.23",
+    "description": "This subroutine is used by the REVISE MODE to check the data item selected. If MAIL STATUS, data item number one, is selected, a validity check is made to verify that the correct item was indicated. A valid or invalid flag is set according to user response and logic flow returns to the calling routine. Flowchart Figure 5.4.1-23 depicts the flow diagram for this subroutine.",
+    "pdfPage": 33
+  },
+  {
+    "routine": "RDSUB",
+    "record": "correspondence",
+    "sectionId": "4.1.24",
+    "description": "This subroutine is used by the SEARCH MODE to read the selected subfile(s) desired for the specific data item search. When all subfiles are finished, a read complete flag is set. Flowchart Figure 5.4.1-24 depicts the flow diagram for this subroutine.",
+    "pdfPage": 33
+  },
+  {
+    "routine": "SCRNHD",
+    "record": "correspondence",
+    "sectionId": "4.1.25",
+    "description": "This subroutine is used by the SEARCH MODE to format and display on the terminal the appropriate header for each data item search. Flowchart Figure 5.4.1-25 depicts the flow diagram for this subroutine.",
+    "pdfPage": 33
+  },
+  {
+    "routine": "SCRNPT",
+    "record": "correspondence",
+    "sectionId": "4.1.26",
+    "description": "This subroutine is used by the SEARCH MODE to format and display on the terminal the appropriate data items for a document record which was found. If many document records are found during a search and it is observed that needed information will soon disappear from the screen, the user may temporarily stop terminal display by depressing the space bar. Terminal display\n\nmay be restarted by depressing the 'Q' key. This routine also increments the number of documents found counter. Flowchart Figure 5.4.1-26 depicts the flow\n\ndiagram for this subroutine.",
+    "pdfPage": 33
+  },
+  {
+    "routine": "HARDHD",
+    "record": "correspondence",
+    "sectionId": "4.1.27",
+    "description": "This subroutine is used by the SEARCH MODE to format for the output file the appropriate header for each data item search: This header is\n\npresented on each page of the output file. Flowchart Figure 5.4.1-27 depicts the flow diagram for this subroutine.",
+    "pdfPage": 33
+  },
+  {
+    "routine": "HARDPT",
+    "record": "correspondence",
+    "sectionId": "4.1.28",
+    "description": "This subroutine is used by the SEARCH MODE to format for the output - file the appropriate data items for a document record which was found during a specific data item search. Flowchart Figure 5.4.1-28 depicts the flow diagram for this subroutine.",
+    "pdfPage": 34
+  },
+  {
+    "routine": "UPDATE",
+    "record": "correspondence",
+    "sectionId": "4.1.29",
+    "description": "This subroutine is used by the INPUT MODE to delete or change document records in the ACTION DUE DATE subfile. The updating of this file is determined by checks on specified words in the subject of the referencing document. Flowchart Figure 5.4.1-29 depicts the flow diagram for this subroutine.",
+    "pdfPage": 34
+  },
+  {
+    "routine": "INPTDR",
+    "record": "dir",
+    "sectionId": "4.2.1",
+    "description": "This subroutine is the input routine for the SPADS MAIL LOG DIR/\n\nREPORT subfile. The DIR/REPORT data record for each document consists of up to nine (9) data items. See Figure 6.2.2.1. The first item entered is the DIR/REPORT Number. The file is then checked for a previous entry containing this number. If the number is found, the user has the option to enter the REVISE MODE. Normally, changes are required only to two (2) data items: (8) Revision and (9) Revision Date. Following each completed document entry, all items are displayed on the terminal. Flowchart Figure 5.4.2-1 depicts the INPUT MODE of the DIR/REPORT subfile.",
+    "pdfPage": 35
+  },
+  {
+    "routine": "SEADR",
+    "record": "dir",
+    "sectionId": "4.2.2",
+    "description": "This subroutine is the search routine for the SPADS MAIL LOG DIR/REPORT subfile.\n\nOf the nine (9) possible data items within a DIR/REPORT record, all but one, REVISION, are searchable. It should also be noted that the Revision Date is searched during a DATE search. This allows the DATE search to check only the most recent date associated with a document. See Figure 6.2.2.2.\n\nThe DATE search has the capability of retrieving an entire month's or year's worth of data by entering 00 for the day or month. For example, entering 110078 would result in finding all the documents within the data base in the eleventh month, November, for the year 1978. Likewise, an entry of 000078 -would retrieve all documents for the year 1978.\n\nThere is a specialized ALL search which outputs all documents in the DIR/REPORT subfile. This ALL search has an optional output along with the normal output consisting of the entire nine (9) item record. This optional output only displays the number of documents found on the terminal and automatically spools to the high speed printer the DIR Number and Revision.\n\nThe VEHICLE search also has a special quality. A group of vehicles may be found by using the first and last valid vehicle options. For example,\n\nif a user declares the first valid vehicle as 198 and is searching for vehicle number 200, not only would all documents containing vehicle 200 be found, but also those with numbers 198S, 199S, and 200S; where S represents all subsequent vehicles. Default for the first valid vehicle number is zero (0) whereas, the last valid vehicle number becomes 999.\n\nFlowchart Figure 5.4.2-2 depicts the SEARCH MODE of the DIR/REPORT subfile.",
+    "pdfPage": 35
+  },
+  {
+    "routine": "REVSDR",
+    "record": "dir",
+    "sectionId": "4.2.3",
+    "description": "This subroutine is the revise routine for the SPADS MAIL LOG DIR/REPORT subfile.\n\nThe only information needed in order to revise or delete a DIR or Report is the DIR or REPORT Number. Note that the REVISE MODE may be entered in two (2) ways: a direct REVISE command or thru an INPUT MODE option. If a DIR or REPORT is entered and found already to be in the file, the user may change to the REVISE MODE for modification of old data items.\n\nOtherwise, when the desired document record is found, it will be displayed on the terminal for verification. If it is not the correct record, search for the document will continue. After the revision has been made, the document record is again displayed on the terminal for user edification. Flowchart Figure 5.4.2-3 depicts the REVISE MODE of the DIR/REPORT subfile.",
+    "pdfPage": 36
+  },
+  {
+    "routine": "ARCDR",
+    "record": "dir",
+    "sectionId": "4.2.4",
+    "description": "This subroutine is the archive routine for the SPADS MAIL LOG DIR/REPORT subfile.\n\nThe necessary information needed in order to archive a DIR or Report is the DIR Number. The user may also designate how many documents to be archived at one session. The file in which all archived records are placed is called INACT. Flowchart Figure 5.4.2-4 depicts the ARCHIVE MODE of the DIR/REPORT subfile.",
+    "pdfPage": 36
+  },
+  {
+    "routine": "SHOWDR",
+    "record": "dir",
+    "sectionId": "4.2.5",
+    "description": "This subroutine is used to display an entire data record on the terminal for the INPUT or REVISE MODES. Each data item is numbered in order to verify the data record as either correctly input or the correct record to be revised or deleted. Flowchart Figure 5.4.2-5 depicts the flow diagram for this subroutine.",
+    "pdfPage": 37
+  },
+  {
+    "routine": "INPSDR",
+    "record": "dir",
+    "sectionId": "4.2.6",
+    "description": "This subroutine is used by the INPUT or REVISE MODES to input or change specific data items within a data record. Flowchart Figure 5.4.2-6 depicts the flow diagram for this subroutine.",
+    "pdfPage": 37
+  },
+  {
+    "routine": "ALDR",
+    "record": "dir",
+    "sectionId": "4.2.7",
+    "description": "This subroutine is called by the SEARCH MODE to perform a PRINT ALL type of search. This routine has two (2) options: a complete listing of DIR/REPORT records containing the entire data record or a partial listing only containing the DIR/REPORT Number and REVISION. When the entire data record option is used, all nine (9) data items are displayed on the terminal and formatted for output. During the partial search only multiples of 50 are displayed on the terminal. During this search the break key is inhibited.\n\nWhen the DIR/REPORT data file is finished, this routine automatically spools the output file to the high speed printer. Flowchart Figure 5.4.2-7 depicts the flow diagram for this subroutine.",
+    "pdfPage": 37
+  },
+  {
+    "routine": "TITDR",
+    "record": "dir",
+    "sectionId": "4.2.8",
+    "description": "This subroutine is called by the SEARCH MODE to perform the TITLE search. This procedure allows up to four (4) of the seven (7) possible words in the title to be searched. As each title is found containing the desired word, the entire title is displayed on the terminal. If none are found, the user may restart this subroutine or return to the SEARCH MODE which is normally done when the data file is finished. When the final word has been searched, the entire data record of document records found will be formatted to an\n\noutput file and displayed on the terminal. Flowchart Figure 5.4.2-8 depicts the flow diagram for this subroutine.",
+    "pdfPage": 37
+  },
+  {
+    "routine": "DIRN",
+    "record": "dir",
+    "sectionId": "4.2.9",
+    "description": "This subroutine is called by the SEARCH MODE to perform the DIR/REPORT NUMBER type of search. If the desired number is not located, a special Not Found message is displayed on the terminal. When the search is finished, this routine returns to the SEARCH MODE. Flowchart Figure 5.4.2-9 depicts the flow diagram for this subroutine.",
+    "pdfPage": 38
+  },
+  {
+    "routine": "DATDR",
+    "record": "dir",
+    "sectionId": "4.2.10",
+    "description": "This subroutine is called by the SEARCH MODE to perform the DOCUMENT DATE type of search. The DATE search has the capability of retrieving an entire month's or year's worth of data by entering 00 for the day or month. For example, entering 110078 would result in finding all the documents within the data base in the eleventh month, November, for the year 1978. Likewise, an entry of 000078 would retrieve all documents for the year 1978. Flowchart Figure 5.4.2-10 depicts the flow diagram for this subroutine.",
+    "pdfPage": 38
+  },
+  {
+    "routine": "WANUM",
+    "record": "dir",
+    "sectionId": "4.2.11",
+    "description": "This subroutine is called by the SEARCH MODE to perform a WORK AUTHORIZATION/ID CODE type of search. This procedure may perform partial searches using the W.A. Number only or W.A. Number in conjunction with the first two (2) letters of the ID Code. This routine formats document records found and builds an output file. When the file has been finished, this routine returns to the SEARCH MODE. Flowchart Figure 5.4.2-11 depicts the flow diagram for this subroutine.",
+    "pdfPage": 38
+  },
+  {
+    "routine": "SYSDR",
+    "record": "dir",
+    "sectionId": "4.2.12",
+    "description": "This subroutine is called by the SEARCH MODE to perform a SYSTEM search. This routine formats document records found and builds an output file. When the file has been finished, this routine returns to the SEARCH MODE. Flowchart Figure 5.4.2-12 depicts the flow diagram for this subroutine.",
+    "pdfPage": 38
+  },
+  {
+    "routine": "CONN",
+    "record": "dir",
+    "sectionId": "4.2.13",
+    "description": "This subroutine is called by the SEARCH MODE to perform a CONTRACT NUMBER type of search. This procedure uses the CONTRACT TABLE, CTAB, to find the W.A. Number/ID Code associated with the desired Contract Number. See Section 6.3.2 for further information concerning the CTAB Table. The routine now performs a modified W.A. NUMBER/ID CODE type of search. See Section 4.2.11 for a description of this search. Flowchart Figure 5.4.2-13 depicts the flow diagram for this subroutine.",
+    "pdfPage": 39
+  },
+  {
+    "routine": "VEHN",
+    "record": "dir",
+    "sectionId": "4.2.14",
+    "description": "This subroutine is called by the SEARCH MODE to perform a VEHICLE NUMBER type of search. The VEHICLE search also has a special quality. A group of vehicles may be found by using the first and last valid vehicle options. For example, if a user declares the first valid vehicle as 198 and is searching for vehicle number 200, not only would all documents containing vehicle 200 be found, but also those with numbers 198S, 199S, and 200S; where S represents all subsequent vehicles. Default for the first valid vehicle number is zero (0) whereas, the last valid vehicle number becomes 999.\n\nWhen the file has been finished, this routine returns to the SEARCH - MODE. Flowchart Figure 5.4.2-14 depicts the flow diagram for this subroutine.",
+    "pdfPage": 39
+  },
+  {
+    "routine": "FMAIN",
+    "record": "dir",
+    "sectionId": "4.2.15",
+    "description": "This subroutine is used by the SEARCH MODE to format and display on the terminal the entire data record found during a specific data item search. This procedure also formats the data record for the output file to be spooled on the high speed printer. The Contract Number is found in the CONTRACT TABLE, CTAB, by search for the W.A. Number/ID Code. See Section 6.3.2 for further information concerning the CTAB Table.\n\nIf many document records are found during a search and it is observed that needed information will soon disappear from the screen, the user may\n\ntemporarily stop terminal display by depressing the space bar. Terminal display may be restarted by depressing the 'Q' key. Flowchart Figure 5.4.2-15 depicts the flow diagram for this subroutine.",
+    "pdfPage": 39
+  },
+  {
+    "routine": "CMAIN",
+    "record": "dir",
+    "sectionId": "4.2.16",
+    "description": "This subroutine is used by the SEARCH MODE to format and display on the terminal the entire data record found during a CONTRACT NUMBER search, 4.2.13. This procedure also formats the data record for the output file to be spooled on the high speed printer.\n\nIf many document records are found during a search and it is observed that needed information will soon disappear from the screen, the user may temporarily stop terminal display by depressing the space bar. Terminal display may be restarted by depressing the 'Q' key. Flowchart Figure 5.4.2-16 depicts the flow diagram for this subroutine.",
+    "pdfPage": 40
+  },
+  {
+    "routine": "INPTDW",
+    "record": "drawing-eo",
+    "sectionId": "4.3.1",
+    "description": "This subroutine is the input routine for the SPADS MAIL LOG DRAWING/E.O. subfile. The DRAWING subfile data record consists of eleven (11) data items. If the drawing contains more than one (1) sheet, an additional sheet record consisting of five (5) data items is kept for each sheet in the SHEET subfile. See Figure 6.2.3.1. The ENGINEERING ORDER subfile data record consists of six (6) data items. See Figure 6.2.3.3. The main body of data for these three (3) subfiles are sent from Dallas rather\n\nthan manually input. Unfortunately, vehicle system and section and engineering order titles are not available in the original Dallas Data Base.\n\nHowever, these fields may be entered in manually input Drawings and E.O.'s. The INPUT MODE has two (2) optional operations:\n\n(1) E.O. - input of new engineering orders. ' (2) Drawings and E.O.'s - input of new drawings along with their referenced E.O.'s. During option number 2, entry of referenced E.O.'s, option number 1-is automatically performed if the E.O.'s are new to the data base.\n\nEntry of new engineering orders may result in one (1) of three (3) terminal messages if the drawing sheet already has three (3), four (4), or more E.O.'s referenced. Flowchart Figure 5.4.3-1 depicts the. INPUT MODE of\n\nthe DRAWING/E.O. subfile.",
+    "pdfPage": 41
+  },
+  {
+    "routine": "REVSDW",
+    "record": "drawing-eo",
+    "sectionId": "4.3.2",
+    "description": "This subroutine is the revise routine for the SPADS MAIL LOG DRAWING/E.O. subfile. The only information necessary in order to revise or.\n\ndelete a drawing or engineering order is the Drawing Number or E.O. Number. When the desired record is found, it will be displayed on the terminal for\n\nverification. If it is not the correct record, search for the desired record will continue. After the revision has been made the entire record is again displayed on the terminal for user edification.\n\nThe REVISE MODE may change the revision of a sheet. During this modification, all engineering orders referenced by that drawing sheet are automatically deleted. The REVISE MODE may also be used an an Input operation by adding a new sheet(s) to any existing drawing.\n\nFlowchart Figure 5.4.3-2 depicts the REVISE MODE of the DRAWING/E.O. subfi le.",
+    "pdfPage": 41
+  },
+  {
+    "routine": "SEADW",
+    "record": "drawing-eo",
+    "sectionId": "4.3.3",
+    "description": "This subroutine is the search routine for the SPADS MAIL DRAWING/E.O. subfile.\n\nOf the eleven (11) data items within the DRAWING subfile, nine (9)\n\nare searchable. The resulting output from these searches always consists\n\nof six (6) data items. See Figure 6.2.3.2. The ENGINEERING ORDER subfile consists of six (6) item records, of which only two (2) are searchable. The resulting output from these two (2) searches consists of up to all six: (6) data items. It should be noted that Revision Date is output in place of the E.O. Date when an E.O. has a revision. This allows only the most recent date to be displayed. See Figure 6.2.3.4.\n\nDue to the data base source for drawings coming from Dallas and manual input, three (3) searches have limited capability: SYSTEM, SECTION, and DATE. The SYSTEM and SECTION searches are only usable for those drawings which are manually input. However, some Dallas drawing data will contain this information within the title. Therefore, a TITLE search can be used if either the SYSTEM or SECTION searches are found unsuccessful. The DATE search is also limited in that all Dallas drawing data will have the same date. This date represents the latest information update received from Dallas. Nevertheless, the DATE search has the capability of retrieving an entire month's or year's worth of data by entering 00 for the day or month. For example, entering 110078 would result in finding all drawings within the data base in the\n\neleventh month, November, for the year 1978. Likewise an entry of 000078 would retrieve all documents for the year 1978. )\n\n. There are two (2) specialized searches: REVISION ACTION DUE and PRINT ALL. REVISION ACTION DUE search finds all drawings containing sheets which reference five (5) or more engineering orders. The PRINT ALL search has two (2) options: (1) Output all drawings and their referenced E.O.'s or\n(2) Output all engineering orders in the data base.\n\nThe VEHICLE search also has some special qualities. First, the user may search for all drawings related to a certain vehicle, or search for all engineering orders related to a certain vehicle. Second, a group of vehicles may be found by using the first and last valid vehicle options. For example, if a user declares the first valid vehicle as 198 and is searching for vehicle number 200, not only would all records containing vehicle 200 be found, but also those with numbers 198S, 199S, and 200S; where S represents all subsequent vehicles. Default for the first valid vehicle number is zero (0); whereas, the last valid vehicle number becomes 999.\n\nAnother search also has the drawing and engineering order options. This is the E.O. NUMBER search. The user may search the ENGINEERING ORDER subfile for a specific E.O. Number or search the DRAWING subfile for all drawings referencing a specific E.O. Number. For an outline of all search capabilities see Figure 6.2.3.5.\n\nFlowchart Figure 5.4.3-3 depicts the SEARCH MODE of the DRAWING/E.O. subfile.",
+    "pdfPage": 42
+  },
+  {
+    "routine": "ARCDW",
+    "record": "drawing-eo",
+    "sectionId": "4.3.4",
+    "description": "This subroutine is the archive routine for the SPADS MAIL LOG DRAWING/E.O. subfile. The only information needed in order to archive a drawing is the Drawing Number. The user may designate how many drawings are to be archived at one (1) session. Actual drawing data archived is placed in a file called INACTD. If the drawing contains more than one (1) sheet, the SHEET subfile is automatically updated. Sheet drawing data is stored in a file called INACTS.,,\n\nEngineering order data records are automatically archived. E.O.'s unreferenced by any drawings are placed in a file called INACTE. Flowchart Figure 5.4.3-4 depicts the ARCHIVE MODE of the DRAWING/E.O. subfile.",
+    "pdfPage": 43
+  },
+  {
+    "routine": "SHOWEO",
+    "record": "drawing-eo",
+    "sectionId": "4.3.5",
+    "description": "This subroutine is used to display the entire ENGINEERING ORDER data record on the terminal for the INPUT or REVISE MODES. Each data item\n\nis numbered in order to verify the data record as either correctly input or the correct record to be revised or deleted. Flowchart Figure 5.4.3-5 depicts\n\nthe flow diagram for this subroutine.",
+    "pdfPage": 44
+  },
+  {
+    "routine": "SHOWDW",
+    "record": "drawing-eo",
+    "sectionId": "4.3.6",
+    "description": "This subroutine is used to display an entire DRAWING data record from both the DRAW and SHEET subfiles. This entire data record is displayed\n\non the terminal during the INPUT or REVISE MODES. Each data item is numbered in order to verify the data record as either correctly input or the correct\n\nrecord to be revised or deleted. Flowchart Figure 5.4.3-6 depicts the flow diagram for this subroutine.",
+    "pdfPage": 44
+  },
+  {
+    "routine": "INPSE",
+    "record": "drawing-eo",
+    "sectionId": "4.3.7",
+    "description": "This subroutine is used by the INPUT or REVISE MODES to input or change specific data items within the ENGINEERING ORDER data subfile. Flowchart Figure 5.4.3-7 depicts the flow diagram for this subroutine.",
+    "pdfPage": 44
+  },
+  {
+    "routine": "INPSDW",
+    "record": "drawing-eo",
+    "sectionId": "4.3.8",
+    "description": "This subroutine is used by the INPUT or REVISE MODES to input or change specific data items within the DRAWING and SHEET data subfiles. Revision of SHEET data records is performed by this routine, whereas, SHEET data Input is performed by another subroutine described in 4.3.9. Flowchart Figure 5.4.3-8 depicts the flow diagram for this procedure.",
+    "pdfPage": 44
+  },
+  {
+    "routine": "INPSS",
+    "record": "drawing-eo",
+    "sectionId": "4.3.9",
+    "description": "This subroutine is used by the INPUT MODE to enter SHEET subfile data items. If referenced E.O.'s are new to the data base, the user may enter the Engineering Order Input routine described in 4.3.7. Flowchart Figure 5.4.3-9 depicts the flow diagram for this procedure,",
+    "pdfPage": 45
+  },
+  {
+    "routine": "FIXSHT",
+    "record": "drawing-eo",
+    "sectionId": "4.3.10",
+    "description": "This subroutine is used by the REVISE MODE to prepare the SHEET data subfile for the input of a new sheet for a specified drawing. Flowchart Figure 5.4.3-10 depicts the flow diagram for this subroutine.",
+    "pdfPage": 45
+  },
+  {
+    "routine": "SHTADD",
+    "record": "drawing-eo",
+    "sectionId": "4.3.11",
+    "description": "This subroutine is used by the REVISE MODE to input new data items in the SHEET subfile corresponding to a new sheet for a specified drawing. This procedure is performed in conjunction with FIXSHT described in 4.3.10. Flowchart Figure 5.4.3-11 depicts the flow diagram for this subroutine.",
+    "pdfPage": 45
+  },
+  {
+    "routine": "NEOADD",
+    "record": "drawing-eo",
+    "sectionId": "4.3.12",
+    "description": "This subroutine is used by the INPUT or REVISE MODES to add a new ENGINEERING ORDER to a sheet of a specified drawing. Entry of new engineering orders may result in one (1) of three (3) terminal messages if the drawing sheet already has three (3), four (4), or more E.O.'s referenced. Flowchart Figure 5.4.3-12 depicts the flow diagram for this subroutine.",
+    "pdfPage": 45
+  },
+  {
+    "routine": "HEADER",
+    "record": "drawing-eo",
+    "sectionId": "4.3.13",
+    "description": "This subroutine is used by the SEARCH MODE to format for the output file the appropriate header for each data item search. This header is presented on each page of the output file. Flowchart Figure 5.4.3-13 depicts the flow diagram for this subroutine.",
+    "pdfPage": 45
+  },
+  {
+    "routine": "MAIND",
+    "record": "drawing-eo",
+    "sectionId": "4.3.14",
+    "description": "This subroutine is used by the SEARCH MODE to format and display on the terminal the appropriate DRAWING data items for each data record which was found during a REVISION ACTION DUE type of search. This procedure also formats the data items for the output file to be spooled on the high speed printer.\n\nIf many document records are found during a search and it is observed that needed information will soon disappear from the screen, the user may temporarily stop terminal display by depressing the space bar. Terminal display may be restarted by depressing the 'Q' key. Flowchart Figure 5.4.3-14 depicts the flow diagram for this subroutine.",
+    "pdfPage": 46
+  },
+  {
+    "routine": "DMAIN",
+    "record": "drawing-eo",
+    "sectionId": "4.3.15",
+    "description": "This subroutine is used by the SEARCH MODE to format and display on the terminal the appropriate DRAWING data items for each data record which was found. This procedure also formats. the data items for the output file to be spooled on the high speed printer.\n\nIf many document records are found during a search and it is observed that needed information will soon disappear from the screen, the user may temporarily stop terminal display by depressing the space bar. Terminal display may be restarted by depressing the 'Q' key. Flowchart Figure 5.4.3-15 depicts the flow diagram for this subroutine.",
+    "pdfPage": 46
+  },
+  {
+    "routine": "TITDW",
+    "record": "drawing-eo",
+    "sectionId": "4.3.16",
+    "description": "This subroutine is called by the SEARCH MODE to perform the TITLE search. This procedure allows up to four (4) of the seven (7) possible words in the title to be searched. As each title is found containing the desired word, the entire title is displayed on the terminal. If none are found, the user may restart this subroutine or return to the SEARCH MODE which is normally done when the data file is finished. When the final word has been searched,\n\n- 32.\n\nthe appropriate data items of each DRAWING data record found will be formatted to an output file and displayed on the terminal. Flowchart Figure 5.4.3-16 depicts the flow diagram for this subroutine.",
+    "pdfPage": 46
+  },
+  {
+    "routine": "ALDW",
+    "record": "drawing-eo",
+    "sectionId": "4.3.17",
+    "description": "This subroutine is called by the SEARCH MODE to perform a PRINT ALL type of search. This routine has two (2) options: a complete listing of all Drawing data including Engineering Orders or a listing of Engineering Orders only. During this search the break key is inhibited. Each DRAWING or ENGINEERING ORDER data record is formatted for the output file and displayed on the terminal. When the designated subfiles are finished, this routine automatically spools the output file to the high speed printer. Flowchart Figure 5.4.3-17 depicts the flow diagram for this subroutine.",
+    "pdfPage": 47
+  },
+  {
+    "routine": "ACTDUE",
+    "record": "drawing-eo",
+    "sectionId": "4.3.18",
+    "description": "This subroutine is called by the SEARCH MODE to perform the REVISION ACTION DUE type of search. This procedure searches the DRAWING and SHEET subfiles for all Drawing data sheets referencing five (5) or more Engineering Orders. Those drawing sheets found which contain the correct number of E.O.'s are formatted for the output file and displayed on the terminal. During this search the break key is inhibited. When all DRAWING data records have been checked, this routine automatically spools the output file to the high speed printer. Flowchart Figure 5.4.3-18 depicts the flow diagram for this subroutine.",
+    "pdfPage": 47
+  },
+  {
+    "routine": "DRAWN",
+    "record": "drawing-eo",
+    "sectionId": "4.3.19",
+    "description": "This subroutine is called by the SEARCH MODE to perform the DRAWING NUMBER type of search. If the desired number is not located, a special Not Found message is displayed on the terminal. When the search is finished, this routine returns to the SEARCH MODE. Flowchart Figure 5.4.3-19 depicts the flow diagram for this subroutine.",
+    "pdfPage": 47
+  },
+  {
+    "routine": "DATDW",
+    "record": "drawing-eo",
+    "sectionId": "4.3.20",
+    "description": "This subroutine is called by the SEARCH MODE to perform the DRAWING DATE type of search. The DATE search has the capability of retrieving an entire month's or year's worth of data by entering 00 for the day or month. For example, entering 110078 would result in finding all the: documents within the data base in the eleventh month, November, for the- year 1978. Likewise, an entry of 000078 would retrieve all documents for the year 1978. Flowchart Figure 5.4.3-20 depicts the flow diagram for this subroutine.",
+    "pdfPage": 48
+  },
+  {
+    "routine": "SYSDW",
+    "record": "drawing-eo",
+    "sectionId": "4.3.21",
+    "description": "This subroutine is called by the SEARCH MODE to perform a SYSTEM search. This routine formats drawings found and builds an output file. When the file has been finished, this routine returns to the SEARCH MODE. Flowchart Figure 5.4.3-21 depicts the flow diagram for this subroutine.",
+    "pdfPage": 48
+  },
+  {
+    "routine": "VEHND",
+    "record": "drawing-eo",
+    "sectionId": "4.3.22",
+    "description": "This subroutine is called by the SEARCH MODE to perform a VEHICLE NUMBER type of search. This procedure has two (2) options: all the Drawings or all the Engineering Orders related to a vehicle, or set of vehicles. The- Vehicle search also has a special quality. A group of vehicles may be found by using the first and last valid vehicle options. For example, if a user. declares the first valid vehicle as 198 and is searching for vehicle number ; 200, not only would all documents containing vehicle 200 be found, but also those with numbers 198S, 199S, and 200S; where S represents all subsequent vehicles. Default for the first valid vehicle number is zero (0) whereas, the last valid vehicle number becomes 999.\n\nFlowchart Figure 5.4.3-22 depicts the flow diagram for this subroutine.",
+    "pdfPage": 48
+  },
+  {
+    "routine": "SECTN",
+    "record": "drawing-eo",
+    "sectionId": "4.3.23",
+    "description": "This subroutine is called by the SEARCH MODE to perform a SECTION search. This routine formats drawings found and builds an output file. When the file has been finished, this routine returns to the SEARCH MODE. Flowchart Figure 5.4.3-23 depicts the flow diagram for this subroutine.",
+    "pdfPage": 49
+  },
+  {
+    "routine": "CODE",
+    "record": "drawing-eo",
+    "sectionId": "4.3.24",
+    "description": "This subroutine is called by the SEARCH MODE to perform a VENDOR CODE type of search. This procedure checks the first three (3) numbers of each drawing number for a designated code. All drawings found with this vendor code are formatted for the output file and displayed on the terminal. When the file has been finished, this routine returns to the SEARCH MODE. Flowchart Figure 5.4.3-24 depicts the flow diagram for this subroutine.",
+    "pdfPage": 49
+  },
+  {
+    "routine": "EONN",
+    "record": "drawing-eo",
+    "sectionId": "4.3.25",
+    "description": "This subroutine is called by the SEARCH MODE to perform the ENGINEERING ORDER NUMBER type of search. This procedure has two options: locating a specific Engineering Order within the E.O. data subfile or search the DRAWING data subfiles for all sheets referencing a specific Engineering Order. If the first option is taken and the desired E.O. is not located on the E.O. subfile, a special Not Found message is displayed on the terminal. Regardless of the option, the routine formats for the output file and displays on the terminal the appropriate data items for data records found. When the search is finished, this routine returns to the SEARCH MODE. Flowchart Figure 5.4.3-25 depicts the flow diagram for this subroutine.",
+    "pdfPage": 49
+  },
+  {
+    "routine": "IDENT",
+    "record": "general",
+    "sectionId": "4.4.1",
+    "description": "This subroutine is used by the three (3) main subfile entrance.routines to record the user identification, time and date of entry, and the terminal used. The file used to store this information is called USER in each of the three (3) program UFD's. Flowchart Figure 5.4.4-1 depicts the flow diagram for this subroutine.",
+    "pdfPage": 50
+  },
+  {
+    "routine": "TINPUT",
+    "record": "general",
+    "sectionId": "4.4.2",
+    "description": "This subroutine is used to perform the basic Title Input for all three (3) subfiles. This procedure is used in the INPUT MODE to build a seven (7) word, ten (10) characters per word searchable title. It is also called during the REVISE MODE to change an existing title. The routine is also used to build a compatible word for which to perform the TITLE search. Flowchart Figure 5.4.4-2 depicts the flow diagram for this subroutine.",
+    "pdfPage": 50
+  },
+  {
+    "routine": "RDCOM",
+    "record": "general",
+    "sectionId": "4.4.3",
+    "description": "This subroutine is used by the Title Input routine, 4.4.2, to construct the title one (1) character at a time. Editor checks are made for eraser, kill, and new line characters. Flowchart Figure 5.4.4-3 depicts the flow diagram for this subroutine.",
+    "pdfPage": 50
+  },
+  {
+    "routine": "GETWRD",
+    "record": "general",
+    "sectionId": "4.4.4",
+    "description": "This subroutine is used by the Title Input routine, 4.4.2, to build\n\nthe searchable title in seven (7) words, ten (10) characters per word. Flowchart Figure 5.4.4-4 depicts the flow diagram for this subroutine.",
+    "pdfPage": 50
+  },
+  {
+    "routine": "GETWD",
+    "record": "general",
+    "sectionId": "4.4.5",
+    "description": "This subroutine is used by the Title Input routine, 4.4.2, to preserve and store the title as input. This title is used for output formatting. Flowchart Figure 5.4.4-5 depicts the flow diagram for this subroutine.",
+    "pdfPage": 51
+  },
+  {
+    "routine": "GETCON",
+    "record": "general",
+    "sectionId": "4.4.6",
+    "description": "This subroutine is used by the MAIL CORRESPONDENCE and DIR/REPORT - subfile programs to fetch a Contract Number from the CONTRACT TABLE, CTAB. This process is performed by searching the table for a given Work Authorization Number/ID Code. See Section 6.2.3 for further information concerning the CTAB Table. If the search if unsuccessful, a special Not Found message is stored in place of the Contract Number and displayed on the terminal. Flowchart Figure 5.4.4-6 depicts the flow diagram for this subroutine.",
+    "pdfPage": 51
+  },
+  {
+    "routine": "IDUSER",
+    "record": "general",
+    "sectionId": "4.4.7",
+    "description": "This subroutine is used by the ARCHIVE MODE routine to check the user identification for a valid entry. If the user identification is not SYSTEM, a special invalid user message is displayed on the terminal. A special message is also sent to the system terminal to record the improper entry attempt into the ARCHIVE MODE. Flowchart Figure 5.4.4-7 depicts the flow diagram for this subroutine.",
+    "pdfPage": 51
+  },
+  {
+    "routine": "CLEAR",
+    "record": "external",
+    "sectionId": "8.2.1",
+    "description": "This subroutine is used to clear the user terminal. Appendix E, Figure 1 depicts the source code for this subroutine.",
+    "pdfPage": 548
+  },
+  {
+    "routine": "PAUS",
+    "record": "external",
+    "sectionId": "8.2.2",
+    "description": "This subroutine performs the following functions:\n\nIf many document records are found during a search and it is observed that needed information will soon disappear from the screen, the user may temporarily stop terminal display by depressing the space bar. Terminal display may be restarted by depressing the 'Q' key.\n\nAt this time the source code for this subroutine is not available. However, a routine used by this PAUS routine, CHKLIN, is available. Appendix E, Figure 2 depicts the source code for the Check Line subroutine.",
+    "pdfPage": 548
+  },
+  {
+    "routine": "JTIME",
+    "record": "external",
+    "sectionId": "8.2.3",
+    "description": "This subroutine is only used in the MAIL CORRESPONDENCE portion of the program. This procedure converts a given date, month, date, and year, into Julian time. Appendix E, Figure 3 depicts the source code for this subroutine.",
+    "pdfPage": 548
+  },
+  {
+    "routine": "PHASE 1",
+    "record": "support",
+    "sectionId": "9.0",
+    "description": "Begin execution of conversion by using routine PHASE 1. This is accomplished by entering R *PHASE-1. This routine picks out the necessary data from the Dallas data and builds a new data file called NEW.",
+    "pdfPage": 549
+  },
+  {
+    "routine": "PHASE 2",
+    "record": "support",
+    "sectionId": "9.0",
+    "description": "PHASE 2 is executed in the same manner as PHASE 1. This routine modifies the vehicle numbers and builds a searchable title. The procedure also formats all data for data base subfile compatibility. The new data file constructed during this phase is called FINAL.",
+    "pdfPage": 549
+  },
+  {
+    "routine": "TTEST",
+    "record": "support",
+    "sectionId": "9.0",
+    "description": "PHASE 2 has a checking routine called TTEST. This routine displays on the terminal each data record within FINAL.",
+    "pdfPage": 549
+  },
+  {
+    "routine": "PHASE 3",
+    "record": "support",
+    "sectionId": "9.0",
+    "description": "PHASE 3 is actually made up of several subroutines which build the DRAW and SHEET subfiles from the FINAL data file. Each subfile has its own checking routine:",
+    "pdfPage": 549
+  },
+  {
+    "routine": "TEST",
+    "record": "support",
+    "sectionId": "9.0",
+    "description": "DRAW is checked by TEST. The TEST routine builds an output file called OUT containing all DRAW data items for each data record.",
+    "pdfPage": 549
+  },
+  {
+    "routine": "CHECKS",
+    "record": "support",
+    "sectionId": "9.0",
+    "description": "SHEET is checked by CHECKS. The CHECKS routine builds an output file called SHT containing all SHEET data items for each data record.",
+    "pdfPage": 550
+  },
+  {
+    "routine": "PHASE 4",
+    "record": "support",
+    "sectionId": "9.0",
+    "description": "PHASE 4 must be executed overnight due its long running time. This routine builds the Engineering Order data file, EO, from the FINAL data file. Each E.O. number entered is checked for a previous entry. This process becomes progressively more time consuming as the E.O. data file builds and exceeds 1500 records.",
+    "pdfPage": 550
+  }
+]

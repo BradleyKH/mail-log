@@ -1,0 +1,48 @@
+---
+pdfPage: 176
+folio: null
+sectionId: "B.SHOWC"
+kind: listing
+source: ocr
+confidence: 45.3
+figures: []
+listing:
+  appendix: "B"
+  routines: ["SHOWC"]
+  listingPage: 161
+---
+```fortran
+(2046)  820    CONTINUE
+(2047)       IF(KTW,E920) GOTO 900
+(2048)       WRITE(15850) (TWX CMoN) GNZ195)-
+(2049)  850   FORMAT(5X94A49A2)
+(2050)  3810  CONTINUE
+(2051)  900   CONTINUE
+(2052)       WRITEC1 (1000)FSC
+(2053)  1000 FORMAT(' 136 %e 2A49A20'/% 5 2A4(A2)
+(2054)        WRITE (101200)
+(2055)  1200 FORMAT(' 14.6 ENGINFERS! 9')
+(2056)        KRE=C
+(2057)        DO 1400 L=143
+(2058)        IFUNREC1sL) NEO?     KRE=KRE+1
+(2059) C 1400 CONTINUE
+(2060)        IF(KRE.EQ.0) GOTO 1050
+(2061)        WRITE(1,170) CNRE(10L) 9L=193)
+(2062)  170   FORMAT(5X93 CA301X))
+(2063)  1050  CONTINUE
+(2064)        IF(ITREP.EQ.0) COTO 1070
+(2065)        WRITE(1 01100)
+(2066)  1100  FORMAT(' 15. DESCRIPTION:
+(2067)        DO 1500 I=1430
+(2068)        KDD=0
+(2069)        DO 1600 J219"21
+(2070)        IF COOT(I,J) NE oT   KDD=KOD+1
+(2071)  1600  CONTINUE
+(2072)        IF(KDD,EN.O) GOTO 1070
+(2073)       WRITE(1,180) CDOTCI oD) (J=1921)
+(2074)  180   FORMAT(4X(TC1X92A499A2))
+(2075)  1500  CONTINUE
+(2076)  1070  CONTINUE
+(2077)        RETURN
+(2078)        END
+```

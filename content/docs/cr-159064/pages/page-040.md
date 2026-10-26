@@ -1,0 +1,43 @@
+---
+pdfPage: 40
+folio: null
+sectionId: "B.SCRNHD"
+kind: listing
+source: reviewed
+confidence: 95
+figures: []
+listing:
+  appendix: "B"
+  routines: ["SCRNPT"]
+  listingPage: 24
+---
+```fortran
+(0325)  15    FORMAT(2X,'*',38X,'PRINT ALL',29X,'*')
+(0326)  20   FORMAT(2X,'*',32X,'MAIL STATUS:  ',A2,28X,'*')
+(0327)  30   FORMAT(2X,'*',15X,'AUTHOR/SOURCE:  ',7A4,17X,'*')
+(0328)  40   FORMAT(2X,'*',30X,'DOCUMENT DATE:  ',2(I2,'-'),I2,22X,'*')
+(0329)  45   FORMAT(2X,'*',20X,'WHO TO:  ',8A4,15X,'*')
+(0330)  50   FORMAT(2X,'*',20X,'DOCUMENT/LETTER NUMBER:  ',4A4,A2,13X,'*')
+(0331)  60   FORMAT(2X,'*',20X,'SUBJECT:  ',4(2A4,A2,1X),2X,'*')
+(0332)  70   FORMAT(2X,'*',30X,'INPUT DATE:  ',2(I2,'-'),I2,25X,'*')
+(0333)  80   FORMAT(2X,'*',25X,'W.A. NUMBER/ID CODE:  ',4A2,21X,'*')
+(0334)  90   FORMAT(2X,'*',25X,'CONTRACT NUMBER:  ',5A4,13X,'*')
+(0335) 100   FORMAT(2X,'*',32X,'ACTION DUE DATE',29X,'*')
+(0336) 120   FORMAT(2X,'*',22X,'NASA RESPONSIBLE ENGINEER:  ',A3,23X,'*')
+(0337) C      DISPLAY THE DISPLAY FORMAT LINE ONE
+(0338)       WRITE(1,125)
+(0339) 125   FORMAT(2X,'* SUBJECT',68X,'*')
+(0340) C      DISPLAY THE DISPLAY FORMAT LINE TWO
+(0341)       WRITE(1,130)
+(0342) 130   FORMAT(2X,'* TYPE/LETTER NUMBER',5X,'FILE SYSTEM CODE',8X,
+(0343)      1 'INPUT DATE-CODE',13X,'*')
+(0344)        IF(ITEM.EQ.11) WRITE(1,600)
+(0345) 600   FORMAT(2X,'* AUTHOR / SOURCE',8X,'RESPONSIBLE ENGINEER',4X,        ! [?]
+(0346)      1'DUE DATE',20X,'*')
+(0347)        IF(ITEM.EQ.11.OR.ITEM.EQ.50) GOTO 650
+(0348)        WRITE(1,625)
+(0349) 625    FORMAT(2X'* REFERENCED DOCUMENTS',55X,'*')
+(0350) 650   WRITE(1,10)
+(0351)       RETURN
+(0352)       END
+```

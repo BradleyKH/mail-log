@@ -1,0 +1,53 @@
+---
+pdfPage: 451
+folio: null
+sectionId: "D.DMAIN"
+kind: listing
+source: reviewed
+confidence: 100
+figures: []
+listing:
+  appendix: "D"
+  routines: ["DMAIN"]
+  listingPage: null
+---
+```fortran
+(1833)       WRITE(1,260)(SHTN(J),J=1,2),REV
+(1834)       WRITE(7,260)(SHTN(J),J=1,2),REV
+(1835) 260   FORMAT(11X,'SHEET# ',I2,'.',I2,5X,'REV ',A2)
+(1836)       GO TO 275
+(1837) 265   WRITE(1,270) SHTN(1),REV
+(1838)       WRITE(7,270) SHTN(1),REV
+(1839) 270   FORMAT(11X,'SHEET# ',I2,8X,'REV ',A2)
+(1840) 275   CONTINUE
+(1841)       INEO=INEO+NEO
+(1842)       IF(NEO.EQ.0) GOTO 190
+(1843)       IF(R.EQ.0) GOTO 33
+(1844)       II=NEO
+(1845)       IF(NEO.GT.10) II=10
+(1846)       DO 37 I=1,II
+(1847)       IF(EOREF(I,1).EQ.'     ') GOTO 300
+(1848)       WRITE(1,38) I,(EOREF(I,K),K=1,2)
+(1849)       WRITE(7,38) I,(EOREF(I,K),K=1,2)
+(1850) 37    CONTINUE
+(1851)       GO TO 300
+(1852) 33    II=NEO
+(1853)       IF(NEO.GT.10) II=10
+(1854)       DO 300 I=1,II
+(1855) 30    READ(18,END=90)EON,ETIT,EPTIT,EOREV,EDT,ERDT,EOVEH
+(1856) C     SEARCH FOR EOREF=EON
+(1857)       DO 400 N=1,2
+(1858)       IF(EON(N).NE.EOREF(I,N)) GOTO 30
+(1859) 400   CONTINUE
+(1860) 130   FORMAT(3X,19A4)
+(1861)       IF(EOREV.EQ.'NC') GOTO 150
+(1862)       WRITE(7,230)EOKNT,EON,EOREV,ERDT,EPTIT
+(1863) 230   FORMAT(11X,I2,'. ',2A4,1X,'REV ',A2,3X,2(I2,'-'),I2,
+(1864)      13X,19A4)
+(1865)       WRITE(1,140)EOKNT,EON,EOREV,ERDT
+(1866) 140   FORMAT(11X,I2,'. ',2A4,1X,'REV ',A2,5X,2(I2,'-'),I2)
+(1867)       GO TO 60
+(1868) 150   WRITE(7,240)EOKNT,EON,EOREV,EDT,EPTIT
+(1869) 240   FORMAT(11X,I2,'. ',2A4,1X,'REV ',A2,3X,2(I2,'-'),I2,
+(1870)      13X,19A4)
+```

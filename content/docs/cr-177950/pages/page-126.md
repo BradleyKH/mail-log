@@ -1,0 +1,80 @@
+---
+pdfPage: 126
+folio: "118"
+sectionId: "8.4"
+kind: text
+source: ocr
+confidence: 77.2
+figures: []
+---
+11/ 8/84 PAGE
+PARTS INVENTORY LIST FOR GRAWING : D424083
+
+TITLED =: COARSE SUN SENSOR AZIMUTH
+
+1
+
+```text
+ITEM PART NUMBER           MANUFACTURER          GENERIC NUMBER          CATEGORY
+
+26 M38510/11201BCX    FAIRCHILD          LM139AD              MICROCIRCLIITS
+REQD HAVE TYPE APPROVAL INFORMATION                           LOCATION
+
+2 32    P                                                   L1 $2
+```
+
+DESCRIPTION: COMPARATOR
+MORE? N
+OUTPUT TO PRINTER (Y OR N) > N
+
+NO OUTPUT SPOOLED !!1!!
+
+Option 7 performs the Approval Field search for the Parts File.
+search is also a partial search and operates similarty to search oplicr
+
+(2). See the following example.
+
+SELECT OPTION BY ENTERING NUMBER (RETURN TO QUIT) > 7
+
+THIS SEARCH ROUTINE PERFORMS THE APPROVAL FIELD QUERY / RETRIEVAL
+ON THE PARTS LIST OF THE UARS ELECTRICAL DRAWING FILE.
+
+7UR
+
+tt
+
+ENT CATEGORIES AVA
+
+LABLE
+
+| FOR SEARCHING ARE:
+
+4
+fom
+
+WOONAU PWD — I
+
+CAPACI TORS
+CONNECTORS
+CRYSTALS
+CIODES
+FILTERS
+FUSES
+INDUCTORS
+MICROCIRCUITS
+PC BOARDS
+RELAYS
+RESISTORS
+SOLDER
+THERM I STORS
+TRANSF ORMERS
+TRANS | STORS
+
+WN— oO
+ww ewe we vw ww we ww wv wv
+
+PREP PR RRR RR RR OO HH
+
+This
+
+two

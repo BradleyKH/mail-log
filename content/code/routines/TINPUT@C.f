@@ -1,0 +1,50 @@
+      SUBROUTINE TINPUT(TIL,LEN)
+C
+C     TITLE PACK ROUTINE
+C
+C     THIS ROUTINE PACKS THE TITLF(S) IN A UNIFORM MANNER
+C     FOR LATER STORAGE ANO RCCALL
+C
+C
+C     COMMON BLOCK FOR THE DIR FILE
+C
+      COMMON TIT,PTIT,DIR,RPT,OToSYS     eWANSCONSID,VEH GACT oR
+      COMMON COMP eREV,RDATQWA
+C
+C
+C     DATA DECLARATION BLOCK FOR THE DIR FILE
+C
+      INTEGER*4 TIT(21) sPTIT(19) eDIR (4) @RPT(4) oSYSC(3) oCON(5S) GS IDS ACT
+      INTEGER*4 COMP(21)
+      INTEGER #2 DT(3) oWAN(4) PVEH( 292) 9R,REV,RDAT(3) oWA(4)
+C
+        COMMON /X/ PEDL
+      INTEGER*4 ARRAY(4) 9 BLNK,TIL(21)-
+      INTEGER *2 BUF (76) sBUFF (76) sPEOL
+      CALL RDCOM(BUF)
+       DO 5 I=1576
+      BUFF (I) =BUF (I)
+5     CONTINUE
+      BLNK=T
+      DO 1 I=1921                                                   A,
+ 1    TILCII=BLNG
+      DO 11 T=1420
+      ARRAY (1)=BLNK
+      ARRAY (2)=BLNK                               .             .
+      ARRAY(3)=5LNK
+      ARRAY (4 )=BLNK   OO
+      CALL GETWRD (SUF eARRAYSLEN)
+      TIL(I)=ARRAY(1)
+      TIL CI +1 =ARRAY(2)
+      TIL(I+2)=ARRAY(3)
+      TIL(I+3)=ARRAY(4)
+         I=I+2
+12    CONTINUE
+11    CONTINUE
+      PEDL=1
+      DO 200 I=1,19
+200   PTIT(I)=BLNK
+      CALL GETWD(BUFF,PTIT)
+211    CONTINUE
+      RETURN
+      END

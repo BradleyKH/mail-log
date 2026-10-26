@@ -1,0 +1,48 @@
+---
+pdfPage: 108
+folio: "96"
+sectionId: "7.3.2"
+kind: mixed
+source: ocr
+confidence: 69.1
+figures: ["7.3.2.5"]
+---
+DRAWING/ENGINEERING ORDER: DRAWING TITLE SEARCH: PRINTER OUTPUT BRIEF
+
+14: 15 11/30/78
+
+ARHAREA AAA HERRERA HHREHRAHAREEHHRAARAAHHAAEAAE RHEE HHA HHEHARAEHRA HEHEHE AE RARAROHERAHARORAREKREHRAHOHAEHRELEREAREHENDAE
+
+```text
+ORAWING TITLE SEAHCH ¢   SECT       8          RING
+DRAWING TITLE                                             ‘                    DRAWING NUMBER          DATE
+```
+
+SHitET NUMBER
+teQe KUMBER
+AHAARHERAAEHRAREAAAHRAAHE AREA REHRAAAARHARETHEAAERARHEAEAAR AERA A AAHAHHAARHRHEAEHRATEREARHAAAEERARERAEKRARARARSAHHHEKRARHHATEREREREREREOEH
+
+```text
+1. AVAPT RING TRANS SECT B                              23 000039             10-27-76
+SHEETA 1        REV D
+```
+
+le V24818
+
+```text
+2. BUSHING HOIST RING TRAN SECT B                                                 23 000119             10-27-78
+SHEETH 1        REV D
+```
+
+be V31123
+
+```text
+Se STUN HOIST RING TRANS SECT B                   23 000121             10-27-78
+SHEETH# 1        REV C
+4s RING AFT ATTACH TRANS SECT B                                                   23 000122             10-27-78
+SHEET® 1        REV C
+```
+
+le V40081
+
+FIGURE 7.3.2.5

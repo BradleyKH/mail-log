@@ -1,0 +1,55 @@
+---
+pdfPage: 202
+folio: "194"
+sectionId: "12.3.2"
+kind: text
+source: ocr
+confidence: 91.4
+figures: []
+---
+the housekeeping routine to be run in order to purge the records marked for
+
+deletion. See the following example.
+
+SELECT OPTION BY ENTERING NUMBER (RETURN TO QUIT) > 2
+
+THIS PROGRAM WILL DELETE SELECTED RECORDS FROM THE DATA BASE
+TYPE QUIT TO RETURN TO MAIN MENU
+
+ENTER LAST NAME > SMITH
+ENTER FIRST NAME M.I. > JACOB, P.
+SEARCH IN PROGRESS
+PLEASE STAND BY ...
+2 RECORDS WERE FOUND :: LAST NAME = SMITH
+AND FIRST NAME = JACOB, P.
+15
+
+```text
+ORGANI ZATION    =WYLE LAB.
+CITY            =HAMPTON
+```
+
+STATE~COUNTRY =VA
+16
+
+```text
+ORGANI ZATION    =PRIME COMPUTER, INC.
+CITY            =NAT1CK
+```
+
+STATE-COUNTRY =MA
+ENTER RECORD NUMBER TO BE DELETED > 15
+THE FOLLOWING HAS BEEN FOUND:
+LAST NAME >SMITH FIRST NAME >JACOB, P.
+
+ORGANI ZATION >WYLE LAB.
+
+```text
+STREET >1122 RESEARCH DRIVE                      CITY >HAMPTON
+STATE >VA                    ZIP CODE >23666                 AREA CODE >804
+PHONE NO. >865-1111 EXT. >1112      ENTRY DATE > 1/31/1985
+```
+
+LOGO I-N / COMMENTS:
+
+DELETE THIS RECORD (Y OR N) > Y

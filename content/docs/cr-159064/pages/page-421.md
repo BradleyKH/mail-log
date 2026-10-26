@@ -1,0 +1,30 @@
+---
+pdfPage: 421
+folio: null
+sectionId: "D.DATDW"
+kind: listing
+source: ocr
+confidence: 64.4
+figures: []
+listing:
+  appendix: "D"
+  routines: ["DATDW"]
+  listingPage: 94
+---
+```fortran
+(1427) C     ‘DISPLAY AND PRINT DRAWING ON TERMINAL AND PRINTER OUTPUT
+(1428) 150    CALL DMAIN
+(1429) C      INCREMENT LINE COUNTER FOR DRAWING RECORO PRINTED FOR OUTPUT
+(1430)        ILINESILINE*INEO
+(1431) C     ‘IS THE PRINTER AT BOTTOM OF PAGE
+(1432)       IF(ILINE,LE +45) GOTO 100
+(1433) C      SET TO TOP OF PRINTER PAGE FLAG
+(1434)       IPAGE=0
+(1435) C      RESET  ‘THE LINE COUNTER TO 0
+(1436)       ILINE=0
+(1437)       GO TO 100
+(1438) 200   WRITEC1(2S5S0)KNT,D
+(1439) 2506  FORMAT('' THERE ARE '19' ORAWINGS WITH A DATE OF '2(12%='),12)
+(1440)       RETURN
+(1441)       END
+```

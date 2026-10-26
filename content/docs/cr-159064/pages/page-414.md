@@ -1,0 +1,53 @@
+---
+pdfPage: 414
+folio: null
+sectionId: "D.CODE"
+kind: listing
+source: ocr
+confidence: 59.9
+figures: []
+listing:
+  appendix: "D"
+  routines: ["CODE"]
+  listingPage: 87
+---
+```fortran
+(1303)       WRITE(192)ICODE
+(1304) 100   READ(E,END=200 DRAW eTIT,PTIT,CT SYS oVEH,SECT oNSHT oFREV sFNEO,FEOREF
+(1305)       REWIND 16
+(1306)        WRITE (10,5)0RAW(1)
+(1307) 5     FORMAT(1A4)
+(1308)       REWIND 10
+(1309)        READC10(2)C00
+(1310)         IF(ICODE(1).£Q.°23") GOTO 30                          7
+(1311)         DO 20 I=192
+(1312)         IF(ICODE(I).NE.COD(I)) GOTO 100.
+(1313) C 20    CONTINUE
+(1314)         GO TO 40
+(1315) 30    IF (ICODE(1).NE2CO0(1)) GOTO 100
+(1316) C      INCREMENT THE FOUND COUNTER
+(1317)  40    KNTSKNT#1
+(1318) C      INCREMENT LINE COUNTER FOR NEXT RECORD
+(1319)        ILINE=ILINE +FNEO*(NSHT43
+(1320) C      CHECK FOR EOTTOM CF PAGE
+(1321)        IF(ILINE.LE.45) GCTO 31
+(1322) C      SET TO TOP OF PRINTER PAGE FLAG
+(1323)         IPAGE=0
+(1324) C      SET LINE COUNTER BACK TO 0
+(1325)         ILINE=0
+(1326) C      INCREMENT LINE COUNTER FOR NEXT RECORD
+(1327)         ILINE=FNEG+NSHT 43°
+(1328) C      IS A HEADER REQUIRED NOW
+(1329) 31    IF(IPAGE.NE.0) GOTO 150
+(1330) C      INCREMENT LINE COUNTER FOR HEADER
+(1331)       ILINE=ILINE+32
+(1332) C    . PRINT HEADER ON PRINTER OUTPUT
+(1333) C     FETCH AND WRITE TIME AND DATE TO OUTPUT FILE
+(1334) C   ALL.   TIMDATCARRAY $15)
+(1335)       AMIN=ARRAY(4)                                  7
+(1336)       AH=AMIN/60.0
+(1337)       TH=AH
+(1338)       IMM=IH*60
+(1339) C     IMINZAMIN                                 .     ss
+(1340)        TOMSIMIN-IMM:            .
+```

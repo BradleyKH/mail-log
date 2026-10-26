@@ -1,0 +1,17 @@
+[
+  {
+    "file": "docs/cr-159064/pages/page-136.md",
+    "messagePrefix": "INPSC: gap from 1544 to 1621",
+    "reason": "Listing pages B-121 and B-122 are missing from the original report (noted on PDF page 135)."
+  },
+  {
+    "file": "docs/cr-177948/glossary.json",
+    "messagePrefix": "missing",
+    "reason": "The 1985 SPADS manual has no glossary or defined-terms section to transcribe."
+  },
+  {
+    "file": "docs/cr-177950/glossary.json",
+    "messagePrefix": "missing",
+    "reason": "The 1985 SPADS manual has no glossary or defined-terms section to transcribe."
+  }
+]

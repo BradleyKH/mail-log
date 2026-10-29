@@ -2,8 +2,14 @@
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { createElement } from "react";
 import { createMemoryRouter, RouterProvider } from "react-router";
-import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeAll, beforeEach, describe, expect, it, vi } from "vitest";
+import { spadsMenus, spadsRecords, spadsReports, spadsTables } from "@/content/load";
 import SpadsTerminal from "./SpadsTerminal";
+
+// The cold import and parse of content/spads/ can outlast findBy's 1s timeout on CI; warm it once up front.
+beforeAll(async () => {
+  await Promise.all([spadsMenus(), spadsRecords(), spadsTables(), spadsReports()]);
+}, 30_000);
 
 // Reduced motion prints output instantly, so every line is on screen as soon as React renders.
 beforeEach(() => {

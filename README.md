@@ -1,6 +1,6 @@
 # MAIL LOG
 
-A website about MAIL LOG, the FORTRAN records-tracking program Danny K. Harris wrote for the Scout Project Office at NASA Langley Research Center while working for Vought Corporation's Hampton Technical Center (contract NAS1-13500). MAIL LOG was one of the first parts of SPADS, the Scout Project Automatic Data System. The site is built from his four May 1979 MAIL LOG reports, including the program's FORTRAN source listings and flowcharts, and from three July 1985 SPADS User's Operating Procedures volumes that describe SPADS as it stood in 1985, including its Contract Analysis (financial analysis) program and the MAIL LOG correspondence file. It is deployed to GitHub Pages as a static site.
+A website about MAIL LOG, the FORTRAN records-tracking program Danny Harris wrote for the Scout Project Office at NASA Langley Research Center while working for Vought Corporation's Hampton Technical Center (contract NAS1-13500). MAIL LOG was one of the first parts of SPADS, the Scout Project Automatic Data System. The site is built from his four May 1979 MAIL LOG reports, including the program's FORTRAN source listings and flowcharts, and from three July 1985 SPADS User's Operating Procedures volumes that describe SPADS as it stood in 1985, including its Contract Analysis (financial analysis) program and the MAIL LOG correspondence file. It is deployed to GitHub Pages as a static site.
 
 ## The reports
 

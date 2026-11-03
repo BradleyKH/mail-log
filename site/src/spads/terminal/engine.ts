@@ -92,7 +92,7 @@ const coreSteps: Steps = {
       if (n === 8) return s.go("contract");
       if (n === 0) return s.go("logout");
       if (n === 9) {
-        s.hint("MAIL LOG Correspondence is the 1979 program this site is built around; its terminal is in the Terminal room.");
+        s.hint("MAIL LOG Correspondence is the 1979 program this site is built around; its terminal is on the Terminal page.");
         return reprompt(s, "spadsMain");
       }
       if (n !== null && n >= 1 && n <= 17) {

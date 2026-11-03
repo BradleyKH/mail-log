@@ -5,7 +5,7 @@ import { listingLines, routineForSeq } from "./listing";
 
 type Props = { code: string; routines: RoutineEntry[] };
 
-/** One printed listing page; each sequence number links to the same card in the Code room. */
+/** One printed listing page; each sequence number links to the same card on the Code page. */
 export default function ListingBlock({ code, routines }: Props) {
   const lines = useMemo(() => listingLines(code), [code]);
   const seqById = useMemo(() => new Map(lines.map((l) => [l.id, l.seq])), [lines]);

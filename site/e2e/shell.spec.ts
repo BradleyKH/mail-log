@@ -35,7 +35,7 @@ test("unknown section links redirect to the report", async ({ page }) => {
   await expect(page).toHaveURL(/\/archive\/cr-159065$/);
 });
 
-test("top nav reaches every room", async ({ page }) => {
+test("top nav reaches every page", async ({ page }) => {
   await page.goto("/");
   const nav = page.getByRole("navigation", { name: "Main" });
   for (const [label, url] of [

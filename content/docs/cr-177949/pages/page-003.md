@@ -3,94 +3,55 @@ pdfPage: 3
 folio: null
 sectionId: null
 kind: text
-source: ocr
-confidence: 83.3
+source: reviewed
+confidence: 100
 figures: []
 ---
-1.0
+```text
+                 USER'S OPERATING PROCEDURES MANUAL
+                 FOR SCOUT PROJECT OFFICE, NASA LARC
 
-2.0
+TABLE OF CONTENTS                                              PAGE NO.
 
-3.0
+1.0  INTRODUCTION                                                    1
 
-4.0
+     1.1  SECTION DESCRIPTIONS                                       2
 
-5.0
+2.0  BASIC OPERATING PROCEDURES                                      4
 
-6.0
+     2.1  LOGIN                                                      4
+     2.2  PROGRAM ENTRY                                              5
+     2.3  PROGRAM EXIT                                               6
+     2.4  ENTERING ANALYSIS                                          6
+     2.5  FINANCIAL ANALYSIS RECORD DESCRIPTION                     13
+     2.6  INPUT OPERATIONS                                          14
+     2.7  UPDATE OPERATIONS                                         14
+     2.8  SYSTEM EXIT / LOGOUT                                      14
 
-USER'S OPERATING PROCEDURES MANUAL
-FOR SCOUT PROJECT OFFICE, NASA LARC
+3.0  SPECIAL OPERATIONS                                             17
 
-TABLE OF CONTENTS
+     3.1  PRINTOUT SPOOLING                                         17
+     3.2  EMERGENCY / RECOVERY                                      19
+          3.2.1  SOFTWARE / OPERATOR ERRORS FOR SPADS               19
+          3.2.2  FILE IN USE                                        19
 
-| NTRODUCT | ON
-1.1 SECTION DESCRIPTIONS
+4.0  RETRIEVE OPTION                                                21
 
-BASIC OPERATING PROCEDURES
+     4.1  MOD OPTION                                                21
+          4.1.1  SAMPLE MOD / ADD OPTION                            22
+          4.1.2  SAMPLE MOD / ADD OPTION WITH JOB ORDER CHANGES     29
+          4.1.3  HOURS AND DOLLARS DATA CHANGES                     33
+     4.2  DELETE OPTION                                             37
+     4.3  SPOOL OPTION                                              39
 
-LOGIN
+5.0  INPUT OPTION                                                   41
 
-PROGRAM ENTRY
-PROGRAM EX\T
-ENTERING ANALYSIS
+6.0  BOOK PART OPTION                                               44
 
-INPUT OPERATIONS
-UPDATE OPERATIONS
-SYSTEM EXIT / LOGOUT
+     6.1  ENTIRE RECORD OPTION                                      44
+     6.2  BRIEF LISTING OPTION                                      45
 
-NON ND DD ND PO
-e.0U0Um sos «8
-ON AW A WA =
+                                   i
+```
 
-SPECIAL OPERATIONS
-
-3.1 PRINTOUT SPOOLING
-3.2 EMERGENCY / RECOVERY
-
-3.2.1 SOFTWARE / OPERATOR ERRORS FOR SPADS
-
-3.2.2 FILE IN USE
-
-RETRIEVE OPTION
-4.1 MOD OPTION
-
-4.1.1 SAMPLE MOD / ADD OPTION
-
-FINANCIAL ANALYSIS RECORD DESCRIPTION
-
-17
-
-17
-19
-19
-19
-
-21
-22
-
-4.1.2 SAMPLE MOD / ADD OPTION WITH JOB ORDER CHANGES 2S
-
-4.1.3 HOURS AND DOLLARS DATA CHANGES
-
--2 DELETE OPTION
-3 SPOOL OPTION
-
-INPUT OPTION
-
-BOOK PART OPTION
-
-6.1 ENTIRE RECORD OPTION
-6.2 BRIEF LISTING OPTION
-
-33
-37
-39
-
-41
-44
-
-44
-45
-
-TMWBS-~ SND 1% 4
+N85-34519# (handwritten)

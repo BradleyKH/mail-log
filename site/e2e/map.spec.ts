@@ -59,7 +59,7 @@ test("code deep link shows the routine's description and calls", async ({ page }
   await expect(popover.getByTestId("map-routine-description")).toHaveText(ausea.description!);
   const panel = page.getByTestId("map-panel");
   for (const name of ["SCRNHD", "SCRNPT", "HARDHD", "HARDPT"]) await expect(panel.getByRole("button", { name, exact: true })).toBeVisible();
-  await expect(panel.getByRole("link", { name: "Read the FORTRAN in the Code room" })).toHaveAttribute("href", "/code/AUSEA");
+  await expect(panel.getByRole("link", { name: "Read the FORTRAN on the Code page" })).toHaveAttribute("href", "/code/AUSEA");
   await panel.getByRole("button", { name: "SCRNHD", exact: true }).click();
   await expect(page).toHaveURL(/layer=code&routine=SCRNHD/);
   await expect(page.getByTestId("map-popover").getByTestId("map-popover-title")).toHaveText("SCRNHD");

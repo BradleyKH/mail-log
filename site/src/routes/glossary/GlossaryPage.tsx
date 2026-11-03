@@ -7,16 +7,16 @@ import { filterGlossary, mergedGlossary } from "./glossaryEntries";
 
 export default function GlossaryPage() {
   const all = useMemo(mergedGlossary, []);
-  const docs = listDocs().filter((d) => all.some((e) => e.docId === d.docId));
+  const docs = listDocs().filter((d) => all.some((e) => e.definitions.some((def) => def.sources.some((s) => s.docId === d.docId))));
   const [query, setQuery] = useState("");
   const [docId, setDocId] = useState<DocId | "all">("all");
   const shown = filterGlossary(all, query, docId);
 
   return (
-    <section className="max-w-3xl space-y-6">
+    <section className="space-y-6">
       <header className="space-y-2">
         <h1 className="font-mono text-3xl font-semibold tracking-wide uppercase">Glossary</h1>
-        <p className="text-muted-foreground">Terms defined across the MAIL LOG reports, as the reports print them.</p>
+        <p className="text-muted-foreground">Terms defined across the reports, as the reports print them. A term defined the same way in several reports appears once, with each source.</p>
       </header>
       <div className="flex flex-wrap gap-3">
         <Input

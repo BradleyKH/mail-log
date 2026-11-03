@@ -5,8 +5,10 @@ export default function HomeHero() {
       <header className="space-y-4">
         <p className="font-mono text-sm tracking-widest text-muted-foreground uppercase">For Danny K. Harris</p>
         <h1 className="font-mono text-4xl font-semibold tracking-wide uppercase sm:text-5xl">MAIL LOG</h1>
-        <p className="max-w-xl text-lg">
-          A records-tracking program written in FORTRAN by Danny K. Harris for the Scout Project Office.
+        <p className="text-lg">
+          A records-tracking program Danny K. Harris wrote in FORTRAN for NASA&apos;s Scout Project Office in 1979, and SPADS, the
+          office data system it was part of. This site brings back the program&apos;s original NASA reports: every page readable and
+          searchable, the program running again in a terminal, and its source code traced routine by routine.
         </p>
         <p className="font-mono text-sm text-muted-foreground">
           Vought Corporation, Hampton Technical Center, for NASA Langley Research Center, May 1979.

@@ -5,17 +5,18 @@ import { createAnnotator, stepContext, type Segment } from "./annotate";
 import ListingBlock from "./ListingBlock";
 import { parseBody, type BodyBlock } from "./parseBody";
 import ProseParagraph from "./ProseParagraph";
+import { reflowProse } from "./reflow";
 import TextBlock from "./TextBlock";
 
 type Prepared = BodyBlock | { type: "annotated"; segments: Segment[] };
 
-/** The page's text: prose with glossary and step links, terminal output verbatim, listings linked to the Code room. */
+/** The page's text: prose with glossary and step links, terminal output verbatim, listings linked to the Code page. */
 export default function PageText({ page, routines }: { page: Page; routines: RoutineEntry[] }) {
   const steps = page.docId === "cr-159065" ? stepContext(page.sectionId) : undefined;
 
   const blocks = useMemo<Prepared[]>(() => {
     const annotate = createAnnotator({ steps: steps !== undefined, glossary: getGlossary(page.docId) });
-    return parseBody(page.body).map((b): Prepared => (b.type === "prose" ? { type: "annotated", segments: annotate(b.text) } : b));
+    return parseBody(page.body).map((b): Prepared => (b.type === "prose" ? { type: "annotated", segments: annotate(reflowProse(b.text)) } : b));
   }, [page.body, page.docId, steps]);
 
   if (blocks.length === 0) return <p className="text-sm text-muted-foreground">This page is blank in the original.</p>;

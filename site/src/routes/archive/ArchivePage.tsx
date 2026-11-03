@@ -13,7 +13,7 @@ export default function ArchivePage() {
     <section className="space-y-6">
       <header className="space-y-2">
         <h1 className="font-mono text-3xl font-semibold tracking-wide uppercase">Archive</h1>
-        <p className="max-w-2xl text-muted-foreground">
+        <p className="text-muted-foreground">
           The MAIL LOG reports of 1979 and the SPADS manuals of 1985, searchable, with the text beside the original scans.
         </p>
       </header>

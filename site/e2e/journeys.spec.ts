@@ -3,7 +3,7 @@ import { expect, test } from "@playwright/test";
 // Headless Chromium only offers WebGL through SwiftShader.
 test.use({ launchOptions: { args: ["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"] } });
 
-test("manual step to the Map, across to the Code layer, into the Code room, to the Terminal, and back", async ({ page }) => {
+test("manual step to the Map, across to the Code layer, into the Code page, to the Terminal, and back", async ({ page }) => {
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
 
@@ -33,7 +33,7 @@ test("manual step to the Map, across to the Code layer, into the Code room, to t
   expect(errors).toEqual([]);
 });
 
-test("a listing line opens the Code room at that line", async ({ page }) => {
+test("a listing line opens the Code page at that line", async ({ page }) => {
   await page.goto("/archive/cr-159064/page/86?view=text");
   await page.locator("[data-slot=fortran-block]").getByRole("link", { name: "0793", exact: true }).click();
   await expect(page).toHaveURL(/\/code\/AUSEA\?line=0793$/);
@@ -41,7 +41,7 @@ test("a listing line opens the Code room at that line", async ({ page }) => {
   await expect(page.locator("[data-line-id='0793.1']")).toBeInViewport();
 });
 
-test("the header search and / reach the Archive search from any room", async ({ page }) => {
+test("the header search and / reach the Archive search from any page", async ({ page }) => {
   await page.goto("/code");
   await page.keyboard.press("/");
   await expect(page).toHaveURL(/\/archive$/);

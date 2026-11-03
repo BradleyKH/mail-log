@@ -24,7 +24,7 @@ function type(engine: Engine, state: EngineState, inputs: string[]) {
   return { state, text: lines.join("\n"), lines };
 }
 
-const toSearchMenu = ["LOGIN DKH", "MAIL", "COR", "SEA"];
+const toSearchMenu = ["LOGIN DKH", "COR", "SEA"];
 const authorSearch = (name: string) => ["AUTH", "120778", "080178", "123178", "6", name];
 
 describe("correspondence author/source search", () => {
@@ -85,7 +85,7 @@ describe("input validation", () => {
 
   it("rejects keys that are not on a menu", () => {
     const { engine } = setup();
-    const { state } = type(engine, engine.start().state, ["LOGIN DKH", "MAIL", "COR", "SEA", "XYZ"]);
+    const { state } = type(engine, engine.start().state, ["LOGIN DKH", "COR", "SEA", "XYZ"]);
     expect(state.step).toBe(301);
   });
 
@@ -114,7 +114,7 @@ describe("input mode and the session store", () => {
   it("stores an entered record and finds it later by author/source", () => {
     const { engine, store } = setup();
     const before = store.list("correspondence").length;
-    const { state, text } = type(engine, engine.start().state, ["LOGIN DKH", "MAIL", "COR", ...entry]);
+    const { state, text } = type(engine, engine.start().state, ["LOGIN DKH", "COR", ...entry]);
     expect(text).toContain("CONTRACT NUMBER NAS1-15100");
     expect(state.step).toBe(4);
     expect(store.list("correspondence")).toHaveLength(before + 1);
@@ -126,7 +126,7 @@ describe("input mode and the session store", () => {
 
   it("revises and archives the entered record by its input date-code", () => {
     const { engine, store } = setup();
-    let { state } = type(engine, engine.start().state, ["LOGIN DKH", "MAIL", "COR", ...entry]);
+    let { state } = type(engine, engine.start().state, ["LOGIN DKH", "COR", ...entry]);
     const saved = store.list("correspondence").find((r) => r.origin === "session")!;
     const code = `120778${saved.values.dailyCounter!.padStart(4, "0")}`;
     ({ state } = type(engine, state, ["REV", code, "NO", "6", "YES", "REV", "1", "2", "HARRIS, DANNY K.", "COR"]));
@@ -142,26 +142,26 @@ describe("input mode and the session store", () => {
 describe("flow switching and session control", () => {
   it("switches to the DIR flow at step 3 and searches its two records", () => {
     const { engine } = setup();
-    const { state, lines } = type(engine, engine.start().state, ["LOGIN DKH", "MAIL", "DIR", "SEA", "ALL", "2"]);
+    const { state, lines } = type(engine, engine.start().state, ["LOGIN DKH", "DIR", "SEA", "ALL", "2"]);
     expect(state.record).toBe("dir");
     expect(lines).toContain("THERE ARE 2 DOCUMENTS IN THE DIR FILE");
   });
 
   it("searches drawing fields the sample sheets do not carry and finds none", () => {
     const { engine } = setup();
-    const { lines } = type(engine, engine.start().state, ["LOGIN DKH", "MAIL", "DRAW", "SEA", "SYS", "NO", "ELEC"]);
+    const { lines } = type(engine, engine.start().state, ["LOGIN DKH", "DRAW", "SEA", "SYS", "NO", "ELEC"]);
     expect(lines).toContain("THERE ARE 0 DRAWINGS WITH A SYSTEM OF ELEC");
   });
 
   it("finds a drawing's E.O.s through the E.O. number search", () => {
     const { engine } = setup();
-    const { lines } = type(engine, engine.start().state, ["LOGIN DKH", "MAIL", "DRAW", "SEA", "EO", "NO", "V24818", "DR"]);
+    const { lines } = type(engine, engine.start().state, ["LOGIN DKH", "DRAW", "SEA", "EO", "NO", "V24818", "DR"]);
     expect(lines.some((l) => /THERE ARE 1 DRAWINGS WITH A TOTAL OF 1 SHEET/.test(l))).toBe(true);
   });
 
   it("logs out after QUIT twice", () => {
     const { engine } = setup();
-    const { state, lines } = type(engine, engine.start().state, ["LOGIN DKH", "MAIL", "COR", "QUIT", "QU"]);
+    const { state, lines } = type(engine, engine.start().state, ["LOGIN DKH", "COR", "QUIT", "QU"]);
     expect(state.step).toBe("exit");
     expect(lines.at(-1)).toMatch(/^DKH \(4\) LOGGED OUT AT/);
   });

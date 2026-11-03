@@ -55,14 +55,14 @@ test("a record created in Today is found in the 1979 terminal", async ({ page },
   await expect(page).toHaveURL(/view=1979/);
   await expect(page).toHaveURL(/record=dir/);
   await page.getByRole("button", { name: "Instant" }).click();
-  for (const l of ["login dkh", "MAIL", "DIR", "SEA", "DIR", "99DIR0001"]) await typeLine(page, l);
+  for (const l of ["login dkh", "DIR", "SEA", "DIR", "99DIR0001"]) await typeLine(page, l);
   await expect(log(page)).toContainText("SCOUT WIND TUNNEL SUMMARY");
 });
 
 test("a record entered at the 1979 terminal appears in Today and can be archived there", async ({ page }) => {
   await page.goto("/terminal?view=1979&record=dir");
   await page.getByRole("button", { name: "Instant" }).click();
-  for (const l of ["login dkh", "MAIL", "DIR", "INP", "GO"]) await typeLine(page, l);
+  for (const l of ["login dkh", "DIR", "INP", "GO"]) await typeLine(page, l);
   await expect(page).toHaveURL(/step=1(06|07)/);
   const fromTerminal = ["TERMINAL ENTRY TITLE", "98DIR0002", "050779", "PROP", "35260000", "", "A", "050779", "NO"];
   for (const l of fromTerminal) {

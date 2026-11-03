@@ -9,7 +9,7 @@ export default function CodePage() {
     <section className="space-y-8">
       <header className="space-y-2">
         <h1 className="font-mono text-3xl font-semibold tracking-wide uppercase">Code</h1>
-        <p className="max-w-2xl text-muted-foreground">
+        <p className="text-muted-foreground">
           MAIL LOG as Danny K. Harris wrote it: FORTRAN, routine by routine, beside the original listing pages and flowcharts.
         </p>
       </header>

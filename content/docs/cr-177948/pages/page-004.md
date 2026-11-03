@@ -3,144 +3,60 @@ pdfPage: 4
 folio: null
 sectionId: null
 kind: text
-source: ocr
-confidence: 89.5
+source: reviewed
+confidence: 100
 figures: []
 ---
-6.0
+```text
+TABLE OF CONTENTS                                              PAGE NO.
 
-7.0
+6.0  MAIL LOG CORRESPONDENCE FILE                                   35
 
-8.0
+     6.1  INPUT OPTION                                              36
+          6.1.1  INPUT MAIL CORRESPONDENCE                          36
+          6.1.2  INPUT ACTION DUE ITEMS                             41
+          6.1.3  INPUT DIR'S / REPORTS                              42
+     6.2  UPDATE OPTION                                             44
+          6.2.1  UPDATE MAIL CORRESPONDENCE                         44
+          6.2.2  UPDATE ACTION DUE ITEMS                            46
+     6.3  DELETE OPTION                                             49
+          6.3.1  DELETE MAIL CORRESPONDENCE                         49
+          6.3.2  DELETE ACTION DUE ITEMS                            50
+     6.4  REPORT OPTION                                             51
+     6.5  SEARCH OPTION                                             51
+     6.6  SAMPLE SEARCHES                                           53
+     6.7  SPOOLING OUTPUT                                           55
+     6.8  ARCHIVE OPTION                                            56
 
-TABLE
+7.0  MOTOR INFORMATION FILE                                         59
 
-OF CONTENTS PAGE NO.
+     7.1  INPUT OPTION                                              60
+          7.1.1  INPUT TO SPARES, VEHICLE, AND TEST EXPENDED FILES  60
+          7.1.2  INPUT TO NOTE FILE                                 61
+          7.1.3  INPUT TO STAGE, CATEGORY, & LOCATION LOOKUP TABLES 61
+     7.2  UPDATE OPTION                                             64
+          7.2.1  UPDATE SPARES, VEHICLE, AND TEST EXPENDED FILES    65
+          7.2.2  UPDATE NOTE FILE                                   66
+          7.2.3  UPDATE STAGE, CATEGORY, & LOCATION LOOKUP TABLES   67
+          7.2.4  TRANSFER OF COMPONENTS                             70
+                 7.2.4.1  TRANSFER VEHICLE TO VEHICLE               72
+                 7.2.4.2  TRANSFER VEHICLE TO SPARE                 73
+                 7.2.4.3  TRANSFER SPARE TO VEHICLE                 74
+                 7.2.4.4  TRANSFER SPARE TO SPARE                   75
+                 7.2.4.5  TRANSFER SPARE TO TEST EXPENDED           76
+     7.3  DELETE OPTION                                             77
+     7.4  REPORT OPTION                                             80
+     7.5  SEARCH OPTION                                             82
+     7.6  SAMPLE SEARCHES                                           83
+     7.7  SPOOLING OUTPUT                                           86
+     7.8  ARCHIVE OPTION                                            87
 
-MAIL LOG CORRESPONDENCE FILE
+8.0  HISTORY INFORMATION FILE                                       88
 
-6.1
+     8.1  INPUT OPTION                                              90
+     8.2  UPDATE OPTION                                             92
+     8.3  DELETE OPTION                                             94
+     8.4  REPORT OPTION                                             94
 
-6.2
-
-7.2
-
-INPUT OPTION
-
-6.1.1 INPUT MAIL CORRESPONDENCE
-6.1.2 INPUT ACTION DUE ITEMS
-6.1.3 INPUT DIR'S / REPORTS
-UPDATE OPTION
-
-6.2.1 UPDATE MAIL CORRESPONDENCE
-6.2.2 UPDATE ACTION DUE ITEMS
-DELETE OPTION
-
-6.3.1 DELETE MAIL CORRESPONDENCE
-6.3.2 DELETE ACTION DUE ITEMS
-REPORT OPTION
-
-SEARCH OPTION
-
-SAMPLE SEARCHES
-
-SPOOL ING OUTPUT
-
-ARCHIVE OPTION
-
-INFORMATION FILE
-
-INPUT OPTION
-
-7.1.1. INPUT TO SPARES, VEHICLE, AND TEST EXPENDED FILES
-7.1.2 INPUT TO NOTE FILE
-
-7.1.3 INPUT TO STAGE, CATEGORY, & LOCATION LOOKUP TABLES
-UPDATE OPTION
-
-7.2.1 UPDATE SPARES, VEHICLE, AND TEST EXPENDED FILES
-UPDATE NOTE FILE
-
-UPDATE STAGE, CATEGORY, & LOCATION LOOKUP TABLES
-TRANSFER OF COMPONENTS
-
-7.2.4.1 TRANSFER VEHICLE TO VEHICLE
-
-TRANSFER VEHICLE TO SPARE
-
-TRANSFER SPARE TO VEHICLE
-
-TRANSFER SPARE TO SPARE
-
-TRANSFER SPARE TO TEST EXPENDED
-
-7.2.
-7.2.
-7.2.
-
-f& WN
-
-NNN
-ul & WR
-
-DELETE OPTION
-REPORT OPTION
-SEARCH OPTION
-SAMPLE SEARCHES
-SPOOLING OUTPUT
-ARCHIVE OPTION
-
-HISTORY INFORMATION FILE
-
-INPUT CFTION
-UPDATE OPTION
-
-DELETE OPTION
-REPORT OPTION
-
-36
-36
-41
-
-42
-44
-44
-46
-49
-49
-50
-51
-51
-53
-55
-56
-
-59
-
-60
-60
-61
-61
-64
-65
-66
-67
-70
-72
-73
-74
-75
-76
-77
-80
-82
-
-86
-87
-
-88
-
-90
-92
-94
-94
+                                   ii
+```

@@ -13,7 +13,7 @@ export default function CodeIntro({ totals }: { totals: CodeIndex["totals"] }) {
   ];
   return (
     <div className="grid gap-6 md:grid-cols-[1fr_auto]">
-      <div className="max-w-2xl space-y-3 leading-relaxed">
+      <div className="space-y-3 leading-relaxed">
         <p>
           The program is written in FORTRAN IV for the PRIME 300 computer system in Building 1192-E at NASA Langley Research Center. The
           machine is a 16-bit minicomputer with 64K words of virtual memory and 256K words of physical memory, backed by a 60 megabyte disk

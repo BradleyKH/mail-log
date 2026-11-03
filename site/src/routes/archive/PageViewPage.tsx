@@ -3,7 +3,6 @@ import { Link, useNavigate, useParams, useSearchParams } from "react-router";
 import { getDoc, getSections, loadPage } from "@/content/load";
 import { displayText } from "@/lib/display";
 import type { Page } from "@/content/types";
-import ArchiveSearchBar from "./ArchiveSearchBar";
 import Breadcrumb from "./Breadcrumb";
 import OcrBadge from "./OcrBadge";
 import PageNav from "./PageNav";
@@ -96,7 +95,6 @@ export default function PageViewPage() {
         <SidebarToc docId={doc.docId} sections={sections} currentSectionId={page?.sectionId ?? null} pdfPage={n} />
       </aside>
       <section className="min-w-0 space-y-4">
-        <ArchiveSearchBar />
         <Breadcrumb
           items={[
             { label: "Archive", to: "/archive" },
@@ -104,16 +102,14 @@ export default function PageViewPage() {
             ...(section ? [{ label: displayText(section.title) }] : []),
           ]}
         />
-        <header className="space-y-1">
+        <header className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
           <h1 className="font-mono text-2xl font-semibold tracking-wide">
             {doc.reportNumber}, page {n}
           </h1>
-          <p className="text-sm text-muted-foreground">
-            {page?.folio ? `Printed page ${page.folio}` : "Unnumbered page"}
-            {section ? ` · Section ${section.id}` : ""}
-            {page ? ` · ${page.kind}` : ""}
+          <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-muted-foreground">
+            <span>{page?.folio ? `Printed page ${page.folio}` : "Unnumbered page"}</span>
+            {page && <OcrBadge source={page.source} />}
           </p>
-          {page && <OcrBadge source={page.source} />}
         </header>
         <div className="flex flex-wrap items-center justify-between gap-3">
           <PageNav docId={doc.docId} pdfPage={n} pageCount={doc.pageCount} />

@@ -9,6 +9,8 @@ export type HookCtx = {
   step: Step;
   print(...lines: string[]): void;
   hint(text: string): void;
+  /** Shows a line as if the visitor had typed it. */
+  echo(text: string): void;
   /** Prints the step's own prompt, optionally with placeholders filled. */
   printPrompt(fill?: Record<string, string>): void;
   records(): StoredRecord[];

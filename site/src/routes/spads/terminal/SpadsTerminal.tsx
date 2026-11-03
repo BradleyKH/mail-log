@@ -1,11 +1,23 @@
 import { useState } from "react";
 import BaudControl from "@/routes/terminal/BaudControl";
+import TerminalHint from "@/routes/terminal/TerminalHint";
 import TerminalScreen from "@/routes/terminal/TerminalScreen";
 import { usePrefersReducedMotion } from "@/routes/terminal/usePrefersReducedMotion";
 import SpadsHood from "./SpadsHood";
 import { inputHint, screenOf } from "./spadsHints";
 import { useSpadsSession } from "./useSpadsSession";
 import "@/routes/terminal/terminal.css";
+
+const HELP = (
+  <>
+    <p>Click the screen and type, then press Enter. Entries are not case sensitive.</p>
+    <p>
+      Start with <span className="font-mono">LOGIN</span> and your initials, such as <span className="font-mono">LOGIN DKH</span>, and press Enter at
+      the password prompts. Each menu after that is numbered; type an option&apos;s number to open it.
+    </p>
+    <p>The line beside this icon names what the current screen expects. The panel beside the terminal explains the screen and, where one applies, the formula behind its figures.</p>
+  </>
+);
 
 export default function SpadsTerminal() {
   const session = useSpadsSession();
@@ -41,9 +53,7 @@ export default function SpadsTerminal() {
           ariaLabel="SPADS Contract Analysis terminal output"
           embedded
         />
-        <p id="terminal-hint" className="text-sm text-muted-foreground" data-testid="terminal-hint">
-          Expected: {inputHint(state)}.
-        </p>
+        <TerminalHint help={HELP}>Expected: {inputHint(state)}.</TerminalHint>
       </div>
       <SpadsHood screen={screenOf(state)} formula={formula} />
     </div>

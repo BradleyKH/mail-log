@@ -3,13 +3,11 @@ pdfPage: 1
 folio: null
 sectionId: null
 kind: cover
-source: ocr
-confidence: 72.7
+source: reviewed
+confidence: 100
 figures: []
 ---
-Tee on - eet?
-
-Alasd CR -17 19449
+NASA CR-177949 (handwritten)
 
 NASA Contractor Report 177949
 
@@ -18,30 +16,22 @@ NASA-CR-177949
 
 USER'S OPERATING PROCEDURES
 
-VOLUME II - SCOUT PROJECT FINANCIAL
-ANALYSIS PROGRAM
+VOLUME II - SCOUT PROJECT FINANCIAL ANALYSIS PROGRAM
 
 Cynthia G. Harris and Danny K. Harris
 
 PRC KENTRON, INC.
 Hampton, Virginia
 
-big yy
-ILRADY agpy
-SFI tuys
+LIBRARY COPY, SEP 1 1985 (stamp)
 
 Contract NAS1-18000
-July 1985 hy
-
-Yoslayy
-vn VIRGINIA
+July 1985
 
 NASA
-
-National Aeronautics and
-Space Administration
+National Aeronautics and Space Administration
 
 Langley Research Center
 Hampton, Virginia 23665
 
-0008 0
+NF00708

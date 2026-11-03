@@ -3,101 +3,58 @@ pdfPage: 3
 folio: null
 sectionId: null
 kind: text
-source: ocr
-confidence: 85.4
+source: reviewed
+confidence: 100
 figures: []
 ---
-1.0
+```text
+                 USER'S OPERATING PROCEDURES MANUAL
+                 for SCOUT PROJECT OFFICE, NASA LaRC
 
-2.0
+TABLE OF CONTENTS                                              PAGE NO.
 
-3.0
+1.0  INTRODUCTION                                                    1
 
-4.0
+     1.1  SECTION DESCRIPTIONS                                       2
 
-5.0
+2.0  BASIC OPERATING PROCEDURES                                      6
 
-USER'S OPERATING PROCEDURES MANUAL
-for SCOUT PROJECT OFFICE, NASA LaRC
+     2.1  LOGIN                                                      6
+     2.2  PROGRAM ENTRY                                              7
+     2.3  PROGRAM EXIT                                               7
+     2.4  ENTRANCE TO PRIVILEGED AREAS                               8
+     2.5  INPUT OPERATIONS                                           9
+          2.5.1  INFO INPUT SCREENS                                  9
+          2.5.2  FORTRAN INPUT FORMS                                11
+     2.6  UPDATE OPERATIONS                                         11
+          2.6.1  INFO UPDATE SCREENS                                11
+          2.6.2  FORTRAN UPDATE FORMS                               12
+     2.7  ERROR MESSAGES                                            12
+     2.8  SYSTEM EXIT / LOGOUT                                      12
 
-TABLE OF CONTENTS
+3.0  SPECIAL OPERATIONS                                             14
 
-iNTRODUCT 1! ON
-1.1 SECTION DESCRIPTIONS
+     3.1  PRINTOUT SPOOLING                                         14
+     3.2  SPECIAL MENU OPTIONS                                      16
+     3.3  EMERGENCY / RECOVERY                                      21
+          3.3.1  SOFTWARE / OPERATOR ERRORS FOR SPADS               21
+          3.3.2  FILE IN USE                                        22
+     3.4  EMERGENCY / RECOVERY FOR OAS                              22
+          3.4.1  SOFTWARE / OPERATOR ERRORS                         23
+     3.5  ARCHIVE OPERATION                                         23
+     3.6  QUICKIE OPERATION                                         23
 
-BASIC OPERATING PROCEDURES
+4.0  OFFICE AUTOMATION SYSTEM                                       25
 
-2.1 LOGIN
+5.0  TELEMAIL NETWORK                                               30
 
-2.2 PROGRAM ENTRY
+     5.1  TELEMAIL GENERAL ENTRY                                    30
+     5.2  TELEMAIL EXIT                                             31
+     5.3  CLEANUP OF PRIMOS FILES                                   32
+     5.4  SENDING A DOCUMENT                                        32
+     5.5  RECEIVING A DOCUMENT                                      33
 
-2.3 PROGRAM EXIT
+                                   i
+```
 
-2.4 ENTRANCE TO PRIVILEGED AREAS
-2.5 INPUT OPERATIONS
-
-2.5.1 INFO INPUT SCREENS
-2.5.2 FORTRAN INPUT FORMS
-2.6 UPDATE OPERATIONS
-
-2.6.1 INFO UPDATE SCREENS
-2.6.2 FORTRAN UPDATE FORMS
-7 ERROR MESSAGES
-
-8 SYSTEM EXIT / LOGOUT
-
-SPECIAL OPERATIONS
-
-3.1 PRINTOUT SPOOLING
-
-3.2 SPECIAL MENU OPTIONS
-
-3.3 EMERGENCY / RECOVERY
-3.3.1 SOFTWARE / OPERATOR ERRORS FOR SPADS
-3.3.2 FILE IN USE
-
-3.4 EMERGENCY / RECOVERY FOR OAS
-3.4.1 SOFTWARE / OPERATOR ERRORS
-
-3.5 ARCHIVE OPERATION
-
-3.6 QUICKIE OPERATION
-
-OFFICE AUTOMATION SYSTEM
-
-TELEMAIL NETWORK
-
-5.1 TELEMAIL GENERAL ENTRY
-5.2 TELEMAIL EXIT
-
-5.3 CLEANUP OF PRIMOS FILES
-5.4 SENDING A DOCUMENT
-
-5.5 RECEIVING A DOCUMENT
-
-PAGE NO.
-
-onuoanrna
-
-11
-11
-11
-12
-12
-12
-
-14
-
-14
-16
-21
-21
-22
-22
-23
-23
-23
-
-25
-
-WOKS- DASVG &
+N85-34518# (handwritten)

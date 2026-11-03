@@ -3,22 +3,19 @@ pdfPage: 1
 folio: null
 sectionId: null
 kind: cover
-source: ocr
-confidence: 75.5
+source: reviewed
+confidence: 100
 figures: []
 ---
-sz tase)
-
-NAIR 1572 OL3
-
-1
+NASA CR-159,063 (handwritten)
 
 NASA Contractor Report 159063
 
 NASA-CR-159063
 
-1931 0 OL 1287
-MA IL LOG - PROGRAM THEORY ee
+1981 0019287 (handwritten)
+
+MAIL LOG - PROGRAM THEORY
 VOLUME I
 
 Danny K. Harris
@@ -30,38 +27,16 @@ Hampton, Virginia 23666
 NASA Contract NAS1-13500
 May 1979
 
-(FOR EARLY DOMESTIC DISSEMINATION"
+FOR EARLY DOMESTIC DISSEMINATION
 
-Because of its significant early commercial potential, this
-information, which has been developed under a U.S. Gov-~
-ernment program, is being disseminated within the United
-States in advance of general publication. This information
-may be duplicated and used by the recipient with the express
-limitation that it not be published.-Release of this
-information to other domestic parties by the recipient shall
-be made subject to these limitations. "-_
+Because of its significant early commercial potential, this information, which has been developed under a U.S. Government program, is being disseminated within the United States in advance of general publication. This information may be duplicated and used by the recipient with the express limitation that it not be published. Release of this information to other domestic parties by the recipient shall be made subject to these limitations.
 
-Foreign release may be made only with prior NASA approval
-and appropriate export licenses. This legend shall
+Foreign release may be made only with prior NASA approval and appropriate export licenses. This legend shall be marked on any reproduction of this information in whole or in part.
 
-be marked on any reproduction of this information in whole __
+Date for general release May 1981
 
-```text
-or in part.”                                     “yo
-
-_                         .     IE BOY
-Daler general release _May 1981 _.         [ Ceara Ge ty:
-
-NASA            .                  LANGUY TID LVL SSHTER
-```
-
-pean Oral?
-
-```text
-Nationa! Aeronautics and                                       . ‘ .  :  ae : wok
-Space Administration                           .          HALON, Vicia:
-```
+NASA
+National Aeronautics and Space Administration
 
 Langley Research Center
-
 Hampton, Virginia 23665

@@ -9,7 +9,7 @@ const PAGES = readdirSync(docsDir)
 const LINES = codeIndex.totals.lines.toLocaleString("en-US");
 
 test.describe("home", () => {
-  test("shows hero, numbers, doors", async ({ page }, info) => {
+  test("shows hero, numbers, sections", async ({ page }, info) => {
     await page.goto("/");
     await expect(page.getByRole("heading", { level: 1 })).toHaveText("MAIL LOG");
     await expect(page.getByAltText(/Cover of NASA Contractor Report CR-159065/)).toBeVisible();
@@ -17,7 +17,7 @@ test.describe("home", () => {
     await expect(page.getByText(PAGES, { exact: true })).toBeVisible();
     for (const [name, url] of [["Archive", /\/archive$/], ["Terminal", /\/terminal$/], ["Code", /\/code$/], ["Map", /\/map$/]] as const) {
       await page.goto("/");
-      await page.getByRole("region", { name: "Rooms" }).getByRole("link", { name: new RegExp(`^${name}`) }).click();
+      await page.getByRole("region", { name: "Explore" }).getByRole("link", { name: new RegExp(`^${name}`) }).click();
       await expect(page).toHaveURL(url);
     }
     await page.goto("/");
@@ -42,7 +42,7 @@ test.describe("about", () => {
     await page.screenshot({ path: `test-results/screens/about-mobile-${info.project.name}.png`, fullPage: true });
     await page.getByRole("link", { name: "Archive search for MAGSAT" }).click();
     await expect(page).toHaveURL(/\/archive\?q=MAGSAT$/);
-    await page.goto("/about");
+    await page.goto("/");
     await page.getByRole("link", { name: "preface as printed" }).click();
     await expect(page).toHaveURL(/\/archive\/cr-159065\/page\/12$/);
   });
@@ -54,14 +54,14 @@ test.describe("glossary", () => {
     await expect(page.getByRole("heading", { level: 1 })).toHaveText("Glossary");
     const rows = page.getByTestId("glossary-row");
     const total = await rows.count();
-    expect(total).toBe(136);
+    expect(total).toBe(59);
     await page.screenshot({ path: `test-results/screens/glossary-${info.project.name}.png` });
     await page.getByLabel("Filter glossary").fill("archive");
     expect(await rows.count()).toBeLessThan(total);
     await expect(rows.first()).toContainText(/archive/i);
     await page.getByLabel("Report", { exact: true }).selectOption("cr-159064");
     await expect(rows.first().getByText("NASA CR-159064")).toBeVisible();
-    await rows.first().getByRole("link").click();
+    await rows.first().getByRole("link", { name: /CR-159064/ }).first().click();
     await expect(page).toHaveURL(/\/archive\/cr-159064\/page\/\d+$/);
     await page.setViewportSize({ width: 390, height: 800 });
     await page.goto("/glossary");

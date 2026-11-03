@@ -5,7 +5,7 @@ import { expect, test, type Page } from "@playwright/test";
 test.use({ launchOptions: { args: ["--use-angle=swiftshader", "--enable-unsafe-swiftshader", "--ignore-gpu-blocklist"] } });
 
 const PAGES: [name: string, path: string, ready: (page: Page) => Promise<void>][] = [
-  ["home", "/", async (p) => void (await expect(p.getByRole("region", { name: "Rooms" })).toBeVisible())],
+  ["home", "/", async (p) => void (await expect(p.getByRole("region", { name: "Explore" })).toBeVisible())],
   ["about", "/about", async (p) => void (await expect(p.getByRole("heading", { level: 1 })).toBeVisible())],
   ["glossary", "/glossary", async (p) => void (await expect(p.getByRole("heading", { level: 1 })).toBeVisible())],
   ["archive", "/archive", async (p) => void (await expect(p.getByRole("searchbox")).toBeVisible())],
@@ -55,7 +55,7 @@ test("the terminal is reachable and usable from the keyboard alone", async ({ pa
   await expect(page.getByLabel("Terminal input")).toBeFocused();
   await page.keyboard.type("login dkh");
   await page.keyboard.press("Enter");
-  await expect(page).toHaveURL(/step=2/);
+  await expect(page).toHaveURL(/step=3/);
 });
 
 test("the 2D map fallback works from the keyboard", async ({ page }) => {
@@ -74,7 +74,7 @@ test("the 2D map fallback works from the keyboard", async ({ page }) => {
   await finder.focus();
   await finder.selectOption({ label: "AUSEA" });
   await expect(page).toHaveURL(/routine=AUSEA/);
-  const link = page.getByTestId("map-panel").getByRole("link", { name: "Read the FORTRAN in the Code room" });
+  const link = page.getByTestId("map-panel").getByRole("link", { name: "Read the FORTRAN on the Code page" });
   await link.focus();
   await page.keyboard.press("Enter");
   await expect(page).toHaveURL(/\/code\/AUSEA$/);

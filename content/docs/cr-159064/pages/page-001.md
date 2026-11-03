@@ -3,62 +3,42 @@ pdfPage: 1
 folio: null
 sectionId: null
 kind: cover
-source: ocr
-confidence: 63.8
+source: reviewed
+confidence: 100
 figures: []
 ---
-WNIORINIMR Gap cen
+NASA CR-159,064 (handwritten)
 
-NASA Contractor “Report 159064
+NASA Contractor Report 159064
 
-```text
-‘            |           ,                            NASA-CR-159064
-1        MAIL LOG - PROGRAM THEORY   '7319 0 jgago
-VOLUME II                  re
-```
+NASA-CR-159064
+
+1981 0019290 (handwritten)
+
+MAIL LOG - PROGRAM THEORY
+VOLUME II
 
 Danny K. Harris
 
 VOUGHT CORPORATION
 Hampton Technical Center
-Hampton, Virginia 23666 -
+Hampton, Virginia 23666
 
-```text
-y                NASA Contract NAS1-13500 —
-c                          May 1979
-```
+NASA Contract NAS1-13500
+May 1979
 
 FOR EARLY DOMESTIC DISSEMINATION
 
-```text
-Because of its significant early commercia!    ential, this
+Because of its significant early commercial potential, this information, which has been developed under a U.S. Government program, is being disseminated within the United States in advance of general publication. This information may be duplicated and used by the recipient with the express limitation that it not be published. Release of this information to other domestic parties by the recipient shall be made subject to these limitations.
 
-‘                                     information, which has been developed under a U.S, Gov-
+Foreign release may be made only with prior NASA approval and appropriate export licenses. This legend shall be marked on any reproduction of this information in whole or in part.
 
-.                                     ernment program, is being disseminatedwithin the United
+Date for general release May 1981
 
-.                                     States in
+(The dissemination legend is crossed out by hand.)
 
-L                                   may be dupli
+NASA
+National Aeronautics and Space Administration
 
-a                             press limitation
-
-:                                            information to othe
-
-Q                                                 be made subject to thése }
-
-i                           Foreign release may pe
-
-ik                                  proval and approprjdte expo
-
-.                                              be marked on an
-
-t   co                                   or in part.
-
-Le                               Date for ge            ni. Lee      PRU Seth Oey
-*                   tek   a    :      -    2 od
-am       ;                           National Aeronautics and                  LANSUT 8 Ss TER
-ib      .                           Space Administration                           ou bors feas
-```
-
+Langley Research Center
 Hampton, Virginia 23665

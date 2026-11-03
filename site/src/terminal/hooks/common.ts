@@ -25,6 +25,15 @@ export const commonHooks: HookTable = {
       return 2;
     },
   },
+  2: {
+    // The reports document only MAIL LOG; the other keys led to programs with no manual here, so the menu answers itself.
+    enter(c) {
+      c.printPrompt();
+      c.echo("MAIL");
+      c.hint("Only MAIL LOG is documented in these 1979 reports, so MAIL is entered for you.");
+      return 3;
+    },
+  },
   3: {
     validate: (_c, input) => ({ ok: input in DATA_TYPE_KEYS }),
     submit(c, input) {

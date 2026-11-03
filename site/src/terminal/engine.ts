@@ -60,6 +60,7 @@ class Session {
       step,
       print: (...lines) => this.print("program", ...lines),
       hint: (text) => this.print("hint", text),
+      echo: (text) => this.print("echo", text),
       printPrompt: (map) => this.print("program", ...fill(step.prompt, map ?? {})),
       records: () => this.env.store.list(this.state.record),
       today: () => this.state.vars.today ?? mmddyyOf(this.now()),

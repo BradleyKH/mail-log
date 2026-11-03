@@ -14,7 +14,7 @@ import ScreenProjector from "./ScreenProjector";
 
 const EMPTY: Highlight = { nodes: new Set(), edges: new Set(), focus: [] };
 
-/** The three.js view; loaded lazily so three and the R3F stack stay out of every other room's bundle. */
+/** The three.js view; loaded lazily so three and the R3F stack stay out of every other page's bundle. */
 export default function MapCanvas(props: MapViewProps) {
   const { data, layer, palette, theme } = props;
   const registry = useMemo<AnchorRegistry>(() => new Map(), []);

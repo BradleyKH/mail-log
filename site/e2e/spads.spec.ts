@@ -31,7 +31,7 @@ test("SPADS page shows its sections and jump links", async ({ page }) => {
   await page.goto("/spads");
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("SPADS");
   const jumps = page.getByRole("navigation", { name: "On this page" });
-  for (const name of ["Terminal", "Month spread", "Reports", "MAIL LOG in 1985"]) {
+  for (const name of ["What SPADS became", "MAIL LOG in 1985", "Contract Analysis", "Terminal", "Month spread", "Reports"]) {
     await expect(jumps.getByRole("link", { name })).toBeVisible();
   }
   await expect(page.locator("#spread")).toBeAttached();

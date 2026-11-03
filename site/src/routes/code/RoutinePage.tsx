@@ -58,7 +58,7 @@ export default function RoutinePage() {
           {entry.kind} / Appendix {entry.appendix} / {entry.lines} lines
         </p>
         {entry.description ? (
-          <p className="max-w-3xl leading-relaxed">
+          <p className="leading-relaxed">
             {displayText(entry.description)}
             {entry.descriptionPage && (
               <>

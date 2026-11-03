@@ -3,158 +3,61 @@ pdfPage: 4
 folio: null
 sectionId: null
 kind: text
-source: ocr
-confidence: 84.1
+source: reviewed
+confidence: 100
 figures: []
 ---
-6.0
+```text
+TABLE OF CONTENTS                                              PAGE NO.
 
-7.0
+6.0  MAIL LOG CORRESPONDENCE FILE                                   29
 
-8.0
+     6.1  INPUT OPTION                                              30
+     6.2  UPDATE OPTION                                             33
+     6.3  DELETE OPTION                                             36
+     6.4  SEARCH OPTION                                             39
+          6.4.1  CCR SEARCH                                         40
+          6.4.2  CORRESPONDENCE SEARCH                              46
+     6.5  REPORT OPTION                                             56
+          6.5.1  DAILY INPUT REPORT                                 57
+          6.5.2  DOCUMENT DATE REPORT                               58
+          6.5.3  SPECIAL CCR REPORTS                                59
+                 6.5.3.1  OPEN OR HOLD RECORDS                      60
+                 6.5.3.2  APPROVED OR DISAPPROVED RECORDS           61
+                 6.5.3.3  CANCELLED OR WITHDRAWN RECORDS            62
+                 6.5.3.4  SEARCH AND PRINT ALL                      63
 
-TABLE OF CONTENTS
+7.0  MECHANICAL DRAWING FILE                                        65
 
-MAIL LOG CORRESPONDENCE FILE
+     7.1  INPUT OPTION                                              66
+          7.1.1  INPUT TO DRAWING FILE                              67
+          7.1.2  INPUT TO CATEGORY LOOKUP TABLE                     69
+          7.1.3  INPUT TO SCC FILE                                  70
+          7.1.4  SORT THE DRAWING DATA BASE                         71
+     7.2  UPDATE OPTION                                             71
+          7.2.1  UPDATE DRAWING RECORD                              72
+          7.2.2  UPDATE DRAWING PART                                73
+          7.2.3  UPDATE SPECIFICATION RECORD                        74
+          7.2.4  UPDATE SCC FILE RECORD                             74
+          7.2.5  UPDATE RECORD IN CATEGORY LOOKUP TABLE             76
+          7.2.6  SORT THE DRAWING DATA BASE                         77
+     7.3  DELETE OPTION                                             77
+          7.3.1  DELETE A PART                                      77
+          7.3.2  DELETE A DRAWING                                   79
+          7.3.3  DELETE A SPECIFICATION RECORD                      80
+          7.3.4  DELETE A PART FROM THE SCC FILE                    80
+          7.3.5  DELETE A CATEGORY FROM THE LOOKUP TABLE            82
+     7.4  SEARCH OPTION                                             83
+          7.4.1  SEARCH OPTIONS FOR DRAWINGS AND PARTS              84
+          7.4.2  SEARCH OPTIONS FOR SCC FILE                        88
+     7.5  REPORT OPTION                                             90
 
-INPUT OPTION
-UPDATE OPTION
-DELETE OPTION
-SEARCH OPTION
-6.4.1 CCR SEARCH
-6.4.2 CORRESPONDENCE SEARCH
-REPORT OPTION
-6.5.1 DAILY INPUT REPORT
--5.2 DOCUMENT DATE REPORT
-5.5 SPECIAL CCR REPORTS
-6.5.3.1 OPEN OR HOLD RECORDS
-2 APPROVED OR DISAPPROVED RECORDS
-3 CANCELLED OR WITHDRAWN RECORDS
--4 SEARCH AND PRINT ALL
+8.0  ELECTRICAL DRAWING FILE                                        98
 
-6
-6
+     8.1  INPUT OPTION                                              99
+          8.1.1  INPUT TO DRAWING FILE                              99
+          8.1.2  INPUT TO CATEGORY LOOKUP TABLE                    100
+     8.2  UPDATE OPTION                                            102
 
-MECHANICAL DRAWING FILE
-
-7.1
-
-7.2
-
-7.3
-
-7.4
-
-7.5
-
-INPUT OPTION
-
-INPUT TO DRAWING FILE
-
-INPUT TO CATEGORY LOOKUP TABLE
-
-INPUT TO SCC FILE
-
-SORT THE DRAWING DATA BASE
-
-OPTION
-
-UPDATE DRAWING RECGRD
-
-UPDATE DRAWING PART
-
-UPDATE SPECIFICATION RECORD
-
-UPDATE SCC FILE RECORD
-
-UPDATE RECORD IN CATEGORY LOOKUP TABLE
-SORT THE DRAWING DATA BASE
-
-OPTION
-
-DELETE A PART
-
-DELETE A DRAWING
-
-DELETE A SPECIFICATION RECORD
-
-DELETE A PART FROM THE SCC FILE
-
-DELETE A CATEGORY FROV THE LOOKUP TABLE
-
-Ueieie
-
-Ve PEWWWWUOCNNNNNND OH eae
-m
-
-e e mie ee ee
-© e e FTie © « © «© « Pe
-AN AWQUVPUN = AAGEUN = ARUN
-
-Dw~nsNONNNANN ONS N CONN NS
-
-EARCH OPTION
-
-«4.1 SEARCH OPTIONS FOR DRAWINGS AND PARTS
--4.2 SEARCH OPTIONS FOR SCC FILE
-
-EPORT OPTION
-
-ELECTRICAL DRAWING FILE
-
-8.1
-
-8.2
-
-INPUT OPTION
-
-8.1.1 INPUT TO DRAWING FILE
-
-8.1.2 INPUT TO CATEGORY LOOKUP TABLE
-UPDATE OPTION
-
-30
-33
-36
-39
-40
-46
-56
-57
-58
-59
-60
-
-62
-63
-
-65
-
-66
-67
-
-70
-71
-71
-72
-73
-74
-74
-76
-77
-77
-77
-79
-80
-
-82
-83
-
-84
-88
-
-98
-99
-
-100
-102
+                                   ii
+```

@@ -34,7 +34,7 @@ export default function HoodCode({ match }: { match: HoodMatch }) {
       )}
       <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
         <Link to={codeHref(match.routine, match.seq)} className="text-primary underline-offset-2 hover:underline">
-          Read {match.name} in the Code room
+          Read {match.name} on the Code page
         </Link>
         <Link to={`/map?layer=code&routine=${encodeURIComponent(match.routine)}`} className="text-primary underline-offset-2 hover:underline">
           See it on the Map

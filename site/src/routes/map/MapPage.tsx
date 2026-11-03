@@ -151,7 +151,7 @@ export default function MapPage() {
     <section className="space-y-4" data-layer={layer}>
       <header className="space-y-2">
         <h1 className="font-mono text-3xl font-semibold tracking-wide uppercase">Map</h1>
-        <p className="max-w-3xl text-muted-foreground">
+        <p className="text-muted-foreground">
           MAIL LOG in two layers. The Manual layer lays out every step of the operating instructions, from login through each record's
           four modes. The Code layer shows the program as written: his routines, the CALLs between them, and the files they open.
         </p>

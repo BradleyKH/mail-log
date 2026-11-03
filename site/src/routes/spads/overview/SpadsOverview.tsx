@@ -7,10 +7,10 @@ import { overviewFacts, partsTransferIntro, partsTransfers } from "./overviewDat
 export default function SpadsOverview() {
   return (
     <section className="space-y-6">
-      <h2 className="font-mono text-xl font-semibold tracking-wide uppercase">SPADS in 1985</h2>
+      <h2 className="font-mono text-xl font-semibold tracking-wide uppercase">What SPADS became</h2>
       <p>
-        In July 1985 the Scout Project Automatic Data System ran on a PRIME 750. Three User&apos;s Operating Procedures volumes describe
-        it.
+        In July 1985 SPADS ran on a PRIME 750. Three User&apos;s Operating Procedures volumes describe it: Volume I the Scout Project
+        Office programs, Volume II Contract Analysis, and Volume III the Projects Directorate programs.
       </p>
       <ul className="space-y-3">
         {overviewFacts.map((fact) => (

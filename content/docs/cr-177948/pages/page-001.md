@@ -3,13 +3,11 @@ pdfPage: 1
 folio: null
 sectionId: null
 kind: cover
-source: ocr
-confidence: 79.6
+source: reviewed
+confidence: 100
 figures: []
 ---
-pe an on eh
-
-POASA- CH-~ UTVIAGE
+NASA-CR-177948 (handwritten)
 
 NASA Contractor Report 177948
 
@@ -17,6 +15,7 @@ NASA-CR-177948
 19850026205
 
 USER'S OPERATING PROCEDURES
+
 VOLUME I - SCOUT PROJECT INFORMATION PROGRAMS
 
 Cynthia G. Harris and Danny K. Harris
@@ -24,15 +23,15 @@ Cynthia G. Harris and Danny K. Harris
 PRC KENTRON, INC.
 Hampton, Virginia
 
-LIBRARY C2
 Contract NAS1-18000
+July 1985
 
-July 1985 SEP 5 eS
+LIBRARY COPY, SEP 5 1985 (stamp)
 
 NASA
-
-National Aeronautics and
-Space Administration
+National Aeronautics and Space Administration
 
 Langley Research Center
 Hampton, Virginia 23665
+
+NF00707

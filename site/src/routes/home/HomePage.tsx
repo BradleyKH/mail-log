@@ -1,5 +1,5 @@
 import DedicationBlock from "./DedicationBlock";
-import HomeDoors from "./HomeDoors";
+import HomeSections from "./HomeSections";
 import HomeHero from "./HomeHero";
 import HomeIntro from "./HomeIntro";
 import HomeStats from "./HomeStats";
@@ -10,7 +10,7 @@ export default function HomePage() {
       <HomeHero />
       <HomeStats />
       <HomeIntro />
-      <HomeDoors />
+      <HomeSections />
       <DedicationBlock />
     </div>
   );

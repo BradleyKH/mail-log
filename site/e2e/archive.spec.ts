@@ -60,7 +60,7 @@ test("text blocks scroll sideways instead of wrapping", async ({ page }) => {
   await expect(block).toHaveCSS("white-space", "pre");
 });
 
-test("listing sequence numbers link into the Code room", async ({ page }) => {
+test("listing sequence numbers link into the Code page", async ({ page }) => {
   await page.goto("/archive/cr-159064/page/86?view=text");
   const block = page.locator("[data-slot=fortran-block]");
   await expect(block).toBeVisible();

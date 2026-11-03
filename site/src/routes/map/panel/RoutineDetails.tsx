@@ -33,7 +33,7 @@ export default function RoutineDetails({ routine, xref, go }: Props) {
       <PanelSection title="Go to">
         <ul className="space-y-1">
           <li>
-            <PanelLink to={routineHref(routine.id)}>Read the FORTRAN in the Code room</PanelLink>
+            <PanelLink to={routineHref(routine.id)}>Read the FORTRAN on the Code page</PanelLink>
           </li>
           {routine.listingPages[0] !== undefined && (
             <li>

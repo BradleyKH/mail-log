@@ -6,6 +6,14 @@ import type { DocId, Section } from "@/content/types";
 import { pagePath } from "./scanUrl";
 import { useIsDesktop } from "./useIsDesktop";
 
+/** Top two levels always; deeper sections only along the branch the reader is in, so long reports stay scannable. */
+function visible(s: Section, current: string | null): boolean {
+  if (s.level <= 2) return true;
+  if (!current) return false;
+  const parent = s.id.replace(/\.[^.]+$/, "");
+  return current === parent || current.startsWith(`${parent}.`);
+}
+
 type Props = { docId: DocId; sections: Section[]; currentSectionId: string | null; pdfPage: number };
 
 /** Sticky contents list; a collapsed disclosure on small screens. */
@@ -35,7 +43,7 @@ export default function SidebarToc({ docId, sections, currentSectionId, pdfPage 
       <div ref={listRef} className="relative max-h-72 overflow-y-auto py-2 lg:max-h-[calc(100svh-7rem)]">
         <p className="hidden px-3 pb-1 font-mono text-xs tracking-widest text-muted-foreground uppercase lg:block">Contents</p>
         <ul className="text-sm">
-          {sections.map((s) => (
+          {sections.filter((s) => visible(s, current)).map((s) => (
             <li key={s.id}>
               <Link
                 to={pagePath(docId, s.pdfPage)}

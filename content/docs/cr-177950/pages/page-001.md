@@ -3,15 +3,12 @@ pdfPage: 1
 folio: null
 sectionId: null
 kind: cover
-source: ocr
-confidence: 76.5
+source: reviewed
+confidence: 100
 figures: []
 ---
-Pare cad
+NASA CR-177950 (handwritten)
 
-Y wteethe wa)
-
-MASA CR ITT 7SO
 NASA Contractor Report 177950
 
 NASA-CR-177950
@@ -19,24 +16,22 @@ NASA-CR-177950
 
 USER'S OPERATING PROCEDURES
 
-VOLUME III - PROJECTS DIRECTORATE
-INFORMATION PROGRAMS
+VOLUME III - PROJECTS DIRECTORATE INFORMATION PROGRAMS
 
 Cynthia G. Harris and Danny K. Harris
 
 PRC KENTRON, INC.
 Hampton, Virginia
 
+LIBRARY COPY, SEP 1 1985 (stamp)
+
 Contract NAS1-18000
-July 1985 =2 4 1u959
-Ne
+July 1985
 
 NASA
-
-National Aeronautics and
-Space Administration
+National Aeronautics and Space Administration
 
 Langley Research Center
 Hampton, Virginia 23665
 
-venue
+NF00709

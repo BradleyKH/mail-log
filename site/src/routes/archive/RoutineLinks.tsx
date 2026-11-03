@@ -3,7 +3,7 @@ import type { RoutineEntry } from "@/content/types";
 
 type Props = { routines: RoutineEntry[]; kind: "flowchart" | "listing" };
 
-/** Links from a flowchart or listing page to its routine in the Code room. */
+/** Links from a flowchart or listing page to its routine on the Code page. */
 export default function RoutineLinks({ routines, kind }: Props) {
   if (routines.length === 0) return null;
   return (
@@ -17,7 +17,7 @@ export default function RoutineLinks({ routines, kind }: Props) {
           </Link>
         </span>
       ))}
-      . Open it in the Code room.
+      . Open it on the Code page.
     </p>
   );
 }

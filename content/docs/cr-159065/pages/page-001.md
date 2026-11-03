@@ -3,65 +3,41 @@ pdfPage: 1
 folio: null
 sectionId: null
 kind: cover
-source: ocr
-confidence: 77
+source: reviewed
+confidence: 100
 figures: []
 ---
-TT) | aaa
+NASA CR-159,065 (handwritten)
 
-```text
-,                             159065
-NASA Contractor Report                 NASA-CR-159065
-```
+NASA Contractor Report 159065
 
-\9qxz| OO 23529
+NASA-CR-159065
+
+1981 00 23338 (handwritten)
 
 MAIL LOG - PROGRAM OPERATING INSTRUCTIONS
+
 Danny K. Harris
 
 VOUGHT CORPORATION
 Hampton Technical Center
 Hampton, Virginia 23666
 
-PrN rN RN Sone AO™ ty
+NASA Contract NAS1-13500
+May 1979
 
-Biay ao
+FOR EARLY DOMESTIC DISSEMINATION (struck through)
 
-```text
-NASA Contract NAS1-13500         LARC Sf ton ari
-May 1979                   Pee
-Lo.    .                                        Pei Qay Nin SaNTA
-```
+Because of its significant early commercial potential, this information, which has been developed under a U.S. Government program, is being disseminated within the United States in advance of general publication. This information may be duplicated and used by the recipient with the express limitation that it not be published. Release of this information to other domestic parties by the recipient shall be made subject to these limitations.
 
-ecause of its significant early commercial potential, this
+Foreign release may be made only with prior NASA approval and appropriate export licenses. This legend shall be marked on any reproduction of this information in whole or in part.
 
-press limitation that it n published.
-information to other domestic paMies b
-be made subject to these limitations
+Date for general release May 1981
 
-ase of this
-€ recipient shall!
-
-Foreign release may be madgonly with prio
-proval and appropriate
-be marked on any r
-or in part.
-
-```text
-C                  ASA ap-
-ort licenses. This legen    all
-```
-
-duction of this information in whole
-
-éral release _May 1981.
+(The dissemination legend is crossed out by hand.)
 
 NASA
+National Aeronautics and Space Administration
 
-National Aeronautics and
-Space Administration
-
-Date for
-
-\- Langley Research Center
-Hampten, Virginia 23665
+Langley Research Center
+Hampton, Virginia 23665

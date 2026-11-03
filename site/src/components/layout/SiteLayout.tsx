@@ -3,10 +3,12 @@ import { Outlet } from "react-router";
 import RouteFallback from "./RouteFallback";
 import SiteFooter from "./SiteFooter";
 import SiteHeader from "./SiteHeader";
+import { useScrollToTop } from "./useScrollToTop";
 import { useSlashSearch } from "./useSlashSearch";
 
 export default function SiteLayout() {
   useSlashSearch();
+  useScrollToTop();
   return (
     <div className="flex min-h-svh flex-col overflow-x-clip">
       <SiteHeader />

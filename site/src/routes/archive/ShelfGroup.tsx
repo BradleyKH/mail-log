@@ -9,7 +9,7 @@ export default function ShelfGroup({ group, docs }: { group: ShelfGroupDef; docs
         <h2 id={`shelf-${group.date}`} className="font-mono text-xl font-semibold tracking-wide">
           {group.title}
         </h2>
-        <p className="max-w-2xl text-sm text-muted-foreground">{group.description}</p>
+        <p className="text-sm text-muted-foreground">{group.description}</p>
       </header>
       <div className="grid gap-4 md:grid-cols-2">
         {docs.map((d) => (

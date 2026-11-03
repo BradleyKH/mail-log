@@ -22,7 +22,7 @@ test("a typed session runs the author/source search end to end", async ({ page }
   await page.getByRole("button", { name: "Instant" }).click();
   await expect(page).toHaveURL(/record=correspondence&step=1/);
 
-  await typeAll(page, ["login dkh", "MAIL", "COR"]);
+  await typeAll(page, ["login dkh", "COR"]);
   await expect(log(page)).toContainText("DKH (4) LOGGED IN AT");
   await expect(page.getByTestId("hood-step")).toHaveText(/MODE SELECTION/);
 
@@ -67,7 +67,7 @@ test("the under-the-hood code link opens the routine at the matching line", asyn
   await expect(block.locator('[data-line-id="0804.1"]')).toContainText("AUTHOR/SOURCE SEARCH");
   await expect(block.locator('[data-line-id="0804.1"]')).toHaveAttribute("data-active", "true");
   await expect(page.getByRole("link", { name: "See it on the Map" })).toHaveAttribute("href", "/map?layer=code&routine=AUSEA");
-  await page.getByRole("link", { name: "Read AUSEA in the Code room" }).click();
+  await page.getByRole("link", { name: "Read AUSEA on the Code page" }).click();
   await expect(page).toHaveURL(/\/code\/AUSEA\?line=0804$/);
 });
 
@@ -84,7 +84,7 @@ test("reduced motion prints instantly with a steady cursor", async ({ page }, in
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("/terminal");
   await expect(page.getByRole("button", { name: "Instant" })).toBeDisabled();
-  await typeAll(page, ["LOGIN DKH", "MAIL"]);
+  await typeAll(page, ["LOGIN DKH"]);
   await expect(log(page)).toContainText("DO YOU WISH TO WORK WITH THE DIR/REPORT DATA");
   await expect(page.getByRole("button", { name: /SKIP/ })).toHaveCount(0);
   const animation = await page.evaluate("getComputedStyle(document.querySelector('.terminal-crt [aria-hidden]')).animationName");

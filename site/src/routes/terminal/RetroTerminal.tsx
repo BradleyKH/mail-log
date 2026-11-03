@@ -2,11 +2,23 @@ import { useState } from "react";
 import { findStep } from "@/terminal/engine";
 import { inputHint } from "@/terminal/hints";
 import BaudControl from "./BaudControl";
+import TerminalHint from "./TerminalHint";
 import TerminalScreen from "./TerminalScreen";
 import UnderTheHood from "./UnderTheHood";
 import { usePrefersReducedMotion } from "./usePrefersReducedMotion";
 import { useTerminalSession } from "./useTerminalSession";
 import "./terminal.css";
+
+const HELP = (
+  <>
+    <p>Click the screen and type, then press Enter. Entries are not case sensitive.</p>
+    <p>
+      Start with <span className="font-mono">LOGIN</span> and your initials, such as <span className="font-mono">LOGIN DKH</span>. Then pick a
+      data base (COR, DIR, or DRAW) and a mode: INP to file a record, REV to revise one, SEA to search, ARC to archive.
+    </p>
+    <p>The line beside this icon names what the current step expects. The panel beside the terminal shows the manual&apos;s text for the step and the FORTRAN behind it.</p>
+  </>
+);
 
 export default function RetroTerminal() {
   const { state, lines, submit, restart, env } = useTerminalSession();
@@ -27,9 +39,7 @@ export default function RetroTerminal() {
             </button>
           </div>
           <TerminalScreen lines={lines} baud={baud} reducedMotion={reducedMotion} exited={state.step === "exit"} onSubmit={submit} />
-          <p id="terminal-hint" className="text-sm text-muted-foreground" data-testid="terminal-hint">
-            {hint ? `Expected: ${hint}.` : "Press Enter to continue."}
-          </p>
+          <TerminalHint help={HELP}>{hint ? `Expected: ${hint}.` : "Press Enter to continue."}</TerminalHint>
         </div>
         <UnderTheHood record={state.record} step={step} recordTitle={flow?.title ?? state.record} />
       </div>

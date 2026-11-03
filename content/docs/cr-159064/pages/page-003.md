@@ -3,17 +3,20 @@ pdfPage: 3
 folio: null
 sectionId: null
 kind: text
-source: ocr
-confidence: 88.1
+source: reviewed
+confidence: 100
 figures: []
 ---
-MATL LOG
+MAIL LOG
 
 PROGRAM THEORY
+
 VOL. II
+
 NASA CONTRACTOR REPORT
+
 DANNY K. HARRIS
 
 May 1979
 
-W$l-70Zb |
+N81-70261 (handwritten)

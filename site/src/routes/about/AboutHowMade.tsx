@@ -7,7 +7,7 @@ export default function AboutHowMade() {
         Every page of the four 1979 reports was scanned, and its text recognized by machine. The recognized FORTRAN listings were repaired
         line by line, and the pages where recognition was least certain were reviewed against the scans. Each page on the site shows its
         scan beside its text, so the original is always one glance away. The Terminal follows the operating instructions&apos; own step
-        logic, and the Code and Map rooms are built from the printed listings and flowcharts.
+        logic, and the Code and Map pages are built from the printed listings and flowcharts.
       </p>
       <p>
         The 1985 manuals are typed text and read well by machine. The printed appendix reports at the back of Volume II, the sample

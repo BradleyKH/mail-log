@@ -1,26 +1,27 @@
 import { NavLink } from "react-router";
-import { cn } from "@/lib/utils";
+import NavDropdown from "./NavDropdown";
+import NavGroup from "./NavGroup";
+import { navLinkClass } from "./navLinkClass";
 import { NAV_ITEMS } from "./navItems";
 
-export default function SiteNav({ className, onNavigate }: { className?: string; onNavigate?: () => void }) {
+/** `stacked` is the mobile sheet layout: groups list their pages inline instead of opening a dropdown. */
+export default function SiteNav({ className, onNavigate, stacked = false }: { className?: string; onNavigate?: () => void; stacked?: boolean }) {
   return (
     <nav aria-label="Main" className={className}>
-      {NAV_ITEMS.map((item) => (
-        <NavLink
-          key={item.to}
-          to={item.to}
-          end={item.end}
-          onClick={onNavigate}
-          className={({ isActive }) =>
-            cn(
-              "rounded-sm px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground",
-              isActive && "bg-secondary text-foreground underline decoration-primary decoration-2 underline-offset-[6px]",
-            )
-          }
-        >
-          {item.label}
-        </NavLink>
-      ))}
+      {NAV_ITEMS.map((item) => {
+        if (item.children) {
+          return stacked ? (
+            <NavGroup key={item.to} item={item} pages={item.children} onNavigate={onNavigate} />
+          ) : (
+            <NavDropdown key={item.to} item={item} pages={item.children} />
+          );
+        }
+        return (
+          <NavLink key={item.to} to={item.to} end={item.end} onClick={onNavigate} className={({ isActive }) => navLinkClass(isActive)}>
+            {item.label}
+          </NavLink>
+        );
+      })}
     </nav>
   );
 }

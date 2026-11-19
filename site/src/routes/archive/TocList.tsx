@@ -3,11 +3,13 @@ import { displayText } from "@/lib/display";
 import type { DocId, Section } from "@/content/types";
 import { pagePath } from "./scanUrl";
 
+// Every report's page 1 is its cover, which no printed contents list names.
+const TITLE_PAGE: Section = { id: "0.0", title: "TITLE PAGE", level: 1, pdfPage: 1 };
+
 export default function TocList({ docId, sections }: { docId: DocId; sections: Section[] }) {
-  if (sections.length === 0) return <p className="text-sm text-muted-foreground">No contents list for this report.</p>;
   return (
     <ul className="text-sm" data-testid="toc">
-      {sections.map((s) => (
+      {[TITLE_PAGE, ...sections].map((s) => (
         <li key={s.id}>
           <Link
             to={pagePath(docId, s.pdfPage)}

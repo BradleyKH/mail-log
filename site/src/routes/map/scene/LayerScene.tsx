@@ -3,7 +3,7 @@ import { useCallback, useMemo, useRef } from "react";
 import type { Group } from "three";
 import type { Highlight } from "../graph/selection";
 import type { TracePath } from "../graph/trace";
-import type { MapEdge, MapGraph, MapNode, NodeGroup, NodeShape } from "../graph/types";
+import type { MapEdge, MapGraph, MapNode, NodeShape } from "../graph/types";
 import type { ScenePalette } from "../palette";
 import EdgeLines from "./EdgeLines";
 import FocusRings from "./FocusRings";
@@ -21,7 +21,6 @@ interface Props {
   glow: "additive" | "normal";
   highlight: Highlight;
   trace: TracePath | null;
-  hidden: Set<NodeGroup>;
   hovered: string | null;
   reducedMotion: boolean;
   onHover: (id: string | null) => void;
@@ -30,7 +29,7 @@ interface Props {
 
 /** One layer of the map; the inactive layer shrinks and fades out rather than vanishing. */
 export default function LayerScene(props: Props) {
-  const { graph, active, palette, glow, highlight, trace, hidden, hovered, reducedMotion } = props;
+  const { graph, active, palette, glow, highlight, trace, hovered, reducedMotion } = props;
   const group = useRef<Group>(null);
   const progress = useRef(active ? 1 : 0);
 
@@ -44,9 +43,8 @@ export default function LayerScene(props: Props) {
     }
   });
 
-  const nodes = useMemo(() => graph.nodes.filter((n) => !hidden.has(n.group)), [graph, hidden]);
+  const nodes = graph.nodes;
   const nodeById = useMemo(() => new Map(graph.nodes.map((n) => [n.id, n])), [graph]);
-  const visibleIds = useMemo(() => new Set(nodes.map((n) => n.id)), [nodes]);
   const traceNodes = useMemo(() => new Set(trace?.nodeIds ?? []), [trace]);
   const traceEdges = useMemo(() => new Set(trace?.edgeIds ?? []), [trace]);
   const styles = useMemo(() => nodeStyles(graph, palette, highlight, traceNodes, hovered), [graph, palette, highlight, traceNodes, hovered]);
@@ -55,11 +53,10 @@ export default function LayerScene(props: Props) {
     const base: MapEdge[] = [];
     const lit: MapEdge[] = [];
     for (const e of graph.edges) {
-      if (!visibleIds.has(e.from) || !visibleIds.has(e.to)) continue;
       (highlight.edges.has(e.id) || traceEdges.has(e.id) ? lit : base).push(e);
     }
     return { base, lit };
-  }, [graph, visibleIds, highlight, traceEdges]);
+  }, [graph, highlight, traceEdges]);
 
   const colorOf = useCallback(
     (e: MapEdge) => {

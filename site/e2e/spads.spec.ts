@@ -17,7 +17,7 @@ async function typeAll(page: Page, lines: string[]) {
 
 /** Logs in and opens the NAS1-16200 analysis menu, with output printing instantly. */
 async function toAnalysisMenu(page: Page) {
-  await page.goto("/spads#terminal");
+  await page.goto("/spads/terminal");
   await page.getByRole("button", { name: "Instant" }).click();
   await expect(log(page)).toContainText("OK, LOGIN PLEASE");
   await typeAll(page, ["LOGIN DKH", "", "", "8", "10"]);
@@ -25,25 +25,40 @@ async function toAnalysisMenu(page: Page) {
   await expect(log(page)).toContainText("RETRIEVE");
 }
 
-test("SPADS page shows its sections and jump links", async ({ page }) => {
+test("the SPADS header dropdown reaches each SPADS page", async ({ page }) => {
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
-  await page.goto("/spads");
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText("SPADS");
-  const jumps = page.getByRole("navigation", { name: "On this page" });
-  for (const name of ["What SPADS became", "MAIL LOG in 1985", "Contract Analysis", "Terminal", "Month spread", "Reports"]) {
-    await expect(jumps.getByRole("link", { name })).toBeVisible();
+  await page.goto("/");
+  const nav = page.getByRole("navigation", { name: "Main" });
+  for (const [name, url, heading] of [
+    ["What SPADS Became", /\/spads$/, /What SPADS became/i],
+    ["MAIL LOG in 1985", /\/spads\/mail-log$/, /MAIL LOG in 1985/i],
+    ["Contract Analysis Terminal", /\/spads\/terminal(\?|$)/,/Contract Analysis Terminal/i],
+    ["Month Spread and Reports", /\/spads\/spread-reports$/, /Month Spread and Reports/i],
+  ] as const) {
+    await nav.getByRole("button", { name: "SPADS" }).click();
+    await page.getByRole("menuitem", { name }).click();
+    await expect(page).toHaveURL(url);
+    // The menu animates out; reopening before it unmounts would target the departing items.
+    await expect(page.getByRole("menu")).toHaveCount(0);
+    await expect(page.getByRole("heading", { level: 1 })).toHaveText(heading);
+    await expect(page.getByRole("navigation", { name: "SPADS pages" }).getByRole("link", { name })).toHaveAttribute("aria-current", "page");
   }
-  await expect(page.locator("#spread")).toBeAttached();
-  await expect(page.locator("#reports")).toBeAttached();
-  await expect(page.locator("#mail-log-1985")).toBeAttached();
   expect(errors).toEqual([]);
+});
+
+test("old single-page SPADS anchors redirect to their pages", async ({ page }) => {
+  await page.goto("/spads#mail-log-1985");
+  await expect(page).toHaveURL(/\/spads\/mail-log$/);
+  await page.goto("/spads#spread");
+  await expect(page).toHaveURL(/\/spads\/spread-reports#spread$/);
+  await expect(page.locator("#spread")).toBeInViewport();
 });
 
 test("login reaches the NAS1-16200 analysis menu", async ({ page }) => {
   await toAnalysisMenu(page);
   await expect(page).toHaveURL(/screen=analysisMain/);
-  await expect(page.getByRole("link", { name: /Read it in the manual/ })).toHaveAttribute("href", /\/archive\/cr-177949\/page\/14$/);
+  await expect(page.getByRole("link", { name: /Read it in the manual/ })).toHaveAttribute("href", /\/reports\/cr-177949\/page\/14$/);
 });
 
 test("RETRIEVE shows SYS 125 and the ETC update prints 47502", async ({ page }, info) => {
@@ -66,12 +81,12 @@ test("RETRIEVE shows SYS 125 and the ETC update prints 47502", async ({ page }, 
 });
 
 test("the spread explainer opens the manual's example preset", async ({ page }) => {
-  await page.goto("/spads#spread");
+  await page.goto("/spads/spread-reports");
   const section = page.locator("#spread");
   const manual = section.getByRole("button", { name: "The manual's example" });
   await expect(manual).toHaveAttribute("aria-pressed", "true");
   await expect(section.getByTestId("spread-row")).toHaveCount(17);
-  await expect(section.getByRole("link", { name: /PDF page \d+/ }).first()).toHaveAttribute("href", /\/archive\/cr-177949\/page\/\d+$/);
+  await expect(section.getByRole("link", { name: /PDF page \d+/ }).first()).toHaveAttribute("href", /\/reports\/cr-177949\/page\/\d+$/);
 
   await section.getByRole("button", { name: /ETC update/ }).click();
   await expect(section.getByText(/SEP 84 prints 47502/)).toBeVisible();
@@ -80,14 +95,14 @@ test("the spread explainer opens the manual's example preset", async ({ page }) 
 });
 
 test("report O-4 opens with its variance note and returns to the gallery", async ({ page }) => {
-  await page.goto("/spads#reports");
+  await page.goto("/spads/spread-reports#reports");
   const cards = page.getByTestId("report-card");
   await expect(cards).toHaveCount(31);
   await cards.filter({ has: page.getByText("O-4", { exact: true }) }).click();
   const detail = page.getByTestId("report-detail");
   await expect(detail).toBeVisible();
   await expect(detail.getByTestId("formula-note").filter({ hasText: "EST. VARIANCE = committed EAC - contract value" })).toBeVisible();
-  await expect(detail.getByRole("link", { name: "PDF page 170" }).first()).toHaveAttribute("href", /\/archive\/cr-177949\/page\/170$/);
+  await expect(detail.getByRole("link", { name: "PDF page 170" }).first()).toHaveAttribute("href", /\/reports\/cr-177949\/page\/170$/);
   await detail.getByRole("button", { name: "Back to all reports" }).click();
   await expect(cards).toHaveCount(31);
 });

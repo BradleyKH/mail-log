@@ -14,7 +14,7 @@ export default function RoutineScans({ docId, pages, label, empty = "No scan pag
               {label}, page {page}
             </span>
             <Link to={archivePageHref(docId, page)} className="text-primary underline underline-offset-2">
-              Open in the Archive
+              Open in Reports
             </Link>
           </figcaption>
           <img

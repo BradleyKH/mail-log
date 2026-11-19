@@ -39,7 +39,7 @@ describe("ReportGallery", () => {
     const variance = notes.find((n) => n.textContent?.includes("EST. VARIANCE = committed EAC - contract value"));
     expect(variance).toBeDefined();
     expect(variance?.textContent).toContain("reconstructed from the printout");
-    expect(screen.getByRole("link", { name: "PDF page 170" }).getAttribute("href")).toBe("/archive/cr-177949/page/170");
+    expect(screen.getByRole("link", { name: "PDF page 170" }).getAttribute("href")).toBe("/reports/cr-177949/page/170");
   });
 
   it("flags subtotals that are wrong in the original and returns to the grid", async () => {

@@ -60,7 +60,7 @@ export const bookSteps: Steps = {
       spool(s, {
         style: "record",
         then: "analysis",
-        sampleNote: "Each record in the book prints in the Entire Record format, Appendix C-1 (CR-177949, PDF 121), in the Archive.",
+        sampleNote: "Each record in the book prints in the Entire Record format, Appendix C-1 (CR-177949, PDF 121), in Reports.",
       });
     },
   }),

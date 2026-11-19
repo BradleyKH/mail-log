@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 export default function HeaderSearchLink() {
   return (
     <Button asChild variant="ghost" size="icon">
-      <Link to="/archive" state={{ focusSearch: true }} aria-label="Search the reports (press /)" title="Search the reports (press /)">
+      <Link to="/reports" state={{ focusSearch: true }} aria-label="Search the reports (press /)" title="Search the reports (press /)">
         <Search />
       </Link>
     </Button>

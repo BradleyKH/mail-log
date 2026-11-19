@@ -26,7 +26,7 @@ function onlyInSiteDocs(): Plugin {
 }
 
 /**
- * Serves the Archive's search documents as `virtual:search-index`, computed from content/ in Node so
+ * Serves the Reports search documents as `virtual:search-index`, computed from content/ in Node so
  * the browser never fetches every page body to build its index.
  */
 function searchIndex(): Plugin {

@@ -19,7 +19,7 @@ export default function AboutReports() {
         {listDocs().map((d) => (
           <li key={d.docId} className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 p-3">
             <div>
-              <Link to={`/archive/${d.docId}`} className="font-medium underline underline-offset-4">
+              <Link to={`/reports/${d.docId}`} className="font-medium underline underline-offset-4">
                 {d.title}
               </Link>
               <div className="font-mono text-xs text-muted-foreground">

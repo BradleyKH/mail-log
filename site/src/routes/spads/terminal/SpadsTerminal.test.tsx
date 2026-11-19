@@ -26,7 +26,7 @@ afterEach(() => {
 });
 
 function renderAt(search = "") {
-  const router = createMemoryRouter([{ path: "/spads", element: createElement(SpadsTerminal) }], { initialEntries: [`/spads${search}`] });
+  const router = createMemoryRouter([{ path: "/spads/terminal", element: createElement(SpadsTerminal) }], { initialEntries: [`/spads/terminal${search}`] });
   render(createElement(RouterProvider, { router }));
   return router;
 }
@@ -58,7 +58,7 @@ describe("SpadsTerminal", () => {
     expect(router.state.location.search).toBe("?screen=analysisMain");
     expect(screen.getByTestId("spads-hood-screen").textContent).toBe("You are at the Analysis main menu");
     expect(output().textContent).toContain("RETRIEVE");
-    expect(screen.getByRole("link", { name: /Read it in the manual \(page 14\)/ }).getAttribute("href")).toBe("/archive/cr-177949/page/14");
+    expect(screen.getByRole("link", { name: /Read it in the manual \(page 14\)/ }).getAttribute("href")).toBe("/reports/cr-177949/page/14");
   });
 
   it("restores ?screen=analysisMain to that menu", async () => {

@@ -9,7 +9,7 @@ export default function ShelfCard({ doc }: { doc: DocMeta }) {
   return (
     <Card className="overflow-hidden py-0">
       <CardContent className="flex gap-4 p-4">
-        <Link to={`/archive/${doc.docId}`} className="shrink-0" tabIndex={-1} aria-hidden>
+        <Link to={`/reports/${doc.docId}`} className="shrink-0" tabIndex={-1} aria-hidden>
           <img
             src={scanUrl(doc.docId, 1, true)}
             alt=""
@@ -20,7 +20,7 @@ export default function ShelfCard({ doc }: { doc: DocMeta }) {
         <div className="flex min-w-0 flex-col gap-1">
           <p className="font-mono text-xs tracking-widest text-muted-foreground uppercase">{doc.reportNumber}</p>
           <h3 className="text-lg leading-snug font-semibold">
-            <Link to={`/archive/${doc.docId}`} className="hover:text-primary hover:underline">
+            <Link to={`/reports/${doc.docId}`} className="hover:text-primary hover:underline">
               {doc.title}
             </Link>
           </h3>

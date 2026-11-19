@@ -46,10 +46,10 @@ export default function SpreadExplainer() {
   const error = preset !== "etc" && "error" in custom ? custom.error : undefined;
 
   return (
-    <section id="spread" aria-labelledby="spread-heading" className="space-y-4">
-      <h3 id="spread-heading" className="font-mono text-lg font-semibold tracking-wide uppercase">
+    <section id="spread" aria-labelledby="spread-heading" className="scroll-mt-20 space-y-4">
+      <h2 id="spread-heading" className="font-mono text-xl font-semibold tracking-wide uppercase">
         Month spread
-      </h3>
+      </h2>
       <p className="text-sm text-muted-foreground">
         The program's SPREAD routine fills in the months of an estimate. It turns a first and last month, each with hours and dollars, into a cumulative estimate for every month in between. Each
         monthly step is rounded on its own and added up, so the last month can land a little off its target.

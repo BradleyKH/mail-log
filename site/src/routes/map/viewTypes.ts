@@ -1,7 +1,7 @@
 import type { RecordType } from "@/content/types";
 import type { Highlight } from "./graph/selection";
 import type { TracePath } from "./graph/trace";
-import type { Layer, MapNode, NodeGroup, Vec3 } from "./graph/types";
+import type { Layer, MapNode, Vec3 } from "./graph/types";
 import type { ScenePalette, SceneTheme } from "./palette";
 import type { MapData } from "./useMapData";
 
@@ -21,7 +21,6 @@ export interface MapViewProps {
   palette: ScenePalette;
   highlight: Highlight;
   trace: TracePath | null;
-  hidden: Set<NodeGroup>;
   hovered: string | null;
   popoverNode: MapNode | null;
   record: RecordType;

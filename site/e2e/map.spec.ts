@@ -42,7 +42,7 @@ test("manual deep link focuses a step and its popover matches the manual", async
   await expect(popover.getByTestId("map-input-pattern")).toHaveText(step.input!.pattern);
   const panel = page.getByTestId("map-panel");
   await expect(panel.getByTestId("map-panel-title")).toHaveText("Step #30");
-  await expect(panel.getByRole("link", { name: `The manual, page ${step.pdfPage}` })).toHaveAttribute("href", `/archive/cr-159065/page/${step.pdfPage}`);
+  await expect(panel.getByRole("link", { name: `The manual, page ${step.pdfPage}` })).toHaveAttribute("href", `/reports/cr-159065/page/${step.pdfPage}`);
   await expect(panel.getByRole("link", { name: "This step in the Terminal" })).toHaveAttribute("href", "/terminal?record=correspondence&step=330");
   await expect(panel.getByRole("link", { name: "AUSEA" })).toHaveAttribute("href", "/code/AUSEA?line=0804.1");
   expect(errors).toEqual([]);

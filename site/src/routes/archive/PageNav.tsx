@@ -46,7 +46,7 @@ export default function PageNav({ docId, pdfPage, pageCount }: Props) {
           Next <ChevronRight />
         </span>
       )}
-      <form onSubmit={jump} className="ml-auto flex items-center gap-1">
+      <form onSubmit={jump} className="ml-auto hidden items-center gap-1 sm:flex">
         <Input
           type="number"
           inputMode="numeric"

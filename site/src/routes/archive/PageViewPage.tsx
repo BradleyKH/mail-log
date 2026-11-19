@@ -4,7 +4,6 @@ import { getDoc, getSections, loadPage } from "@/content/load";
 import { displayText } from "@/lib/display";
 import type { Page } from "@/content/types";
 import Breadcrumb from "./Breadcrumb";
-import OcrBadge from "./OcrBadge";
 import PageNav from "./PageNav";
 import PageText from "./PageText";
 import RoutineLinks from "./RoutineLinks";
@@ -12,11 +11,9 @@ import ScanViewer from "./ScanViewer";
 import SidebarToc from "./SidebarToc";
 import { pagePath, scanUrl } from "./scanUrl";
 import { useCodeIndex } from "./useCodeIndex";
-import { useIsDesktop } from "./useIsDesktop";
 import ViewToggle, { type PageView } from "./ViewToggle";
 
-const LOW_CONFIDENCE = 60;
-const VIEWS: PageView[] = ["text", "scan", "both"];
+const VIEWS: PageView[] = ["text", "scan"];
 
 export default function PageViewPage() {
   const { docId = "", pdfPage = "" } = useParams();
@@ -25,7 +22,6 @@ export default function PageViewPage() {
   const valid = doc !== undefined && Number.isInteger(n) && n >= 1 && n <= doc.pageCount;
   const [params, setParams] = useSearchParams();
   const navigate = useNavigate();
-  const desktop = useIsDesktop();
   const codeIndex = useCodeIndex();
   const [loaded, setLoaded] = useState<Page | undefined>();
   const page = loaded?.docId === docId && loaded.pdfPage === n ? loaded : undefined;
@@ -61,18 +57,16 @@ export default function PageViewPage() {
       <section className="space-y-3">
         <h1 className="font-mono text-2xl font-semibold uppercase">Page not found</h1>
         <p className="text-muted-foreground">THERE IS NO PAGE {pdfPage} IN THIS REPORT.</p>
-        <Link to={doc ? `/archive/${doc.docId}` : "/archive"} className="text-primary underline">
-          Back to {doc ? doc.reportNumber : "the Archive"}
+        <Link to={doc ? `/reports/${doc.docId}` : "/reports"} className="text-primary underline">
+          Back to {doc ? doc.reportNumber : "Reports"}
         </Link>
       </section>
     );
   }
 
   const flowchartPage = page?.kind === "flowchart";
-  const defaultView: PageView = page && (flowchartPage || page.confidence < LOW_CONFIDENCE) ? "scan" : "both";
   const requested = params.get("view");
-  const picked = (VIEWS as string[]).includes(requested ?? "") ? (requested as PageView) : defaultView;
-  const view: PageView = picked === "both" && !desktop ? "text" : picked;
+  const view: PageView = (VIEWS as string[]).includes(requested ?? "") ? (requested as PageView) : "scan";
   const setView = (v: PageView) =>
     setParams(
       (p) => {
@@ -86,8 +80,6 @@ export default function PageViewPage() {
   const routines = (codeIndex?.routines ?? []).filter((r) =>
     flowchartPage ? r.flowchartPages.includes(n) : page?.kind === "listing" ? [...r.listingPages, ...r.symbolTablePages].includes(n) : false,
   );
-  const showText = view === "text" || view === "both";
-  const showScan = view === "scan" || view === "both";
 
   return (
     <div className="grid gap-6 lg:grid-cols-[16rem_minmax(0,1fr)]">
@@ -97,32 +89,24 @@ export default function PageViewPage() {
       <section className="min-w-0 space-y-4">
         <Breadcrumb
           items={[
-            { label: "Archive", to: "/archive" },
-            { label: doc.reportNumber, to: `/archive/${doc.docId}` },
+            { label: "Reports", to: "/reports" },
+            { label: doc.reportNumber, to: `/reports/${doc.docId}` },
             ...(section ? [{ label: displayText(section.title) }] : []),
           ]}
         />
-        <header className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-          <h1 className="font-mono text-2xl font-semibold tracking-wide">
-            {doc.reportNumber}, page {n}
-          </h1>
-          <p className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-muted-foreground">
-            <span>{page?.folio ? `Printed page ${page.folio}` : "Unnumbered page"}</span>
-            {page && <OcrBadge source={page.source} />}
-          </p>
-        </header>
+        <h1 className="font-mono text-2xl font-semibold tracking-wide">{doc.reportNumber}</h1>
         <div className="flex flex-wrap items-center justify-between gap-3">
           <PageNav docId={doc.docId} pdfPage={n} pageCount={doc.pageCount} />
           <ViewToggle value={view} onChange={setView} />
         </div>
         {page && routines.length > 0 && <RoutineLinks routines={routines} kind={flowchartPage ? "flowchart" : "listing"} />}
-        <div className={showText && showScan ? "grid items-start gap-4 lg:grid-cols-2" : ""}>
-          {showText && (
+        <div>
+          {view === "text" && (
             <div className="min-w-0" data-pane="text">
               {page ? <PageText page={page} routines={routines} /> : <p className="font-mono text-sm text-muted-foreground">LOADING...</p>}
             </div>
           )}
-          {showScan && (
+          {view === "scan" && (
             <div className="min-w-0" data-pane="scan">
               <ScanViewer
                 src={scanUrl(doc.docId, n)}

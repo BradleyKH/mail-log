@@ -20,8 +20,8 @@ export default function DocumentPage() {
       <section className="space-y-3">
         <h1 className="font-mono text-2xl font-semibold uppercase">Unknown report</h1>
         <p className="text-muted-foreground">NO REPORT WITH THIS ID.</p>
-        <Link to="/archive" className="text-primary underline">
-          Back to the Archive
+        <Link to="/reports" className="text-primary underline">
+          Back to Reports
         </Link>
       </section>
     );
@@ -33,12 +33,10 @@ export default function DocumentPage() {
   return (
     <section className="space-y-6">
       <ArchiveSearchBar />
-      <Breadcrumb items={[{ label: "Archive", to: "/archive" }, { label: doc.reportNumber }]} />
-      <header className="space-y-2">
-        <h1 className="font-mono text-3xl font-semibold tracking-wide">{doc.reportNumber}</h1>
-        <p className="text-lg">{doc.title}</p>
-        <p className="text-sm text-muted-foreground">{formatDocDate(doc.date)} &middot; {doc.pageCount} pages</p>
-        <div className="flex flex-wrap gap-2 pt-1">
+      <Breadcrumb items={[{ label: "Reports", to: "/reports" }, { label: doc.reportNumber }]} />
+      <header className="space-y-2 lg:grid lg:grid-cols-[1fr_auto] lg:items-center lg:gap-x-4 lg:space-y-0">
+        <h1 className="font-mono text-3xl font-semibold tracking-wide lg:col-start-1">{doc.reportNumber}</h1>
+        <div className="flex flex-wrap gap-2 pt-1 lg:col-start-2 lg:row-start-1 lg:justify-end">
           <Link to={pagePath(doc.docId, 1)} className={cn(buttonVariants({ size: "sm" }))}>
             Start reading
           </Link>
@@ -50,6 +48,10 @@ export default function DocumentPage() {
           >
             NTRS record <ExternalLink />
           </a>
+        </div>
+        <div className="space-y-2 lg:col-span-2 lg:pt-2">
+          <p className="text-lg">{doc.title}</p>
+          <p className="text-sm text-muted-foreground">{formatDocDate(doc.date)} &middot; {doc.pageCount} pages</p>
         </div>
       </header>
 

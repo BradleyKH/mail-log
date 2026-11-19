@@ -5,7 +5,7 @@ import { FORMULAS, hoodFor, SPADS_DOC, type FormulaKey } from "./spadsHints";
 
 type Props = { screen: string | undefined; formula: FormulaKey | undefined };
 
-const pageLink = (page: number) => `/archive/${SPADS_DOC}/page/${page}`;
+const pageLink = (page: number) => `/reports/${SPADS_DOC}/page/${page}`;
 
 export default function SpadsHood({ screen, formula }: Props) {
   const [open, setOpen] = useState(true);

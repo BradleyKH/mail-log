@@ -167,7 +167,7 @@ export function current(s: Session): StoredSpadsRecord | undefined {
 function leaveRetrieve(s: Session): void {
   if (s.ctx.spoolPending) {
     s.ctx.spoolPending = false;
-    spool(s, { style: "record", then: "analysis", sampleNote: "The manual's sample of a spooled record is the Entire Record printout, Appendix C-1 (CR-177949, PDF 121), in the Archive." });
+    spool(s, { style: "record", then: "analysis", sampleNote: "The manual's sample of a spooled record is the Entire Record printout, Appendix C-1 (CR-177949, PDF 121), in Reports." });
     return;
   }
   s.go("analysis");

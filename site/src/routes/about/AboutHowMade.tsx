@@ -12,8 +12,7 @@ export default function AboutHowMade() {
       <p>
         The 1985 manuals are typed text and read well by machine. The printed appendix reports at the back of Volume II, the sample
         printouts of the financial program, were too dense for that, so an AI model transcribed them from page renders. Every
-        transcribed total was then checked by arithmetic against the printout&apos;s own figures, and the pages carry a badge marking
-        them as AI transcriptions. Where the manuals state no formula, the site reconstructs it from the printed rows and labels it as
+        transcribed total was then checked by arithmetic against the printout&apos;s own figures. Where the manuals state no formula, the site reconstructs it from the printed rows and labels it as
         a reconstruction, with the rows it reproduces.
       </p>
     </AboutSection>

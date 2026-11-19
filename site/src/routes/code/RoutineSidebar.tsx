@@ -96,7 +96,7 @@ export default function RoutineSidebar({ entry, data }: { entry: RoutineEntry; d
                   <span className="flex gap-3">
                     {step && (
                       <Link to={archivePageHref("cr-159065", step.pdfPage)} className={link}>
-                        Archive
+                        Report
                       </Link>
                     )}
                     <Link to={terminalHref(s.record, s.step)} className={link}>

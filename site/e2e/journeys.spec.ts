@@ -7,7 +7,7 @@ test("manual step to the Map, across to the Code layer, into the Code page, to t
   const errors: string[] = [];
   page.on("pageerror", (e) => errors.push(e.message));
 
-  await page.goto("/archive/cr-159065/page/40?view=text");
+  await page.goto("/reports/cr-159065/page/40?view=text");
   await page.locator("[data-pane=text]").getByRole("link", { name: "Step #30 on the Map" }).click();
   await expect(page).toHaveURL(/\/map\?layer=manual&record=correspondence&step=330/);
   const panel = page.getByTestId("map-panel");
@@ -34,17 +34,17 @@ test("manual step to the Map, across to the Code layer, into the Code page, to t
 });
 
 test("a listing line opens the Code page at that line", async ({ page }) => {
-  await page.goto("/archive/cr-159064/page/86?view=text");
+  await page.goto("/reports/cr-159064/page/86?view=text");
   await page.locator("[data-slot=fortran-block]").getByRole("link", { name: "0793", exact: true }).click();
   await expect(page).toHaveURL(/\/code\/AUSEA\?line=0793$/);
   await expect(page.locator("[data-line-id='0793.1']")).toHaveAttribute("data-active", "true");
   await expect(page.locator("[data-line-id='0793.1']")).toBeInViewport();
 });
 
-test("the header search and / reach the Archive search from any page", async ({ page }) => {
+test("the header search and / reach the Reports search from any page", async ({ page }) => {
   await page.goto("/code");
   await page.keyboard.press("/");
-  await expect(page).toHaveURL(/\/archive$/);
+  await expect(page).toHaveURL(/\/reports$/);
   const box = page.getByRole("searchbox", { name: "Search the reports" });
   await expect(box).toBeFocused();
   await box.fill("MAGSAT HEATSHIELD");
@@ -52,22 +52,22 @@ test("the header search and / reach the Archive search from any page", async ({ 
   const results = page.getByTestId("results-cr-159065");
   await expect(results).toBeVisible({ timeout: 30_000 });
   await results.getByRole("link").first().click();
-  await expect(page).toHaveURL(/\/archive\/cr-159065\/page\/\d+/);
+  await expect(page).toHaveURL(/\/reports\/cr-159065\/page\/\d+/);
   await expect(page.getByText(/MAGSAT HEATSHIELD/).first()).toBeVisible();
 
   await page.goto("/map");
   await page.getByRole("link", { name: "Search the reports (press /)" }).click();
-  await expect(page).toHaveURL(/\/archive$/);
+  await expect(page).toHaveURL(/\/reports$/);
   await expect(box).toBeFocused();
 });
 
 test("glossary terms open their definition and source page", async ({ page }) => {
-  await page.goto("/archive/cr-159065/page/21?view=text");
+  await page.goto("/reports/cr-159065/page/21?view=text");
   const term = page.locator("[data-pane=text] button.cursor-help").first();
   await expect(term).toBeVisible();
   await term.click();
   const pop = page.getByRole("dialog");
   await expect(pop.getByRole("link", { name: /Source: page \d+/ })).toBeVisible();
   await pop.getByRole("link", { name: /Source: page \d+/ }).click();
-  await expect(page).toHaveURL(/\/archive\/cr-159065\/page\/1(4[6-9]|50)/);
+  await expect(page).toHaveURL(/\/reports\/cr-159065\/page\/1(4[6-9]|50)/);
 });

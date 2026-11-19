@@ -11,11 +11,11 @@ const LINES = codeIndex.totals.lines.toLocaleString("en-US");
 test.describe("home", () => {
   test("shows hero, numbers, sections", async ({ page }, info) => {
     await page.goto("/");
-    await expect(page.getByRole("heading", { level: 1 })).toHaveText("MAIL LOG");
+    await expect(page.getByRole("heading", { level: 1 })).toHaveText("NASA MAIL LOG");
     await expect(page.getByAltText(/Cover of NASA Contractor Report CR-159065/)).toBeVisible();
     await expect(page.getByText(LINES)).toBeVisible();
     await expect(page.getByText(PAGES, { exact: true })).toBeVisible();
-    for (const [name, url] of [["Archive", /\/archive$/], ["Terminal", /\/terminal$/], ["Code", /\/code$/], ["Map", /\/map$/]] as const) {
+    for (const [name, url] of [["Reports", /\/reports$/], ["Terminal", /\/terminal$/], ["Code", /\/code$/], ["Map", /\/map$/]] as const) {
       await page.goto("/");
       await page.getByRole("region", { name: "Explore" }).getByRole("link", { name: new RegExp(`^${name}`) }).click();
       await expect(page).toHaveURL(url);
@@ -40,11 +40,11 @@ test.describe("about", () => {
     await page.screenshot({ path: `test-results/screens/about-${info.project.name}.png`, fullPage: true });
     await page.setViewportSize({ width: 390, height: 800 });
     await page.screenshot({ path: `test-results/screens/about-mobile-${info.project.name}.png`, fullPage: true });
-    await page.getByRole("link", { name: "Archive search for MAGSAT" }).click();
-    await expect(page).toHaveURL(/\/archive\?q=MAGSAT$/);
+    await page.getByRole("link", { name: "Search the reports for MAGSAT" }).click();
+    await expect(page).toHaveURL(/\/reports\?q=MAGSAT$/);
     await page.goto("/");
     await page.getByRole("link", { name: "preface as printed" }).click();
-    await expect(page).toHaveURL(/\/archive\/cr-159065\/page\/12$/);
+    await expect(page).toHaveURL(/\/reports\/cr-159065\/page\/12$/);
   });
 });
 
@@ -62,7 +62,7 @@ test.describe("glossary", () => {
     await page.getByLabel("Report", { exact: true }).selectOption("cr-159064");
     await expect(rows.first().getByText("NASA CR-159064")).toBeVisible();
     await rows.first().getByRole("link", { name: /CR-159064/ }).first().click();
-    await expect(page).toHaveURL(/\/archive\/cr-159064\/page\/\d+$/);
+    await expect(page).toHaveURL(/\/reports\/cr-159064\/page\/\d+$/);
     await page.setViewportSize({ width: 390, height: 800 });
     await page.goto("/glossary");
     await expect(rows.first()).toBeVisible();

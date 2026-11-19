@@ -5,13 +5,16 @@ const ROUTES: [path: string, heading: RegExp][] = [
   ["./", /MAIL LOG/],
   ["about", /About/],
   ["glossary", /Glossary/],
-  ["archive", /Archive/],
-  ["archive?q=MAGSAT", /Archive/],
-  ["archive/cr-159063", /CR-159063/],
-  ["archive/cr-159065/page/40", /CR-159065, page 40/],
-  ["archive/cr-159064/page/87", /CR-159064, page 87/],
-  ["spads#terminal", /SPADS/],
-  ["archive/cr-177949/page/160", /CR-177949, page 160/],
+  ["reports", /Reports/],
+  ["reports?q=MAGSAT", /Reports/],
+  ["reports/cr-159063", /CR-159063/],
+  ["reports/cr-159065/page/40", /^(NASA )?CR-159065$/],
+  ["reports/cr-159064/page/87", /^(NASA )?CR-159064$/],
+  ["spads", /What SPADS became/i],
+  ["spads/terminal?screen=analysisMain", /Contract Analysis Terminal/i],
+  ["spads/spread-reports", /Month Spread and Reports/i],
+  ["spads#terminal", /Contract Analysis Terminal/i],
+  ["reports/cr-177949/page/160", /^(NASA )?CR-177949$/],
   ["terminal?record=dir&step=3&view=1979", /Terminal/],
   ["terminal?record=correspondence&view=today", /Terminal/],
   ["code", /Code/],
@@ -48,13 +51,13 @@ for (const [path, heading] of ROUTES) {
 }
 
 test("section links redirect under the base", async ({ page, baseURL }) => {
-  await page.goto("archive/cr-159065/section/4.1.3");
-  await expect(page).toHaveURL(new RegExp(`${basePath(baseURL)}archive/cr-159065/page/[0-9]+$`));
+  await page.goto("reports/cr-159065/section/4.1.3");
+  await expect(page).toHaveURL(new RegExp(`${basePath(baseURL)}reports/cr-159065/page/[0-9]+$`));
 });
 
 test("scans load under the base", async ({ page }) => {
   for (const [path, name] of [
-    ["archive/cr-159065/page/40?view=scan", /Scan of page 40/],
+    ["reports/cr-159065/page/40?view=scan", /Scan of page 40/],
     ["./", /Cover of NASA/],
   ] as const) {
     await page.goto(path);
@@ -71,10 +74,10 @@ test("scans load under the base", async ({ page }) => {
 
 test("in-app links keep the base", async ({ page, baseURL }) => {
   const base = basePath(baseURL);
-  await page.goto("archive/cr-159064/page/86?view=text");
+  await page.goto("reports/cr-159064/page/86?view=text");
   await page.locator("[data-slot=fortran-block]").getByRole("link", { name: "0793", exact: true }).click();
   await expect(page).toHaveURL(new RegExp(`${base}code/AUSEA[?]line=0793$`));
-  await page.getByRole("navigation", { name: "Main" }).getByRole("link", { name: "Map", exact: true }).click();
+  await page.getByRole("navigation", { name: "Main" }).getByRole("link", { name: "Logic Map", exact: true }).click();
   await expect(page).toHaveURL(new RegExp(`${base}map$`));
   await page.reload();
   await expect(page.getByRole("heading", { level: 1 })).toHaveText(/Map/);
@@ -84,7 +87,7 @@ test("unknown paths fall back to the app's not-found page", async ({ page }) => 
   const response = await page.goto("no/such/page");
   await expect(page.getByRole("heading", { level: 1 })).toHaveText("Record not found");
   await page.getByRole("link", { name: "Return to the main menu" }).click();
-  await expect(page.getByRole("heading", { level: 1 })).toHaveText("MAIL LOG");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("NASA MAIL LOG");
   // Only the Pages preview answers with a real 404; the dev server answers 200.
   if (basePath(test.info().project.use.baseURL) !== "/") expect(response?.status()).toBe(404);
 });

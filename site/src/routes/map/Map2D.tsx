@@ -6,12 +6,12 @@ const PAD = 8;
 
 /** A flat top-down drawing of the active layer for browsers without WebGL, with the same selection and links. */
 export default function Map2D(props: MapViewProps) {
-  const { data, layer, palette, highlight, trace, hidden, hovered, popoverNode } = props;
+  const { data, layer, palette, highlight, trace, hovered, popoverNode } = props;
   const graph = layer === "code" ? data.code : data.manual;
 
   const view = useMemo(() => {
     if (!graph) return null;
-    const nodes = graph.nodes.filter((n) => !hidden.has(n.group));
+    const nodes = graph.nodes;
     const byId = new Map(nodes.map((n) => [n.id, n]));
     const xs = nodes.map((n) => n.position[0]);
     const zs = nodes.map((n) => n.position[2]);
@@ -21,7 +21,7 @@ export default function Map2D(props: MapViewProps) {
     const height = Math.max(...zs) + PAD - minZ;
     const edges = graph.edges.filter((e) => byId.has(e.from) && byId.has(e.to));
     return { nodes, byId, edges, viewBox: `${minX} ${minZ} ${width} ${height}` };
-  }, [graph, hidden]);
+  }, [graph]);
 
   if (!graph || !view) return <p className="p-4 text-sm text-muted-foreground">Loading the code index...</p>;
 
@@ -80,9 +80,7 @@ export default function Map2D(props: MapViewProps) {
             </circle>
           );
         })}
-        {graph.labels
-          .filter((l) => !hidden.has(l.group))
-          .map((l) => (
+        {graph.labels.map((l) => (
             <text
               key={l.id}
               x={l.position[0]}

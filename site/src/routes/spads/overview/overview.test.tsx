@@ -16,7 +16,7 @@ const renderIn = (ui: React.ReactElement) => render(<MemoryRouter>{ui}</MemoryRo
 
 function expectLinksResolve(container: HTMLElement) {
   const hrefs = [...container.querySelectorAll("a")].map((a) => a.getAttribute("href") ?? "");
-  const archive = hrefs.filter((h) => h.startsWith("/archive/cr-"));
+  const archive = hrefs.filter((h) => h.startsWith("/reports/cr-"));
   expect(archive.length).toBeGreaterThan(0);
   for (const href of archive) {
     const parts = href.split("/");
@@ -35,7 +35,7 @@ function expectLinksResolve(container: HTMLElement) {
     }
   }
   for (const href of hrefs) {
-    if (href.startsWith("/archive")) expect(href).toMatch(/^\/archive\/cr-\d+(\/(page|section)\/[\w.]+)?$/);
+    if (href.startsWith("/reports")) expect(href).toMatch(/^\/reports\/cr-\d+(\/(page|section)\/[\w.]+)?$/);
   }
 }
 
@@ -101,7 +101,7 @@ describe("MailLogCompare and MailLog1985", () => {
   it("links to the 1979 terminal and report", () => {
     const { container } = renderIn(<MailLog1985 />);
     expect(container.querySelector('a[href="/terminal"]')).not.toBeNull();
-    expect(container.querySelector('a[href="/archive/cr-159065"]')).not.toBeNull();
+    expect(container.querySelector('a[href="/reports/cr-159065"]')).not.toBeNull();
     expect(container.querySelector("#mail-log-1985")).not.toBeNull();
     expectLinksResolve(container);
   });

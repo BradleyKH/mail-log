@@ -19,7 +19,7 @@ export default function MailLogCompare() {
       </div>
       {compareRows.map((row) => (
         <div key={row.topic} className="rounded-md border bg-card p-3">
-          <h3 className="mb-2 font-mono text-sm font-semibold">{row.topic}</h3>
+          <h2 className="mb-2 font-mono text-sm font-semibold">{row.topic}</h2>
           <div className="grid gap-4 md:grid-cols-2">
             <div className="space-y-2">
               <div className="font-mono text-xs font-semibold tracking-wide uppercase md:hidden">MAIL LOG, 1979</div>

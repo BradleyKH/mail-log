@@ -46,12 +46,16 @@ export default function ScanViewer({ src, alt, tall }: Props) {
       </div>
       <div
         ref={frame}
+        // Focusable so keyboard users can scroll a scan taller than the frame.
+        tabIndex={0}
+        role="region"
+        aria-label={alt}
         onPointerDown={onDown}
         onPointerMove={onMove}
         onPointerUp={() => (drag.current = null)}
         onPointerCancel={() => (drag.current = null)}
         onDoubleClick={() => setZoom((z) => (z === 0 ? 2 : 0))}
-        className={`overflow-auto rounded-md border bg-muted ${tall ? "max-h-[85svh]" : "max-h-[75svh]"} ${zoom > 0 ? "cursor-grab active:cursor-grabbing" : "cursor-zoom-in"}`}
+        className={`overflow-auto rounded-md border bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${tall ? "max-h-[85svh]" : "max-h-[75svh]"} ${zoom > 0 ? "cursor-grab active:cursor-grabbing" : "cursor-zoom-in"}`}
       >
         <img
           src={src}

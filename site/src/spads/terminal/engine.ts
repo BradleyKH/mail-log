@@ -99,8 +99,8 @@ const coreSteps: Steps = {
         const doc = MAIN_MENU_DOCS[n];
         s.hint(
           doc
-            ? `This program is not emulated here. It is documented in ${doc}, in the Archive.`
-            : "This program is not emulated here. The 1985 SPADS manuals (CR-177948 to CR-177950) in the Archive describe the SPADS programs.",
+            ? `This program is not emulated here. It is documented in ${doc}, in Reports.`
+            : "This program is not emulated here. The 1985 SPADS manuals (CR-177948 to CR-177950) in Reports describe the SPADS programs.",
         );
         return reprompt(s, "spadsMain");
       }

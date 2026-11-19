@@ -96,7 +96,7 @@ export const updateSteps: Steps = {
             style: "basic",
             allSites: true,
             then: "ua.entire",
-            sampleNote: "The manual's sample of this listing is the Book All brief listing, Appendix B-1 (CR-177949), in the Archive.",
+            sampleNote: "The manual's sample of this listing is the Book All brief listing, Appendix B-1 (CR-177949), in Reports.",
           });
         case 8: return s.go("uj.menu");
         default: return s.go("update.main");
@@ -111,7 +111,7 @@ export const updateSteps: Steps = {
         style: "basic",
         allSites: true,
         then: "update.main",
-        sampleNote: "The manual's sample of this file is the Entire Record printout, Appendix C-1 (CR-177949, PDF 121), in the Archive.",
+        sampleNote: "The manual's sample of this file is the Entire Record printout, Appendix C-1 (CR-177949, PDF 121), in Reports.",
       });
     },
     input: () => {},

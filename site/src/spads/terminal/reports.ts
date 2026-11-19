@@ -419,7 +419,7 @@ export const reportSteps: Steps = {
     spool(s, {
       style: "record",
       then: "report.tables",
-      sampleNote: `The manual reproduces this table report as Appendix ${t.appendix} (CR-177949, PDF ${t.page}), in the Archive.`,
+      sampleNote: `The manual reproduces this table report as Appendix ${t.appendix} (CR-177949, PDF ${t.page}), in Reports.`,
     });
     return true;
   }),
@@ -468,7 +468,7 @@ export const reportSteps: Steps = {
       }
       const q = quarter533(parseMonth(s.state.statusMonth)) ?? 1;
       s.hint(
-        `Computed from the store's sample records, in dollars, as a reconstruction of the 533 columns. The manual's printed ${["1ST", "2ND", "3RD", "4TH"][q - 1]} QUARTER sample is Appendix E-${q} in the Archive.`,
+        `Computed from the store's sample records, in dollars, as a reconstruction of the 533 columns. The manual's printed ${["1ST", "2ND", "3RD", "4TH"][q - 1]} QUARTER sample is Appendix E-${q} in Reports.`,
       );
       s.lines(lines533(s.store.list(), s.store.tables(), s.state.statusMonth));
       s.go("report.main");

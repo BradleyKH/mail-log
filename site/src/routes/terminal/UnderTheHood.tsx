@@ -54,7 +54,7 @@ export default function UnderTheHood({ record, step, recordTitle }: Props) {
                 {step.input?.description && <p className="text-sm">{displayText(step.input.description)}</p>}
                 {step.response && <p className="text-sm text-muted-foreground">{displayText(step.response)}</p>}
                 <div className="flex flex-wrap gap-x-4 gap-y-1 pt-1 text-sm">
-                  <Link to={`/archive/cr-159065/page/${step.pdfPage}`} className="text-primary underline-offset-2 hover:underline">
+                  <Link to={`/reports/cr-159065/page/${step.pdfPage}`} className="text-primary underline-offset-2 hover:underline">
                     Read it in the manual (page {step.pdfPage})
                   </Link>
                   <Link to={`/map?layer=manual&record=${record}&step=${step.n}`} className="text-primary underline-offset-2 hover:underline">

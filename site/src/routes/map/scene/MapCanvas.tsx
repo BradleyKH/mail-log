@@ -47,7 +47,6 @@ export default function MapCanvas(props: MapViewProps) {
               glow={theme === "dark" ? "additive" : "normal"}
               highlight={id === layer ? props.highlight : EMPTY}
               trace={id === layer ? props.trace : null}
-              hidden={props.hidden}
               hovered={id === layer ? props.hovered : null}
               reducedMotion={props.reducedMotion}
               onHover={props.onHover}
@@ -62,7 +61,6 @@ export default function MapCanvas(props: MapViewProps) {
       <SceneOverlay
         registry={registry}
         labels={active?.labels ?? []}
-        hidden={props.hidden}
         popoverNode={props.popoverNode}
         flows={data.flows}
         index={data.index}

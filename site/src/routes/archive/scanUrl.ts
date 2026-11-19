@@ -6,4 +6,4 @@ export function scanUrl(docId: DocId, pdfPage: number, thumb = false): string {
   return `${import.meta.env.BASE_URL}scans/${docId}/${thumb ? "thumbs/" : ""}${name}`;
 }
 
-export const pagePath = (docId: DocId, pdfPage: number) => `/archive/${docId}/page/${pdfPage}`;
+export const pagePath = (docId: DocId, pdfPage: number) => `/reports/${docId}/page/${pdfPage}`;

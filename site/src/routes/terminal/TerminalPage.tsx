@@ -1,7 +1,6 @@
 import { useSearchParams } from "react-router";
 import RetroTerminal from "./RetroTerminal";
 import TodayView from "./today/TodayView";
-import ViewToggle from "./ViewToggle";
 
 export default function TerminalPage() {
   const [params] = useSearchParams();
@@ -10,15 +9,11 @@ export default function TerminalPage() {
   return (
     <div className="space-y-6">
       <header className="space-y-3">
-        <div className="flex flex-wrap items-start justify-between gap-4">
-          <h1 className="text-3xl font-semibold tracking-tight">Terminal</h1>
-          <ViewToggle view={view} />
-        </div>
+        <h1 className="text-3xl font-semibold tracking-tight">Terminal</h1>
         {view === "1979" ? (
           <p className="text-muted-foreground">
             MAIL LOG as it ran in 1979, driven step by step by its own operating manual. Log in with your initials, then pick a
-            data base: COR for daily correspondence, DIR for reports, DRAW for drawings and engineering orders. This is the original; Today
-            runs the same program logic behind a modern face.
+            data base: COR for daily correspondence, DIR for reports, DRAW for drawings and engineering orders.
           </p>
         ) : (
           <p className="text-muted-foreground" data-testid="today-caption">

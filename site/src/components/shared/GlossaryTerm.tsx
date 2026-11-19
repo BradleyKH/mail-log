@@ -27,7 +27,7 @@ export default function GlossaryTerm({ entry, docId, children }: GlossaryTermPro
         <p className="font-semibold">{entry.term}</p>
         <p className="mt-1 text-muted-foreground">{displayText(entry.definition)}</p>
         <Link
-          to={`/archive/${docId}/page/${entry.pdfPage}`}
+          to={`/reports/${docId}/page/${entry.pdfPage}`}
           className="mt-2 inline-block text-primary underline-offset-2 hover:underline"
         >
           Source: page {entry.pdfPage}

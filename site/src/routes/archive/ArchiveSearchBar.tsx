@@ -9,11 +9,15 @@ type Props = {
   query?: string;
   /** Search as you type (used on the results page); otherwise Enter submits. */
   live?: boolean;
+  /** Focus the field when it mounts. */
+  autoFocus?: boolean;
+  /** Called on Escape; the field ignores Escape when absent. */
+  onEscape?: () => void;
 };
 
-const target = (q: string) => `/archive${q ? `?q=${encodeURIComponent(q)}` : ""}`;
+const target = (q: string) => `/reports${q ? `?q=${encodeURIComponent(q)}` : ""}`;
 
-export default function ArchiveSearchBar({ query = "", live = false }: Props) {
+export default function ArchiveSearchBar({ query = "", live = false, autoFocus = false, onEscape }: Props) {
   const navigate = useNavigate();
   const inputRef = useRef<HTMLInputElement>(null);
   const [value, setValue] = useState(query);
@@ -23,8 +27,8 @@ export default function ArchiveSearchBar({ query = "", live = false }: Props) {
   const location = useLocation();
   const focusOnArrival = (location.state as FocusSearchState | null)?.focusSearch === true;
   useEffect(() => {
-    if (focusOnArrival) inputRef.current?.focus();
-  }, [focusOnArrival, location.key]);
+    if (focusOnArrival || autoFocus) inputRef.current?.focus();
+  }, [focusOnArrival, autoFocus, location.key]);
 
   useEffect(() => {
     if (!live || value.trim() === query.trim()) return;
@@ -46,6 +50,12 @@ export default function ArchiveSearchBar({ query = "", live = false }: Props) {
         data-site-search
         value={value}
         onChange={(e) => setValue(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key === "Escape" && onEscape) {
+            e.preventDefault();
+            onEscape();
+          }
+        }}
         onFocus={() => void import("@/lib/search/loadEngine").then((m) => m.loadSearchEngine())}
         aria-label="Search the reports"
         placeholder="Search the reports (press /)"

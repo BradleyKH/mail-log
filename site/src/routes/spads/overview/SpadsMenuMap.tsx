@@ -20,7 +20,7 @@ export default function SpadsMenuMap() {
 
   return (
     <div className="space-y-3">
-      <h3 className="font-mono text-sm font-semibold tracking-wide uppercase">The SPADS Main Menu</h3>
+      <h2 className="font-mono text-sm font-semibold tracking-wide uppercase">The SPADS Main Menu</h2>
       <p className="text-sm text-muted-foreground">
         Each option opens a program; the volume and section that document it are linked.
       </p>
@@ -44,7 +44,7 @@ export default function SpadsMenuMap() {
               <div className="mt-1 text-xs text-muted-foreground">
                 {doc ? (
                   <>
-                    <Link to={`/archive/${doc.docId}/section/${doc.sectionId}`} className="underline underline-offset-4">
+                    <Link to={`/reports/${doc.docId}/section/${doc.sectionId}`} className="underline underline-offset-4">
                       {`${VOLUME_LABEL[doc.docId]} section ${doc.sectionId}`}
                     </Link>
                     {", "}

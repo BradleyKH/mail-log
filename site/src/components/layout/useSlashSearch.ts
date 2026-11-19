@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router";
 
-/** State a navigation carries so the Archive's search field takes focus on arrival. */
+/** State a navigation carries so the Reports search field takes focus on arrival. */
 export type FocusSearchState = { focusSearch?: boolean };
 
-/** `/` focuses the page's search field anywhere on the site, or opens the Archive search when the page has none. */
+/** `/` focuses the page's search field anywhere on the site, or opens the Reports search when the page has none. */
 export function useSlashSearch() {
   const navigate = useNavigate();
   useEffect(() => {
@@ -18,7 +18,7 @@ export function useSlashSearch() {
         field.focus();
         field.select();
       } else {
-        navigate("/archive", { state: { focusSearch: true } satisfies FocusSearchState });
+        navigate("/reports", { state: { focusSearch: true } satisfies FocusSearchState });
       }
     };
     window.addEventListener("keydown", onKey);

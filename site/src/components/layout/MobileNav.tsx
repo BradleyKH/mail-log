@@ -15,10 +15,10 @@ export default function MobileNav() {
       </SheetTrigger>
       <SheetContent side="left" className="w-64 bg-background">
         <SheetHeader>
-          <SheetTitle className="font-mono tracking-widest">MAIL LOG</SheetTitle>
+          <SheetTitle className="font-mono tracking-widest">NASA MAIL LOG</SheetTitle>
           <SheetDescription className="sr-only">Site sections</SheetDescription>
         </SheetHeader>
-        <SiteNav className="flex flex-col gap-1 px-2" onNavigate={() => setOpen(false)} />
+        <SiteNav stacked className="flex flex-col gap-1 px-2" onNavigate={() => setOpen(false)} />
       </SheetContent>
     </Sheet>
   );

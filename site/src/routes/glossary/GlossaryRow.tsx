@@ -12,7 +12,7 @@ export default function GlossaryRow({ entry }: { entry: MergedGlossaryEntry }) {
             {d.sources.map((s) => (
               <Link
                 key={`${s.docId}:${s.pdfPage}`}
-                to={`/archive/${s.docId}/page/${s.pdfPage}`}
+                to={`/reports/${s.docId}/page/${s.pdfPage}`}
                 className="font-mono text-primary underline-offset-2 hover:underline"
               >
                 {s.reportNumber} p. {s.pdfPage}

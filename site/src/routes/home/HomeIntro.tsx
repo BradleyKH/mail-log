@@ -15,7 +15,7 @@ export default function HomeIntro() {
         system. MAIL LOG was its part for correspondence, reports, and engineering drawings, so a document could be found by author,
         subject, or date. It ran on a PRIME 300 computer at Langley, and in May 1979 its documentation was published as four NASA
         contractor reports. Read the{" "}
-        <Link to="/archive/cr-159065/page/12" className="underline underline-offset-4">
+        <Link to="/reports/cr-159065/page/12" className="underline underline-offset-4">
           preface as printed
         </Link>
         .

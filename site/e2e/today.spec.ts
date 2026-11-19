@@ -51,9 +51,7 @@ test("a record created in Today is found in the 1979 terminal", async ({ page },
   await page.keyboard.press("Escape");
   await page.screenshot({ path: `${shots}/created-${info.project.name}.png`, fullPage: true });
 
-  await page.getByRole("radio", { name: "1979" }).click();
-  await expect(page).toHaveURL(/view=1979/);
-  await expect(page).toHaveURL(/record=dir/);
+  await page.goto("/terminal?view=1979&record=dir");
   await page.getByRole("button", { name: "Instant" }).click();
   for (const l of ["login dkh", "DIR", "SEA", "DIR", "99DIR0001"]) await typeLine(page, l);
   await expect(log(page)).toContainText("SCOUT WIND TUNNEL SUMMARY");
@@ -70,9 +68,7 @@ test("a record entered at the 1979 terminal appears in Today and can be archived
     await page.waitForTimeout(50);
   }
 
-  await page.getByRole("radio", { name: "Today" }).click();
-  await expect(page).toHaveURL(/view=today/);
-  await expect(page).toHaveURL(/record=dir/);
+  await page.goto("/terminal?view=today&record=dir");
   await page.getByLabel("Filter records").fill("98DIR0002");
   await expect(page.getByTestId("record-row")).toHaveCount(1);
   await page.getByTestId("record-row").click();
@@ -81,18 +77,6 @@ test("a record entered at the 1979 terminal appears in Today and can be archived
   await page.getByRole("button", { name: "Confirm archive" }).click();
   await expect(page.getByTestId("record-row")).toHaveCount(0);
   await expect(page.getByTestId("today-notice")).toContainText("Archived");
-});
-
-test("the toggle keeps the record type and updates the URL", async ({ page }) => {
-  await page.goto("/terminal?view=today&record=drawing-eo");
-  await expect(page.getByRole("link", { name: "Drawings / E.O." })).toHaveAttribute("aria-current", "page");
-  await page.getByRole("radio", { name: "1979" }).click();
-  await expect(page).toHaveURL(/view=1979/);
-  await expect(page).toHaveURL(/record=drawing-eo/);
-  await expect(page.getByTestId("hood-step")).toBeVisible();
-  await page.getByRole("radio", { name: "Today" }).click();
-  await expect(page).toHaveURL(/view=today&record=drawing-eo|record=drawing-eo&view=today/);
-  await expect(page.getByRole("heading", { level: 2, name: "Drawings / E.O." })).toBeVisible();
 });
 
 test("the form applies the terminal's rules", async ({ page }) => {

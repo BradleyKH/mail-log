@@ -6,7 +6,7 @@ import { mailLogIntro1985 } from "./overviewData";
 export default function MailLog1985() {
   return (
     <section id="mail-log-1985" className="space-y-6">
-      <h2 className="font-mono text-xl font-semibold tracking-wide uppercase">MAIL LOG in 1985</h2>
+      <h1 className="font-mono text-3xl font-semibold tracking-wide uppercase">MAIL LOG in 1985</h1>
       <p>
         SPADS in 1985 still tracked correspondence, through a Mail Log program on its Main Menu (option 9) and a second Mail Log program
         for the Projects Directorate. Here they sit beside the 1979 MAIL LOG.
@@ -25,7 +25,7 @@ export default function MailLog1985() {
           terminal
         </Link>{" "}
         or read its report,{" "}
-        <Link to="/archive/cr-159065" className="underline underline-offset-4">
+        <Link to="/reports/cr-159065" className="underline underline-offset-4">
           CR-159065
         </Link>
         .

@@ -4,10 +4,10 @@ const ROUTES: [path: string, heading: RegExp][] = [
   ["/", /MAIL LOG/],
   ["/about", /About/],
   ["/glossary", /Glossary/],
-  ["/archive", /Archive/],
-  ["/archive?q=MAGSAT", /Archive/],
-  ["/archive/cr-159065", /CR-159065/],
-  ["/archive/cr-159064/page/87", /CR-159064, page 87/],
+  ["/reports", /Reports/],
+  ["/reports?q=MAGSAT", /Reports/],
+  ["/reports/cr-159065", /CR-159065/],
+  ["/reports/cr-159064/page/87", /^(NASA )?CR-159064$/],
   ["/terminal?record=dir&step=3&view=1979", /Terminal/],
   ["/code", /Code/],
   ["/code/AUSEA?line=0823", /AUSEA/],
@@ -26,23 +26,23 @@ for (const [path, heading] of ROUTES) {
 }
 
 test("section links redirect to the section's first page", async ({ page }) => {
-  await page.goto("/archive/cr-159065/section/4.1");
-  await expect(page).toHaveURL(/\/archive\/cr-159065\/page\/21$/);
+  await page.goto("/reports/cr-159065/section/4.1");
+  await expect(page).toHaveURL(/\/reports\/cr-159065\/page\/21$/);
 });
 
 test("unknown section links redirect to the report", async ({ page }) => {
-  await page.goto("/archive/cr-159065/section/99.9");
-  await expect(page).toHaveURL(/\/archive\/cr-159065$/);
+  await page.goto("/reports/cr-159065/section/99.9");
+  await expect(page).toHaveURL(/\/reports\/cr-159065$/);
 });
 
 test("top nav reaches every page", async ({ page }) => {
   await page.goto("/");
   const nav = page.getByRole("navigation", { name: "Main" });
   for (const [label, url] of [
-    ["Archive", /\/archive$/],
+    ["Reports", /\/reports$/],
     ["Terminal", /\/terminal$/],
     ["Code", /\/code$/],
-    ["Map", /\/map$/],
+    ["Logic Map", /\/map$/],
     ["Glossary", /\/glossary$/],
     ["About", /\/about$/],
     ["Home", /\/$/],
@@ -65,20 +65,20 @@ test("theme toggle switches and persists", async ({ page }, info) => {
 });
 
 test("screenshots", async ({ page }, info) => {
-  for (const path of ["/", "/archive", "/terminal"]) {
+  for (const path of ["/", "/reports", "/terminal"]) {
     await page.goto(path);
     await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
     await page.screenshot({ path: `test-results/screens/${info.project.name}${path.replace(/\//g, "_")}.png`, fullPage: true });
   }
   await page.setViewportSize({ width: 390, height: 800 });
-  await page.goto("/archive");
+  await page.goto("/reports");
   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
   await page.getByRole("button", { name: "Open menu" }).click();
   const menu = page.getByRole("dialog");
-  await expect(menu.getByRole("link", { name: "Terminal" })).toBeVisible();
+  await expect(menu.getByRole("link", { name: "Terminal", exact: true })).toBeVisible();
   await page.waitForTimeout(600);
   await page.screenshot({ path: `test-results/screens/${info.project.name}_mobile-menu.png` });
-  await menu.getByRole("link", { name: "Terminal" }).click();
+  await menu.getByRole("link", { name: "Terminal", exact: true }).click();
   await expect(page).toHaveURL(/\/terminal$/);
   await expect(menu).toBeHidden();
 });

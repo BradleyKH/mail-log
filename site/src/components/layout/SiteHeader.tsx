@@ -10,8 +10,8 @@ export default function SiteHeader() {
       <div className="mx-auto flex h-14 max-w-6xl items-center gap-2 px-4">
         <MobileNav />
         <Link to="/" className="mr-4 flex items-baseline gap-2">
-          <span className="font-mono text-lg font-semibold tracking-[0.2em]">MAIL LOG</span>
-          <span className="hidden font-mono text-xs text-muted-foreground sm:inline">NASA SPADS, 1979</span>
+          <span className="font-mono text-lg font-semibold tracking-[0.2em]">NASA MAIL LOG</span>
+          <span className="hidden font-mono text-xs text-muted-foreground sm:inline">SPADS 1979</span>
         </Link>
         <SiteNav className="hidden flex-1 items-center gap-1 md:flex" />
         <div className="ml-auto flex items-center md:ml-0">

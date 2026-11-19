@@ -12,7 +12,7 @@ export default function CiteLinks({ cite }: { cite: Cite }) {
       {cite.sectionId && (
         <>
           {", "}
-          <Link to={`/archive/${cite.docId}/section/${cite.sectionId}`} className="underline underline-offset-4">
+          <Link to={`/reports/${cite.docId}/section/${cite.sectionId}`} className="underline underline-offset-4">
             {`section ${cite.sectionId}`}
           </Link>
         </>

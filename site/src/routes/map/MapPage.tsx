@@ -1,11 +1,10 @@
 import { Suspense, lazy, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "react-router";
 import { frameNodes, homeGoal } from "./graph/focus";
-import { RECORD_ORDER } from "./graph/labels";
 import { mapSearch, parseMapParams } from "./graph/params";
 import { highlightFor, selectionFromRef, selectionNodeId, type Selection } from "./graph/selection";
 import { tracePath } from "./graph/trace";
-import type { Layer, MapNode, NodeGroup } from "./graph/types";
+import type { Layer, MapNode } from "./graph/types";
 import Map2D from "./Map2D";
 import MapLegend from "./MapLegend";
 import MapToolbar from "./MapToolbar";
@@ -21,10 +20,6 @@ import { supportsWebGL } from "./webgl";
 
 const MapCanvas = lazy(() => import("./scene/MapCanvas"));
 
-const LAYER_GROUPS: Record<Layer, readonly NodeGroup[]> = {
-  manual: ["core", ...RECORD_ORDER],
-  code: [...RECORD_ORDER, "general", "support", "external", "file"],
-};
 const HOME_DIRECTION: [number, number, number] = [0, 0.78, 0.62];
 
 export default function MapPage() {
@@ -38,7 +33,6 @@ export default function MapPage() {
   const record = parsed.record ?? (selection?.kind === "step" ? selection.record : "correspondence");
 
   const [hovered, setHovered] = useState<string | null>(null);
-  const [hidden, setHidden] = useState<Set<NodeGroup>>(() => new Set());
   const [tracing, setTracing] = useState(false);
   const [webgl] = useState(supportsWebGL);
   const [view, setView] = useState<"3d" | "2d">(() => (supportsWebGL() ? "3d" : "2d"));
@@ -136,7 +130,6 @@ export default function MapPage() {
     palette,
     highlight,
     trace,
-    hidden,
     hovered,
     popoverNode,
     record,
@@ -150,7 +143,7 @@ export default function MapPage() {
   return (
     <section className="space-y-4" data-layer={layer}>
       <header className="space-y-2">
-        <h1 className="font-mono text-3xl font-semibold tracking-wide uppercase">Map</h1>
+        <h1 className="font-mono text-3xl font-semibold tracking-wide uppercase">Logic Map</h1>
         <p className="text-muted-foreground">
           MAIL LOG in two layers. The Manual layer lays out every step of the operating instructions, from login through each record's
           four modes. The Code layer shows the program as written: his routines, the CALLs between them, and the files they open.
@@ -159,17 +152,6 @@ export default function MapPage() {
       <MapToolbar
         layer={layer}
         onLayer={setLayer}
-        groups={LAYER_GROUPS[layer]}
-        hidden={hidden}
-        onToggleGroup={(g) =>
-          setHidden((prev) => {
-            const next = new Set(prev);
-            if (next.has(g)) next.delete(g);
-            else next.add(g);
-            return next;
-          })
-        }
-        palette={palette}
         tracing={tracing}
         onTrace={setTracing}
         onReset={() => requestFocus("home")}

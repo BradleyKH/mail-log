@@ -14,7 +14,7 @@ export const RECORD_ORDER = ["correspondence", "dir", "drawing-eo", "general", "
 
 export const routineHref = (id: string, line?: string) =>
   `/code/${encodeURIComponent(id)}${line ? `?line=${encodeURIComponent(line)}` : ""}`;
-export const archivePageHref = (docId: string, pdfPage: number) => `/archive/${docId}/page/${pdfPage}`;
+export const archivePageHref = (docId: string, pdfPage: number) => `/reports/${docId}/page/${pdfPage}`;
 export const terminalHref = (record: string, step: number) => `/terminal?record=${record}&step=${step}`;
 export const mapManualHref = (record: string, step: number) => `/map?layer=manual&record=${record}&step=${step}`;
 export const mapCodeHref = (routine: string) => `/map?layer=code&routine=${encodeURIComponent(routine)}`;

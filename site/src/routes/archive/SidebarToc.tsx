@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { displayText } from "@/lib/display";
 import type { DocId, Section } from "@/content/types";
 import { pagePath } from "./scanUrl";
+import { TITLE_PAGE, withTitlePage } from "./titlePage";
 import { useIsDesktop } from "./useIsDesktop";
 
 /** Top two levels always; deeper sections only along the branch the reader is in, so long reports stay scannable. */
@@ -24,7 +25,7 @@ export default function SidebarToc({ docId, sections, currentSectionId, pdfPage 
   const current =
     sections.find((s) => s.id === currentSectionId)?.id ??
     [...sections].reverse().find((s) => s.pdfPage <= pdfPage)?.id ??
-    null;
+    (pdfPage === TITLE_PAGE.pdfPage ? TITLE_PAGE.id : null);
 
   useEffect(() => {
     const list = listRef.current;
@@ -43,7 +44,7 @@ export default function SidebarToc({ docId, sections, currentSectionId, pdfPage 
       <div ref={listRef} className="relative max-h-72 overflow-y-auto py-2 lg:max-h-[calc(100svh-7rem)]">
         <p className="hidden px-3 pb-1 font-mono text-xs tracking-widest text-muted-foreground uppercase lg:block">Contents</p>
         <ul className="text-sm">
-          {sections.filter((s) => visible(s, current)).map((s) => (
+          {withTitlePage(sections).filter((s) => visible(s, current)).map((s) => (
             <li key={s.id}>
               <Link
                 to={pagePath(docId, s.pdfPage)}

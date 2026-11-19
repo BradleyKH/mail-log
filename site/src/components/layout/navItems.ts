@@ -15,6 +15,5 @@ export const NAV_ITEMS: readonly NavItem[] = [
   { to: "/code", label: "Code", end: false },
   { to: "/reports", label: "Reports", end: false },
   { to: "/spads", label: "SPADS", end: false, children: SPADS_PAGES },
-  { to: "/glossary", label: "Glossary", end: false },
   { to: "/about", label: "About", end: false },
 ];

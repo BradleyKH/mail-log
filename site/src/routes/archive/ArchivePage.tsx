@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { useLocation, useNavigate, useSearchParams } from "react-router";
+import { Link, useLocation, useNavigate, useSearchParams } from "react-router";
 import { Search, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { FocusSearchState } from "@/components/layout/useSlashSearch";
@@ -79,6 +79,11 @@ export default function ArchivePage() {
           ))}
         </div>
       )}
+      <p className="text-sm text-muted-foreground">
+        <Link to="/glossary" className="underline underline-offset-4 hover:text-foreground">
+          Glossary of terms
+        </Link>
+      </p>
     </section>
   );
 }

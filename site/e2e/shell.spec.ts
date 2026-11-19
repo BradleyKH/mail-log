@@ -43,7 +43,6 @@ test("top nav reaches every page", async ({ page }) => {
     ["Terminal", /\/terminal$/],
     ["Code", /\/code$/],
     ["Logic Map", /\/map$/],
-    ["Glossary", /\/glossary$/],
     ["About", /\/about$/],
     ["Home", /\/$/],
   ] as const) {
@@ -51,6 +50,13 @@ test("top nav reaches every page", async ({ page }) => {
     await expect(page).toHaveURL(url);
     await expect(nav.getByRole("link", { name: label, exact: true })).toHaveAttribute("aria-current", "page");
   }
+});
+
+test("reports page links to the glossary", async ({ page }) => {
+  await page.goto("/reports");
+  await page.getByRole("link", { name: "Glossary of terms" }).click();
+  await expect(page).toHaveURL(/\/glossary$/);
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Glossary");
 });
 
 test("theme toggle switches and persists", async ({ page }, info) => {

@@ -17,7 +17,7 @@ export default function AboutScout() {
         >
           NASA Space Science Data Coordinated Archive
         </a>
-        . Try the{" "}
+        .{" "}
         <Link to="/reports?q=MAGSAT" className="underline underline-offset-4">
           Search the reports for MAGSAT
         </Link>

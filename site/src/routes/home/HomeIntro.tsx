@@ -23,11 +23,11 @@ export default function HomeIntro() {
       <p>
         By July 1985 SPADS had grown into a menu of 17 programs on a PRIME 750, covering contracts and finance, parts, and the wider
         Projects Directorate. Three operating manuals from that year, also part of this archive, show the same office six years on. The
-        Charleston Gazette-Mail reported in 2001 that his financial and inventory programs saved the government $12 million.
+        Charleston Gazette-Mail reported in 2001 that Danny&apos;s financial and inventory programs saved the government $12 million.
       </p>
       <p>
         <Link to="/about" className="underline underline-offset-4">
-          More about Danny, the reports, and how this site was made
+          More about Danny and the reports
         </Link>
         .
       </p>

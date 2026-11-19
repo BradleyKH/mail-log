@@ -15,7 +15,7 @@ test.describe("home", () => {
     await expect(page.getByAltText(/Cover of NASA Contractor Report CR-159065/)).toBeVisible();
     await expect(page.getByText(LINES)).toBeVisible();
     await expect(page.getByText(PAGES, { exact: true })).toBeVisible();
-    for (const [name, url] of [["Reports", /\/reports$/], ["Terminal", /\/terminal$/], ["Code", /\/code$/], ["Map", /\/map$/]] as const) {
+    for (const [name, url] of [["Reports", /\/reports$/], ["Terminal", /\/terminal$/], ["Code", /\/code$/], ["Logic Map", /\/map$/]] as const) {
       await page.goto("/");
       await page.getByRole("region", { name: "Explore" }).getByRole("link", { name: new RegExp(`^${name}`) }).click();
       await expect(page).toHaveURL(url);

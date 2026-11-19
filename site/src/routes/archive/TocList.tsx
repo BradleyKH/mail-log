@@ -2,14 +2,12 @@ import { Link } from "react-router";
 import { displayText } from "@/lib/display";
 import type { DocId, Section } from "@/content/types";
 import { pagePath } from "./scanUrl";
-
-// Every report's page 1 is its cover, which no printed contents list names.
-const TITLE_PAGE: Section = { id: "0.0", title: "TITLE PAGE", level: 1, pdfPage: 1 };
+import { withTitlePage } from "./titlePage";
 
 export default function TocList({ docId, sections }: { docId: DocId; sections: Section[] }) {
   return (
     <ul className="text-sm" data-testid="toc">
-      {[TITLE_PAGE, ...sections].map((s) => (
+      {withTitlePage(sections).map((s) => (
         <li key={s.id}>
           <Link
             to={pagePath(docId, s.pdfPage)}

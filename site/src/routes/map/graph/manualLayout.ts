@@ -13,10 +13,10 @@ export const RECORD_ANGLES: Record<RecordType, number> = {
   "drawing-eo": deg(150),
 };
 
-const RECORD_RADIUS = 52;
-const STEP_SPACING = 2.3;
+const RECORD_RADIUS = 40;
+const STEP_SPACING = 3.3;
 /** Mode sub-clusters fan out on the far side of the hub, away from the core. */
-const MODE_OFFSETS = { input: deg(-105), revise: deg(-38), search: deg(38), archive: deg(105) };
+const MODE_OFFSETS = { input: deg(-115), revise: deg(-45), search: deg(45), archive: deg(115) };
 const STEP_SIZE = 0.65;
 const HUB_SIZE = 1.1;
 
@@ -74,7 +74,7 @@ export function buildManualGraph(flows: Partial<Record<RecordType, Flow>>): MapG
       const steps = flow.steps.filter((s) => modeOfStep(s.n) === mode).sort((a, b) => a.n - b.n);
       if (steps.length === 0) continue;
       const clusterRadius = phyllotaxisRadius(steps.length, STEP_SPACING);
-      const center = polar(hub, angle + MODE_OFFSETS[mode], 9 + clusterRadius, 0);
+      const center = polar(hub, angle + MODE_OFFSETS[mode], 7 + clusterRadius, 0);
       labels.push({
         id: `label:${record}:${mode}`,
         text: MODE_LABELS[mode],

@@ -28,4 +28,6 @@ export interface MapViewProps {
   focus: FocusRequest | null;
   onHover: (id: string | null) => void;
   onSelect: (node: MapNode) => void;
+  /** A click on empty space around the nodes. */
+  onDeselect: () => void;
 }

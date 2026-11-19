@@ -32,7 +32,15 @@ export default function Map2D(props: MapViewProps) {
 
   return (
     <div className="relative h-full w-full" data-testid="map-2d" style={{ background: palette.background }}>
-      <svg viewBox={view.viewBox} className="h-full w-full" role="group" aria-label={`Two-dimensional map, ${layer} layer`}>
+      <svg
+        viewBox={view.viewBox}
+        className="h-full w-full"
+        role="group"
+        aria-label={`Two-dimensional map, ${layer} layer`}
+        onClick={(e) => {
+          if (!(e.target as Element).closest("[data-node]")) props.onDeselect();
+        }}
+      >
         <g fill="none">
           {view.edges.map((e) => {
             const a = view.byId.get(e.from)!;

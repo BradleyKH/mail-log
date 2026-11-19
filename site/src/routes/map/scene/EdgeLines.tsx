@@ -105,8 +105,10 @@ export default function EdgeLines({ nodes, edges, colorOf, dimmed, progress, pul
 
   useEffect(() => {
     material.blending = additive ? AdditiveBlending : NormalBlending;
-    material.uniforms.uBase.value = additive ? 0.35 : 0.5;
-  }, [material, additive]);
+    // While the pulse animates, the travelling lights carry the edges on their own; the steady
+    // line only shows when motion is reduced, so edges never disappear entirely.
+    material.uniforms.uBase.value = pulse ? 0 : additive ? 0.35 : 0.5;
+  }, [material, additive, pulse]);
 
   useFrame((state) => {
     material.uniforms.uTime.value = pulse ? state.clock.elapsedTime : 0;

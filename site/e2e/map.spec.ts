@@ -112,6 +112,25 @@ test("the finder selects nodes from the keyboard", async ({ page }) => {
   await expect(page.getByTestId("map-panel-title")).toHaveText("Step #8");
 });
 
+test("clicking empty space in the 3D map clears the selection but keeps the record in view", async ({ page }) => {
+  await page.goto("/map?layer=manual&record=correspondence&step=330");
+  await waitForScene(page);
+  await expect(page.getByTestId("map-panel-title")).toHaveText("Step #30");
+  await page.locator("[data-testid=map-viewport] canvas").click({ position: { x: 5, y: 5 } });
+  await expect(page).toHaveURL(/\?layer=manual&record=correspondence$/);
+  await expect(page.getByRole("button", { name: "Clear selection" })).toHaveCount(0);
+});
+
+test("Escape and the Clear button keep the record in view", async ({ page }) => {
+  await page.goto("/map?layer=manual&record=correspondence&step=330");
+  await waitForScene(page);
+  await page.keyboard.press("Escape");
+  await expect(page).toHaveURL(/[?]layer=manual&record=correspondence$/);
+  await page.goto("/map?layer=manual&record=correspondence&step=330");
+  await page.getByRole("button", { name: "Clear selection" }).click();
+  await expect(page).toHaveURL(/[?]layer=manual&record=correspondence$/);
+});
+
 test("without WebGL the flat map keeps selection and links", async ({ page }) => {
   const errors = collectErrors(page);
   await disableWebGL(page);
@@ -126,6 +145,8 @@ test("without WebGL the flat map keeps selection and links", async ({ page }) =>
   await expect(page.locator('svg [data-node="routine:AUSEA"]')).toBeVisible();
   await page.locator('svg [data-node="file:DRAW"]').click();
   await expect(page.getByTestId("map-panel-title")).toHaveText("DRAW");
+  await page.getByTestId("map-2d").click({ position: { x: 5, y: 5 } });
+  await expect(page.getByRole("button", { name: "Clear selection" })).toHaveCount(0);
   expect(errors).toEqual([]);
 });
 

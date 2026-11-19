@@ -31,6 +31,10 @@ export default function MapCanvas(props: MapViewProps) {
         gl={{ antialias: true }}
         role="img"
         aria-label={`Three-dimensional map, ${layer} layer`}
+        // R3F fires this only for clicks, not orbit drags, that hit no node.
+        onPointerMissed={(e) => {
+          if (e.button === 0) props.onDeselect();
+        }}
       >
         <SceneBackdrop palette={palette} animate={!props.reducedMotion} />
         <ambientLight intensity={theme === "dark" ? 1.5 : 1.9} />

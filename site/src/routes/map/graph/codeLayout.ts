@@ -9,15 +9,15 @@ import type { ClusterLabel, CodeGroup, MapEdge, MapGraph, MapNode, Vec3 } from "
 type RoutineGroup = Exclude<CodeGroup, "file" | "external">;
 
 const GROUP_PLACEMENT: Record<RoutineGroup, { angle: number; radius: number }> = {
-  correspondence: { angle: RECORD_ANGLES.correspondence, radius: 46 },
-  dir: { angle: RECORD_ANGLES.dir, radius: 46 },
-  "drawing-eo": { angle: RECORD_ANGLES["drawing-eo"], radius: 46 },
-  general: { angle: deg(90), radius: 34 },
-  support: { angle: deg(-30), radius: 40 },
+  correspondence: { angle: RECORD_ANGLES.correspondence, radius: 50 },
+  dir: { angle: RECORD_ANGLES.dir, radius: 50 },
+  "drawing-eo": { angle: RECORD_ANGLES["drawing-eo"], radius: 50 },
+  general: { angle: deg(90), radius: 38 },
+  support: { angle: deg(-30), radius: 45 },
 };
 const ROUTINE_ORDER: readonly RoutineGroup[] = ["correspondence", "dir", "drawing-eo", "general", "support"];
 
-const ROUTINE_SPACING = 4.4;
+const ROUTINE_SPACING = 5.2;
 const FILE_HEIGHT = 16;
 const FILE_SIZE = 0.9;
 const EXTERNAL_SIZE = 0.9;
@@ -105,7 +105,7 @@ export function buildCodeGraph(index: CodeIndex): MapGraph {
         const pa = filePositions[a].p;
         const pb = filePositions[b].p;
         const d = distance(pa, pb);
-        const min = 4;
+        const min = 5;
         if (d >= min) continue;
         const dx = d === 0 ? 1 : (pb[0] - pa[0]) / d;
         const dz = d === 0 ? 0 : (pb[2] - pa[2]) / d;

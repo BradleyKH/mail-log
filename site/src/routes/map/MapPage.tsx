@@ -63,10 +63,12 @@ export default function MapPage() {
     [layer, parsed.record, setParams],
   );
 
+  // Keeps the URL's record so the scene key holds and the camera stays where the user left it.
   const clear = useCallback(() => {
+    if (!selection) return;
     setLocalSelection(null);
-    setParams(mapSearch(layer, null, null), { replace: true });
-  }, [layer, setParams]);
+    setParams(mapSearch(layer, null, parsed.record), { replace: true });
+  }, [selection, layer, parsed.record, setParams]);
 
   const setLayer = (l: Layer) => {
     setHovered(null);
@@ -137,6 +139,7 @@ export default function MapPage() {
     focus,
     onHover: setHovered,
     onSelect: onSelectNode,
+    onDeselect: clear,
   };
   const flat = <Map2D {...viewProps} />;
 

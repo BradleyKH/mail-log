@@ -1,10 +1,10 @@
 import { Link } from "react-router";
 
 const SECTIONS = [
-  { to: "/reports", name: "Reports", blurb: "All seven reports, searchable, with each page's text beside the original scan." },
   { to: "/terminal", name: "Terminal", blurb: "Run MAIL LOG the way the 1979 manual describes it, one step at a time." },
-  { to: "/code", name: "Code", blurb: "His FORTRAN, routine by routine, beside the printed listings." },
   { to: "/map", name: "Logic Map", blurb: "The program's steps and its real call graph, in three dimensions." },
+  { to: "/code", name: "Code", blurb: "Danny's FORTRAN, routine by routine, beside the printed listings." },
+  { to: "/reports", name: "Reports", blurb: "All seven reports, searchable, with each page's text beside the original scan." },
   {
     to: "/spads",
     name: "SPADS",
